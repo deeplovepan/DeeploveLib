@@ -1,0 +1,6 @@
+gzip and gunzip 
+command 
+
+unzip gz file 
+ex: 
+gunzip gcc-3.4.6-sol10-sparc-local.gz 
