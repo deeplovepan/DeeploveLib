@@ -1,0 +1,23 @@
+vnc
+command
+
+
+setting up vnc server: 
+(1) edit .vnc/xstartup 
+uncomment "unset SESSION_MANAGER" & "exec /etc/X11/xinit/xinitrc" 
+(2)vncserver 
+
+kill vnc server: 
+ex: 
+vncserver -kill :1 
+vncserver -kill :2 
+the number is vnc server number 
+
+many users can share the same screen by access same vnc port 
+user can has his own screen by access different port 
+
+show running vnc server info: 
+/root/.vnc/dns.evt.com:1.pid 
+
+connect to linux vnc server form mac: 
+vnc://172.18.1.1:5901 
