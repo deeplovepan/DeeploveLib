@@ -1,0 +1,41 @@
+linux service
+command 
+
+in the header of service script, we can add something like following: 
+### BEGIN INIT INFO 
+# Provides: myService 
+# Required-Start: $network +myService 
+# Should-Start: 
+# Required-Stop: 
+# Should-Stop: 
+# Default-Start: 2 3 5 
+# Default-Stop: 
+# Description: Example Service 
+### END INIT INFO 
+
+(1) "$" before a service name refers to a group of services that comprise the pseudo name. 
+These are defined in /etc/insserv.conf. 
+(2) "+" means that the service is optional or that failure of the service will not prevent the referencing service 
+from starting or stopping 
+
+enable service during boot 
+ex: service is testd 
+(1) cp testd /etc/init.d 
+(2) chmod a+x /etc/init.d/testd 
+
+1. red hat or suse: 
+(3) chkconfig testd --add 
+(4) chkconfig testd on 
+
+2. debian: 
+(3) update-rc.d httpd defaults 
+
+
+
+
+remove service: 
+1. red hat or suse: 
+chkconfig testd --del 
+
+2. debian: 
+update-rc.d -f testd remove 
