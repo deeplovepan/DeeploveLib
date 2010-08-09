@@ -1,0 +1,9 @@
+Mercurial 
+command 
+
+
+
+
+download project: 
+ex: 
+hg clone ssh://anon@hg.opensolaris.org/hg/onnv/onnv-gate 
