@@ -1,0 +1,24 @@
+scan lun
+command
+
+
+scan all channels, targets and LUNs on host3 
+( this method is suitable for fibre , sas & iscsi) 
+echo "- - -" > /sys/class/scsi_host/host3/scan 
+
+delete lun: 
+ex: 
+echo 1 > /sys/bus/scsi/devices/2\:0\:1\:2/delete 
+
+fibre: 
+issue lip 
+echo "- - -" > /sys/class/fc_host/host2/issue_lip 
+this will also scan new lun 
+
+iscsi: 
+rescan 
+iscsiadm -m node -R 
+
+scan lun procedure: 
+(1) delete all ses 
+(2) issue lip for fibre or rescan for iscsi 
