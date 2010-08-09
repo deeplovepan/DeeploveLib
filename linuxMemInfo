@@ -1,0 +1,37 @@
+linux memory info 
+command
+
+cat /proc/meminfo 
+ex output: 
+MemTotal: 955820 kB 
+MemFree: 697632 kB 
+Buffers: 7516 kB 
+Cached: 105248 kB 
+SwapCached: 0 kB 
+Active: 131848 kB 
+Inactive: 78552 kB 
+SwapTotal: 5116692 kB 
+SwapFree: 5116692 kB 
+Dirty: 48 kB 
+Writeback: 0 kB 
+AnonPages: 97736 kB 
+Mapped: 28356 kB 
+Slab: 23240 kB 
+SReclaimable: 8004 kB 
+SUnreclaim: 15236 kB 
+PageTables: 5076 kB 
+NFS_Unstable: 0 kB 
+Bounce: 0 kB 
+WritebackTmp: 0 kB 
+CommitLimit: 5594600 kB 
+Committed_AS: 172136 kB 
+VmallocTotal: 34359738367 kB 
+VmallocUsed: 273316 kB 
+VmallocChunk: 34359464883 kB 
+HugePages_Total: 0 
+HugePages_Free: 0 
+HugePages_Rsvd: 0 
+HugePages_Surp: 0 
+Hugepagesize: 2048 kB 
+DirectMap4k: 7616 kB 
+DirectMap2M: 1040384 kB 
