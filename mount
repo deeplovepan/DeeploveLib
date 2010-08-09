@@ -1,0 +1,16 @@
+mount
+command
+
+ex: 
+1. mount /dev/dm-2 s0 
+
+2. for read-only file system problem 
+mount / -o remount,rw 
+
+3. mount -a
+   mount all file systems mentioned in fstab
+   
+/etc/fstab:
+configure mount devices at boot time on linux
+ex:
+/dev/dm-2           /root/s0                ext2    defaults        0  0
