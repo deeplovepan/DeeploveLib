@@ -1,0 +1,121 @@
+linux iscsi
+command
+
+start: 
+rcopen-iscsi start 
+or 
+/etc/init.d/iscsi start 
+
+
+
+command: 
+(1) discovery: 
+iscsiadm -m discovery -t st -p 192.168.4.123 
+
+(2) show node info: 
+iscsiadm -m node 
+
+(3) login: 
+iscsiadm -m node -p 192.168.4.123 -l 
+
+(4) login all: 
+iscsiadm -m node -L all 
+
+(5) logout: 
+iscsiadm -m node -p 10.10.10.1 -u 
+
+(6) logout all: 
+iscsiadm -m node -U all 
+
+(7) delete all nodes info 
+iscsiadm -m node -o delete 
+
+(8) delete specific node 
+iscsiadm -m node -p 10.10.10.1 -o delete 
+
+(9) update chap info: 
+update chap information: 
+iscsiadm -m node -p 192.168.4.123 --op=update --name=node.session.auth.authmethod --value=CHAP 
+iscsiadm -m node -p 192.168.4.123 --op=update --name=node.session.auth.username --value=andy 
+iscsiadm -m node -p 192.168.4.123 --op=update --name=node.session.auth.password --value=1234 
+
+(10)show iscsi parameter info: 
+iscsiadm -m node -o show 
+-> output ex 
+ode.name = iqn.2002-10.com.infortrend:raid.sn7652171.112 
+node.tpgt = 1 
+node.startup = manual 
+iface.hwaddress = default 
+iface.ipaddress = default 
+iface.iscsi_ifacename = default 
+iface.net_ifacename = default 
+iface.transport_name = tcp 
+iface.initiatorname = 
+node.discovery_address = 10.10.10.8 
+node.discovery_port = 3260 
+node.discovery_type = send_targets 
+node.session.initial_cmdsn = 0 
+node.session.initial_login_retry_max = 8 
+node.session.cmds_max = 128 
+node.session.queue_depth = 32 
+node.session.auth.authmethod = None 
+node.session.auth.username = 
+node.session.auth.password = 
+node.session.auth.username_in = 
+node.session.auth.password_in = 
+node.session.timeo.replacement_timeout = 120 
+node.session.err_timeo.abort_timeout = 15 
+node.session.err_timeo.lu_reset_timeout = 20 
+node.session.err_timeo.host_reset_timeout = 60 
+node.session.iscsi.FastAbort = Yes 
+node.session.iscsi.InitialR2T = No 
+node.session.iscsi.ImmediateData = Yes 
+node.session.iscsi.FirstBurstLength = 262144 
+node.session.iscsi.MaxBurstLength = 16776192 
+node.session.iscsi.DefaultTime2Retain = 0 
+node.session.iscsi.DefaultTime2Wait = 2 
+node.session.iscsi.MaxConnections = 1 
+node.session.iscsi.MaxOutstandingR2T = 1 
+node.session.iscsi.ERL = 0 
+node.conn[0].address = 10.10.10.8 
+node.conn[0].port = 3260 
+node.conn[0].startup = manual 
+node.conn[0].tcp.window_size = 524288 
+node.conn[0].tcp.type_of_service = 0 
+node.conn[0].timeo.logout_timeout = 15 
+node.conn[0].timeo.login_timeout = 15 
+node.conn[0].timeo.auth_timeout = 45 
+node.conn[0].timeo.noop_out_interval = 5 
+node.conn[0].timeo.noop_out_timeout = 5 
+node.conn[0].iscsi.MaxRecvDataSegmentLength = 131072 
+node.conn[0].iscsi.HeaderDigest = None 
+node.conn[0].iscsi.DataDigest = None 
+node.conn[0].iscsi.IFMarker = No 
+node.conn[0].iscsi.OFMarker = No 
+
+
+iscsi config: 
+edit /etc/iscsi/iscsid.conf 
+(1) auto login when boot: 
+node.startup = automatic 
+(2) increase iscsi ping time to prevent a lot of io error messages 
+node.conn[0].timeo.noop_out_interval = X 
+node.conn[0].timeo.noop_out_timeout = X 
+
+
+iscsi target ip info & mapped device info 
+ex: 
+/sys/class/iscsi_session/session11/device/connection11:0/iscsi_connection:connection11:0/address 
+/sys/class/iscsi_session/session10/device/target11:0:0 
+
+
+problem: 
+(1) Initiatorname required: 
+edit /etc/iscsi/initiatorname.iscsi 
+InitiatorName=iqn.2001-08.something.something 
+
+install: 
+(1) debian: 
+open-iscsi_2.0.870~rc3-0.4_amd64.deb 
+
+
