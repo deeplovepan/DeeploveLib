@@ -1,0 +1,106 @@
+multipath 
+command 
+
+
+debin install: 
+(1)apt-get install multipath [ remove highlighting ]-tools 
+(2) edit multipath.conf 
+/lib/udev/scsi_id 
+multipath info when no path: 
+mpathbn (0800DC0BBC240A19D7B315) dm-0 
+[size=20G][features=1 queue_if_no_path][hwhandler=0][rw] 
+
+
+multipath.conf setting: 
+suse 11 or debian 5.4: 
+getuid_callout	 "/lib/udev/scsi_id -g -u -d /dev/%n " 
+other: 
+getuid_callout	 "/sbin/scsi_id -g -u -s /block/%n" 
+
+
+
+remove dm: 
+multipath -F 
+multipath stop 
+
+show multipath info: 
+multipath -v3 
+
+load driver: 
+0. modprobe dm-mod 
+modprobe dm-multipath 
+modprobe dm-round-robin 
+1. chkconfig boot.multipath on 
+2.chkconfig multipathd on 
+3. /etc/init.d/boot.multipath start 
+4. /etc/init.d/multipathd start 
+
+query multipath status: 
+multipath -l 
+
+stop multipath service: 
+1. /etc/init.d/boot.multipath stop 
+2. /etc/init.d/multipathd stop 
+
+/etc/scsi_id.config: 
+the info related to multipath 
+
+how to decide multipath: 
+the sds with the same uuid are combined into a dm 
+scsi_id -g -s /block/sda can get uuid 
+
+for red hat: 
+default multipath is not triggered 
+modify /etc/multipath.conf : 
+comment blacklist 
+remove dm: 
+multipath -F 
+multipath stop 
+
+no dm problem: 
+comment blacklist in /etc/multipath.conf 
+queue io : 
+for new kernel: 
+// wait 150s before remove device 
+dev_loss_tmo 150 
+explain: 
+set /sys/class/fc_remote_ports/rport-*/dev_loss_tmo 
+for old kernel 
+no_path_retry 30 
+
+set path_grouping_policy as group_by_prio 
+problem: 
+Is device-mapper driver missing from kernel? 
+answer: 
+load driver 
+
+set multipath name: 
+defaults { 
+user_friendly_names yes 
+} 
+multipaths { 
+multipath { 
+wwid 0800653d547e5135f43b6c 
+alias red 
+} 
+multipath { 
+wwid 080064278ada8d3d358795 
+alias blue 
+} 
+} 
+} 
+wwid is the 22 byte sn from inquiry 
+the name in /dev/mapper & /dev/mpath become red & blue 
+
+
+remove device size checking : 
+in libmultipath/configure.c 
+if (pp2->size != mpp->size) { 
+/* 
+* ouch, avoid feeding that to the DM 
+*/ 
+condlog(0, "%s: size %llu, expected %llu. " 
+"Discard", pp2->dev_t, pp2->size, 
+mpp->size); 
+mpp->action = ACT_REJECT; 
+} 
