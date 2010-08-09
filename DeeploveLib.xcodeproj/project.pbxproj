@@ -27,6 +27,9 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		61284FE2120FD98400696385 /* mount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount; sourceTree = "<group>"; };
+		61285009120FE05200696385 /* linuxIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIscsi; sourceTree = "<group>"; };
+		6128500A120FE63000696385 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
+		6128500D120FF5A200696385 /* linuxService */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxService; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,9 +75,20 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
-				61284FE2120FD98400696385 /* mount */,
+				6128500E120FF5DB00696385 /* command */,
 			);
 			name = note;
+			sourceTree = "<group>";
+		};
+		6128500E120FF5DB00696385 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				61284FE2120FD98400696385 /* mount */,
+				61285009120FE05200696385 /* linuxIscsi */,
+				6128500A120FE63000696385 /* ssh */,
+				6128500D120FF5A200696385 /* linuxService */,
+			);
+			name = command;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
