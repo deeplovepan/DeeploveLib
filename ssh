@@ -1,0 +1,6 @@
+ssh
+command
+
+enable root login: 
+edit /etc/ssh/sshd_config 
+PermitRootLogin yes 
