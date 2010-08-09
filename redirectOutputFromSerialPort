@@ -1,0 +1,26 @@
+redirect output from serial port
+command
+
+1. modify bios: 
+(1)Change BIOS settings /Server/Serial Console Features/BIOS Redirection Port to 
+[Serial port 1 or 2] 
+(2)change direct to modem 
+
+2. modify /boot/grub/menu.lst for suse 
+modify /boot/grub/grub.conf for red hat 
+console=ttyS0, 115200,vt100 
+
+3. modify /ect/inittab 
+c0:2345:respawn:/sbin/agetty ttyS0 115200 vt100 
+
+4. modify /etc/securetty 
+ttyS0 
+
+5. change log level to see info 
+echo 9 > /proc/sysrq-trigger 
+echo 1 > /proc/sys/kernel/sysrq 
+alt + sysrq + p : show cpu info 
+alt + sysrq + t : show current task list 
+alt + sysrq + m : show memory info 
+
+reference: http://www.vanemery.com/Linux/Serial/serial-console.html 
