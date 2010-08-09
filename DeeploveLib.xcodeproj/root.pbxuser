@@ -59,7 +59,7 @@
 	61284FE2120FD98400696385 /* mount */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {967, 439}}";
-			sepNavSelRange = "{178, 0}";
+			sepNavSelRange = "{14, 0}";
 			sepNavVisRange = "{0, 301}";
 		};
 	};
@@ -80,8 +80,8 @@
 	6128500D120FF5A200696385 /* linuxService */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1258.25, 861}}";
-			sepNavSelRange = "{708, 0}";
-			sepNavVisRange = "{599, 333}";
+			sepNavSelRange = "{661, 0}";
+			sepNavVisRange = "{0, 627}";
 		};
 	};
 	6128500F120FF5E400696385 /* PBXTextBookmark */ = {
@@ -153,6 +153,27 @@
 		rType = 0;
 		vrLen = 301;
 		vrLoc = 0;
+	};
+	6128501E120FFDC700696385 /* wget */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 439}}";
+			sepNavSelRange = "{16, 0}";
+			sepNavVisRange = "{0, 122}";
+		};
+	};
+	6128501F120FFE0100696385 /* zip */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 439}}";
+			sepNavSelRange = "{86, 0}";
+			sepNavVisRange = "{0, 86}";
+		};
+	};
+	61285020120FFE3300696385 /* Mercurial */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 439}}";
+			sepNavSelRange = "{23, 0}";
+			sepNavVisRange = "{0, 106}";
+		};
 	};
 	61845828120FACA500F093F1 /* DeeploveLib */ = {
 		isa = PBXExecutable;

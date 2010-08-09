@@ -30,6 +30,10 @@
 		61285009120FE05200696385 /* linuxIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIscsi; sourceTree = "<group>"; };
 		6128500A120FE63000696385 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
 		6128500D120FF5A200696385 /* linuxService */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxService; sourceTree = "<group>"; };
+		6128501E120FFDC700696385 /* wget */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wget; sourceTree = "<group>"; };
+		6128501F120FFE0100696385 /* zip */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zip; sourceTree = "<group>"; };
+		61285020120FFE3300696385 /* Mercurial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mercurial; sourceTree = "<group>"; };
+		612850241210000900696385 /* jiffiesTickHZ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jiffiesTickHZ; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				61285023120FFFF300696385 /* linuxDriver */,
 				6128500E120FF5DB00696385 /* command */,
 			);
 			name = note;
@@ -87,8 +92,19 @@
 				61285009120FE05200696385 /* linuxIscsi */,
 				6128500A120FE63000696385 /* ssh */,
 				6128500D120FF5A200696385 /* linuxService */,
+				6128501E120FFDC700696385 /* wget */,
+				6128501F120FFE0100696385 /* zip */,
+				61285020120FFE3300696385 /* Mercurial */,
 			);
 			name = command;
+			sourceTree = "<group>";
+		};
+		61285023120FFFF300696385 /* linuxDriver */ = {
+			isa = PBXGroup;
+			children = (
+				612850241210000900696385 /* jiffiesTickHZ */,
+			);
+			name = linuxDriver;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
