@@ -1,0 +1,9 @@
+scp
+command
+
+
+goal: file transfer 
+
+ex: 
+scp -r scsiTest root@192.168.5.83:/root/ 
+copy directory scsiTest to /root/ on 192.168.5.83 
