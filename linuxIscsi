@@ -118,6 +118,5 @@ install:
 (1) debian: 
 open-iscsi_2.0.870~rc3-0.4_amd64.deb 
 
-http://www.disa.nu/pub/doc/sles10/usr/share/doc/manual/sles-admin_en/sec.inst.system.iscsi.initiator.html
 
 
