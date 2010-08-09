@@ -1,0 +1,7 @@
+wget 
+command 
+
+
+download file 
+ex: 
+wget ftp://ftp.sunfreeware.com/pub/freeware/sparc/10/gcc-3.4.6-sol10-sparc-local.gz 
