@@ -1,0 +1,29 @@
+jiffies, tick, HZ 
+linuxDriver 
+
+
+HZ: 
+定義每一秒有幾次timer interrupts 
+ex: 
+HZ為1000，代表每秒有1000次timer interrupts 
+check HZ value: 
+ex: 
+cd /usr/src/kernels/2.6.18-194.el5-xen-i686 
+make menuconfig 
+Processor type and features ---> Timer frequency (250 HZ) 
+
+tick: 
+HZ的倒數 
+
+jiffies: 
+系統自開幾以來，已經過多少的tick 
+每發生一次timer interrupt，Jiffies變數會被加1 
+
+
+calcuate time difference: 
+#include linux/delay.h 
+unsigned long startTime = jiffies; 
+msleep(1000); 
+long dif = jiffies - startTime; 
+unsigned msec = jiffies_to_msecs(abs(dif)); 
+printk("%lu %d.%03d\n", dif, msec/1000, msec%1000); 
