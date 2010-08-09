@@ -1,0 +1,18 @@
+memory management 
+compare 
+
+linux driver: 
+(1) kmalloc 
+ex: 
+#include 
+#include 
+struct work_struct *work = kmalloc(sizeof(struct work_struct), GFP_KERNEL); 
+GFP_KERNEL vs GFP_ATOMIC 
+GFP_KERNEL: 
+kmalloc() is allowed to go to sleep and wait for pages to get freed up 
+GFP_ATOMIC: 
+kmalloc() is not allowed to sleep-wait for free pages, 
+so the probability of successful allocation with GFP_ATOMIC is lower than with GFP_KERNEL 
+
+the size limit for kmalloc: 
+128k = 130172 byte 
