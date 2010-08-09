@@ -1,0 +1,30 @@
+gcc
+command
+
+
+(1) -I 
+ex: 
+gcc -I/test/myDir test.c -o test.o 
+add include path after -I 
+Hence, test.c include , and myDir.h is under /test/myDir/ 
+Note: path added by -I has higher priority 
+
+(2) show gcc environment 
+echo "main(){printf("hello world\n");}" | gcc -E -v - 
+-> 
+ignoring nonexistent directory "/usr/sfw/lib/gcc/i386-pc-solaris2.11/3.4.3/../../../../i386-pc-solaris2.11/include" 
+#include "..." search starts here: 
+#include <...> search starts here: 
+/usr/local/include 
+/usr/sfw/include 
+/usr/sfw/lib/gcc/i386-pc-solaris2.11/3.4.3/include 
+/usr/include 
+End of search list. 
+# 1 "" 
+# 1 "" 
+# 1 "" 
+# 1 "" 
+main(){printf("hello world\n");} 
+
+(3) default include path 
+solaris: /usr/include/ 
