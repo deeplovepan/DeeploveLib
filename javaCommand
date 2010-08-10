@@ -1,0 +1,10 @@
+java command 
+java 
+
+
+compile: 
+javac: 
+ex: 
+(1) javac -cp /usr/local/apache-tomcat-6.0.29/lib/servlet-api.jar SampleServlet.java 
+(2) javac -cp /usr/local/apache-tomcat-6.0.29/lib/servlet-api.jar:/usr/local/apache-tomcat-6.0.29/lib/junit-3.8.2.jar:/usr/local/apache-tomcat-6.0.29/lib/cactus.core.framework.uberjar.javaEE.14-1.8.1.jar 
+SampleServlet.java TestSampleServlet.java 
