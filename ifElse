@@ -1,0 +1,16 @@
+if else 
+compare 
+
+
+bash: 
+ex: 
+a=2 
+if [ $a -gt 2 ] 
+then 
+echo " > 2" 
+elif [ $a -gt 1 ] 
+then 
+echo " > 1" 
+else 
+echo " > 0" 
+fi 
