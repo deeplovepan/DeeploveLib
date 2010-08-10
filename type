@@ -1,0 +1,5 @@
+type 
+compare 
+
+linux driver: 
+uint64_t (linux/types.h) 
