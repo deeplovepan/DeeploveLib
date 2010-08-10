@@ -1,0 +1,9 @@
+sleep 
+compare 
+
+linux driver: 
+msleep: 
+ex: 
+#include <linux/delay.h> 
+// sleep 1s 
+msleep(1000); 
