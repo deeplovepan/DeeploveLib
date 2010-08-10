@@ -1,0 +1,24 @@
+driver command 
+compare 
+
+
+list running module: 
+mac: 
+kextstat 
+
+solaris: 
+modinfo 
+
+linux: 
+lsmod 
+
+
+load module: 
+mac: 
+kextload test.kext 
+
+solaris: 
+modload /kernel/drv/tzmon 
+
+linux: 
+insmod test.ko 
