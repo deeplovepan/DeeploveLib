@@ -34,6 +34,28 @@
 		6128501F120FFE0100696385 /* zip */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zip; sourceTree = "<group>"; };
 		61285020120FFE3300696385 /* Mercurial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mercurial; sourceTree = "<group>"; };
 		612850241210000900696385 /* jiffiesTickHZ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jiffiesTickHZ; sourceTree = "<group>"; };
+		612850361210045900696385 /* memoryManagement */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = memoryManagement; sourceTree = "<group>"; };
+		6128506E121026AF00696385 /* gcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gcc; sourceTree = "<group>"; };
+		6128506F121027DE00696385 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		612850701210282200696385 /* scp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scp; sourceTree = "<group>"; };
+		612850711210284B00696385 /* vnc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vnc; sourceTree = "<group>"; };
+		61285072121028E000696385 /* scanLun */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scanLun; sourceTree = "<group>"; };
+		612850731210291400696385 /* multipath */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multipath; sourceTree = "<group>"; };
+		61285074121029C800696385 /* redirectOutputFromSerialPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redirectOutputFromSerialPort; sourceTree = "<group>"; };
+		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
+		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
+		614334201210E74400C319F9 /* ifElse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ifElse; sourceTree = "<group>"; };
+		614334211210E77F00C319F9 /* installPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPackage; sourceTree = "<group>"; };
+		6143342F1210EAC000C319F9 /* fileIo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileIo; sourceTree = "<group>"; };
+		614334301210EAE700C319F9 /* driverCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverCommand; sourceTree = "<group>"; };
+		614334361210ED4600C319F9 /* printMessage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = printMessage; sourceTree = "<group>"; };
+		614334371210ED7F00C319F9 /* textEncoding */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textEncoding; sourceTree = "<group>"; };
+		614334381210F11200C319F9 /* math */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = math; sourceTree = "<group>"; };
+		614334391210F18D00C319F9 /* type */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type; sourceTree = "<group>"; };
+		6143343A1210F1AB00C319F9 /* sleep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sleep; sourceTree = "<group>"; };
+		6143346C1210F8A700C319F9 /* stringAndNumber */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringAndNumber; sourceTree = "<group>"; };
+		6143346E1210F8DE00C319F9 /* time */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = time; sourceTree = "<group>"; };
+		614334811210F98C00C319F9 /* sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sqlite; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +101,8 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				6143346F1210F97F00C319F9 /* database */,
+				612850351210043100696385 /* compare */,
 				61285023120FFFF300696385 /* linuxDriver */,
 				6128500E120FF5DB00696385 /* command */,
 			);
@@ -95,6 +119,15 @@
 				6128501E120FFDC700696385 /* wget */,
 				6128501F120FFE0100696385 /* zip */,
 				61285020120FFE3300696385 /* Mercurial */,
+				6128506E121026AF00696385 /* gcc */,
+				6128506F121027DE00696385 /* Makefile */,
+				612850701210282200696385 /* scp */,
+				612850711210284B00696385 /* vnc */,
+				61285072121028E000696385 /* scanLun */,
+				612850731210291400696385 /* multipath */,
+				61285074121029C800696385 /* redirectOutputFromSerialPort */,
+				6128507912102A1E00696385 /* iso */,
+				6128507A12102B8600696385 /* linuxMemInfo */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -105,6 +138,33 @@
 				612850241210000900696385 /* jiffiesTickHZ */,
 			);
 			name = linuxDriver;
+			sourceTree = "<group>";
+		};
+		612850351210043100696385 /* compare */ = {
+			isa = PBXGroup;
+			children = (
+				612850361210045900696385 /* memoryManagement */,
+				614334201210E74400C319F9 /* ifElse */,
+				614334211210E77F00C319F9 /* installPackage */,
+				6143342F1210EAC000C319F9 /* fileIo */,
+				614334301210EAE700C319F9 /* driverCommand */,
+				614334361210ED4600C319F9 /* printMessage */,
+				614334371210ED7F00C319F9 /* textEncoding */,
+				614334381210F11200C319F9 /* math */,
+				614334391210F18D00C319F9 /* type */,
+				6143343A1210F1AB00C319F9 /* sleep */,
+				6143346C1210F8A700C319F9 /* stringAndNumber */,
+				6143346E1210F8DE00C319F9 /* time */,
+			);
+			name = compare;
+			sourceTree = "<group>";
+		};
+		6143346F1210F97F00C319F9 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				614334811210F98C00C319F9 /* sqlite */,
+			);
+			name = database;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
