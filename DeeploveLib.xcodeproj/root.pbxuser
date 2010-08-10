@@ -962,6 +962,13 @@
 			sepNavVisRange = "{0, 378}";
 		};
 	};
+	6143353812115AE200C319F9 /* changeJavaVersionOnMac */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {998.159, 460}}";
+			sepNavSelRange = "{34, 0}";
+			sepNavVisRange = "{0, 147}";
+		};
+	};
 	61845828120FACA500F093F1 /* DeeploveLib */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
