@@ -1,0 +1,10 @@
+time 
+compare 
+
+c: 
+#include <time.h> 
+time_t timep; 
+time (&timep); 
+printf("begin %s\n", ctime(&timep)); 
+-> 
+Wed Aug 4 11:55:09 2010 
