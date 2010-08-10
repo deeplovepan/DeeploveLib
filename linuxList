@@ -1,0 +1,75 @@
+linux list
+algorithm 
+
+
+header: linux/list.h 
+
+struct list_head { struct list_head *next, *prev; }; 
+static inline void INIT_LIST_HEAD(struct list_head *list) { 
+list->next = list; list->prev = list; 
+} 
+static inline void __list_add(struct list_head *new, 
+struct list_head *prev, 
+struct list_head *next) 
+{ 
+next->prev = new; 
+new->next = next; 
+new->prev = prev; 
+prev->next = new; 
+} 
+static inline void list_add_tail(struct list_head *new, struct list_head *head) { 
+__list_add(new, head->prev, head); 
+} 
+#define offsetof(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER) 
+#define container_of(ptr, type, member) ({ \ 
+const typeof( ((type *)0)->member ) *__mptr = (ptr); \ 
+(type *)( (char *)__mptr - offsetof(type,member) );}) 
+
+#define list_entry(ptr, type, member) container_of(ptr, type, member) 
+
+static inline int list_empty(const struct list_head *head) 
+{ 
+return head->next == head; 
+} 
+
+
+ex: 
+#include "list.h" 
+
+struct list_head testList; 
+
+typedef struct listElementSt{ 
+void* content; 
+struct list_head list; 
+}listElement; 
+
+struct Person{ 
+int age; 
+char name[10]; 
+}; 
+
+int main() 
+{ 
+INIT_LIST_HEAD(&testList); 
+int i; 
+
+for(i=0; i<2; i++) 
+{ 
+struct Person person; 
+person.age = 10*(i+1); 
+listElement *new_element = malloc(sizeof(listElement)); 
+new_element->content = &person; 
+list_add_tail(&new_element->list, &testList); 
+
+} 
+
+
+if(list_empty(&testList) == 0) 
+{ 
+printf("list not empty\n"); 
+listElement *tempListElement = list_entry(testList.next, listElement, list); 
+struct Person *tempPerson = tempListElement->content; 
+printf("age %d\n", tempPerson->age); 
+} 
+
+} 
