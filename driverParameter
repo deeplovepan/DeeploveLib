@@ -1,0 +1,24 @@
+driver parameter 
+compare
+
+linuxDriver 
+ex: 
+#include 
+int dmMajor = 0; 
+module_param(dmMajor, int, S_IRUGO); 
+-> insmod text.ko dmMajor=3 
+
+commonly used type for module parameter: 
+1. bool 
+2. charp 
+3. int 
+
+permission for module parameter 
+control how user access parameter from /sys/module/ 
+(1) S_IRUGO: read only 
+(2) S_IWUSR: allow root to modify 
+
+User can see module parameter value under /sys/module/ 
+ex: 
+after load test.ko, 
+its module parameter value is in /sys/module/test/parameters/ 
