@@ -1,0 +1,18 @@
+install package 
+compare 
+
+
+cent os, fedora 
+yum 
+(1) yum install superiotool 
+
+
+solaris: 
+(1) System -> Administration -> Package Manager 
+ex: 
+search gcc, then Install SUNWgcc 
+(gcc is installed on /usr/sfw/bin/) 
+(2) pkgadd 
+ex: 
+pkgadd -d gcc-3.3.2-sol10-sparc-local 
+package search location: http://pkg.opensolaris.org/release/en/index.shtml 
