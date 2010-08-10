@@ -1,0 +1,33 @@
+sqlite
+database 
+
+
+command: 
+(1) select * from testTable; 
+show content of testTable 
+(2) drop table testTable; 
+delete testTable 
+(3) sqlite3 testDatabase 
+create database testDatabase 
+(4) create table testTable(name String primary key, job String); 
+create table testTable 
+(5) delete from testTable; 
+delete all records in testTable 
+(6) update testTable set age=3 where name="peter" 
+update record 
+(7) delete from testTable where name like "peter%" 
+delete one record 
+
+
+fts3: 
+goal: for full-text search 
+suppor fts3 for sqlite on mac os: 
+(1) download sqlite source 
+(2) #define SQLITE_ENABLE_FTS3 in sqlite3.c 
+(3) CFLAGS="-DSQLITE_ENABLE_FTS3=1" ./configure 
+(4) make install 
+(5) sudo cp /usr/local/lib/libsqlite3.0.8.6.dylib /usr/lib/libsqlite3.dylib 
+
+fts3 command ex: 
+1. sqlite3 ContentDb 
+2. CREATE VIRTUAL TABLE ContentTable USING fts3(title, content, tag, image); 
