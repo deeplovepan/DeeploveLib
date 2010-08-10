@@ -1,0 +1,7 @@
+change java version on mac 
+java 
+
+
+change link: 
+ex: 
+ln -s /System/Library/Frameworks/JavaVM.framework/Versions/1.6/Commands/java /usr/bin/java 
