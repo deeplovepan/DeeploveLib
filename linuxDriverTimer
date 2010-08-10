@@ -1,0 +1,52 @@
+linuxDriverTimer 
+linuxDriver 
+
+timer info 
+http://docs.blackfin.uclinux.org/doku.php?id=linux-kernel:timers 
+
+ex: 
+#include linux/module.h 
+#include linux/timer.h 
+#include linux/jiffies.h 
+
+
+struct timer_list timerDelRefCountForScsi; 
+
+
+void timerDelRefCountForScsiFunc(unsigned long data) 
+{ 
+printk("timerDelRefCountForScsiFunc\n"); 
+mod_timer(&timerDelRefCountForScsi, jiffies + msecs_to_jiffies(5 * 1000)); 
+} 
+
+void createTimer() 
+{ 
+setup_timer(&timerDelRefCountForScsi, timerDelRefCountForScsiFunc, 0); 
+// fire timer after 5 second 
+int result = mod_timer(&timerDelRefCountForScsi, 
+jiffies + msecs_to_jiffies(5 * 1000)); 
+if (result) 
+printk("mod_timer error\n"); 
+} 
+
+
+static int hello_init(void) 
+{ 
+printk(KERN_ALERT "Hello, world\n"); 
+createTimer(); 
+return 0; 
+} 
+
+// note: if not del_timer before unload module, 
+// kernel will crash 
+static void hello_exit(void) 
+{ 
+if( del_timer(&timerDelRefCountForScsi) ) 
+{ 
+printk("del timer error\n"); 
+} 
+printk(KERN_ALERT "Goodbye, cruel world\n"); 
+} 
+
+module_init(hello_init); 
+module_exit(hello_exit); 
