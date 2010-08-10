@@ -1,0 +1,79 @@
+io port program 
+ioPort 
+
+Most of the time, I/O pins are controlled by two I/O locations: 
+one that allows selecting what pins are used as input and what pins are used as output 
+and one in which you can actually read or write logic levels. 
+
+reference: 
+http://www.faqs.org/docs/Linux-mini/IO-Port-Programming.html 
+
+linux: 
+header: 
+(1) get permission to access port 
+ex: 
+ioperm(0x300, 5, 1) 
+give access to ports 0x300 through 0x304 (a total of 5 ports). 
+The last argument is a Boolean value specifying whether to give access to the program to the ports (true (1)) 
+
+ioperm() can only give access to ports 0x000 through 0x3ff; 
+for higher ports, you need to use iopl() (which gives you access to all ports at once). 
+ex: 
+iopl(3); 
+
+(2) input a byte (8 bits) from a port 
+inb(port) 
+
+(3) output a byte to a port 
+outb(value, port) 
+
+ex: 
+read value of controller register 20 ( CR20 ) 
+spec: (WINBOND I/O W83627HF/F) 
+CR20 
+Bit 7 -0: DEVIDB7 - DEBIDB0 --> Device ID Bit 7 - Bit 0 = 0x52 (read only) 
+program: 
+#define DEVICE_ID_REG	 0x20 
+outb(DEVICE_ID_REG, port); 
+return inb(port + 1); 
+
+
+solaris: 
+ex: 
+#include 
+#define PS_IOPL 0x3000 
+
+int enableIoPort(void) 
+{ 
+if (sysi86(SI86V86, V86SC_IOPL, PS_IOPL) < 0) 
+{ 
+printf("fail enable io port\n"); 
+return (-1); /* failed to enable direct port I/O */ 
+} 
+return (0); 
+} 
+
+void myOutb(unsigned char val, int port) 
+{ 
+__asm__("movl %0, %%edx\n\t" 
+"movb %1, %%al\n\t" 
+"outb (%%dx)" 
+: 
+:"r"(port), "r"(val) 
+:"%eax", "%edx" 
+); 
+} 
+
+unsigned char myInb(int port) 
+{ 
+unsigned char val; 
+__asm__("subl %%eax, %%eax\n\t" 
+"movl %1, %%edx\n\t" 
+"inb (%%dx)\n\t" 
+"movb %%al, %0" 
+:"=r"(val) 
+:"r"(port) 
+:"%eax", "%edx" 
+); 
+return (val); 
+} 
