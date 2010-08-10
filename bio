@@ -1,0 +1,10 @@
+bio 
+linuxDriver 
+
+struct bio: 
+/linux/bio.h 
+
+(1) sector_t bi_sector 
+one sector is 512 bytes 
+(2) bi_size 
+size in bytes 
