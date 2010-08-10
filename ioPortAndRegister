@@ -1,0 +1,105 @@
+io port and register 
+ioPort 
+
+
+South Bridge chip: 
+intel ICH5R ( Intel® 82801EB I/O Controller Hub 5 (ICH5) / Intel® 82801ER I/O Controller Hub 5 R (ICH5R) ) 
+
+
+super io chip: 
+(1) Winbond W83627HF/F 
+(2) IT8718F 
+
+two kinds of register 
+(1) configuration register 
+(2) normal register 
+To read and write configuration regsiter, we need to enter configure mode 
+For normal register, we can directly access 
+
+why 0x2e: 
+(Table 131. Fixed I/O Ranges Decoded by Intel® ICH5, 2E–2F, LPC SIO, LPC SIO, p270) 
+
+ex: 
+(1) Winbond W83627HF/F 
+use address register 0x2e and data register 0x2f to access configuration register 
+1. outb(0x87, 0x2e); outb(0x87, 0x2e); 
+enable configuration mode, Write 87h to the location 0x2e twice. ( CR26 , Bit 6, p76) 
+
+2. outb(0x20, 0x2e); inb(0x2f); 
+get device id ( CR20, Bit 7 -0 = 0x52, p74) 
+
+3. outb(0x07, 0x2e); outb(0x0b, 0x2f); 
+select Logical Device B (Hardware Monitor) (CR07, Logical Device Number, p74) 
+(4.12 Logical Device B p97) 
+
+4. outb(0x60, 0x2e); int base1 = inb(0x2f); 
+outb(0x61, 0x2e); int base2 = inb(0x2f); 
+int base = (base1 << 8) | base2; 
+get Hardware Monitor base address (4.12 Logical Device B CR60, CR 61, p97) 
+
+flow for step 1~4: 
+isaset -f 0x2e 0x87 
+isaset -f 0x2e 0x87 
+isadump 0x2e 0x2f ( check value at address 0x20 for device id) 
+isaset -f 0x2e 0x87 
+isaset -f 0x2e 0x87 
+isaset 0x2e 0x2f 0x07 0x0b 
+isadump 0x2e 0x2f ( check value at address 0x60, 0x61 for hardware monotor base address) 
+
+note: winband chip has one problem 
+It will leave configuration mode after many read 
+
+After getting Hardware Monitor base address, we can access register and ram of HARDWARE MONITOR 
+( 2.7 REGISTERS AND RAM) 
+If Hardware Monitor base address is 0xc00, to access register and ram of HARDWARE MONITOR, 
+use address register 0xc05( 0xc00 + 5) and data register 0xc06( 0xc00 + 6) to access 
+( 2.7 REGISTERS AND RAM, Address Register (Port x5h), p38) 
+
+5. outb(0x4e, 0xc05); outb(0x81, 0xc06); 
+set bank 1 (Register 50h ~ 5Fh Bank Select Register - Index 4Eh, 
+Bit 2-0: Index ports 0x50~0x5F Bank select., p52) 
+
+6. outb(0x50, 0xc05); int temp1 = inb(0xc06); 
+outb(0x51, 0xc05); int temp2 = inb(0xc06); 
+int temperature = ( (temp1 << 8) | temp2 ) >> 7; 
+get Temperature Sensor 2 temperature (Temperature Sensor 2 Temperature (High Byte) Register - Index 50h (Bank 1), 
+Temperature Sensor 2 Temperature (Low Byte) Register - Index 51h (Bank 1), 
+Bit 7: Temperature <0> of sensor2, which is low byte, p59) 
+
+7. isaset 0xc05 0xc06 0x55 0x10 
+set Temperature Sensor 2 Over-temperature 
+(Temperature Sensor 2 Over-temperature (High Byte) Register - Index 55h (Bank 1), p61, 
+Temperature Sensor 2 Over-temperature (Low Byte) Register - Index 56h (Bank 1), p62) 
+
+8. isadump 0xc05 0xc06 (check value at address 0x41) 
+check if High limit of VTIN2 has been exceeded from temperature sensor 2. 
+(Interrupt Status Register 1ï£§ Index 41h, 
+Bit 5: A one indicates a High limit of VTIN2 has been exceeded from temperature sensor 2, p42) 
+
+(2) IT8718F 
+1 isaset -f 0x2e 0x87 
+isaset -f 0x2e 0x01 
+isaset -f 0x2e 0x55 
+isaset -f 0x2e 0x55 
+enter configure mode ( 8.1 Configuring Sequence Description, Enter the MB PnP Mode, p27 ) 
+
+2 isadump 0x2e 0x2f 
+check value at address 0x20, 0x21 for device id 
+(8.3.3	Chip ID Byte 1 (Index=20h, Default=87h), 8.3.4	Chip ID Byte 2 (Index=21h, Default=18h), p34) 
+
+
+3 isaset 0x2e 0x2f 0x07 0x04 
+set Logical Device as Environment Controller 
+(8.3.2 Logical Device Number (LDN, Index=07h), p34, 
+8.8 Environment Controller Configuration Registers (LDN=04h), p49) 
+
+4 isadump 0x2e 0x2f ( check value at address 0x60, 0x61 for Environment Controller Base Address) 
+get Environment Controller Base Address 
+(8.8.2 Environment Controller Base Address MSB Register (Index=60h, Default=02h), 
+8.8.3 Environment Controller Base Address LSB Register (Index=61h, Default=90h) ) 
+
+After getting Environment Controller Base Address, we can access Environment Controller register 
+( 9.6.2 Registers) 
+If Environment Controller base address is 0x290, to access register, 
+use address register 0x295( 0x290 + 5) and data register 0x296( 0x290 + 6) to access 
+( 9.6.2.1 Address Port (Base+05h), p77) 
