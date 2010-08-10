@@ -67,6 +67,7 @@
 		614334B712112A9A00C319F9 /* ioPortAndRegister */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioPortAndRegister; sourceTree = "<group>"; };
 		614334B812112B8D00C319F9 /* isadumpAndIsaset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = isadumpAndIsaset; sourceTree = "<group>"; };
 		614334B912112BB300C319F9 /* gpio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gpio; sourceTree = "<group>"; };
+		6143351B12114B4400C319F9 /* linuxList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxList; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +113,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				6143351412114B3000C319F9 /* algorithm */,
 				614334AB12112A4100C319F9 /* ioport */,
 				614334821210F9D300C319F9 /* php */,
 				6143346F1210F97F00C319F9 /* database */,
@@ -203,6 +205,14 @@
 				614334B912112BB300C319F9 /* gpio */,
 			);
 			name = ioport;
+			sourceTree = "<group>";
+		};
+		6143351412114B3000C319F9 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				6143351B12114B4400C319F9 /* linuxList */,
+			);
+			name = algorithm;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
