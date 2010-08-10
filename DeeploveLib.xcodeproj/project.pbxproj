@@ -56,6 +56,17 @@
 		6143346C1210F8A700C319F9 /* stringAndNumber */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringAndNumber; sourceTree = "<group>"; };
 		6143346E1210F8DE00C319F9 /* time */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = time; sourceTree = "<group>"; };
 		614334811210F98C00C319F9 /* sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sqlite; sourceTree = "<group>"; };
+		614334831210F9DE00C319F9 /* phpOnMac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phpOnMac; sourceTree = "<group>"; };
+		6143348412111BD500C319F9 /* bio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bio; sourceTree = "<group>"; };
+		6143348512111C1500C319F9 /* driverParameter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverParameter; sourceTree = "<group>"; };
+		6143348D12111E9500C319F9 /* linuxDriverTimer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverTimer; sourceTree = "<group>"; };
+		6143348E12111ED300C319F9 /* linuxDriverHello */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverHello; sourceTree = "<group>"; };
+		6143348F12111F6400C319F9 /* workQueue */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workQueue; sourceTree = "<group>"; };
+		6143349212111FA500C319F9 /* compileLinuxDriver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = compileLinuxDriver; sourceTree = "<group>"; };
+		614334B612112A5D00C319F9 /* ioPortProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioPortProgram; sourceTree = "<group>"; };
+		614334B712112A9A00C319F9 /* ioPortAndRegister */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioPortAndRegister; sourceTree = "<group>"; };
+		614334B812112B8D00C319F9 /* isadumpAndIsaset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = isadumpAndIsaset; sourceTree = "<group>"; };
+		614334B912112BB300C319F9 /* gpio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gpio; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +112,8 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				614334AB12112A4100C319F9 /* ioport */,
+				614334821210F9D300C319F9 /* php */,
 				6143346F1210F97F00C319F9 /* database */,
 				612850351210043100696385 /* compare */,
 				61285023120FFFF300696385 /* linuxDriver */,
@@ -136,6 +149,11 @@
 			isa = PBXGroup;
 			children = (
 				612850241210000900696385 /* jiffiesTickHZ */,
+				6143348412111BD500C319F9 /* bio */,
+				6143348D12111E9500C319F9 /* linuxDriverTimer */,
+				6143348E12111ED300C319F9 /* linuxDriverHello */,
+				6143348F12111F6400C319F9 /* workQueue */,
+				6143349212111FA500C319F9 /* compileLinuxDriver */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -155,6 +173,7 @@
 				6143343A1210F1AB00C319F9 /* sleep */,
 				6143346C1210F8A700C319F9 /* stringAndNumber */,
 				6143346E1210F8DE00C319F9 /* time */,
+				6143348512111C1500C319F9 /* driverParameter */,
 			);
 			name = compare;
 			sourceTree = "<group>";
@@ -165,6 +184,25 @@
 				614334811210F98C00C319F9 /* sqlite */,
 			);
 			name = database;
+			sourceTree = "<group>";
+		};
+		614334821210F9D300C319F9 /* php */ = {
+			isa = PBXGroup;
+			children = (
+				614334831210F9DE00C319F9 /* phpOnMac */,
+			);
+			name = php;
+			sourceTree = "<group>";
+		};
+		614334AB12112A4100C319F9 /* ioport */ = {
+			isa = PBXGroup;
+			children = (
+				614334B612112A5D00C319F9 /* ioPortProgram */,
+				614334B712112A9A00C319F9 /* ioPortAndRegister */,
+				614334B812112B8D00C319F9 /* isadumpAndIsaset */,
+				614334B912112BB300C319F9 /* gpio */,
+			);
+			name = ioport;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
