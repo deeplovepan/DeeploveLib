@@ -1,0 +1,7 @@
+text encoding 
+compare 
+
+python 
+print big5 string: 
+ex: 
+print "一二三".decode("big5") 
