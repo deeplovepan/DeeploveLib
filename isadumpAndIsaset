@@ -1,0 +1,26 @@
+isadump and isaset 
+ioPort 
+
+
+isaset: 
+ex1: 
+isaset -f 0x2e 0x87 
+note: = outb( 0x87, 0x2e) 
+write value 0x87 to port address 0x2e 
+
+ex2: 
+isaset 0x295 0x296 0x15 0xfd 
+note: = outb(0x15, 0x295); 
+outb(0xfd, 0x296); 
+write value 0xfd to address 0x15 
+first line set address 
+second line set value 
+
+isadump: 
+ex1: 
+isadump 0x295 0x296 
+dump value from address register 0x295 and data register 0x296 
+
+ex2: 
+isadump 0x295 0x296 1 
+dump value from address register 0x295 and data register 0x296, bank is 1 
