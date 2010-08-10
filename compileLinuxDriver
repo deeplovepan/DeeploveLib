@@ -1,0 +1,31 @@
+compile linux driver 
+linuxDriver 
+
+require package: 
+cent os: 
+yum install kernel-devel 
+
+compile existent kernel moudel 
+for cent os: 
+1. cd /usr/src/redhat/BUILD/kernel-2.6.18/linux-2.6.18.x86_64 
+2. make M=fs/ext3 
+http://wiki.centos.org/HowTos/BuildingKernelModules 
+
+
+compile new module 
+ex: 
+if source is hello.c, util.c 
+the makefile is 
+
+obj-m := test.o 
+test-y := hello.o statistics.o 
+
+default: 
+make -C /lib/modules/$(shell uname -r)/build/ SUBDIRS=$(PWD) modules 
+
+clean: 
+rm *.o *.ko 
+
+If fact, build is point to /usr/src/kernels/2.x.x 
+Hence, the following is also correct 
+make -C /usr/src/kernels/2.6.18-128.el5-x86_64/ SUBDIRS=$(PWD) modules 
