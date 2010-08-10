@@ -1,0 +1,8 @@
+math 
+compare 
+
+
+log: 
+python: 
+math.log(8, 2) 
+--> 3 
