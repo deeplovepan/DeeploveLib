@@ -1,0 +1,18 @@
+print message 
+compare 
+
+
+c: 
+ex: 
+printf("hello"); 
+int number = 3; 
+printf("%2d", number); 
+-> 3 ( there is one space before 3) 
+
+mac driver: 
+ex: 
+IOLog("hello\n"); 
+
+linux driver: 
+ex: 
+printk("hello\n"); 
