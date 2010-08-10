@@ -1,0 +1,16 @@
+string to number 
+compare 
+
+
+c: 
+long strtol(const char *restrict str, char **restrict endptr, int base); 
+header: stdlib.h 
+ex1: 
+strtol("20", 0, 0); 
+-> 20 
+ex2: 
+strtol("0x20", 0, 0); 
+-> 32 
+ex3: 
+strtoll("0x2c74fce47e0287aa", 0, 0) 
+->3203463293264103338 
