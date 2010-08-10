@@ -1,0 +1,44 @@
+work queue 
+linuxDriver 
+
+ex: 
+#include <linux/module.h> 
+#include <linux/workqueue.h> 
+#include <linux/delay.h> 
+
+MODULE_LICENSE("GPL"); 
+
+
+void workFunc(void *data) 
+{ 
+msleep(5000); 
+} 
+
+static int hello_init(void) 
+{ 
+struct workqueue_struct *myWorkQueue = create_workqueue("MyWorkQueue"); 
+
+struct work_struct *work = kmalloc(sizeof(struct work_struct), GFP_KERNEL); 
+INIT_WORK(work, workFunc, NULL); 
+// call workFunc immediately 
+queue_work(myWorkQueue, work); 
+
+// call workFunc after 2s 
+work = kmalloc(sizeof(struct work_struct), GFP_KERNEL); 
+INIT_WORK(work, workFunc, NULL); 
+queue_delayed_work(myWorkQueue, work, msecs_to_jiffies(2000) ); 
+
+return 0; 
+} 
+
+static void hello_exit(void) 
+{ 
+
+} 
+
+module_init(hello_init); 
+module_exit(hello_exit); 
+
+-> 
+the second work will execute after 5s, not after 2s 
+becasue it will wait until first work finishs 
