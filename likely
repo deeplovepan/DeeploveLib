@@ -1,0 +1,27 @@
+likely and unlikely 
+linuxDriver 
+
+
+goal: for performance 
+
+ex1: 
+test() likely return 1, exceute action1 is faster 
+if(likely( test() ) ) 
+{ 
+// action1 
+} 
+else 
+{ 
+// action2 
+} 
+
+ex2: 
+test() likely return 0, exceute action2 is faster 
+if(unlikely( test() ) ) 
+{ 
+// action1 
+} 
+else 
+{ 
+// action2 
+} 
