@@ -1,0 +1,62 @@
+gpio
+ioPort 
+
+reference: 
+http://wiki.gp2x.org/wiki/GPIO_Programming_Example 
+http://www.support.emtrion.de/doku.php?id=linux:how-to-access-gpio 
+http://www.simtec.co.uk/appnotes/AN0014/ 
+http://www.simtec.co.uk/appnotes/AN0014/files/devmem2.c 
+http://plugcomputer.org/plugforum/index.php?action=printpage;topic=104.0 
+http://book.opensourceproject.org.cn/embedded/oreillyembed/opensource/0596009836/id-i_0596009836_chp_3_sect_2.html 
+
+
+Vortex86SX SoC example: 
+port0 port1 port2 
+Data Register: 0x78	 0x79	 0x7a 
+Direction Register: 0x98 0x99	 0x9a 
+
+/* set GPIO port0[7-0] as input mode */ 
+outb(0x00, 0x98); 
+/* read data from GPIO port0 */ 
+inb(0x78); 
+/* set GPIO port1[7-0] as output mode */ 
+outb(0xff, 0x99); 
+/* write data to GPIO port1 */ 
+outb(0x55, 0x79); 
+/* set GPIO port2[7-4] as output and [3-0] as input*/ 
+outb(0xf0, 0x9a); 
+/* write data to GPIO port2[7-4], the low nibble (0x0a) will be ignored */ 
+outb(0x5a, 0x7a); 
+
+
+winbond W83627HF/F example: 
+1. isaset -f 0x2e 0x87 
+2. isaset -f 0x2e 0x87 
+3. isaset 0x2e 0x2f 0x07 0x07 
+select GPIO port 1 
+(4.8 Logical Device 7 (Game Port and MIDI Port and GPIO Port 1), p87) 
+4. isaset 0x2e 0x2f 0x30 0x1 
+enable GPIO port 1 
+(CR30 (Default 0x00), Bit 0 1 Activate Game Port, MIDI Port, and GPIO Function) 
+5. isaset 0x2e 0x2f 0xf0 0xf0 
+bit 7-4 is input, 3-0 is output 
+( CRF0 (GP10-GP17 I/O selection register. Default 0xFF) 
+When set to a 1, respective GPIO port is programmed as an input port. 
+When set to a 0, respective GPIO port is programmed as an output port. p88) 
+6. isaset 0x2e 0x2f 0xf1 0x00 
+write 0 to 3-0 
+( CRF1 (GP10-GP17 data register. Default 0x00), 
+If a port is programmed to be an output port, then its respective bit can be read/written. 
+If a port is programmed to be an input port, then its respective bit can only be read. p88) 
+note: 
+CR29 (CR29 (GPIO3 multiplexed pin selection register. VBAT powered. Default 0x00), 
+Bit 7: PIN64S = 0	SUSLED (SUSLED control bits are in CRF3 of Logical Device 9) 
+=1 GP35 
+Bit 6: : PIN69S = 00	CIRRX# 
+= 01	GP34 
+CR2A ( CR2A (GPIO multiplexed pin selection register 1. VCC powered. Default 0X7C)) 
+CR2B ( CR2B(GPIO multiplexed pin selection register 2. VCC powered. Default 0XC0) ) 
+
+find gpio base address: 
+ex: 
+GPLR0 0x40E0_ 0000 (p1023) ( Intel PXA27x Processor Family Developer Manual) 
