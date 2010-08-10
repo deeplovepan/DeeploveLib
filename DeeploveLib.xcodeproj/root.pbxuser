@@ -941,6 +941,27 @@
 		vrLen = 1048;
 		vrLoc = 1270;
 	};
+	6143351B12114B4400C319F9 /* linuxList */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 1134}}";
+			sepNavSelRange = "{45, 0}";
+			sepNavVisRange = "{0, 512}";
+		};
+	};
+	6143353512115A3C00C319F9 /* likely */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 588}}";
+			sepNavSelRange = "{34, 0}";
+			sepNavVisRange = "{0, 280}";
+		};
+	};
+	6143353712115AB600C319F9 /* javaCommand */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2222.73, 460}}";
+			sepNavSelRange = "{20, 0}";
+			sepNavVisRange = "{0, 378}";
+		};
+	};
 	61845828120FACA500F093F1 /* DeeploveLib */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
