@@ -47,6 +47,19 @@
 		6141527F1212476500AA6001 /* driverInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverInfo; sourceTree = "<group>"; };
 		614152AD121250F600AA6001 /* glib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glib; sourceTree = "<group>"; };
 		614152AF1212547F00AA6001 /* cStructure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cStructure; sourceTree = "<group>"; };
+		61415B8A1212825400AA6001 /* enum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enum; sourceTree = "<group>"; };
+		61415C481212B34D00AA6001 /* gdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gdb; sourceTree = "<group>"; };
+		61415C611212C3F100AA6001 /* tomcat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tomcat; sourceTree = "<group>"; };
+		61415C621212C43300AA6001 /* helloJsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = helloJsp; sourceTree = "<group>"; };
+		61415C631212C46100AA6001 /* jspTag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jspTag; sourceTree = "<group>"; };
+		61415C641212C49D00AA6001 /* jspProblem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jspProblem; sourceTree = "<group>"; };
+		61415C651212C4C900AA6001 /* webXmlForTomcat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = webXmlForTomcat; sourceTree = "<group>"; };
+		61415C661212C50600AA6001 /* servlet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = servlet; sourceTree = "<group>"; };
+		61415C671212C53300AA6001 /* forwardReqToJsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = forwardReqToJsp; sourceTree = "<group>"; };
+		61415C681212C56700AA6001 /* tomcatDirectory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tomcatDirectory; sourceTree = "<group>"; };
+		61415C691212C5A800AA6001 /* jspAndServletKnowledge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jspAndServletKnowledge; sourceTree = "<group>"; };
+		61415C6A1212C5DE00AA6001 /* includeJavaClassInJsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = includeJavaClassInJsp; sourceTree = "<group>"; };
+		61415C6B1212C60500AA6001 /* jspAndReq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jspAndReq; sourceTree = "<group>"; };
 		614334201210E74400C319F9 /* ifElse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ifElse; sourceTree = "<group>"; };
 		614334211210E77F00C319F9 /* installPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPackage; sourceTree = "<group>"; };
 		6143342F1210EAC000C319F9 /* fileIo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileIo; sourceTree = "<group>"; };
@@ -120,6 +133,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				61415C581212C3D800AA6001 /* jspAndServlet */,
 				614152AE1212547200AA6001 /* cAndCplus */,
 				614152AC121250F000AA6001 /* lib */,
 				6143353612115AA000C319F9 /* java */,
@@ -154,6 +168,7 @@
 				6128507912102A1E00696385 /* iso */,
 				6128507A12102B8600696385 /* linuxMemInfo */,
 				6143353912115D3600C319F9 /* git */,
+				61415C481212B34D00AA6001 /* gdb */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -205,8 +220,27 @@
 			isa = PBXGroup;
 			children = (
 				614152AF1212547F00AA6001 /* cStructure */,
+				61415B8A1212825400AA6001 /* enum */,
 			);
 			name = cAndCplus;
+			sourceTree = "<group>";
+		};
+		61415C581212C3D800AA6001 /* jspAndServlet */ = {
+			isa = PBXGroup;
+			children = (
+				61415C611212C3F100AA6001 /* tomcat */,
+				61415C621212C43300AA6001 /* helloJsp */,
+				61415C631212C46100AA6001 /* jspTag */,
+				61415C641212C49D00AA6001 /* jspProblem */,
+				61415C651212C4C900AA6001 /* webXmlForTomcat */,
+				61415C661212C50600AA6001 /* servlet */,
+				61415C671212C53300AA6001 /* forwardReqToJsp */,
+				61415C681212C56700AA6001 /* tomcatDirectory */,
+				61415C691212C5A800AA6001 /* jspAndServletKnowledge */,
+				61415C6A1212C5DE00AA6001 /* includeJavaClassInJsp */,
+				61415C6B1212C60500AA6001 /* jspAndReq */,
+			);
+			name = jspAndServlet;
 			sourceTree = "<group>";
 		};
 		6143346F1210F97F00C319F9 /* database */ = {
