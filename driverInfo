@@ -1,0 +1,27 @@
+driver information
+compare
+
+
+linux:
+ex:
+modinfo sg
+->
+filename:       /lib/modules/2.6.18-194.el5/kernel/drivers/scsi/sg.ko
+alias:          char-major-21-*
+version:        3.5.34
+license:        GPL
+description:    SCSI generic (sg) driver
+author:         Douglas Gilbert
+srcversion:     1CF7F18E056D34DC7D849B5
+depends:        scsi_mod
+vermagic:       2.6.18-194.el5 SMP mod_unload gcc-4.1
+parm:           scatter_elem_sz:scatter gather element size (default: max(SG_SCATTER_SZ, PAGE_SIZE)) (int)
+parm:           def_reserved_size:size of buffer reserved for each fd (int)
+parm:           allow_dio:allow direct I/O (default: 0 (disallow)) (int)
+module_sig:	883f3504bb64512c596239a507de7fd112c6ad0a09f4c1e7a430139d9dd155288d8616cc575cbac509b660f6196cc81c9d391a9d72b7a95a271de44b6
+
+
+set module version in driver:
+ex:
+MODULE_VERSION("1.5");
+
