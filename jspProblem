@@ -1,0 +1,9 @@
+jsp problem 
+jspAndServlet
+
+
+
+(1) compile problem: javax.servlet.http does not exist 
+solution: 
+ex: 
+javac -cp /usr/local/apache-tomcat-6.0.29/lib/servlet-api.jar SampleServlet.java 
