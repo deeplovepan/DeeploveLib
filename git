@@ -3,3 +3,26 @@ command
 
 
 1. git init
+
+
+show file history:
+ex:
+(1) git log test.c
+->
+commit 30df7885dada39cdf69aaff676c3e24a1dd7846f
+Author: deeplovepan <deeplovepan@gmail.com>
+Date:   Wed Aug 11 10:24:00 2010 +0800
+
+    commit
+(2) git show 30df7885dada39cdf69aaff676c3e24a1dd7846f
+show detail about the commit
+
+show file status:
+git status
+git status test.c
+
+show difference:
+git diff test.c
+
+reference:
+http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
