@@ -44,6 +44,8 @@
 		61285074121029C800696385 /* redirectOutputFromSerialPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redirectOutputFromSerialPort; sourceTree = "<group>"; };
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
+		6141527F1212476500AA6001 /* driverInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverInfo; sourceTree = "<group>"; };
+		614152AD121250F600AA6001 /* glib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glib; sourceTree = "<group>"; };
 		614334201210E74400C319F9 /* ifElse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ifElse; sourceTree = "<group>"; };
 		614334211210E77F00C319F9 /* installPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPackage; sourceTree = "<group>"; };
 		6143342F1210EAC000C319F9 /* fileIo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileIo; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				614152AC121250F000AA6001 /* lib */,
 				6143353612115AA000C319F9 /* java */,
 				6143351412114B3000C319F9 /* algorithm */,
 				614334AB12112A4100C319F9 /* ioport */,
@@ -183,8 +186,17 @@
 				6143346C1210F8A700C319F9 /* stringAndNumber */,
 				6143346E1210F8DE00C319F9 /* time */,
 				6143348512111C1500C319F9 /* driverParameter */,
+				6141527F1212476500AA6001 /* driverInfo */,
 			);
 			name = compare;
+			sourceTree = "<group>";
+		};
+		614152AC121250F000AA6001 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				614152AD121250F600AA6001 /* glib */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 		6143346F1210F97F00C319F9 /* database */ = {
