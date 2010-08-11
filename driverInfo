@@ -20,6 +20,9 @@ parm:           def_reserved_size:size of buffer reserved for each fd (int)
 parm:           allow_dio:allow direct I/O (default: 0 (disallow)) (int)
 module_sig:	883f3504bb64512c596239a507de7fd112c6ad0a09f4c1e7a430139d9dd155288d8616cc575cbac509b660f6196cc81c9d391a9d72b7a95a271de44b6
 
+note: to let modinfo show module info, we must put module file in /lib/modules/2.6.18-194.el5/kernel/drivers/
+	  modinfo can also get unloaded module info
+
 
 set module version in driver:
 ex:
