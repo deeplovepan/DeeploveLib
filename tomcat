@@ -1,0 +1,13 @@
+tomcat 
+jspAndServlet
+
+
+tomcat on mac os: 
+1. download tomcat source apache-tomcat-5.5.12 
+2. move apache-tomcat-5.5.12 into /usr/local/ 
+3. export CATALINA_HOME=/usr/local/apache-tomcat-5.5.12 
+export JAVA_HOME=/usr 
+4. cd /usr/local/apache-tomcat-5.5.12/bin 
+./startup.sh 
+5. test 
+http://localhost:8080/ 
