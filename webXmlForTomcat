@@ -1,0 +1,21 @@
+web.xml for tomcat 
+jspAndServlet
+
+
+web.xml is under WEB-INF directory 
+
+it includes servlet info 
+
+ex: 
+<servlet> 
+<servlet-name>Chapter1 Servlet</servlet-name> 
+<servlet-class>Ch1Servlet</servlet-class> 
+</servlet> 
+
+<servlet-mapping> 
+<servlet-name>Chapter1 Servlet</servlet-name> 
+<url-pattern>/Serv1</url-pattern> 
+</servlet-mapping> 
+
+Ch1Servlet is java class name 
+Serv1 is URL request path, it will trigger java class Ch1Servlet to run 
