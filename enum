@@ -1,0 +1,9 @@
+enum
+cAndCplus
+
+ex:
+enum COLOR {
+	RED,	
+	BLUE,
+	WHITE
+};
