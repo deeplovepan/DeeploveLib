@@ -1,0 +1,28 @@
+forward request to jsp from servlet 
+jspAndServlet
+
+
+ex: 
+
+java file: 
+public void doPost(HttpServletRequest request, 
+HttpServletResponse response) 
+throws IOException, ServletException { 
+
+List list = new ArrayList(); 
+list.add("peter"); 
+request.setAttribute("styles", result) ; 
+RequestDispatcher view = request.getRequestDispatcher(â€œresult.jspâ€) ; 
+view.forward(request, response) ; 
+
+} 
+
+
+jsp file: 
+<% 
+List styles = (List) request.getAttribute(â€œstylesâ€) ; 
+Iterator it = styles.iterator() ; 
+while(it.hasNext() ) { 
+out. print("<br>try: " + it.next() ) ; 
+} 
+%> 
