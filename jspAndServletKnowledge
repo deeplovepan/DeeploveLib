@@ -1,0 +1,36 @@
+jsp and servlet knowledge 
+jspAndServlet
+
+servlet: 
+1. container( TOMCAT) get HTTP request 
+2. container find the request is for servlet, 
+hence it creates HttpServletResponse & HttpServletRequest 
+3. container find servlet from URL, 
+passes request & response object to servlet 
+4. container calls service() method of servlet 
+5. the service() method will call doGet method or doPost method 
+6. the container send back HTTP response to client 
+
+servlet ex: 
+
+import javax. servlet.*; 
+import javax. servlet.http.*; 
+import java.io.*; 
+public class Ch2Servlet extends HttpServlet { 
+public void doGet(HttpServletRequest request, 
+HttpServletResponse response) 
+throws IOException { 
+PrintWriter out = response. getWriter() ; 
+out. println(""); 
+} 
+} 
+
+
+jsp: 
+jsp file is translated to a servlet class by container 
+ex: 
+test.jsp -> test_jsp.java -> test_jsp.class 
+generated class path: 
+ex: 
+/usr/local/apache-tomcat-6.0.29/work/Catalina/localhost/ch1/org/apache/jsp/test_jsp.class 
+/usr/local/apache-tomcat-6.0.29/work/Catalina/localhost/ch1/org/apache/jsp/test_jsp.java 
