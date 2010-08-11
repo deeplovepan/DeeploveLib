@@ -7,3 +7,9 @@ enum COLOR {
 	BLUE,
 	WHITE
 };
+
+enum STATISTICS {
+	STATISTICS1 = 1,
+	STATISTICS2  = 2,
+	STATISTICS10 = 10
+}
