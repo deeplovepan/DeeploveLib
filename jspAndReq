@@ -1,0 +1,12 @@
+jsp and request 
+jspAndServlet
+ 
+
+get parameter: 
+ex: 
+<%= request.getParameter("myname") %> 
+http://localhost:8080/ch1/test.jsp?myname=peter 
+-> print peter 
+
+get attribute: 
+use getAttribute to get value set from setAttribute 
