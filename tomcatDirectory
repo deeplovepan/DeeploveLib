@@ -1,0 +1,12 @@
+tomcat directory structure 
+jspAndServlet 
+
+
+ex: 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1/test.jsp 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1/WEB-INF 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1/WEB-INF/web.xml 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1/WEB-INF/classes 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1/WEB-INF/classes/myClass/ 
+/usr/local/apache-tomcat-6.0.29/webapps/ch1/WEB-INF/classes/myClass/Rabbit.class 
