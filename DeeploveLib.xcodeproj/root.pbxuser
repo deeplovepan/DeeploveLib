@@ -631,6 +631,13 @@
 		vrLen = 546;
 		vrLoc = 47;
 	};
+	614152AD121250F600AA6001 /* glib */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 456}}";
+			sepNavSelRange = "{8, 0}";
+			sepNavVisRange = "{0, 8}";
+		};
+	};
 	614334201210E74400C319F9 /* ifElse */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {967, 460}}";
