@@ -1,0 +1,19 @@
+c structure
+cAndCplust
+
+structure bit field:
+ex:
+struct abc{
+        char a:4;
+        char b:4;
+};
+int main()
+{
+        struct abc c;
+        char a = 50;
+        memcpy(&c, &a, 1);
+        printf("%x %x\n", c.a, c.b);
+}
+->
+a=2, b=3  -> 16*3 + 2 = 50
+
