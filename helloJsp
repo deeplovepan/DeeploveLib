@@ -1,0 +1,18 @@
+hello jsp 
+jspAndServlet 
+
+1. hello.jsp 
+<html> 
+<head> 
+<title>My first JSP page 
+</title> 
+</head> 
+<body> 
+<%@ page language="java" %> 
+<% out.println("Hello World"); %> 
+</body> 
+</html> 
+
+2. put hello.jsp under /usr/local/apache-tomcat-6.0.29/webapps/myPage/ 
+
+3. http://localhost:8080/myPage/hello.jsp 
