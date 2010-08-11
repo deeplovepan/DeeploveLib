@@ -1,0 +1,28 @@
+jsp tag 
+jspAndServlet
+
+
+1. Expression tag 
+enclosed between <%= and %> 
+is short for out.println() 
+ex: 
+<%= new java.util.Date() %> 
+--> Tue Jul 27 11:42:40 CST 2010 
+
+2. Directive tag 
+enclosed between <%@ and %> 
+ex: 
+<%@ page language="java" %> 
+ex: 
+<%@ page import="java.util.*" %> 
+
+3. Scriptlet tag 
+execute a java source code 
+ex: 
+<% out.println("Hello World"); %> 
+
+4. Declaration tag 
+declare varaible or method 
+ex: 
+<%! int count = 0; %> 
+count will become instance variable of the class 
