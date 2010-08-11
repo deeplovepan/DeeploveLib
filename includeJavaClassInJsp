@@ -1,0 +1,5 @@
+include java class in jsp 
+jspAndServlet 
+
+ex: 
+<%@ page import="foo.*, java.util.*" %> 
