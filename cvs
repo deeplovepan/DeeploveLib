@@ -1,0 +1,93 @@
+cvs 
+command 
+
+
+set cvsroot: 
+export CVSROOT=:pserver:andy@10.1.1.1:/home/cvs 
+
+login 
+cvs login 
+
+import: 
+ex: 
+(1) cd test 
+(2) cvs import test andy ver1 
+test: project name on cvs server 
+andy: Vendor-tag 
+ver1: Version-tag 
+
+checkout: 
+get specific version: 
+cvs co -r v1_2 projectName 
+
+get specific date: 
+cvs co -D "12/02/2008 13:00" projectName 
+
+get specific branch 
+cvs co -r branch_name projectName 
+
+show status: 
+ex: 
+(1)cvs st test.c 
+(2)cvs st | grep Modified 
+find files modified under current directory 
+(3) cvs status -v test 
+show tags & branches for each file of test project 
+
+add: 
+(1)add binary file: 
+cvs add -kb test.o 
+(2) add all directories to CVS 
+find . -type d -print0| xargs -0 cvs add 
+(3)add all the files in the directories to CVS 
+find . -type f -print0| xargs -0 cvs add 
+
+commit: 
+(1)cvs commit test.c 
+(2)cvs commit * 
+commit all files in this directory 
+
+remove 
+1. rm test.c 
+2. cvs rmove teset.c 
+3. cvs commit test.c 
+when check out project next time, test.c is not checked out 
+but test.c is still on cvs server 
+Hence, we can roll back the time test.c exists 
+
+update to last: 
+(1)cvs update 
+(2)cvs up -d 
+
+log: 
+cvs log test.c 
+show history about test.c 
+
+rollback: 
+ex: 
+cvs update -j1.45 -j1.44 test.c 
+cvs commit test.c 
+tag & branch: 
+ex: 
+(1)cvs rtag test_A01 test 
+create a tag for main branch 
+(2)cvs rtag -b Branchname my_module 
+create a branch from main branch 
+(3)cvs rtag -r Tagname -b Branchname my_module 
+create a branch from a tagged revision 
+(4)cvs rtag -r Branchname Tagname my_module 
+create a tag for the current end of a branch of a module 
+(5) cvs rtag -d tagName moduleName 
+delete tag 
+
+show branch info about project 
+cvs rlog -h -l -b agent 
+or 
+cvs rlog target 
+
+cvs diff: 
+ex: 
+(1)cvs diff 
+show content difference 
+(2)cvs diff test.c 
+(3)cvs diff -r 1.39 Cache.c 
