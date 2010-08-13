@@ -10,3 +10,7 @@ myDict = {
 	 3:"joe"
 }
 -> myDict[0] = "peter"
+
+# get dictionary length
+len(myDict)
+-> 4
