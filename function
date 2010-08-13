@@ -1,0 +1,11 @@
+function
+compare
+
+python:
+ex:
+test = 3
+def printOneRowForData(colAmount, dataArray):
+	# access global varaible test
+	global test
+	print "hello"
+
