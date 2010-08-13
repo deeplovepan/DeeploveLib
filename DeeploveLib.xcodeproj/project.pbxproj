@@ -88,6 +88,7 @@
 		6143353712115AB600C319F9 /* javaCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = javaCommand; sourceTree = "<group>"; };
 		6143353812115AE200C319F9 /* changeJavaVersionOnMac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changeJavaVersionOnMac; sourceTree = "<group>"; };
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
+		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +134,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				6154CA151213CEBE00C37E8A /* python */,
 				61415C581212C3D800AA6001 /* jspAndServlet */,
 				614152AE1212547200AA6001 /* cAndCplus */,
 				614152AC121250F000AA6001 /* lib */,
@@ -169,6 +171,7 @@
 				6128507A12102B8600696385 /* linuxMemInfo */,
 				6143353912115D3600C319F9 /* git */,
 				61415C481212B34D00AA6001 /* gdb */,
+				619C406C1214E675001C3C24 /* cvs */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -285,6 +288,13 @@
 				6143353812115AE200C319F9 /* changeJavaVersionOnMac */,
 			);
 			name = java;
+			sourceTree = "<group>";
+		};
+		6154CA151213CEBE00C37E8A /* python */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = python;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
