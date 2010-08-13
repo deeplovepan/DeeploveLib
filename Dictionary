@@ -1,0 +1,12 @@
+dictionary
+compare
+
+python:
+ex:
+myDict = {
+	 0:"peter",
+     1:"andy",
+	 2:"john",
+	 3:"joe"
+}
+-> myDict[0] = "peter"
