@@ -89,6 +89,12 @@
 		6143353812115AE200C319F9 /* changeJavaVersionOnMac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changeJavaVersionOnMac; sourceTree = "<group>"; };
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
+		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
+		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
+		619C435D1215534C001C3C24 /* Dictionary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary; sourceTree = "<group>"; };
+		619C4360121553F9001C3C24 /* loop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop; sourceTree = "<group>"; };
+		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
+		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +192,7 @@
 				6143348F12111F6400C319F9 /* workQueue */,
 				6143349212111FA500C319F9 /* compileLinuxDriver */,
 				6143353512115A3C00C319F9 /* likely */,
+				619C422D12152D34001C3C24 /* linuxDriverLink */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -207,6 +214,11 @@
 				6143346E1210F8DE00C319F9 /* time */,
 				6143348512111C1500C319F9 /* driverParameter */,
 				6141527F1212476500AA6001 /* driverInfo */,
+				619C41FE12152767001C3C24 /* stackTrace */,
+				619C435D1215534C001C3C24 /* Dictionary */,
+				619C4360121553F9001C3C24 /* loop */,
+				619C436112155452001C3C24 /* function */,
+				619C4363121554A8001C3C24 /* comment */,
 			);
 			name = compare;
 			sourceTree = "<group>";

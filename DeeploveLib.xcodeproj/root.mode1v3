@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>186</real>
+								<real>336</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -284,14 +284,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>38</integer>
-									<integer>34</integer>
+									<integer>58</integer>
+									<integer>50</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 753}, {186, 591}}</string>
+							<string>{{0, 0}, {336, 591}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -303,11 +303,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 609}}</string>
+						<string>{{0, 0}, {353, 609}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>186</real>
+							<real>336</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>44 231 1236 650 0 0 1280 938 </string>
@@ -315,7 +315,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>203pt</string>
+					<string>353pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -328,7 +328,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>fileIo</string>
+								<string>linuxList</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -336,11 +336,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>fileIo</string>
+										<string>linuxList</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>619C40681214E64F001C3C24</string>
+										<string>619C43341215509B001C3C24</string>
 										<key>history</key>
 										<array>
 											<string>6128500F120FF5E400696385</string>
@@ -353,7 +353,6 @@
 											<string>6128508012102BF100696385</string>
 											<string>6128508112102BF100696385</string>
 											<string>6128508312102BF100696385</string>
-											<string>6128508412102BF100696385</string>
 											<string>6128508512102BF100696385</string>
 											<string>6128508612102BF100696385</string>
 											<string>6128508812102BF100696385</string>
@@ -364,7 +363,6 @@
 											<string>614334751210F98300C319F9</string>
 											<string>614334761210F98300C319F9</string>
 											<string>614334771210F98300C319F9</string>
-											<string>614334781210F98300C319F9</string>
 											<string>614334791210F98300C319F9</string>
 											<string>6143347B1210F98300C319F9</string>
 											<string>6143347C1210F98300C319F9</string>
@@ -377,12 +375,9 @@
 											<string>614334B112112A4600C319F9</string>
 											<string>614334B212112A4600C319F9</string>
 											<string>614334B312112A4600C319F9</string>
-											<string>6143351512114B3600C319F9</string>
 											<string>6143351612114B3600C319F9</string>
 											<string>6143351712114B3600C319F9</string>
 											<string>6143353D1211608C00C319F9</string>
-											<string>6143353E1211608C00C319F9</string>
-											<string>6143353F1211608C00C319F9</string>
 											<string>614335401211608C00C319F9</string>
 											<string>614335411211608C00C319F9</string>
 											<string>614152831212480700AA6001</string>
@@ -406,7 +401,15 @@
 											<string>61415C7B1212C87000AA6001</string>
 											<string>61415C7C1212C87000AA6001</string>
 											<string>6154CA3E12141FEE00C37E8A</string>
-											<string>6154CA3F12141FEE00C37E8A</string>
+											<string>619C40981214EA3B001C3C24</string>
+											<string>619C40991214EA3B001C3C24</string>
+											<string>619C41861215159C001C3C24</string>
+											<string>619C41871215159C001C3C24</string>
+											<string>619C43301215509B001C3C24</string>
+											<string>619C43311215509B001C3C24</string>
+											<string>619C43321215509B001C3C24</string>
+											<string>619C43331215509B001C3C24</string>
+											<string>619C432E12155078001C3C24</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -418,7 +421,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1028, 480}}</string>
+								<string>{{0, 0}, {878, 480}}</string>
 								<key>RubberWindowFrame</key>
 								<string>44 231 1236 650 0 0 1280 938 </string>
 							</dict>
@@ -438,7 +441,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 485}, {1028, 124}}</string>
+								<string>{{0, 485}, {878, 124}}</string>
 								<key>RubberWindowFrame</key>
 								<string>44 231 1236 650 0 0 1280 938 </string>
 							</dict>
@@ -449,7 +452,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1028pt</string>
+					<string>878pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -846,7 +849,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>linuxList</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -855,7 +858,7 @@
 										<key>Frame</key>
 										<string>{{0, 0}, {781, 212}}</string>
 										<key>RubberWindowFrame</key>
-										<string>65 403 781 470 0 0 1280 938 </string>
+										<string>499 264 781 470 0 0 1280 938 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXNavigatorGroup</string>
@@ -881,7 +884,7 @@
 								<key>Frame</key>
 								<string>{{0, 217}, {781, 212}}</string>
 								<key>RubberWindowFrame</key>
-								<string>65 403 781 470 0 0 1280 938 </string>
+								<string>499 264 781 470 0 0 1280 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXProjectFindModule</string>
@@ -910,7 +913,7 @@
 				<string>1CD0528E0623707200166675</string>
 			</array>
 			<key>WindowString</key>
-			<string>65 403 781 470 0 0 1280 938 </string>
+			<string>499 264 781 470 0 0 1280 938 </string>
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
