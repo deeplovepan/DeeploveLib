@@ -38,10 +38,7 @@ ex:
 
 struct list_head testList; 
 
-typedef struct listElementSt{ 
-void* content; 
-struct list_head list; 
-}listElement; 
+
 
 struct Person{ 
 int age; 
