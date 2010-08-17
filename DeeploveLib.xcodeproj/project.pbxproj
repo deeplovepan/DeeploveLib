@@ -26,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
 		61284FE2120FD98400696385 /* mount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount; sourceTree = "<group>"; };
 		61285009120FE05200696385 /* linuxIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIscsi; sourceTree = "<group>"; };
 		6128500A120FE63000696385 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		619C4360121553F9001C3C24 /* loop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop; sourceTree = "<group>"; };
 		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
 		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
+		61E498F4121A65DF002A606C /* iozone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iozone; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				6143353912115D3600C319F9 /* git */,
 				61415C481212B34D00AA6001 /* gdb */,
 				619C406C1214E675001C3C24 /* cvs */,
+				61E498F4121A65DF002A606C /* iozone */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				6143349212111FA500C319F9 /* compileLinuxDriver */,
 				6143353512115A3C00C319F9 /* likely */,
 				619C422D12152D34001C3C24 /* linuxDriverLink */,
+				6112A64E12192C74006785E8 /* linuxKernelStack */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";

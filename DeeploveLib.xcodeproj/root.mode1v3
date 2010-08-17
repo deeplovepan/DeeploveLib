@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,15 +267,8 @@
 							<array>
 								<string>08FB7794FE84155DC02AAC07</string>
 								<string>61284FE1120FD96500696385</string>
-								<string>61415C581212C3D800AA6001</string>
-								<string>614152AE1212547200AA6001</string>
-								<string>614152AC121250F000AA6001</string>
-								<string>6143353612115AA000C319F9</string>
+								<string>6154CA151213CEBE00C37E8A</string>
 								<string>6143351412114B3000C319F9</string>
-								<string>614334AB12112A4100C319F9</string>
-								<string>614334821210F9D300C319F9</string>
-								<string>6143346F1210F97F00C319F9</string>
-								<string>612850351210043100696385</string>
 								<string>61285023120FFFF300696385</string>
 								<string>6128500E120FF5DB00696385</string>
 								<string>08FB7795FE84155DC02AAC07</string>
@@ -284,8 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>58</integer>
-									<integer>50</integer>
+									<integer>41</integer>
+									<integer>23</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -321,14 +316,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>linuxList</string>
+								<string>gdb</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -336,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>linuxList</string>
+										<string>gdb</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>619C43341215509B001C3C24</string>
+										<string>6144CFE6121A64D400FBF699</string>
 										<key>history</key>
 										<array>
 											<string>6128500F120FF5E400696385</string>
@@ -351,7 +344,6 @@
 											<string>6128507D12102BF100696385</string>
 											<string>6128507F12102BF100696385</string>
 											<string>6128508012102BF100696385</string>
-											<string>6128508112102BF100696385</string>
 											<string>6128508312102BF100696385</string>
 											<string>6128508512102BF100696385</string>
 											<string>6128508612102BF100696385</string>
@@ -362,12 +354,9 @@
 											<string>614334721210F98300C319F9</string>
 											<string>614334751210F98300C319F9</string>
 											<string>614334761210F98300C319F9</string>
-											<string>614334771210F98300C319F9</string>
 											<string>614334791210F98300C319F9</string>
-											<string>6143347B1210F98300C319F9</string>
 											<string>6143347C1210F98300C319F9</string>
 											<string>6143347D1210F98300C319F9</string>
-											<string>6143347E1210F98300C319F9</string>
 											<string>614334AC12112A4600C319F9</string>
 											<string>614334AD12112A4600C319F9</string>
 											<string>614334AF12112A4600C319F9</string>
@@ -385,10 +374,8 @@
 											<string>614152A212124BCD00AA6001</string>
 											<string>614152A312124BCD00AA6001</string>
 											<string>61415C591212C3DD00AA6001</string>
-											<string>61415C5A1212C3DD00AA6001</string>
 											<string>61415C5B1212C3DD00AA6001</string>
 											<string>61415C5C1212C3DD00AA6001</string>
-											<string>61415C5D1212C3DD00AA6001</string>
 											<string>61415C721212C87000AA6001</string>
 											<string>61415C731212C87000AA6001</string>
 											<string>61415C741212C87000AA6001</string>
@@ -400,16 +387,27 @@
 											<string>61415C7A1212C87000AA6001</string>
 											<string>61415C7B1212C87000AA6001</string>
 											<string>61415C7C1212C87000AA6001</string>
-											<string>6154CA3E12141FEE00C37E8A</string>
-											<string>619C40981214EA3B001C3C24</string>
-											<string>619C40991214EA3B001C3C24</string>
 											<string>619C41861215159C001C3C24</string>
 											<string>619C41871215159C001C3C24</string>
 											<string>619C43301215509B001C3C24</string>
-											<string>619C43311215509B001C3C24</string>
 											<string>619C43321215509B001C3C24</string>
-											<string>619C43331215509B001C3C24</string>
-											<string>619C432E12155078001C3C24</string>
+											<string>619C436C121556F7001C3C24</string>
+											<string>619C436D121556F7001C3C24</string>
+											<string>619C436E121556F7001C3C24</string>
+											<string>619C436F121556F7001C3C24</string>
+											<string>619C4370121556F7001C3C24</string>
+											<string>619C4371121556F7001C3C24</string>
+											<string>619C4372121556F7001C3C24</string>
+											<string>619C4373121556F7001C3C24</string>
+											<string>619C4374121556F7001C3C24</string>
+											<string>6112A61D1218DFE1006785E8</string>
+											<string>6112A67712194526006785E8</string>
+											<string>6112A67812194526006785E8</string>
+											<string>6112A67912194526006785E8</string>
+											<string>6144CFC1121A322500FBF699</string>
+											<string>6144CFE3121A64D400FBF699</string>
+											<string>6144CFE4121A64D400FBF699</string>
+											<string>6144CFE5121A64D400FBF699</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -421,14 +419,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {878, 480}}</string>
+								<string>{{0, 0}, {878, 472}}</string>
 								<key>RubberWindowFrame</key>
 								<string>44 231 1236 650 0 0 1280 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>480pt</string>
+							<string>472pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -441,14 +439,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 485}, {878, 124}}</string>
+								<string>{{0, 477}, {878, 132}}</string>
 								<key>RubberWindowFrame</key>
 								<string>44 231 1236 650 0 0 1280 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>124pt</string>
+							<string>132pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -467,9 +465,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>619C40691214E64F001C3C24</string>
+				<string>6144CFC3121A322500FBF699</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>619C406A1214E64F001C3C24</string>
+				<string>6144CFC4121A322500FBF699</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -689,7 +687,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6184582F120FACA800F093F1</string>
-				<string>619C40641214E647001C3C24</string>
+				<string>6144CFBB121A322000FBF699</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -849,7 +847,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>linuxList</string>
+										<string>cvs</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -907,8 +905,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>619C40661214E647001C3C24</string>
-				<string>619C40671214E647001C3C24</string>
+				<string>6144CFBF121A322000FBF699</string>
+				<string>6144CFC0121A322000FBF699</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
