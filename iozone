@@ -1,0 +1,34 @@
+iozone
+command
+
+-i:
+0=write/rewrite
+1=read/re-read
+2=random-read/write
+
+-R:
+ 產生excel格式的輸出
+
+-l:
+lower limit on number of processes to run
+
+-u:
+upper limit on number of processes to run
+
+-s:
+file size
+
+-r:
+record size
+
+-t:
+Run Iozone in a throughput mode. 
+This option allows the user to specify how many threads or processes to 
+have active during the measurement.
+
+-e:
+Include flush (fsync,fflush) in the timing calculations
+
+ex:
+./iozone -R -i 0 -l 4 -u 4 -s 7G -r 1024k -t 4 -e
+
