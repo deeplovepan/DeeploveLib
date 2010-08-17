@@ -5,3 +5,16 @@ c:
 ssize_t read(int fildes, void *buf, size_t nbyte); 
 ssize_t pread(int fildes, void *buf, size_t nbyte, off_t offset); 
 starts reading at a point in the file indicated by the offset parameter 
+
+python:
+ex:
+file = open("text.txt", "w")
+
+
+ex:
+file = open("text.txt", "r")
+# get all content of the file
+text = file.read()
+# read line by line 
+for line in file.readlines():
+	print line
