@@ -97,6 +97,7 @@
 		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
 		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
 		61E498F4121A65DF002A606C /* iozone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iozone; sourceTree = "<group>"; };
+		61E498F5121A7A58002A606C /* shareMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shareMemory; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +241,7 @@
 			children = (
 				614152AF1212547F00AA6001 /* cStructure */,
 				61415B8A1212825400AA6001 /* enum */,
+				61E498F5121A7A58002A606C /* shareMemory */,
 			);
 			name = cAndCplus;
 			sourceTree = "<group>";

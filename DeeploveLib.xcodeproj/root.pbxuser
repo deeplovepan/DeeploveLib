@@ -481,14 +481,14 @@
 	};
 	614152AF1212547F00AA6001 /* cStructure */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 456}}";
-			sepNavSelRange = "{251, 0}";
-			sepNavVisRange = "{0, 253}";
+			sepNavIntBoundsRect = "{{0, 0}, {817, 435}}";
+			sepNavSelRange = "{21, 0}";
+			sepNavVisRange = "{0, 252}";
 		};
 	};
 	61415B8A1212825400AA6001 /* enum */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 456}}";
+			sepNavIntBoundsRect = "{{0, 0}, {817, 435}}";
 			sepNavSelRange = "{126, 0}";
 			sepNavVisRange = "{0, 134}";
 		};
@@ -515,7 +515,7 @@
 		fRef = 614152AF1212547F00AA6001 /* cStructure */;
 		name = "cStructure: 18";
 		rLen = 0;
-		rLoc = 251;
+		rLoc = 250;
 		rType = 0;
 		vrLen = 253;
 		vrLoc = 0;
@@ -1382,6 +1382,13 @@
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 0;
+	};
+	61E498F4121A65DF002A606C /* iozone */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {817, 742}}";
+			sepNavSelRange = "{238, 0}";
+			sepNavVisRange = "{138, 343}";
+		};
 	};
 	8DD76FA90486AB0100D96B5E /* DeeploveLib */ = {
 		activeExec = 0;
