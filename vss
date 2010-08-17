@@ -1,0 +1,59 @@
+vss
+other
+
+vshadow source:
+C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\winbase\vss\vshadow
+ 
+using vshadow.exe 
+(note: if vshadow.exe is 32 bit , it can not run on 64 bit OS)
+create snapshot
+ex:
+vshadow.exe -nw -p F:
+// create a shadow copy for F: 
+// the new created snapshot is also mapped 
+ 
+export snapshot to M:
+vshadow.exe -el={18b93c57-ca61-467d-abc4-d4fa19559ded},M:
+18b93c57-ca61-467d-abc4-d4fa19559ded is shapshot ID
+ 
+delete all snapshot on this computer
+vshadow.exe  -da
+ 
+delete snapshot with shadowcopyId
+vshadow.exe -ds={shadowCopyId}
+ 
+show snapshot lists
+vshadow.exe -q
+ 
+vssadmin list providers
+ex:
+ 
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool 
+(C) Copyright 2001 Microsoft Corp. 
+ 
+Provider name: 'Microsoft Software Shadow Copy provider 1.0' 
+ 
+Provider type: System 
+ 
+Provider Id: {b5946137-7b9f-4925-af80-51abd60b20d5} 
+ 
+Version: 1.0.0.7
+ 
+ 
+Provider name: 'ABC DEF VSS Provider' 
+Provider type: Hardware 
+ 
+Provider Id: {d1da7f61-d080-4ce9-92a1-2c4b819b2787} 
+ 
+Version: 1.5.0.3.5
+ 
+ 
+ 
+ 
+IVssHardwareSnapshotProvider Interface
+http://msdn.microsoft.com/en-us/library/aa384229(VS.85).aspx
+diskshadow:
+1. add volume F:
+2. create
+3. list shadows all
+4. delete shadows all
