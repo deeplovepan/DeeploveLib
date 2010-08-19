@@ -1,0 +1,18 @@
+linux boot
+command
+
+kernel executable:
+/boot/vmlinuz
+ex:
+vmlinuz-2.6.18-194.el5
+
+add a boot kernel:
+ex:
+cp /usr/src/linux/arch/i386/boot/bzImage 
+       /boot/vmlinuz-kernel.version.number
+	   
+	   
+kernel configure:
+configure file for kernel
+ex:
+/boot/config-2.6.18-194.el5
