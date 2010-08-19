@@ -1,0 +1,11 @@
+perror
+cAndCplus
+
+show error message for error code
+
+ex:
+FILE *fp;
+fp = fopen("abc.txt", "r");
+perror("fopen");
+->
+fopen: No such file or directory
