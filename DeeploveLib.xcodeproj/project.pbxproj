@@ -45,6 +45,7 @@
 		61285074121029C800696385 /* redirectOutputFromSerialPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redirectOutputFromSerialPort; sourceTree = "<group>"; };
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
+		613A6D1A121CCFEE00805A1C /* linuxCluster */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxCluster; sourceTree = "<group>"; };
 		613DDB1B121B7F62008AB143 /* objdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objdump; sourceTree = "<group>"; };
 		613DDBD7121B88F8008AB143 /* perror */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perror; sourceTree = "<group>"; };
 		613DDBEA121BB2E7008AB143 /* linuxCrashDump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxCrashDump; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 				61E498F4121A65DF002A606C /* iozone */,
 				61E49948121A8A6D002A606C /* linuxBoot */,
 				613DDB1B121B7F62008AB143 /* objdump */,
+				613A6D1A121CCFEE00805A1C /* linuxCluster */,
 			);
 			name = command;
 			sourceTree = "<group>";
