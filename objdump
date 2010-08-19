@@ -1,0 +1,7 @@
+objdump
+command
+
+show assembly of program & line number of source code:
+ex:
+objdump -D --line-numbers test.o 
+
