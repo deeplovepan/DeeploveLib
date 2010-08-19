@@ -1,0 +1,95 @@
+linux cluster
+command
+
+install:
+rpm -ivh clumanager-1.2.12-1.i386.rpm
+rpm -ivh redhat-config-cluster-1.0.2-1.1.noarch.rpm
+ 
+configuration:
+two nodes:
+node1: 192.168.0.201
+           172.18.0.200 (service IP)
+node2: 192.168.0.202
+ 
+(1)edit /etc/hosts for node1 & node2
+127.0.0.1	localhost.localdomain localhost
+192.168.0.201	node1.com
+192.168.0.202	node2.com
+ 
+(2) start cluster GUI on node1: 
+System -> Administration -> Server Setting -> Cluster Management
+1. set cluster name
+2. add node:
+    node name use the name defined in /etc/hosts
+3. add fence device
+    type: Manual Fencing
+4. set fence device for each node
+    click node, then set fence device
+5. set failover domain (option)
+6. create cluster resource:
+ex: 
+(1) resource for NFS
+a. File System
+b. NFS Export
+c. NFS Client ( set path as mount point of File System)
+d. IP Address
+ 
+7. create cluster service
+     add resources to service( sequence: a, b, c, d)
+8. save    
+ 
+(3) copy /etc/cluster/cluster.conf to other node2
+ 
+(4) start cman:
+     service cman start
+(5) start rgmanager
+     service rgmanager start
+(6) check cluster status
+     clustat
+(7) start service on node1
+     clusvcadm -e serviceName -m node1.com 
+(8) test1:
+     change to node2:
+     clusvcadm -r serviceName -m node2.com 
+ 
+     test2:
+     failOver:
+     shutdown node1
+ 
+     test3:
+     unplug network line
+ 
+     test4:
+     unplug fibre line 
+ 
+note:
+if clvmd is started, service will not auto stop when poweroff node
+ 
+use qdisk:
+(1) create qdisk
+ 
+   mkqdisk -c /dev/sdi1 -l myQdisk
+(2) modify /etc/cluster/cluster.conf
+     for no-multipath,
+  <quorumd interval="3" tko="23" label="myQdisk" votes="1"/>
+    for multipath, use device, not label because multiple devices will have the same label 
+      <quorumd interval="3" tko="23" device="/dev/sdb1" votes="1"/>
+(3) service qdiskd start
+(4) service cman start
+(5) service rgmanager start
+ 
+check qdiskd status;
+qdiskd -fd
+ 
+clvm & gfs2:
+1. service clvmd start  ( must run after cman )
+2. create lv
+3. mkfs.gfs2 -p lock_dlm -t new_cluster:www -j 2 /dev/myVg/myLv
+4. mount /dev/myVg/myLv  /root/share
+ 
+note:
+GFS file system:
+    1. when one node modify file, the other nodes can only read file
+     2. node can see file changed by other
+no-GFS file system
+    1.  node can not see file change by other, unless it unmount and mount disk again 
