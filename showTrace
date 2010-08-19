@@ -1,0 +1,23 @@
+show trace
+cAndCplus
+
+show function name:
+from app:
+printf("%s():\n", __FUNCTION__);
+ 
+from linux driver:
+printk("%s():\n", __FUNCTION__);
+ 
+show file name:
+from app:
+ printf("file %s\n", __FILE__);
+ 
+from linux driver:
+ printk("file %s\n", __FILE__);
+ 
+show line number:
+from app:
+printf("line %d\n", __LINE__);
+ 
+from linux driver:
+printk("line %d\n", __LINE__);
