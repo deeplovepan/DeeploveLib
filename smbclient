@@ -1,0 +1,12 @@
+smbclient
+command
+
+on linux
+ex:
+
+smbclient  //server02/RD -U Test/Andy.Pan
+Test is domain name
+Andy.Pan is user name
+
+
+mget *.*         下傳遠端目錄之所有檔案 
