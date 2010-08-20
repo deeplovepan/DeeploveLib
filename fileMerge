@@ -1,0 +1,38 @@
+fileMerge
+command
+
+mac compare software
+
+how to compare for cvs:
+
+use following script:
+
+#!/bin/sh
+
+SCRIPTNAME="${0##*/}"
+OLDFILE=/tmp/"${1##*/}"
+NEWFILE="$1"
+
+if [ $# -eq 1 ]
+then
+   cvs update -p "$NEWFILE" > "$OLDFILE"
+elif [ $# -eq 2 ]
+then
+   cvs update -p -r "$2" "$NEWFILE"  > "$OLDFILE"
+else
+   echo "usage: $SCRIPTNAME <file> [rev]"
+   exit 1
+fi
+
+opendiff "$OLDFILE" "$NEWFILE"
+
+->
+if above script is test.sh
+then 
+
+->
+bash test.sh  Test.c
+this will open fileMerge to compare Test.c ( local version and
+          server version) 
+
+
