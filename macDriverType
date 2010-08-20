@@ -1,0 +1,5 @@
+mac driver type
+macDriver
+
+kern_return_t:
+	KERN_SUCCESS
