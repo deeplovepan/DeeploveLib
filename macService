@@ -1,0 +1,9 @@
+mac service 
+command
+
+create plist for service on /Library/LaunchDaemons
+
+
+show running service
+launchctl:
+-> list
