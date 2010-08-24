@@ -1,0 +1,4 @@
+ext4
+command
+
+1. yum install e4fsprogs
