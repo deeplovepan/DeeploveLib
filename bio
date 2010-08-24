@@ -6,5 +6,5 @@ struct bio:
 
 (1) sector_t bi_sector 
 one sector is 512 bytes 
-(2) bi_size 
+(2) unsigned int bi_size  
 size in bytes 
