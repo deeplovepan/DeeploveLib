@@ -1,9 +1,34 @@
 mac service 
 command
 
+create service:
 create plist for service on /Library/LaunchDaemons
-
+plist example:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>Label</key>
+<string>com.infortrend.inbandAgent</string>
+<key>ProgramArguments</key>
+<array>
+<string>java</string>
+<string>-cp</string>
+<string>newAgent.jar:log4j.jar</string>
+<string>newagent.Agent</string>
+</array>
+<key>OnDemand</key>
+<false/>
+<key>WorkingDirectory</key>
+<string>/Users/test/Desktop/testInband</string>
+</dict>
+</plist>
 
 show running service
-launchctl:
--> list
+launchctl list
+
+start: 
+launchctl load /Library/LaunchDaemons/test.plist
+ 
+stop:
+launchctl unload /Library/LaunchDaemons/test.plist
