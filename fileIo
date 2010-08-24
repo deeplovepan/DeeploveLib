@@ -6,6 +6,20 @@ ssize_t read(int fildes, void *buf, size_t nbyte);
 ssize_t pread(int fildes, void *buf, size_t nbyte, off_t offset); 
 starts reading at a point in the file indicated by the offset parameter 
 
+write ex:
+#include <fcntl.h>
+int main()
+{
+        int fd = open("out.txt", O_RDWR|O_CREAT);
+        char buf[10000];
+		int len = 100;
+        int writeBytes = write(fd, buf, len);
+        close(fd);
+        return 0;
+}
+          
+	
+	
 python:
 ex:
 file = open("text.txt", "w")
