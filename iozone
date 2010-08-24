@@ -26,9 +26,15 @@ Run Iozone in a throughput mode.
 This option allows the user to specify how many threads or processes to 
 have active during the measurement.
 
+-k:
+async
+
+-+D:
+direct
+
 -e:
 Include flush (fsync,fflush) in the timing calculations
 
 ex:
-./iozone -R -i 0 -l 4 -u 4 -s 7G -r 1024k -t 4 -e
+./iozone -R -i 0 -l 4 -u 4 -s 10G -r 1024k -t 4 -e
 
