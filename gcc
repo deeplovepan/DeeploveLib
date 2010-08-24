@@ -28,3 +28,15 @@ main(){printf("hello world\n");}
 
 (3) default include path 
 solaris: /usr/include/ 
+
+(4) -E
+output preprocessed source code
+
+(5) create jni lib on mac
+gcc -dynamiclib -arch ppc -arch i386 -arch x86_64 -DMAC MacDiskUtil.c TestMacDiskUtil.c CommFunc.c JavaExport.c \
+device_interface.m deeploveLib/macDriver/macDriverClientUtility.c -I /System/Library/Frameworks/JavaVM.framework/Headers \
+-framework IOKit -framework CoreFoundation -framework JavaVM \
+-mmacosx-version-min=10.5 -o libCommFunc.jnilib
+
+
+
