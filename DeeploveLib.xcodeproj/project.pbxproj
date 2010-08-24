@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6132C50C121E13DA0016372F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 6132C50B121E13DA0016372F /* debug.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* DeeploveLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
+		611ADCC81223AF220091246C /* ext4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext4; sourceTree = "<group>"; };
 		61284FE2120FD98400696385 /* mount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount; sourceTree = "<group>"; };
 		61285009120FE05200696385 /* linuxIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIscsi; sourceTree = "<group>"; };
 		6128500A120FE63000696385 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
@@ -45,7 +47,15 @@
 		61285074121029C800696385 /* redirectOutputFromSerialPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redirectOutputFromSerialPort; sourceTree = "<group>"; };
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
+		6132C50A121E13DA0016372F /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		6132C50B121E13DA0016372F /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		6132C58A121E30B30016372F /* macDriverType */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverType; sourceTree = "<group>"; };
+		6132C659121E7CD00016372F /* macService */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macService; sourceTree = "<group>"; };
+		6132C685121E8CBD0016372F /* fio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fio; sourceTree = "<group>"; };
 		613A6D1A121CCFEE00805A1C /* linuxCluster */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxCluster; sourceTree = "<group>"; };
+		613A6D23121CD7D900805A1C /* smbclient */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smbclient; sourceTree = "<group>"; };
+		613A6D2F121CFB7700805A1C /* fileMerge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileMerge; sourceTree = "<group>"; };
+		613A6E21121D37D900805A1C /* macUserClient */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macUserClient; sourceTree = "<group>"; };
 		613DDB1B121B7F62008AB143 /* objdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objdump; sourceTree = "<group>"; };
 		613DDBD7121B88F8008AB143 /* perror */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perror; sourceTree = "<group>"; };
 		613DDBEA121BB2E7008AB143 /* linuxCrashDump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxCrashDump; sourceTree = "<group>"; };
@@ -66,6 +76,9 @@
 		61415C691212C5A800AA6001 /* jspAndServletKnowledge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jspAndServletKnowledge; sourceTree = "<group>"; };
 		61415C6A1212C5DE00AA6001 /* includeJavaClassInJsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = includeJavaClassInJsp; sourceTree = "<group>"; };
 		61415C6B1212C60500AA6001 /* jspAndReq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jspAndReq; sourceTree = "<group>"; };
+		6141E3B81222114C0013D895 /* iftJavaInbandAgent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftJavaInbandAgent; sourceTree = "<group>"; };
+		6141E408122246360013D895 /* xfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xfs; sourceTree = "<group>"; };
+		6141E409122249AF0013D895 /* ext3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext3; sourceTree = "<group>"; };
 		614334201210E74400C319F9 /* ifElse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ifElse; sourceTree = "<group>"; };
 		614334211210E77F00C319F9 /* installPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPackage; sourceTree = "<group>"; };
 		6143342F1210EAC000C319F9 /* fileIo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileIo; sourceTree = "<group>"; };
@@ -123,6 +136,7 @@
 		08FB7794FE84155DC02AAC07 /* DeeploveLib */ = {
 			isa = PBXGroup;
 			children = (
+				6132C508121E13B70016372F /* code */,
 				61284FE1120FD96500696385 /* note */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
@@ -150,6 +164,8 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				6141E3B7122211340013D895 /* infortrend */,
+				613A6E20121D37C700805A1C /* macDriver */,
 				61E498F6121A7AC2002A606C /* other */,
 				6154CA151213CEBE00C37E8A /* python */,
 				61415C581212C3D800AA6001 /* jspAndServlet */,
@@ -193,6 +209,13 @@
 				61E49948121A8A6D002A606C /* linuxBoot */,
 				613DDB1B121B7F62008AB143 /* objdump */,
 				613A6D1A121CCFEE00805A1C /* linuxCluster */,
+				613A6D23121CD7D900805A1C /* smbclient */,
+				613A6D2F121CFB7700805A1C /* fileMerge */,
+				6132C659121E7CD00016372F /* macService */,
+				6132C685121E8CBD0016372F /* fio */,
+				6141E408122246360013D895 /* xfs */,
+				6141E409122249AF0013D895 /* ext3 */,
+				611ADCC81223AF220091246C /* ext4 */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -240,6 +263,32 @@
 			name = compare;
 			sourceTree = "<group>";
 		};
+		6132C508121E13B70016372F /* code */ = {
+			isa = PBXGroup;
+			children = (
+				6132C509121E13BC0016372F /* debug */,
+			);
+			name = code;
+			sourceTree = "<group>";
+		};
+		6132C509121E13BC0016372F /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				6132C50A121E13DA0016372F /* debug.h */,
+				6132C50B121E13DA0016372F /* debug.c */,
+			);
+			name = debug;
+			sourceTree = "<group>";
+		};
+		613A6E20121D37C700805A1C /* macDriver */ = {
+			isa = PBXGroup;
+			children = (
+				613A6E21121D37D900805A1C /* macUserClient */,
+				6132C58A121E30B30016372F /* macDriverType */,
+			);
+			name = macDriver;
+			sourceTree = "<group>";
+		};
 		614152AC121250F000AA6001 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +325,14 @@
 				61415C6B1212C60500AA6001 /* jspAndReq */,
 			);
 			name = jspAndServlet;
+			sourceTree = "<group>";
+		};
+		6141E3B7122211340013D895 /* infortrend */ = {
+			isa = PBXGroup;
+			children = (
+				6141E3B81222114C0013D895 /* iftJavaInbandAgent */,
+			);
+			name = infortrend;
 			sourceTree = "<group>";
 		};
 		6143346F1210F97F00C319F9 /* database */ = {
@@ -389,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76FAC0486AB0100D96B5E /* main.c in Sources */,
+				6132C50C121E13DA0016372F /* debug.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
