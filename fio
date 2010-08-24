@@ -1,0 +1,7 @@
+fio
+command
+
+test io performance
+
+ex:
+./fio examples/aio-read
