@@ -1,0 +1,24 @@
+mac user client
+macDriver
+
+app communicates with driver by user client
+
+1. find driver obj from ioregistry
+
+2. get ioConnect for driver obj
+
+3. use ioConnect to communicate with user client
+ex:
+enum {
+    kMyUserClientOpen,
+    kMyUserClientClose,
+	kInquiry,
+	kSend_Diagnostic,
+	kSync_Cache,
+	kNumberOfMethods // Must be last 
+};
+kern_return_t kernResult = IOConnectCallMethod(connect, kMyUserClientOpen,
+								NULL, 0, NULL, 0, NULL, NULL, NULL, NULL);
+
+4. when user client receives messages, it pass message to driver
+
