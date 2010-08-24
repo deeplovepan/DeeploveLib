@@ -1,0 +1,40 @@
+ext3
+
+
+1. use ram for journal
+mke2fs -O journal_dev /dev/ram0
+mke2fs -J size=8,device=/dev/ram0 /dev/dm-0
+
+
+2.  only journal metadata 
+tune2fs -o journal_data_writeback /dev/hda1
+
+3. disable journal
+tune2fs -O ^has_journal /dev/hda1
+
+4. dumpe2fs /dev/dm-2
+show file system info
+
+5 mount -o commit=30 /dev/vg0/lvol0 /data/
+increase flush interval
+
+6. cat /proc/mounts
+show mount info
+
+7. mke2fs -b 4096 -j /dev/virtual0
+create ext3 file system with block size 4096              
+
+8. three journal level
+(1) data=journal  Journals all data and metadata, so data is written twice
+(2) data=ordered Only journals metadata changes, but data updates are flushed to
+	disk before any transactions commit In data=ordered mode, ext3 only officially
+	journals metadata, but it logically groups metadata and data blocks into
+	a single unit called a transaction. When it's time to write the new 
+	metadata out to disk, the associated data blocks are written first. 
+	data=ordered mode effectively solves the corruption problem found in 
+	data=writeback mode and most other journaled filesystems, and it does so
+	without requiring full data journaling. In general, data=ordered ext3 
+	filesystems perform slightly slower than data=writeback filesystems,
+	 but significantly faster than their full data journaling counterparts.
+(3) data=writeback Only journals metadata changes, and data updates are entirely
+	left to the normal "sync" process
