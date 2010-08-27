@@ -1,0 +1,8 @@
+dd
+command
+
+ex:
+dd if=/dev/zero of=/root/s0/ddOut bs=4k count=500000
+
+ex:
+dd if=/dev/zero of=/root/s0/ddOut iflag=direct oflag=direct bs=4k count=500000
