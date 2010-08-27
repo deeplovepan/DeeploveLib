@@ -35,6 +35,12 @@ direct
 -e:
 Include flush (fsync,fflush) in the timing calculations
 
+-o:
+Writes are synchronously written to disk. (O_SYNC).
+
+-I:
+Use DIRECT IO if possible for all file operations
+
 ex:
 ./iozone -R -i 0 -l 4 -u 4 -s 10G -r 1024k -t 4 -e
 
