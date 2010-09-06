@@ -1,0 +1,22 @@
+oops
+linuxDriver
+
+problem 1:
+
+ list_del corruption. next->prev should be ffff8100007c6000, but was ffffffffffffffff
+
+ [<ffffffff802c5b95>] free_block+0xae/0x13c
+ [<ffffffff802c5cb6>] drain_array+0x93/0xd1
+ [<ffffffff802c6820>] cache_reap+0xea/0x239
+ [<ffffffff802c6736>] cache_reap+0x0/0x239
+ [<ffffffff8024a644>] run_workqueue+0x95/0x140
+ [<ffffffff802471e5>] worker_thread+0x0/0x150
+ [<ffffffff802472ff>] worker_thread+0x11a/0x150
+ [<ffffffff80284806>] default_wake_function+0x0/0xe
+ [<ffffffff802319e7>] kthread+0xd1/0x100
+ [<ffffffff8025aec8>] child_rip+0xa/0x12
+ [<ffffffff80231916>] kthread+0x0/0x100
+ [<ffffffff8025aebe>] child_rip+0x0/0x12
+ 
+ solution:
+ -> change memory
