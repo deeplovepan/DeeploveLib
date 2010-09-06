@@ -1,24 +1,51 @@
 driver command 
 compare 
 
+driver location:
+MAC:
+/System/Library/Extensions/ 
+Linux:
+/lib/modules/2.6.18-128.el5/kernel/drivers/
 
 list running module: 
 mac: 
-kextstat 
-
+(1)kextstat 
+(2)kextlibs:
+ex:
+kextlibs test.kext
+show OSBundleLibraries needed by kext
+(3)kextutil:
+diagnose problem for kext
+ex:
+kextutil test.kext
 solaris: 
 modinfo 
-
 linux: 
-lsmod 
+(1)lsmod 
+(2)modinfo
+ex:
+modinfo test
+show info about test module
 
 
 load module: 
 mac: 
 kextload test.kext 
-
+before load driver, change driver owner
+chown -R root:wheel test.kext
 solaris: 
 modload /kernel/drv/tzmon 
-
 linux: 
 insmod test.ko 
+or
+modprobe test.ko
+
+unload module: 
+MAC:
+kextunload test.kext
+Linux:
+modprobe -r test.ko 
+or
+rmmod test.ko
+
+
