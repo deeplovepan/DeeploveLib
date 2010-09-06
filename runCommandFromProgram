@@ -1,0 +1,29 @@
+run command from program
+
+bash:
+isDebian=$(cat /etc/issue | grep Debian)
+echo ${isDebian}
+ 
+ 
+ 
+python:
+import os
+os.system("ls") 
+ 
+get command output:
+import commands
+output = commands.getoutput("ls /sys/bus/scsi/devices") 
+ 
+c:
+system("ls");
+get command output:
+char buf[128];
+FILE *fd=popen("ls","r");
+if(fd)
+{
+	while(fgets(buf,128,fd))
+	{
+		printf("buf %s\n", buf);
+	}
+}
+pclose(fd);
