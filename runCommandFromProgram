@@ -1,4 +1,5 @@
 run command from program
+compare
 
 bash:
 isDebian=$(cat /etc/issue | grep Debian)
