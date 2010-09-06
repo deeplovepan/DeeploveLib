@@ -7,3 +7,16 @@ ex:
 #include <linux/delay.h> 
 // sleep 1s 
 msleep(1000); 
+
+Java:
+// sleep 1s
+Thread.sleep(1000);
+
+c:
+// sleep 1s
+sleep(1);
+
+python:
+import time
+# sleep 1s
+time.sleep(1)
