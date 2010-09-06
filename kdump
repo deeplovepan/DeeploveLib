@@ -1,0 +1,12 @@
+kdump
+linuxDriver
+
+1. check kexec-tools installed
+rpm -q kexec-tools
+
+2. edit /boot/grub/menu.list
+add crashkernel=128M@16M
+
+3. chkconfig kdump on
+
+4. crash dump is saved in the /var/crash
