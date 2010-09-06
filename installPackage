@@ -5,7 +5,8 @@ compare
 cent os, fedora 
 yum 
 (1) yum install superiotool 
-
+(2) yum search gcc
+	search gcc package
 
 solaris: 
 (1) System -> Administration -> Package Manager 
