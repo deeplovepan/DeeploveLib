@@ -29,6 +29,7 @@
 		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
 		611ADCC81223AF220091246C /* ext4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext4; sourceTree = "<group>"; };
+		611ADCD11223B8790091246C /* software */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = software; sourceTree = "<group>"; };
 		61284FE2120FD98400696385 /* mount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount; sourceTree = "<group>"; };
 		61285009120FE05200696385 /* linuxIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIscsi; sourceTree = "<group>"; };
 		6128500A120FE63000696385 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		61285074121029C800696385 /* redirectOutputFromSerialPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redirectOutputFromSerialPort; sourceTree = "<group>"; };
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
+		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
 		6132C50A121E13DA0016372F /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		6132C50B121E13DA0016372F /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		6132C58A121E30B30016372F /* macDriverType */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverType; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		613A6D23121CD7D900805A1C /* smbclient */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smbclient; sourceTree = "<group>"; };
 		613A6D2F121CFB7700805A1C /* fileMerge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileMerge; sourceTree = "<group>"; };
 		613A6E21121D37D900805A1C /* macUserClient */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macUserClient; sourceTree = "<group>"; };
+		613B8607122D05EA004C03C6 /* oops */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oops; sourceTree = "<group>"; };
+		613D79201225101500AF8E2B /* dd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dd; sourceTree = "<group>"; };
 		613DDB1B121B7F62008AB143 /* objdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objdump; sourceTree = "<group>"; };
 		613DDBD7121B88F8008AB143 /* perror */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perror; sourceTree = "<group>"; };
 		613DDBEA121BB2E7008AB143 /* linuxCrashDump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxCrashDump; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 		6143353712115AB600C319F9 /* javaCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = javaCommand; sourceTree = "<group>"; };
 		6143353812115AE200C319F9 /* changeJavaVersionOnMac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changeJavaVersionOnMac; sourceTree = "<group>"; };
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
+		6151D09B122DF5A900CF1934 /* redHat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redHat; sourceTree = "<group>"; };
+		6151D09C122E23A700CF1934 /* kdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kdump; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
 		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
 		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
@@ -216,6 +222,7 @@
 				6141E408122246360013D895 /* xfs */,
 				6141E409122249AF0013D895 /* ext3 */,
 				611ADCC81223AF220091246C /* ext4 */,
+				613D79201225101500AF8E2B /* dd */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -233,6 +240,9 @@
 				619C422D12152D34001C3C24 /* linuxDriverLink */,
 				6112A64E12192C74006785E8 /* linuxKernelStack */,
 				613DDBEA121BB2E7008AB143 /* linuxCrashDump */,
+				613B8607122D05EA004C03C6 /* oops */,
+				6151D09B122DF5A900CF1934 /* redHat */,
+				6151D09C122E23A700CF1934 /* kdump */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -259,6 +269,7 @@
 				619C4360121553F9001C3C24 /* loop */,
 				619C436112155452001C3C24 /* function */,
 				619C4363121554A8001C3C24 /* comment */,
+				612C7F841234901C00B9563B /* runCommandFromProgram */,
 			);
 			name = compare;
 			sourceTree = "<group>";
@@ -390,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				61E498F7121A7ACA002A606C /* vss */,
+				611ADCD11223B8790091246C /* software */,
 			);
 			name = other;
 			sourceTree = "<group>";
