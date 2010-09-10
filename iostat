@@ -1,0 +1,14 @@
+iostat
+command
+
+test disk io performance  
+ex:
+iostat 3
+show performance at 3 second interval
+ 
+rpm:
+sysstat rpm
+ 
+ 
+show MB/s
+iostat -m 3
