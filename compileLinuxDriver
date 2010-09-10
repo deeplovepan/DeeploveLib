@@ -5,6 +5,24 @@ require package:
 cent os: 
 yum install kernel-devel 
 
+install kernel source:
+cent os:
+1. wget http://mirror.centos.org/centos/5/updates/SRPMS/kernel-2.6.18-194.11.3.el5.src.rpm
+2. mkdir -p rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+3. echo '%_topdir %(echo $HOME)/rpmbuild' > .rpmmacros
+4. rpm -ivh kernel-2.6.18-194.11.3.el5.src.rpm
+5. cd ~/rpmbuild/SPECS
+6. rpmbuild -bp --target=`uname -m` kernel-2.6.spec 2> prep-err.log | tee prep-out.log
+7. cd ~/rpmbuild/BUILD/kernel-2.6.18/linux-2.6.18.i686
+8. make oldconfig
+9. make prepare
+10. make modules_prepare
+
+ex:
+compile md module:
+11. make M=drivers/md
+
+
 compile existent kernel moudel 
 for cent os: 
 1. cd /usr/src/redhat/BUILD/kernel-2.6.18/linux-2.6.18.x86_64 
