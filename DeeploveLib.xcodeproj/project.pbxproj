@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612C7FBE1234B3DE00B9563B /* linuxIoctlClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FBD1234B3DE00B9563B /* linuxIoctlClient.c */; };
+		612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FC11234B56000B9563B /* linuxIoctlDriver.c */; };
 		6132C50C121E13DA0016372F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 6132C50B121E13DA0016372F /* debug.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* DeeploveLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */; };
@@ -49,6 +51,13 @@
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
 		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
+		612C7F851234949D00B9563B /* ioctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioctl; sourceTree = "<group>"; };
+		612C7F93123499CB00B9563B /* lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lock; sourceTree = "<group>"; };
+		612C7FBD1234B3DE00B9563B /* linuxIoctlClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxIoctlClient.c; sourceTree = "<group>"; };
+		612C7FC11234B56000B9563B /* linuxIoctlDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxIoctlDriver.c; sourceTree = "<group>"; };
+		612C7FC31234B76D00B9563B /* iostat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iostat; sourceTree = "<group>"; };
+		612C7FD31234C74900B9563B /* linuxDriverLock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxDriverLock.c; sourceTree = "<group>"; };
+		612C7FE21234E02500B9563B /* linuxDriverMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverMemory; sourceTree = "<group>"; };
 		6132C50A121E13DA0016372F /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		6132C50B121E13DA0016372F /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		6132C58A121E30B30016372F /* macDriverType */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverType; sourceTree = "<group>"; };
@@ -111,6 +120,9 @@
 		6143353712115AB600C319F9 /* javaCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = javaCommand; sourceTree = "<group>"; };
 		6143353812115AE200C319F9 /* changeJavaVersionOnMac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changeJavaVersionOnMac; sourceTree = "<group>"; };
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
+		614D2FD51239FEEB001A2FCF /* grep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grep; sourceTree = "<group>"; };
+		614D2FF0123A0F2B001A2FCF /* dmStudy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dmStudy; sourceTree = "<group>"; };
+		614D3021123A244B001A2FCF /* initrd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initrd; sourceTree = "<group>"; };
 		6151D09B122DF5A900CF1934 /* redHat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redHat; sourceTree = "<group>"; };
 		6151D09C122E23A700CF1934 /* kdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kdump; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
@@ -124,6 +136,9 @@
 		61E498F5121A7A58002A606C /* shareMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shareMemory; sourceTree = "<group>"; };
 		61E498F7121A7ACA002A606C /* vss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vss; sourceTree = "<group>"; };
 		61E49948121A8A6D002A606C /* linuxBoot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxBoot; sourceTree = "<group>"; };
+		61FAFD60123732B600B0BEC7 /* html5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = html5; sourceTree = "<group>"; };
+		61FAFD6612373C7300B0BEC7 /* htmlClassAndId */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = htmlClassAndId; sourceTree = "<group>"; };
+		61FAFD6712375FE200B0BEC7 /* linuxLoadBalance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxLoadBalance; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +185,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				61FAFD5F123732A800B0BEC7 /* html */,
 				6141E3B7122211340013D895 /* infortrend */,
 				613A6E20121D37C700805A1C /* macDriver */,
 				61E498F6121A7AC2002A606C /* other */,
@@ -223,6 +239,8 @@
 				6141E409122249AF0013D895 /* ext3 */,
 				611ADCC81223AF220091246C /* ext4 */,
 				613D79201225101500AF8E2B /* dd */,
+				612C7FC31234B76D00B9563B /* iostat */,
+				614D2FD51239FEEB001A2FCF /* grep */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -243,6 +261,9 @@
 				613B8607122D05EA004C03C6 /* oops */,
 				6151D09B122DF5A900CF1934 /* redHat */,
 				6151D09C122E23A700CF1934 /* kdump */,
+				612C7FE21234E02500B9563B /* linuxDriverMemory */,
+				614D2FF0123A0F2B001A2FCF /* dmStudy */,
+				614D3021123A244B001A2FCF /* initrd */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -270,14 +291,51 @@
 				619C436112155452001C3C24 /* function */,
 				619C4363121554A8001C3C24 /* comment */,
 				612C7F841234901C00B9563B /* runCommandFromProgram */,
+				612C7F851234949D00B9563B /* ioctl */,
+				612C7F93123499CB00B9563B /* lock */,
 			);
 			name = compare;
+			sourceTree = "<group>";
+		};
+		612C7FB11234B3AB00B9563B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				6132C509121E13BC0016372F /* debug */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		612C7FB21234B3B400B9563B /* ex */ = {
+			isa = PBXGroup;
+			children = (
+				612C7FD21234C73300B9563B /* linuxDriverLock */,
+				612C7FB31234B3C000B9563B /* linuxIoctl */,
+			);
+			name = ex;
+			sourceTree = "<group>";
+		};
+		612C7FB31234B3C000B9563B /* linuxIoctl */ = {
+			isa = PBXGroup;
+			children = (
+				612C7FBD1234B3DE00B9563B /* linuxIoctlClient.c */,
+				612C7FC11234B56000B9563B /* linuxIoctlDriver.c */,
+			);
+			name = linuxIoctl;
+			sourceTree = "<group>";
+		};
+		612C7FD21234C73300B9563B /* linuxDriverLock */ = {
+			isa = PBXGroup;
+			children = (
+				612C7FD31234C74900B9563B /* linuxDriverLock.c */,
+			);
+			name = linuxDriverLock;
 			sourceTree = "<group>";
 		};
 		6132C508121E13B70016372F /* code */ = {
 			isa = PBXGroup;
 			children = (
-				6132C509121E13BC0016372F /* debug */,
+				612C7FB21234B3B400B9563B /* ex */,
+				612C7FB11234B3AB00B9563B /* lib */,
 			);
 			name = code;
 			sourceTree = "<group>";
@@ -342,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				6141E3B81222114C0013D895 /* iftJavaInbandAgent */,
+				61FAFD6712375FE200B0BEC7 /* linuxLoadBalance */,
 			);
 			name = infortrend;
 			sourceTree = "<group>";
@@ -406,6 +465,15 @@
 			name = other;
 			sourceTree = "<group>";
 		};
+		61FAFD5F123732A800B0BEC7 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				61FAFD60123732B600B0BEC7 /* html5 */,
+				61FAFD6612373C7300B0BEC7 /* htmlClassAndId */,
+			);
+			name = html;
+			sourceTree = "<group>";
+		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +527,8 @@
 			files = (
 				8DD76FAC0486AB0100D96B5E /* main.c in Sources */,
 				6132C50C121E13DA0016372F /* debug.c in Sources */,
+				612C7FBE1234B3DE00B9563B /* linuxIoctlClient.c in Sources */,
+				612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
