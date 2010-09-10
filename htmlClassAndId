@@ -1,0 +1,17 @@
+html class and id
+html
+
+ex:
+<div id=”sidebar”>
+<h2>Menu</h2>
+</div>
+
+<div class=”post”>
+<h2>Yesterday</h1>
+</div>
+
+#sidebar {float: left; width: 20%; }
+.post {float:right; width: 79%;}
+
+use # for id
+use . for class
