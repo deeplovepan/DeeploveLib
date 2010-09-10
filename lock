@@ -1,0 +1,35 @@
+lock
+compare
+
+linux driver:
+(1)spin lock
+ex:
+spinlock_t testLock= SPIN_LOCK_UNLOCKED;
+unsigned long flags;
+spin_lock_irqsave(&testLock, flags);
+printk("in the lock\n");
+spin_unlock_irqrestore(&testLock, flags);
+(2)read write lock
+ex:
+rwlock_t blockListLock = RW_LOCK_UNLOCKED;
+unsigned long flag;
+write_lock_irqsave(&blockListLock, flag);
+printk("in the lock\n");
+write_unlock_irqrestore(&blockListLock, flag);
+read_lock_irqsave(&blockListLock, flag);
+printk("in the lock\n");
+read_unlock_irqrestore(&blockListLock, flag);
+
+
+spin lock v.s semaphore:
+(1)cannot sleep while holding a spin lock,
+   can sleep while holding a semaphore
+(2)semaphore can allow for an arbitrary number of simultaneous lock holders,
+   spin lock permit at most one task to hold the lock at a time
+(3)mutex is a semaphore with a count of one
+(4)Low overhead locking: Spin lock is preferred
+   Short lock hold time: Spin lock is preferred
+   Long lock hold time: Semaphore is preferred
+   Need to lock from interrupt context: Spin lock is required
+   Need to sleep while holding lock: Semaphore is required
+
