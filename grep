@@ -1,0 +1,6 @@
+grep
+command
+
+ex:
+grep disk_name  *.c
+find file contains disk_name
