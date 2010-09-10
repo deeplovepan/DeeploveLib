@@ -1,0 +1,125 @@
+initrd
+linux driver
+
+location:
+ex:
+/boot/initrd-2.6.18-194.11.3.el5.img 
+
+extract initrd image:
+1. mkdir initrd
+2. cd initrd
+3. gzip -dc /boot/initrd-2.6.18-194.11.3.el5.img | cpio -id
+4. ls 
+   -> bin  dev  etc  init  initrd-2.6.18-194.11.3.el5.img  lib  proc  sbin  sys  sysroot
+   
+   some driver is in lib directory, such as dm-mod.ko
+   init script context ex:
+   
+#!/bin/nash
+
+mount -t proc /proc /proc
+setquiet
+echo Mounting proc filesystem
+echo Mounting sysfs filesystem
+mount -t sysfs /sys /sys
+echo Creating /dev
+mount -o mode=0755 -t tmpfs /dev /dev
+mkdir /dev/pts
+mount -t devpts -o gid=5,mode=620 /dev/pts /dev/pts
+mkdir /dev/shm
+mkdir /dev/mapper
+echo Creating initial device nodes
+mknod /dev/null c 1 3
+mknod /dev/zero c 1 5
+mknod /dev/urandom c 1 9
+mknod /dev/systty c 4 0
+mknod /dev/tty c 5 0
+mknod /dev/console c 5 1
+mknod /dev/ptmx c 5 2
+mknod /dev/rtc c 10 135
+mknod /dev/tty0 c 4 0
+mknod /dev/tty1 c 4 1
+mknod /dev/tty2 c 4 2
+mknod /dev/tty3 c 4 3
+mknod /dev/tty4 c 4 4
+mknod /dev/tty5 c 4 5
+mknod /dev/tty6 c 4 6
+mknod /dev/tty7 c 4 7
+mknod /dev/tty8 c 4 8
+mknod /dev/tty9 c 4 9
+mknod /dev/tty10 c 4 10
+mknod /dev/tty11 c 4 11
+mknod /dev/tty12 c 4 12
+mknod /dev/ttyS0 c 4 64
+mknod /dev/ttyS1 c 4 65
+mknod /dev/ttyS2 c 4 66
+mknod /dev/ttyS3 c 4 67
+echo Setting up hotplug.
+hotplug
+echo Creating block device nodes.
+mkblkdevs
+echo "Loading ehci-hcd.ko module"
+insmod /lib/ehci-hcd.ko 
+echo "Loading ohci-hcd.ko module"
+insmod /lib/ohci-hcd.ko 
+echo "Loading uhci-hcd.ko module"
+insmod /lib/uhci-hcd.ko 
+mount -t usbfs /proc/bus/usb /proc/bus/usb
+echo "Loading jbd.ko module"
+insmod /lib/jbd.ko 
+echo "Loading ext3.ko module"
+insmod /lib/ext3.ko 
+echo "Loading scsi_mod.ko module"
+insmod /lib/scsi_mod.ko 
+echo "Loading sd_mod.ko module"
+insmod /lib/sd_mod.ko 
+echo "Loading libata.ko module"
+insmod /lib/libata.ko 
+echo "Loading ata_piix.ko module"
+insmod /lib/ata_piix.ko 
+echo "Loading scsi_transport_fc.ko module"
+insmod /lib/scsi_transport_fc.ko 
+echo "Loading qla2xxx.ko module"
+insmod /lib/qla2xxx.ko 
+echo "Loading dm-mod.ko module"
+insmod /lib/dm-mod.ko 
+echo "Loading dm-log.ko module"
+insmod /lib/dm-log.ko 
+echo "Loading dm-mirror.ko module"
+insmod /lib/dm-mirror.ko 
+echo "Loading dm-zero.ko module"
+insmod /lib/dm-zero.ko 
+echo "Loading dm-snapshot.ko module"
+insmod /lib/dm-snapshot.ko 
+echo "Loading dm-mem-cache.ko module"
+insmod /lib/dm-mem-cache.ko 
+echo "Loading dm-region_hash.ko module"
+insmod /lib/dm-region_hash.ko 
+echo "Loading dm-message.ko module"
+insmod /lib/dm-message.ko 
+echo "Loading dm-raid45.ko module"
+insmod /lib/dm-raid45.ko 
+echo Waiting for driver initialization.
+stabilized --hash --interval 1000 /proc/scsi/scsi
+mkblkdevs
+echo Scanning and configuring dmraid supported devices
+echo Scanning logical volumes
+lvm vgscan --ignorelockingfailure
+echo Activating logical volumes
+lvm vgchange -ay --ignorelockingfailure  VolGroup00
+resume /dev/VolGroup00/LogVol01
+echo Creating root device.
+mkrootdev -t ext3 -o defaults,ro /dev/VolGroup00/LogVol00
+echo Mounting root filesystem.
+mount /sysroot
+echo Setting up other filesystems.
+setuproot
+echo Switching to new root and running init.
+switchroot
+
+
+5. create initrd image
+(1). find ./ | cpio -H newc -o > /boot/new-initrd.cpio
+(2). cd /boot
+(3). gzip new-initrd.cpio
+(4). mv new-initrd.cpio.gz new-initrd.img
