@@ -123,3 +123,5 @@ switchroot
 (2). cd /boot
 (3). gzip new-initrd.cpio
 (4). mv new-initrd.cpio.gz new-initrd.img
+(5). modify initrd in /boot/grub/menu.lst
+
