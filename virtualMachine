@@ -1,0 +1,5 @@
+virtual machine
+command
+
+share folder on linux virtual machine:
+/mnt/hgfs/
