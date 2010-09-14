@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6105DCCB123E0B4300728D1B /* myBlockDeviceLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */; };
 		612C7FBE1234B3DE00B9563B /* linuxIoctlClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FBD1234B3DE00B9563B /* linuxIoctlClient.c */; };
 		612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FC11234B56000B9563B /* linuxIoctlDriver.c */; };
 		6132C50C121E13DA0016372F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 6132C50B121E13DA0016372F /* debug.c */; };
+		61956341123F5A5B002D4400 /* createBlockDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 61956340123F5A5B002D4400 /* createBlockDevice.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* DeeploveLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6105DCBF123DFA4200728D1B /* virtualMachine */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = virtualMachine; sourceTree = "<group>"; };
+		6105DCC9123E0B4300728D1B /* myBlockDeviceLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBlockDeviceLib.h; sourceTree = "<group>"; };
+		6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myBlockDeviceLib.c; sourceTree = "<group>"; };
 		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
 		611ADCC81223AF220091246C /* ext4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext4; sourceTree = "<group>"; };
 		611ADCD11223B8790091246C /* software */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = software; sourceTree = "<group>"; };
@@ -125,6 +130,8 @@
 		614D3021123A244B001A2FCF /* initrd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initrd; sourceTree = "<group>"; };
 		6151D09B122DF5A900CF1934 /* redHat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redHat; sourceTree = "<group>"; };
 		6151D09C122E23A700CF1934 /* kdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kdump; sourceTree = "<group>"; };
+		61956340123F5A5B002D4400 /* createBlockDevice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createBlockDevice.c; sourceTree = "<group>"; };
+		619563A6123F86B5002D4400 /* myDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDevice.h; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
 		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
 		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
@@ -180,6 +187,15 @@
 				8DD76FB20486AB0100D96B5E /* DeeploveLib */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6105DCC8123E0B2D00728D1B /* linuxDriver */ = {
+			isa = PBXGroup;
+			children = (
+				6105DCC9123E0B4300728D1B /* myBlockDeviceLib.h */,
+				6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */,
+			);
+			name = linuxDriver;
 			sourceTree = "<group>";
 		};
 		61284FE1120FD96500696385 /* note */ = {
@@ -241,6 +257,7 @@
 				613D79201225101500AF8E2B /* dd */,
 				612C7FC31234B76D00B9563B /* iostat */,
 				614D2FD51239FEEB001A2FCF /* grep */,
+				6105DCBF123DFA4200728D1B /* virtualMachine */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -300,6 +317,7 @@
 		612C7FB11234B3AB00B9563B /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				6105DCC8123E0B2D00728D1B /* linuxDriver */,
 				6132C509121E13BC0016372F /* debug */,
 			);
 			name = lib;
@@ -308,7 +326,7 @@
 		612C7FB21234B3B400B9563B /* ex */ = {
 			isa = PBXGroup;
 			children = (
-				612C7FD21234C73300B9563B /* linuxDriverLock */,
+				6195633E123F5A3E002D4400 /* linuxDriver */,
 				612C7FB31234B3C000B9563B /* linuxIoctl */,
 			);
 			name = ex;
@@ -456,6 +474,24 @@
 			name = python;
 			sourceTree = "<group>";
 		};
+		6195633E123F5A3E002D4400 /* linuxDriver */ = {
+			isa = PBXGroup;
+			children = (
+				6195633F123F5A47002D4400 /* createBlockDevice */,
+				612C7FD21234C73300B9563B /* linuxDriverLock */,
+			);
+			name = linuxDriver;
+			sourceTree = "<group>";
+		};
+		6195633F123F5A47002D4400 /* createBlockDevice */ = {
+			isa = PBXGroup;
+			children = (
+				61956340123F5A5B002D4400 /* createBlockDevice.c */,
+				619563A6123F86B5002D4400 /* myDevice.h */,
+			);
+			name = createBlockDevice;
+			sourceTree = "<group>";
+		};
 		61E498F6121A7AC2002A606C /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +565,8 @@
 				6132C50C121E13DA0016372F /* debug.c in Sources */,
 				612C7FBE1234B3DE00B9563B /* linuxIoctlClient.c in Sources */,
 				612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */,
+				6105DCCB123E0B4300728D1B /* myBlockDeviceLib.c in Sources */,
+				61956341123F5A5B002D4400 /* createBlockDevice.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
