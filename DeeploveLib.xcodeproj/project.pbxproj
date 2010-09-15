@@ -12,6 +12,7 @@
 		612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FC11234B56000B9563B /* linuxIoctlDriver.c */; };
 		6132C50C121E13DA0016372F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 6132C50B121E13DA0016372F /* debug.c */; };
 		61956341123F5A5B002D4400 /* createBlockDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 61956340123F5A5B002D4400 /* createBlockDevice.c */; };
+		619563D4123F8B53002D4400 /* testWorkQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 619563D3123F8B53002D4400 /* testWorkQueue.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* DeeploveLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */; };
 /* End PBXBuildFile section */
@@ -132,6 +133,7 @@
 		6151D09C122E23A700CF1934 /* kdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kdump; sourceTree = "<group>"; };
 		61956340123F5A5B002D4400 /* createBlockDevice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createBlockDevice.c; sourceTree = "<group>"; };
 		619563A6123F86B5002D4400 /* myDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDevice.h; sourceTree = "<group>"; };
+		619563D3123F8B53002D4400 /* testWorkQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testWorkQueue.c; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
 		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
 		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
@@ -477,6 +479,7 @@
 		6195633E123F5A3E002D4400 /* linuxDriver */ = {
 			isa = PBXGroup;
 			children = (
+				619563C3123F8B09002D4400 /* workQueue */,
 				6195633F123F5A47002D4400 /* createBlockDevice */,
 				612C7FD21234C73300B9563B /* linuxDriverLock */,
 			);
@@ -490,6 +493,14 @@
 				619563A6123F86B5002D4400 /* myDevice.h */,
 			);
 			name = createBlockDevice;
+			sourceTree = "<group>";
+		};
+		619563C3123F8B09002D4400 /* workQueue */ = {
+			isa = PBXGroup;
+			children = (
+				619563D3123F8B53002D4400 /* testWorkQueue.c */,
+			);
+			name = workQueue;
 			sourceTree = "<group>";
 		};
 		61E498F6121A7AC2002A606C /* other */ = {
@@ -567,6 +578,7 @@
 				612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */,
 				6105DCCB123E0B4300728D1B /* myBlockDeviceLib.c in Sources */,
 				61956341123F5A5B002D4400 /* createBlockDevice.c in Sources */,
+				619563D4123F8B53002D4400 /* testWorkQueue.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
