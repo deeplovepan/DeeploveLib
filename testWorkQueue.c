@@ -9,6 +9,7 @@
 
 #include <linux/module.h> 
 #include <linux/workqueue.h> 
+#include <linux/version.h>
 
 // we can sleep in work's function 
 
@@ -29,7 +30,11 @@ void myWorkFunc(void *data)
 	printk("myWorkFunc %p\n", newWork);
 	kfree(newWork);
 	newWork = kmalloc(sizeof(struct MyWork), GFP_KERNEL);
+#if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	INIT_WORK(&newWork->work, myWorkFunc, newWork);
+#else
+	INIT_WORK(&newWork->work, myWorkFunc);
+#endif
 	currentWork = &newWork->work;
 	queue_delayed_work(myWorkQueue, &newWork->work, 
 					   msecs_to_jiffies(TIME_INTERVAL_IN_MILLISEC) );
@@ -40,7 +45,11 @@ void createWorkQueue()
 {
 	myWorkQueue = create_workqueue("myWorkQueue");
 	struct MyWork *newWork = kmalloc(sizeof(struct MyWork), GFP_KERNEL);
+#if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	INIT_WORK(&newWork->work, myWorkFunc, newWork);
+#else
+	INIT_WORK(&newWork->work, myWorkFunc);
+#endif
 	currentWork = &newWork->work;
 	queue_delayed_work(myWorkQueue, &newWork->work, 
 					   msecs_to_jiffies(TIME_INTERVAL_IN_MILLISEC) );
