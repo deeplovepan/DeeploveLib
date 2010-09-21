@@ -9,6 +9,7 @@ yum
 	search gcc package
 (3) yum upgrade kernel.i686
     yum install kernel-devel
+(4) yum groupinstall 'Development Tools'
 
 solaris: 
 (1) System -> Administration -> Package Manager 
