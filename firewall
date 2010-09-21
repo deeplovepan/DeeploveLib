@@ -1,0 +1,12 @@
+firewall
+command
+
+suse:
+disable firewall:
+ /etc/init.d/SuSEfirewall2_setup stop 
+or
+/sbin/SuSEfirewall2 off 
+ 
+red hat:
+# service iptables stop
+# chkconfig iptables off
