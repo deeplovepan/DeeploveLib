@@ -10,6 +10,35 @@
 #include "myBlockDeviceLib.h"
 #include "myDevice.h"
 
+struct scsi_device* getScsiDevice(int hostNum, int channel,
+								  int scsiId, int lun)
+{
+	struct Scsi_Host *scsi_host = 0;
+	struct scsi_device *sdev = 0;
+	struct scsi_device *targetSdev = 0;
+	int num;
+	
+	for(num = 0; num < 255; num++) 
+	{
+		if(!IS_ERR((scsi_host=scsi_host_lookup(num))) &&
+		   scsi_host != 0) 
+		{
+			shost_for_each_device(sdev, scsi_host)
+			{
+				if(num == hostNum && sdev->channel == channel &&
+				  sdev->id == scsiId && sdev->lun == lun)
+				{
+					targetSdev = sdev;
+					break;
+				}
+			}
+		}
+		scsi_host_put(scsi_host);
+	}
+	
+	return targetSdev;
+}
+
 sector_t getBlockDeviceSizeInSector(struct block_device *bdev)
 {
 	return get_capacity(bdev->bd_disk);
