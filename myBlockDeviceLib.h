@@ -14,6 +14,8 @@
 #include <linux/blkdev.h>
 #include "myDevice.h"
 
+struct scsi_device* getScsiDevice(int hostNum, int channel,
+								  int scsiId, int lun);
 void getBdevMajorMinor(struct block_device *bdev,
 					   unsigned int *major,
 					   unsigned int *minor);
