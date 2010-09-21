@@ -1,0 +1,8 @@
+linux driver memory
+linuxDriver
+
+kmem_cache_alloc:
+ex:
+kmem_cache_alloc(blockPool, GFP_KERNEL) will sleep when alloc fail
+It may block forever if no memory available 
+
