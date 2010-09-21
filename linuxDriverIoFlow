@@ -1,0 +1,28 @@
+linux driver io flow
+linuxDriver
+
+ex:
+Sep 16 19:32:23 linux-v24b kernel:  [<c01fab2e>] generic_make_request+0x4b4/0x4ed
+Sep 16 19:32:23 linux-v24b kernel:  [<c01fac25>] submit_bio+0xbe/0xc6
+Sep 16 19:32:23 linux-v24b kernel:  [<c01a7df0>] dio_bio_submit+0x46/0x57
+Sep 16 19:32:23 linux-v24b kernel:  [<c01a7e33>] dio_send_cur_page+0x32/0x92
+Sep 16 19:32:23 linux-v24b kernel:  [<c01a7f51>] submit_page_section+0xbe/0x124
+Sep 16 19:32:23 linux-v24b kernel:  [<c01a83d1>] do_direct_IO+0x39e/0x42b
+Sep 16 19:32:23 linux-v24b kernel:  [<c01a8745>] direct_io_worker+0x199/0x300
+Sep 16 19:32:23 linux-v24b kernel:  [<c01a8b6d>] __blockdev_direct_IO+0x2c1/0x307
+Sep 16 19:32:23 linux-v24b kernel:  [<f8eb534a>] ext2_direct_IO+0x5b/0x62 [ext2]
+Sep 16 19:32:23 linux-v24b kernel:  [<c0163d76>] generic_file_direct_write+0xff/0x1e8
+Sep 16 19:32:23 linux-v24b kernel:  [<c0164198>] __generic_file_aio_write_nolock+0x339/0x47f
+Sep 16 19:32:23 linux-v24b kernel:  [<c0164796>] generic_file_aio_write+0x61/0xc0
+Sep 16 19:32:23 linux-v24b kernel:  [<c0184a10>] do_sync_write+0xc9/0x10c
+Sep 16 19:32:23 linux-v24b kernel:  [<c0185328>] vfs_write+0x8b/0x13d
+Sep 16 19:32:23 linux-v24b kernel:  [<c018547c>] sys_write+0x41/0x67
+Sep 16 19:32:23 linux-v24b kernel:  [<c01039ad>] sysenter_do_call+0x12/0x21
+
+
+in __blockdev_direct_IO:
+if (rw & WRITE)
+	rw = WRITE_SYNC;
+WRITE_SYNC  = (WRITE | (1 << BIO_RW_SYNC))
+
+
