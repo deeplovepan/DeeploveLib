@@ -15,25 +15,35 @@
 
 #define TIME_INTERVAL_IN_MILLISEC  10000
 
-struct work_struct *currentWork;
+#if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
+	struct work_struct *currentWork;
+#else
+	struct delayed_work *currentWork;
+#endif
 
 struct MyWork {
+#if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	struct work_struct work;
+#else	
+	struct delayed_work work;
+#endif
 };
 
 struct workqueue_struct *myWorkQueue = NULL;
 
-void myWorkFunc(void *data)
+//void myWorkFunc(void *data)
+void myWorkFunc(struct delayed_work *workArg)
 {
-	struct MyWork *newWork = data;
-
+	//struct MyWork *newWork = data;
+	struct MyWork *newWork = container_of(workArg, struct MyWork, work);
+	
 	printk("myWorkFunc %p\n", newWork);
 	kfree(newWork);
 	newWork = kmalloc(sizeof(struct MyWork), GFP_KERNEL);
 #if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	INIT_WORK(&newWork->work, myWorkFunc, newWork);
 #else
-	INIT_WORK(&newWork->work, myWorkFunc);
+	INIT_DELAYED_WORK(&newWork->work, myWorkFunc);
 #endif
 	currentWork = &newWork->work;
 	queue_delayed_work(myWorkQueue, &newWork->work, 
@@ -48,12 +58,12 @@ void createWorkQueue()
 #if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	INIT_WORK(&newWork->work, myWorkFunc, newWork);
 #else
-	INIT_WORK(&newWork->work, myWorkFunc);
+	INIT_DELAYED_WORK(&newWork->work, myWorkFunc);
 #endif
 	currentWork = &newWork->work;
 	queue_delayed_work(myWorkQueue, &newWork->work, 
 					   msecs_to_jiffies(TIME_INTERVAL_IN_MILLISEC) );
-	
+
 }
 
 
