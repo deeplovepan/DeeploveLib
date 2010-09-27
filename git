@@ -24,6 +24,15 @@ git status test.c
 show difference:
 git diff test.c
 
+delete file:
+ex:
+1. rm test.c
+2. git commit test.c
+
+compare difference between local and remote
+1. git fetch
+2. git diff master origin/master
+
 reference:
 http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
 https://sites.google.com/site/aisorcerer/linux-1/gitroutinebusiness
@@ -31,5 +40,12 @@ https://sites.google.com/site/aisorcerer/linux-1/setupthegitservice
 
 check out project
 ex:
-
 git clone http://github.com/jdg/oauthconsumer.git
+
+problem:
+(1) git push problem:
+To prevent you from losing history, non-fast-forward updates were rejected
+
+solution:
+1. git pull
+2. git push
