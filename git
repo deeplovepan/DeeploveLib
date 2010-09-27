@@ -28,3 +28,8 @@ reference:
 http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
 https://sites.google.com/site/aisorcerer/linux-1/gitroutinebusiness
 https://sites.google.com/site/aisorcerer/linux-1/setupthegitservice
+
+check out project
+ex:
+
+git clone http://github.com/jdg/oauthconsumer.git
