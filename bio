@@ -24,5 +24,3 @@ enum bio_rw_flags {
          BIO_RW_DISCARD,
          BIO_RW_NOIDLE,
  };
-
-test
