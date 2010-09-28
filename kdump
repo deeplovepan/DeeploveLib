@@ -1,6 +1,9 @@
 kdump
 linuxDriver
 
+reference:
+http://www.symantec.com/business/support/index?page=content&id=TECH69923
+
 1. check kexec-tools installed
 rpm -q kexec-tools
 
@@ -10,3 +13,10 @@ add crashkernel=128M@16M
 3. chkconfig kdump on
 
 4. crash dump is saved in the /var/crash
+
+suse ex:
+crash file location:
+/var/crash/2010-09-24-06:10/vmcore
+
+command:
+crash usr/lib/debug/lib/modules/2.6.18-92.1.10.el5debug/vmlinux /nas01/cores/2.6.18-92.1.10.el5.vmcore
