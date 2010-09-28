@@ -11,43 +11,82 @@
 #include <linux/workqueue.h> 
 #include <linux/version.h>
 
-// we can sleep in work's function 
+// (1)we can sleep in work's function 
+// (2)we can use queue_work to add work to queue.
+//	  the works in queue are executed by sequence 
+
+char isRemoveDriver = 0;
+
 
 #define TIME_INTERVAL_IN_MILLISEC  10000
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	struct work_struct *currentWork;
 #else
-	struct delayed_work *currentWork;
+	#ifdef USE_DELAY
+		struct delayed_work *currentWork;
+	#else
+		struct work_struct *currentWork;
+	#endif
 #endif
 
 struct MyWork {
 #if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	struct work_struct work;
 #else	
-	struct delayed_work work;
+	#ifdef USE_DELAY
+		struct delayed_work work;
+	#else
+		struct work_struct work;
+	#endif
 #endif
 };
 
 struct workqueue_struct *myWorkQueue = NULL;
 
-//void myWorkFunc(void *data)
+#if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
+void myWorkFunc(void *data)
+#else
+#ifdef USE_DELAY
 void myWorkFunc(struct delayed_work *workArg)
+#else
+void myWorkFunc(struct work_struct *workArg)
+#endif
+#endif
 {
-	//struct MyWork *newWork = data;
+#if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
+	struct MyWork *newWork = data;
+#else	
 	struct MyWork *newWork = container_of(workArg, struct MyWork, work);
+#endif
 	
 	printk("myWorkFunc %p\n", newWork);
 	kfree(newWork);
+	
+#ifndef USE_DELAY
+	if(isRemoveDriver)
+	{
+		return;
+	}
+#endif
+	
 	newWork = kmalloc(sizeof(struct MyWork), GFP_KERNEL);
 #if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	INIT_WORK(&newWork->work, myWorkFunc, newWork);
 #else
-	INIT_DELAYED_WORK(&newWork->work, myWorkFunc);
+	#ifdef USE_DELAY
+		INIT_DELAYED_WORK(&newWork->work, myWorkFunc);
+	#else
+		INIT_WORK(&newWork->work, myWorkFunc);
+	#endif	
 #endif
 	currentWork = &newWork->work;
+#ifdef USE_DELAY
 	queue_delayed_work(myWorkQueue, &newWork->work, 
 					   msecs_to_jiffies(TIME_INTERVAL_IN_MILLISEC) );
+#else
+	queue_work(myWorkQueue, &newWork->work);
+#endif
 }
 
 
@@ -58,12 +97,19 @@ void createWorkQueue()
 #if LINUX_VERSION_CODE < KERNEL_VERSION (2,6,27)	
 	INIT_WORK(&newWork->work, myWorkFunc, newWork);
 #else
-	INIT_DELAYED_WORK(&newWork->work, myWorkFunc);
+	#ifdef USE_DELAY
+		INIT_DELAYED_WORK(&newWork->work, myWorkFunc);
+	#else
+		INIT_WORK(&newWork->work, myWorkFunc);
+	#endif	
 #endif
 	currentWork = &newWork->work;
+#ifdef USE_DELAY
 	queue_delayed_work(myWorkQueue, &newWork->work, 
 					   msecs_to_jiffies(TIME_INTERVAL_IN_MILLISEC) );
-
+#else
+	queue_work(myWorkQueue, &newWork->work);
+#endif
 }
 
 
@@ -79,7 +125,11 @@ static int hello_init(void)
 static void hello_exit(void) 
 { 
 	printk(KERN_ALERT "Goodbye, cruel world\n"); 
+#ifdef USE_DELAY
 	cancel_delayed_work(currentWork);
+#else
+	isRemoveDriver = 1;
+#endif
 	flush_workqueue(myWorkQueue);
 	destroy_workqueue(myWorkQueue);
 } 
