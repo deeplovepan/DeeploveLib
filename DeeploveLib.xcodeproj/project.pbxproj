@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6105DCCB123E0B4300728D1B /* myBlockDeviceLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */; };
+		611D3E92125041F10053B7CA /* miscDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 611D3E91125041F10053B7CA /* miscDriver.c */; };
 		612C7FBE1234B3DE00B9563B /* linuxIoctlClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FBD1234B3DE00B9563B /* linuxIoctlClient.c */; };
 		612C7FC21234B56000B9563B /* linuxIoctlDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 612C7FC11234B56000B9563B /* linuxIoctlDriver.c */; };
 		61321AC31240AC1F00BF9AE5 /* memoryManagement.c in Sources */ = {isa = PBXBuildFile; fileRef = 61321AC21240AC1E00BF9AE5 /* memoryManagement.c */; };
@@ -38,8 +39,11 @@
 		6105DCC9123E0B4300728D1B /* myBlockDeviceLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBlockDeviceLib.h; sourceTree = "<group>"; };
 		6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myBlockDeviceLib.c; sourceTree = "<group>"; };
 		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
+		6117143B124CA3C60096093B /* sysctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sysctl; sourceTree = "<group>"; };
 		611ADCC81223AF220091246C /* ext4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext4; sourceTree = "<group>"; };
 		611ADCD11223B8790091246C /* software */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = software; sourceTree = "<group>"; };
+		611D3E91125041F10053B7CA /* miscDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miscDriver.c; sourceTree = "<group>"; };
+		611D3E96125045F40053B7CA /* headerSearchPathOnXcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = headerSearchPathOnXcode; sourceTree = "<group>"; };
 		61284FE2120FD98400696385 /* mount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mount; sourceTree = "<group>"; };
 		61285009120FE05200696385 /* linuxIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIscsi; sourceTree = "<group>"; };
 		6128500A120FE63000696385 /* ssh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ssh; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		612C7FC31234B76D00B9563B /* iostat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iostat; sourceTree = "<group>"; };
 		612C7FD31234C74900B9563B /* linuxDriverSemaphore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxDriverSemaphore.c; sourceTree = "<group>"; };
 		612C7FE21234E02500B9563B /* linuxDriverMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverMemory; sourceTree = "<group>"; };
+		61309104124B54A800A830EC /* suse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = suse; sourceTree = "<group>"; };
 		61321AC21240AC1E00BF9AE5 /* memoryManagement.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memoryManagement.c; sourceTree = "<group>"; };
 		61321AC51240AC8600BF9AE5 /* linuxHelloDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxHelloDriver.c; sourceTree = "<group>"; };
 		6132C50A121E13DA0016372F /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
@@ -81,7 +86,6 @@
 		613D79201225101500AF8E2B /* dd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dd; sourceTree = "<group>"; };
 		613DDB1B121B7F62008AB143 /* objdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objdump; sourceTree = "<group>"; };
 		613DDBD7121B88F8008AB143 /* perror */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perror; sourceTree = "<group>"; };
-		613DDBEA121BB2E7008AB143 /* linuxCrashDump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxCrashDump; sourceTree = "<group>"; };
 		613DDC2D121BC177008AB143 /* showTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = showTrace; sourceTree = "<group>"; };
 		6141527F1212476500AA6001 /* driverInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverInfo; sourceTree = "<group>"; };
 		614152AD121250F600AA6001 /* glib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glib; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		619C4360121553F9001C3C24 /* loop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop; sourceTree = "<group>"; };
 		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
 		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
+		61C97220125091DD00F10817 /* rpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rpm; sourceTree = "<group>"; };
 		61E498F4121A65DF002A606C /* iozone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iozone; sourceTree = "<group>"; };
 		61E498F5121A7A58002A606C /* shareMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shareMemory; sourceTree = "<group>"; };
 		61E498F7121A7ACA002A606C /* vss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vss; sourceTree = "<group>"; };
@@ -208,9 +213,26 @@
 			name = linuxDriver;
 			sourceTree = "<group>";
 		};
+		611D3E90125041D40053B7CA /* miscDriver */ = {
+			isa = PBXGroup;
+			children = (
+				611D3E91125041F10053B7CA /* miscDriver.c */,
+			);
+			name = miscDriver;
+			sourceTree = "<group>";
+		};
+		611D3E95125045D40053B7CA /* xCode */ = {
+			isa = PBXGroup;
+			children = (
+				611D3E96125045F40053B7CA /* headerSearchPathOnXcode */,
+			);
+			name = xCode;
+			sourceTree = "<group>";
+		};
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				611D3E95125045D40053B7CA /* xCode */,
 				61FAFD5F123732A800B0BEC7 /* html */,
 				6141E3B7122211340013D895 /* infortrend */,
 				613A6E20121D37C700805A1C /* macDriver */,
@@ -269,6 +291,9 @@
 				614D2FD51239FEEB001A2FCF /* grep */,
 				6105DCBF123DFA4200728D1B /* virtualMachine */,
 				61860B7A1247574600ACF73B /* firewall */,
+				61309104124B54A800A830EC /* suse */,
+				6117143B124CA3C60096093B /* sysctl */,
+				61C97220125091DD00F10817 /* rpm */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -285,7 +310,6 @@
 				6143353512115A3C00C319F9 /* likely */,
 				619C422D12152D34001C3C24 /* linuxDriverLink */,
 				6112A64E12192C74006785E8 /* linuxKernelStack */,
-				613DDBEA121BB2E7008AB143 /* linuxCrashDump */,
 				613B8607122D05EA004C03C6 /* oops */,
 				6151D09B122DF5A900CF1934 /* redHat */,
 				6151D09C122E23A700CF1934 /* kdump */,
@@ -507,6 +531,7 @@
 		6195633E123F5A3E002D4400 /* linuxDriver */ = {
 			isa = PBXGroup;
 			children = (
+				611D3E90125041D40053B7CA /* miscDriver */,
 				61321AC41240AC6D00BF9AE5 /* helloDriver */,
 				61321AC11240AC0900BF9AE5 /* memoryManagement */,
 				619563C3123F8B09002D4400 /* workQueue */,
@@ -611,6 +636,7 @@
 				619563D4123F8B53002D4400 /* testWorkQueue.c in Sources */,
 				61321AC31240AC1F00BF9AE5 /* memoryManagement.c in Sources */,
 				61321AC61240AC8600BF9AE5 /* linuxHelloDriver.c in Sources */,
+				611D3E92125041F10053B7CA /* miscDriver.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,11 +674,15 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Volumes/Mac_OS/Users/pandeeplove/Documents/project/linuxDriver/linux-2.6.18.8/include";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
