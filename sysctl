@@ -1,0 +1,12 @@
+sysctl 
+
+
+/etc/sysctl.conf:
+net.core.rmem_default = 256960
+net.core.rmem_max = 256960
+net.core.wmem_default = 256960
+net.core.wmem_max = 256960
+
+location:
+cat /proc/sys/net/ipv4/tcp_rmem
+cat /proc/sys/net/core/rmem_default 
