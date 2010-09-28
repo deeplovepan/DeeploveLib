@@ -4,4 +4,8 @@ compare
 
 python
 ex:
-# this is the comment
+(1) # this is the comment
+(2) """  this is
+	  multi-line comment
+	"""
+	
