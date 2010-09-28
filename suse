@@ -1,0 +1,7 @@
+suse
+
+package search:
+http://software.opensuse.org/search
+http://de.test.opensuse.org/debug/update/11.1/rpm/i586/
+http://download.opensuse.org/debug/distribution/11.1/repo/oss/
+http://ftp.ncnu.edu.tw/Linux/opensuse/distribution/11.2/repo/oss/suse/x86_64/
