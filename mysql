@@ -1,0 +1,13 @@
+mysql
+
+install:
+1.download "MySQL Community Server" 
+  http://dev.mysql.com/downloads/
+2.set path: edit /etc/paths
+  add /usr/local/mysql/bin
+3.install mysql GUI: Sequel Pro
+  
+
+start mysql server:
+mysqld_safe
+
