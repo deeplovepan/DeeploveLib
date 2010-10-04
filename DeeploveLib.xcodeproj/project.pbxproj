@@ -148,6 +148,7 @@
 		6155F72A124238DA00B8ECDA /* linuxDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverIoFlow; sourceTree = "<group>"; };
 		61860B3E124736FE00ACF73B /* cli */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cli; sourceTree = "<group>"; };
 		61860B7A1247574600ACF73B /* firewall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firewall; sourceTree = "<group>"; };
+		6188430612596E42000FE3F6 /* dev_null */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dev_null; sourceTree = "<group>"; };
 		61956340123F5A5B002D4400 /* createBlockDevice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createBlockDevice.c; sourceTree = "<group>"; };
 		619563A6123F86B5002D4400 /* myDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDevice.h; sourceTree = "<group>"; };
 		619563D3123F8B53002D4400 /* testWorkQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testWorkQueue.c; sourceTree = "<group>"; };
@@ -302,6 +303,7 @@
 				61309104124B54A800A830EC /* suse */,
 				6117143B124CA3C60096093B /* sysctl */,
 				61C97220125091DD00F10817 /* rpm */,
+				6188430612596E42000FE3F6 /* dev_null */,
 			);
 			name = command;
 			sourceTree = "<group>";
