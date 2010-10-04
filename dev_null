@@ -1,0 +1,10 @@
+/dev/null
+command
+
+1. hide stdout
+ex:
+ls > /dev/null
+
+2. hide stdout and stderr
+ex:
+abc >& /dev/null
