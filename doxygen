@@ -1,0 +1,18 @@
+doxygen
+doxygen
+
+generated doc for code
+
+0. install GraphViz first
+   http://www.ryandesign.com/graphviz/
+
+1. wizard tab:
+   Mode -> All Entities
+		   include cross-referenced source code in the output
+   
+   Diagrams -> use dot tool from the GraphViz package
+			   enable Call graphs
+			   enable Called by graphs
+			   
+2. export tab: 
+   Dot -> DOT_PATH
