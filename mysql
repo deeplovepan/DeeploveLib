@@ -11,3 +11,22 @@ install:
 start mysql server:
 mysqld_safe
 
+command:
+1. connect database:
+ex:
+connect test
+
+2. show tables;
+
+3. show table field
+ex:
+describe DataTable;
+
+4. show data in table
+ex:
+select * from DataTable;
+
+5. delete all data in table
+ex:
+delete * from DataTable;
+
