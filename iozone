@@ -43,3 +43,6 @@ Use DIRECT IO if possible for all file operations
 
 ex:
 ./iozone -R -i 0 -l 4 -u 4 -s 2G -r 1024k -t 2 -k 4 -I -e
+
+ex:
+./iozone -R --i 0 -i 1  -l 4 -u 4 -s 2G -r 1024k -t 1 -e 
