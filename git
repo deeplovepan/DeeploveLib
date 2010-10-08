@@ -45,6 +45,9 @@ check out project
 ex:
 git clone http://github.com/jdg/oauthconsumer.git
 
+add file:
+git add -u
+
 git gui on mac os x:
 GitX
 
