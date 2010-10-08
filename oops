@@ -19,4 +19,4 @@ problem 1:
  [<ffffffff8025aebe>] child_rip+0x0/0x12
  
  solution:
- -> change memory
+ ->  memory problem, such as some memory address is overwriton 
