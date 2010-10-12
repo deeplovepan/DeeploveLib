@@ -1,0 +1,26 @@
+linux samba
+command
+
+1. install
+   yum install samba
+
+2. edit /etc/samba/smb.conf：
+ex:
+[s0]
+        comment = s0 dir
+        path = /root/s0
+        read only = no
+        public = yes
+
+3.
+(1)
+no passwd setting
+set following line in global setting of smb.conf
+security = share
+(2)
+passwd setting
+add user:
+pdbedit -a test
+
+4. start server
+/etc/init.d/smb start
