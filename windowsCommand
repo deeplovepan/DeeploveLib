@@ -1,0 +1,31 @@
+windows command
+command
+
+restart computer:
+shutdown -r -t 01
+ 
+open terminal:
+run -> cmd
+ 
+open computer management:
+run -> compmgmt.msc
+ 
+open service window
+run -> services.msc
+ 
+opent task manager
+run ->  taskmgr  
+
+net:
+(1)net use
+-> show connection
+ex:
+reconnecting     \\172.18.8.96\IPC$  
+OK               \\192.168.5.34\IPC$
+(2)delete all connection
+net ues * /delete
+
+
+
+
+
