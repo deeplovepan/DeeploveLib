@@ -1,0 +1,8 @@
+iometer
+command
+
+1.IO size
+set Maximum Disk Size 
+ex:
+50kB = 50/0.5 = 100 sector
+
