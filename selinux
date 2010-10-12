@@ -1,0 +1,13 @@
+selinux
+command
+
+disable:
+echo 0 >/selinux/enforce
+
+permanently disable:
+method 1:
+edit /etc/selinux/config 
+SELINUX=disabled
+
+method 2:
+add selinux=0 in boot line of /boot/grub/grub.conf
