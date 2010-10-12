@@ -1,0 +1,47 @@
+install new linux kernel
+linux driver
+
+1. cd /usr/src
+2. download kernel
+ex:
+wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.35.7.tar.bz2
+
+3. tar xjf linux-2.6.18.3.tar.bz2
+4. create link
+ex:
+ln -s linux-2.6.35.7 linux
+
+5. add patch (optional)
+under /usr/src/linux
+ex:
+for bz2 patch
+bzip2 -dc /usr/src/patch.bz2 | patch -p1 --dry-run
+bzip2 -dc /usr/src/patch.bz2 | patch -p1
+
+for gz patch
+gunzip -c /usr/src/patch.gz | patch -p1 --dry-run
+gunzip -c /usr/src/patch.gz | patch -p1
+
+6. configure kernel
+make clean
+make mrproper
+cp /boot/config-`uname -r` ./.config
+make menuconfig
+
+7. build kernel
+make rpm
+if encounter problem "unknown option"
+solution:
+install rpm-build
+
+src.rpm & rpm are created 
+
+8. install kernel
+
+
+
+
+
+
+
+
