@@ -1,4 +1,4 @@
-xfs
+xfs file system
 
 yum install binutils
 yum install xfsprogs yum-kmod kmod-xfs-xen
