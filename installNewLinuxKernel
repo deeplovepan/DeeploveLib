@@ -1,6 +1,9 @@
 install new linux kernel
 linux driver
 
+reference:
+http://www.howtoforge.com/kernel_compilation_centos
+
 1. cd /usr/src
 2. download kernel
 ex:
@@ -34,9 +37,25 @@ if encounter problem "unknown option"
 solution:
 install rpm-build
 
-src.rpm & rpm are created 
+src.rpm & rpm location:
+ex:
+ /usr/src/redhat/RPMS/x86_64/kernel-2.6.35.7-1.x86_64.rpm 
+ /usr/src/redhat/SRPMS/kernel-2.6.35.7-1.src.rpm
 
 8. install kernel
+ex:
+cd /usr/src/redhat/RPMS/x86_64/
+rpm -ivh --nodeps kernel-2.6.35.7-1.x86_64.rpm
+
+9. create ramdisk for kernel
+ex:
+mkinitrd /boot/initrd-2.6.35.7.img 2.6.35.7
+
+10. edit /boot/grub/menu.lst
+add new kernel info for boot
+ex:
+
+
 
 
 
