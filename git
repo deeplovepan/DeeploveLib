@@ -1,10 +1,9 @@
 git
 command
 
+reference: http://plog.longwin.com.tw/my_note-unix/2009/05/19/git-learn-initial-command-2009
 
 1. git init
-
-
 show file history:
 ex:
 (1) git log test.c
@@ -13,7 +12,7 @@ commit 30df7885dada39cdf69aaff676c3e24a1dd7846f
 Author: deeplovepan <deeplovepan@gmail.com>
 Date:   Wed Aug 11 10:24:00 2010 +0800
 
-    commit
+commit
 (2) git show 30df7885dada39cdf69aaff676c3e24a1dd7846f
 show detail about the commit
 
@@ -47,6 +46,13 @@ git clone http://github.com/jdg/oauthconsumer.git
 
 add file:
 git add -u
+
+git checkout:
+(1) git checkout filename 
+    還原檔案到 Repository 狀態
+(2) git checkout HEAD . 
+    將所有檔案都 checkout 出來(最後一次 commit 的版本), 注意, 若有修改的檔案都會被還原到上一版.
+	(git checkout -f 亦可)
 
 git gui on mac os x:
 GitX
