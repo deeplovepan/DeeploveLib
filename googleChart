@@ -1,0 +1,10 @@
+google chart
+google api
+
+ex:
+chs: size
+cht: data
+cht: chart type
+chco: color
+chxl: x label
+http://chart.apis.google.com/chart?cht=bvg&chd=t:5,5,5|10,10,10&chs=200&chco=4D89F9,C6D9FD&chxt=x,y&chxl=0:|Jan|Feb|Mar
