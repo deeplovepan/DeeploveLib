@@ -1,0 +1,5 @@
+generic kext
+mac driver
+
+1. when creating project
+   System Plug-in -> Generic Kernel Extension
