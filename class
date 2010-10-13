@@ -1,0 +1,8 @@
+class
+compare
+
+1. call method from parent class:
+C++:
+ex:
+dog extends animal
+-> animal::eat();
