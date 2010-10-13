@@ -1,0 +1,20 @@
+mac driver life
+mac driver
+
+init -> attach -> probe -> detach -> attach ->  start -> stop -> free
+
+
+problem:
+driver not match, not appear in registry
+solution:
+1. modify OSBundleLibraries
+2. edit probe method
+IOService *MyBlockStorageDriver::probe(IOService *provider,
+												SInt32 *score)
+{
+    //IOService *result = super::probe(provider, score);
+	IOLog("probe score %ld\n", *score);
+	*score = 1000;
+	return this;
+
+}
