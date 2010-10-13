@@ -1,0 +1,9 @@
+mac driver command
+mac driver
+
+kextutil:
+check if driver is ok
+ex:
+kextutil -n -t GenericKext.kext
+-n: not load driver
+-t: print dianostic info
