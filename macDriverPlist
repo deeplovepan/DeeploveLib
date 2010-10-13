@@ -1,0 +1,56 @@
+mac driver plist
+mac driver:
+
+1. CFBundleIdentifier
+unique id for kext
+ex:
+com.deeplove.test
+it does not need to match with IOClass
+
+2. OSBundleLibraries
+define depended libraries
+we can use kextlibs to find linked libraries
+ex:
+kextlibs -xml GenericKext.kext
+->
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.kpi.libkern</key>
+		<string>10.4</string>
+	</dict>
+	
+the match version number lib is define in OSBundleCompatibleVersion
+ex:
+<key>OSBundleCompatibleVersion</key>
+<string>1.0</string>	
+
+3. IOKitPersonalities
+ex:
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>MyIokitDriver</key>
+		<dict>
+		<key>CFBundleIdentifier</key>
+		<string>com.yourcompany.driver.MyIokitDriver</string>
+		<key>IOClass</key>
+		<string>com_yourcompany_driver_MyIokitDriver</string>
+		<key>IOKitDebug</key>
+		<integer>65535</integer>
+		<key>IOProviderClass</key>
+		<string>IOResources</string>
+		<key>IOMatchCategory</key>
+		<string>com_yourcompany_driver_MyIokitDriver</string>
+		</dict>
+	</dict>
+	
+CFBundleIdentifier in IOKitPersonalities must be the same  with outer CFBundleIdentifier
+	
+IOProviderClass:
+ indicates the class of the provider objects that your driver can match on
+
+IOMatchCategory:
+ allows other drivers to match on the same device as your driver, 
+ as long as the drivers’ values for this property differ
+
+
+
