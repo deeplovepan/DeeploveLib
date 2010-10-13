@@ -1,0 +1,10 @@
+lsof
+command
+
+list open files
+ex:
+lsof s0
+->
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+bash    8911 root  cwd    DIR  253,0     4096    2 s0
+top     9884 root  cwd    DIR  253,0     4096    2 s0
