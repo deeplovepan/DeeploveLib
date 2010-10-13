@@ -1,0 +1,11 @@
+linux io scheduler
+linux driver
+
+4 scheduler:
+	(1) cfq
+	(2) noop
+	(3) deadline
+	(4) anticipatory
+
+ex:
+echo deadline >/sys/block/sdd/queue/scheduler
