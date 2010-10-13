@@ -1,0 +1,5 @@
+ioreg
+mac driver
+
+ioreg -l:
+show registry info
