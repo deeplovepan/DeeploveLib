@@ -111,6 +111,7 @@ ex:
 
 problem: 
 (1) Initiatorname required: 
+solution:
 edit /etc/iscsi/initiatorname.iscsi 
 InitiatorName=iqn.2001-08.something.something 
 rcopen-iscsi stop
