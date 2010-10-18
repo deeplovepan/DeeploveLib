@@ -5,3 +5,13 @@ install:
 ex:
 1. rpm -ivh test.rpm
 2. rpm -ivh  --force  test.rpm
+
+srpm:
+suse:
+location:
+/usr/src/packages/
+install:
+1. rpmbuild --rebuild nx_nic-4.0.517-1.src.rpm 
+   nx_nic-4.0.517-1.x86_64.rpm is creaed in /usr/src/packages/RPMS/x86_64
+2. rpm -ivh nx_nic-4.0.517-1.x86_64.rpm
+
