@@ -13,9 +13,16 @@ mpathbn (0800DC0BBC240A19D7B315) dm-0
 
 multipath.conf setting: 
 suse 11 or debian 5.4: 
-getuid_callout	 "/lib/udev/scsi_id -g -u -d /dev/%n " 
+getuid_callout	 "/lib/udev/scsi_id -g -u -d /dev/%n" 
 other: 
 getuid_callout	 "/sbin/scsi_id -g -u -s /block/%n" 
+
+prio setting:
+suse
+prio_callout		"/bin/true"
+red hat:
+prio_callout		"/sbin/mpath_prio_alua /dev/%n"
+
 
 
 
