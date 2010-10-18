@@ -1,0 +1,4 @@
+netstat
+command
+
+netstat -s
