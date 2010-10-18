@@ -3,7 +3,23 @@ command
 
 reference: http://plog.longwin.com.tw/my_note-unix/2009/05/19/git-learn-initial-command-2009
 
-1. git init
+gitk:
+GUI for git
+
+init git project:
+if there is a project dir "test" in local host
+(1) cd test
+(2) git init
+	now .git is created 
+
+
+record file change:
+(1)git commit
+remove # to add change log
+(2)git commit -a 
+commit all 
+
+
 show file history:
 ex:
 (1) git log test.c
@@ -11,17 +27,41 @@ ex:
 commit 30df7885dada39cdf69aaff676c3e24a1dd7846f
 Author: deeplovepan <deeplovepan@gmail.com>
 Date:   Wed Aug 11 10:24:00 2010 +0800
+(2) git log
+show all commit records
 
-commit
-(2) git show 30df7885dada39cdf69aaff676c3e24a1dd7846f
+(3) git show 30df7885dada39cdf69aaff676c3e24a1dd7846f
+	or
+	git show 30df7
 show detail about the commit
+
+(4) git show v0.1
+    show detail about the tag
+	
+(5) git show 900cf:test.txt 
+    show file on specific commit
+	
+(6) git show v0.1:test.txt
+    show file on specific tag
+
+tag:
+git tag v0.1 30df7
+30df7 is leading characters of commit
 
 show file status:
 git status
 git status test.c
 
 show difference:
-git diff test.c
+(1)git diff test.c
+(2)git diff v0.1 v0.3
+(3)git diff v0.01:story.txt v0.03:story.txt
+
+branch:
+(1)git branch branch1
+   create branch branch1
+(2)switch branch
+    git checkout branch1
 
 delete file:
 ex:
