@@ -10,3 +10,6 @@ net.core.wmem_max = 256960
 location:
 cat /proc/sys/net/ipv4/tcp_rmem
 cat /proc/sys/net/core/rmem_default 
+
+command to update:
+sysctl -p
