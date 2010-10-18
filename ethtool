@@ -1,0 +1,7 @@
+ethtool
+command
+
+1. ethtool eth0
+show info about eth0
+
+2. ethtool -s eth0 autoneg on
