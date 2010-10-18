@@ -159,6 +159,9 @@
 		617F49EF125B130400BA909B /* MyDriverNote */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyDriverNote; sourceTree = "<group>"; };
 		61860B3E124736FE00ACF73B /* cli */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cli; sourceTree = "<group>"; };
 		61860B7A1247574600ACF73B /* firewall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firewall; sourceTree = "<group>"; };
+		61867AE41262AAED00CBED25 /* linuxNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxNfs; sourceTree = "<group>"; };
+		61867AEA1262D93500CBED25 /* windowsCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = windowsCommand; sourceTree = "<group>"; };
+		61867AF71262F21500CBED25 /* linuxSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxSamba; sourceTree = "<group>"; };
 		6188430612596E42000FE3F6 /* dev_null */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dev_null; sourceTree = "<group>"; };
 		6188432B1259756B000FE3F6 /* md5sum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = md5sum; sourceTree = "<group>"; };
 		6188436C125983CB000FE3F6 /* macDriverNotification */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverNotification; sourceTree = "<group>"; };
@@ -166,6 +169,12 @@
 		618843B012598635000FE3F6 /* macDriverPlist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverPlist; sourceTree = "<group>"; };
 		618843C51259A2BD000FE3F6 /* macDriverCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverCommand; sourceTree = "<group>"; };
 		618844021259AC08000FE3F6 /* class */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = class; sourceTree = "<group>"; };
+		618F1EC91263F3AB00AC136B /* selinux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selinux; sourceTree = "<group>"; };
+		618F1ED11263FA8200AC136B /* windowsSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = windowsSamba; sourceTree = "<group>"; };
+		618F1ED21263FB9800AC136B /* ioPerformance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioPerformance; sourceTree = "<group>"; };
+		618F1ED41264028F00AC136B /* iometer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iometer; sourceTree = "<group>"; };
+		618F1ED712642DEC00AC136B /* phoronixTestSuite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phoronixTestSuite; sourceTree = "<group>"; };
+		618F1EDC1264384C00AC136B /* installNewLinuxKernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installNewLinuxKernel; sourceTree = "<group>"; };
 		61956340123F5A5B002D4400 /* createBlockDevice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createBlockDevice.c; sourceTree = "<group>"; };
 		619563A6123F86B5002D4400 /* myDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDevice.h; sourceTree = "<group>"; };
 		619563D3123F8B53002D4400 /* testWorkQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testWorkQueue.c; sourceTree = "<group>"; };
@@ -176,6 +185,11 @@
 		619C4360121553F9001C3C24 /* loop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop; sourceTree = "<group>"; };
 		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
 		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
+		619F23F712655AA300376237 /* lsof */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lsof; sourceTree = "<group>"; };
+		619F25151265B4DB00376237 /* qla2xxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = qla2xxx; sourceTree = "<group>"; };
+		619F25161265BB6200376237 /* networkSetting */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = networkSetting; sourceTree = "<group>"; };
+		619F253612669EDD00376237 /* netstat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = netstat; sourceTree = "<group>"; };
+		619F25481266E95900376237 /* ethtool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ethtool; sourceTree = "<group>"; };
 		61C97220125091DD00F10817 /* rpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rpm; sourceTree = "<group>"; };
 		61D8FC05125C0D1200461D44 /* ioreg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioreg; sourceTree = "<group>"; };
 		61E498F4121A65DF002A606C /* iozone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iozone; sourceTree = "<group>"; };
@@ -299,11 +313,11 @@
 				61285072121028E000696385 /* scanLun */,
 				612850731210291400696385 /* multipath */,
 				61285074121029C800696385 /* redirectOutputFromSerialPort */,
-				6128507912102A1E00696385 /* iso */,
 				6128507A12102B8600696385 /* linuxMemInfo */,
 				6143353912115D3600C319F9 /* git */,
 				61415C481212B34D00AA6001 /* gdb */,
 				619C406C1214E675001C3C24 /* cvs */,
+				6128507912102A1E00696385 /* iso */,
 				61E498F4121A65DF002A606C /* iozone */,
 				61E49948121A8A6D002A606C /* linuxBoot */,
 				613DDB1B121B7F62008AB143 /* objdump */,
@@ -325,6 +339,17 @@
 				61C97220125091DD00F10817 /* rpm */,
 				6188430612596E42000FE3F6 /* dev_null */,
 				6188432B1259756B000FE3F6 /* md5sum */,
+				61867AE41262AAED00CBED25 /* linuxNfs */,
+				61867AEA1262D93500CBED25 /* windowsCommand */,
+				61867AF71262F21500CBED25 /* linuxSamba */,
+				618F1EC91263F3AB00AC136B /* selinux */,
+				618F1ED11263FA8200AC136B /* windowsSamba */,
+				618F1ED41264028F00AC136B /* iometer */,
+				618F1ED712642DEC00AC136B /* phoronixTestSuite */,
+				619F23F712655AA300376237 /* lsof */,
+				619F25161265BB6200376237 /* networkSetting */,
+				619F253612669EDD00376237 /* netstat */,
+				619F25481266E95900376237 /* ethtool */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -349,6 +374,8 @@
 				614D3021123A244B001A2FCF /* initrd */,
 				6155F72A124238DA00B8ECDA /* linuxDriverIoFlow */,
 				6156D8B7125EC933000CA3F2 /* linuxIoScheduler */,
+				618F1EDC1264384C00AC136B /* installNewLinuxKernel */,
+				619F25151265B4DB00376237 /* qla2xxx */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -541,6 +568,7 @@
 				6141E3B81222114C0013D895 /* iftJavaInbandAgent */,
 				61FAFD6712375FE200B0BEC7 /* linuxLoadBalance */,
 				61860B3E124736FE00ACF73B /* cli */,
+				618F1ED21263FB9800AC136B /* ioPerformance */,
 			);
 			name = infortrend;
 			sourceTree = "<group>";
