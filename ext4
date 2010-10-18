@@ -2,3 +2,6 @@ ext4
 command
 
 1. yum install e4fsprogs
+
+command:
+1. mount -t ext4 /dev/hda1 s0 -o barriers=0 data=writeback
