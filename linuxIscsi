@@ -113,6 +113,8 @@ problem:
 (1) Initiatorname required: 
 edit /etc/iscsi/initiatorname.iscsi 
 InitiatorName=iqn.2001-08.something.something 
+rcopen-iscsi stop
+rcopen-iscsi start
 
 install: 
 (1) debian: 
