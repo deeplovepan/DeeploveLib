@@ -1,0 +1,7 @@
+sysconf
+
+python
+ex:
+import os
+os.sysconf("SC_PAGESIZE")
+->4096
