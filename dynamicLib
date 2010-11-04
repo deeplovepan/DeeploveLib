@@ -1,0 +1,43 @@
+dynamic library
+
+solaris:
+path:
+/usr/lib/
+
+compile with so:
+ex:
+gcc test.c -L. -lnas_sysinfo
+
+run program linked with so:
+set LD_LIBRARY_PATH
+ex:
+export LD_LIBRARY_PATH=/root/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/smbsrv
+
+linux:
+static lib:
+gcc -Wall -c ctest1.c ctest2.c  
+ar -cvq libctest.a ctest1.o ctest2.o
+ 
+gcc -o executable-name prog.c libctest.a
+ 
+dynamic lib:
+http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
+ 
+ 
+so:
+gcc -Wall -c -fPIC test.c test2.c
+gcc -shared -Wl,-soname,libmylib.so.1 -o libmylib.so.1.0.1 test.o test2.o
+libmylib.so.1.0.1 is created
+now create link
+ln -sf libmylib.so.1.0.1 libmylib.so
+ 
+libmylib.so is put at /root/
+link with so:
+gcc myMain.c -L/root -lmylib -o myMain.o
+ 
+to find so when running program, 
+(1)edit /etc/ld.so.conf
+    add the path for libmylib.so
+(2) ldconfig -v
+ 
