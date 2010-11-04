@@ -39,4 +39,6 @@ device_interface.m deeploveLib/macDriver/macDriverClientUtility.c -I /System/Lib
 -mmacosx-version-min=10.5 -o libCommFunc.jnilib
 
 
+(6)-L : 追加library檔案的搜尋路徑 
 
+(7)-l : 指定連結的函式庫 
