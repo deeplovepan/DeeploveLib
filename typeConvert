@@ -1,0 +1,10 @@
+type convert
+
+python:
+char to int
+ex:
+ord('a')
+
+int to char
+ex:
+chr(97)
