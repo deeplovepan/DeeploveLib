@@ -6,11 +6,24 @@ reference: http://plog.longwin.com.tw/my_note-unix/2009/05/19/git-learn-initial-
 gitk:
 GUI for git
 
+name:
+usually master is name for local Repository
+origin is name for remote Repository
+
 init git project:
 if there is a project dir "test" in local host
 (1) cd test
 (2) git init
 	now .git is created 
+	
+init git project on github:
+(1) create project url on github website
+    git@github.com:deeplovepan/test.git
+(2) mkdir test
+(3) cd test
+(4) git init
+(5) git remote add origin git@github.com:deeplovepan/test.git
+(6) git push origin master
 
 
 record file change:
@@ -48,9 +61,10 @@ tag:
 git tag v0.1 30df7
 30df7 is leading characters of commit
 
-show file status:
-git status
-git status test.c
+show files status:
+(1)git status
+   
+(2)git status test.c
 
 show difference:
 (1)git diff test.c
@@ -61,7 +75,7 @@ branch:
 (1)git branch branch1
    create branch branch1
 (2)switch branch
-    git checkout branch1
+    git checkout branch1	
 
 delete file:
 ex:
@@ -80,12 +94,13 @@ http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
 https://sites.google.com/site/aisorcerer/linux-1/gitroutinebusiness
 https://sites.google.com/site/aisorcerer/linux-1/setupthegitservice
 
-check out project
+get project from remote server
 ex:
 git clone http://github.com/jdg/oauthconsumer.git
 
 add file:
-git add -u
+(1)git add -u
+(2)git add *.c 
 
 git checkout:
 (1) git checkout filename 
