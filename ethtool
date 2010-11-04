@@ -5,3 +5,6 @@ command
 show info about eth0
 
 2. ethtool -s eth0 autoneg on
+
+3. ethtool -i eth0
+show driver info
