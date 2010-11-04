@@ -28,3 +28,8 @@ BOOTPROTO='dhcp'
 ONBOOT=yes
 STARTMODE=auto
  
+ 
+solaris:
+ex:
+ifconfig e1000g0 plumb
+ifconfig e1000g0 dhcp
