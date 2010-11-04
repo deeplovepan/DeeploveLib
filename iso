@@ -5,3 +5,6 @@ command
 read iso content from linux: 
 ex: 
 mount -o loop -t iso9660 SLES-11-DVD-x86_64-GM-DVD1.iso /mnt/iso 
+
+read iso content from mac:
+hdiutil mount sample.iso
