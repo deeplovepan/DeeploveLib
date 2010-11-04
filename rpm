@@ -6,6 +6,9 @@ ex:
 1. rpm -ivh test.rpm
 2. rpm -ivh  --force  test.rpm
 
+remove:
+rpm -e test
+
 srpm:
 suse:
 location:
