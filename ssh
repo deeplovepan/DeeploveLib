@@ -1,6 +1,10 @@
 ssh
 command
 
+linux:
 enable root login: 
 edit /etc/ssh/sshd_config 
 PermitRootLogin yes 
+
+solaris:
+/lib/svc/method/sshd restart
