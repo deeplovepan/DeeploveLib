@@ -1,0 +1,9 @@
+phoronix-test-suite
+command
+
+1. show test software list
+./phoronix-test-suite list-tests
+
+
+2. show info about specific software 
+./phoronix-test-suite info tiobench
