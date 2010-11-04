@@ -10,6 +10,7 @@ yum
 (3) yum upgrade kernel.i686
     yum install kernel-devel
 (4) yum groupinstall 'Development Tools'
+(5) yum whatprovides ld-linux.so.2
 
 solaris: 
 (1) System -> Administration -> Package Manager 
