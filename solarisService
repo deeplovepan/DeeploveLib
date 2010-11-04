@@ -1,0 +1,7 @@
+solaris service
+command
+
+1. start service
+ex:
+svcadm enable -r telnet
+-r will recursively enables its  dependencies
