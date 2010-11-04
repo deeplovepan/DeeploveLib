@@ -1,0 +1,7 @@
+space
+
+1. trim space at end of line
+python:
+ex:
+myStr = "hello  "
+myStr = myStr.strip()
