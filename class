@@ -6,3 +6,7 @@ C++:
 ex:
 dog extends animal
 -> animal::eat();
+
+2. access member
+java:
+this.myMember
