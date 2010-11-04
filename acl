@@ -1,0 +1,31 @@
+acl
+command
+
+show dir acl:
+ex:
+ls -dv andy
+->
+drwxr-xr-x+  4 root     root           4 Oct 29 18:54 andy/
+     0:user:deeplove:list_directory/read_data/execute:allow
+     1:owner@:list_directory/read_data/add_file/write_data/add_subdirectory
+         /append_data/read_xattr/write_xattr/execute/read_attributes
+         /write_attributes/read_acl/write_acl/write_owner/synchronize:allow
+     2:group@:list_directory/read_data/read_xattr/execute/read_attributes
+         /read_acl/synchronize:allow
+     3:everyone@:list_directory/read_data/read_xattr/execute/read_attributes
+         /read_acl/synchronize:allow
+		 
+ls -dV andy
+->
+drwxr-xr-x+  4 root     root           4 Oct 29 18:54 andy/
+          user:deeplove:r-x-----------:-------:allow
+                 owner@:rwxp--aARWcCos:-------:allow
+                 group@:r-x---a-R-c--s:-------:allow
+              everyone@:r-x---a-R-c--s:-------:allow
+
+
+chmod A+user:deeplove:rx:allow andy/
+
+
+
+
