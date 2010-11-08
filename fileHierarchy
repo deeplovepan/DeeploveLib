@@ -1,0 +1,20 @@
+file hierarchy
+compare
+
+python:
+ex:
+import os
+for root, dirs, files in os.walk("/var/root/Desktop/testDir"):
+        print "root " + str(root)
+        print "dirs " + str(dirs)
+        print "files " + str(files)
+->
+root /var/root/Desktop/testDir
+dirs ['abc1', 'abc2']
+files []
+root /var/root/Desktop/testDir/abc1
+dirs []
+files ['a.txt']
+root /var/root/Desktop/testDir/abc2
+dirs []
+files ['b.txt']
