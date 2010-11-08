@@ -61,4 +61,11 @@ if match:
 ->
 test_123
 
+pass variable into re.compile
+ex:
+a = "abc"
+matchPattern = re.compile('(%s)$' % a)
+
+
+
 
