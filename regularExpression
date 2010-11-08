@@ -49,3 +49,15 @@ if match:
 a
 bc
 
+sub:
+find all the matches for a pattern, and replace them with a different string
+ex:
+str = "test123"
+match = matchPattern.search(str)
+if match:
+        newStr = matchPattern.sub('_' + match.group(1) , str)
+        print newStr
+->
+test_123
+
+
