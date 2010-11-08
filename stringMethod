@@ -4,3 +4,11 @@ compare
 string compare:
 python:
 ==, >, <, !=
+
+split string:
+python:
+ex:
+str = "test.jpg"
+str.split('.')
+->
+['test', 'jpg']
