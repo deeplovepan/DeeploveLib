@@ -30,7 +30,8 @@ match 1 or more repetitions
 match 0 or more repetitions
 ?
 match 0 or 1 repetitions
-
+\
+escape character
 
 
 search():
