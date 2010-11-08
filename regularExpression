@@ -1,0 +1,51 @@
+regular expression
+compare
+
+
+
+python:
+
+special character:
+\d
+Matches any decimal digit; this is equivalent to the class [0-9].
+\D
+Matches any non-digit character; this is equivalent to the class [^0-9].
+\s
+Matches any whitespace character; this is equivalent to the class [ \t\n\r\f\v].
+\S
+Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v].
+\w
+Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_].
+\W
+Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
+$
+Matches the end of the string 
+^
+Matches the start of the string
+.
+matches any character except a newline
++
+match 1 or more repetitions
+*
+match 0 or more repetitions
+?
+match 0 or 1 repetitions
+
+
+
+search():
+Scan through a string, looking for any location where this RE matches.
+group:
+use () to group & use group function to get group element
+ex:
+import re
+matchPattern = re.compile('(a)(bc)$')
+str = "helloabc"
+match = matchPattern.search("helloabc")
+if match:
+	print match.group(1)
+	print match.group(2)
+->
+a
+bc
+
