@@ -4,6 +4,11 @@ solaris:
 path:
 /usr/lib/
 
+
+create so:
+gcc -fPIC -c source.c
+gcc -o library.so -shared source.o
+
 compile with so:
 ex:
 gcc test.c -L. -lnas_sysinfo
