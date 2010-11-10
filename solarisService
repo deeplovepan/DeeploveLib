@@ -5,3 +5,12 @@ command
 ex:
 svcadm enable -r telnet
 -r will recursively enables its  dependencies
+
+2. check service status
+(1) svcs
+    show all service
+(2) svcs | grep nfs
+    
+3. stop service
+ex:
+svcadm disable netatalk
