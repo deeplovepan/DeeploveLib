@@ -13,3 +13,9 @@ SampleServlet.java TestSampleServlet.java
 ex:
 java -cp DiskWatch.jar driveinfo.MainApp 172.18.8.104  output 30 5
 
+(3) java.library.path
+ex:
+java -Djava.library.path=. Test
+
+
+
