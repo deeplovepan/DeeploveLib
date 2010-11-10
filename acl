@@ -23,9 +23,11 @@ drwxr-xr-x+  4 root     root           4 Oct 29 18:54 andy/
                  group@:r-x---a-R-c--s:-------:allow
               everyone@:r-x---a-R-c--s:-------:allow
 
+set acl on dir for user:
+chmod A+user:peter:rx:deny /root/testAcl
 
-chmod A+user:deeplove:rx:allow andy/
-
+set acl on dir for group:
+chmod A+group:gn1:rx:allow /root/testAcl
 
 
 
