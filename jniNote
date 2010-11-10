@@ -1,0 +1,37 @@
+jni note
+jni
+
+load dynamic lib:
+ex:
+System.loadLibrary("foo");
+problem:
+if the function A in foo lib is not defined, 
+we can still load library 
+but we will fail when we call function B(call A in B) in foo lib,
+solution:
+when create so, add -l to link the lib defined the function
+ex:
+link sqlite3
+cc -Kpic -G -o libfoo.so -I/usr/java/include -I/usr/java/include/solaris -lsqlite3 foo.c -z text
+ex:
+libsqlite5.so is under /root/testLib
+cc -Kpic -G -o libfoo.so -I/usr/java/include -I/usr/java/include/solaris -L/root/testLib  -lsqlite5 foo.c -z text
+note: L must before l 
+
+
+solaris:
+ex:
+cc -Kpic -G -o libfoo.so -I/usr/java/include -I/usr/java/include/solaris foo.c -z text
+
+linux:
+ex:
+gcc -shared -fpic -o libfoo.so -I/usr/java/include -I/usr/java/include/linux foo.c
+ 
+
+mac os:
+gcc -dynamiclib -o libfoo.jnilib -I/System/Library/Frameworks/JavaVM.framework/Headers foo.c -framework JavaVM
+
+
+run:
+ex:
+java -Djava.library.path=<path_of_native_lib> JNIFoo 
