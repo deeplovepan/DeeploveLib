@@ -1,0 +1,15 @@
+account and group
+command
+
+solaris:
+ex:
+1. add user
+useradd deeplove
+2. add group
+groupadd gn1
+3. show user list
+dispuid
+4. show group list
+dispgid
+
+
