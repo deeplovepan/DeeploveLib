@@ -1,0 +1,14 @@
+zfs
+command
+
+1. create pool
+zfs create myPool c0t0d0
+c0t0d0 is disk name
+
+2. create volume
+zfs create -V 1gb myPool/myVol1
+myPool is pool name
+myVol1 is volume name
+
+3. list
+zfs list
