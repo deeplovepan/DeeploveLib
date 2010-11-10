@@ -1,0 +1,67 @@
+call python from c:
+python
+
+compile:
+gcc -I/usr/include/python2.6 -lpython2.6 test.c -o test.o
+
+reference: http://www.fnal.gov/docs/products/python/v1_5_2/ext/parseTuple.html
+		   http://www.cppblog.com/jacky2019/archive/2007/05/17/24276.html
+		   
+ex:
+python code:
+test.py
+import os
+import commands
+
+STATUS_OK = 0
+
+def testArg(a1, a2):
+	myList = []
+	for i in  range(0,3):
+		subList = []
+		subList.append("hello")
+		subList.append(3.3)
+		myList.append(tuple(subList))
+	return myList
+
+c code:
+testPython.c
+
+#include <Python.h>
+
+int main()
+{
+	Py_Initialize();
+	
+	PyRun_SimpleString("import sys");
+	char *checkPath = "if not '/root' in sys.path: sys.path.append('/root')";
+	PyRun_SimpleString(checkPath);
+
+
+
+ 	PyObject * pModule = NULL;
+ 	PyObject * pFunc   = NULL;
+ 	PyObject * pArg    = NULL;
+ 	pModule = PyImport_ImportModule("test");
+	pFunc   = PyObject_GetAttrString(pModule, "testArg");
+	pArg    = Py_BuildValue("(si)", "test", 3);
+ 	PyObject *retValue = PyEval_CallObject(pFunc, pArg);
+	int size = PyList_GET_SIZE(retValue);
+	int i;
+	printf("size %d\n", size);
+	char *str;
+	float num;
+
+	for(i=0;i<size;i++)
+	{
+		PyObject *tuple =  PyList_GetItem(retValue, i);
+		PyArg_ParseTuple(tuple, "sf", &str, &num);
+		printf("%s %f\n", str, num);
+	}
+	
+ 	Py_Finalize();
+
+ return 0;
+}
+
+
