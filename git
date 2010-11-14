@@ -131,4 +131,9 @@ edit .git/config
         remote = origin
         merge = refs/heads/master
  
+(3) commit your changes or stash them before you can merge
+solution:
+git reset --hard 
+this will remove changes on the local side
+
 
