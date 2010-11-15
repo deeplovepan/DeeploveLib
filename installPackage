@@ -12,6 +12,18 @@ yum
 (4) yum groupinstall 'Development Tools'
 (5) yum whatprovides ld-linux.so.2
 
+debian:
+(1) install
+ex:
+apt-get install gcc
+(2)update package info:
+apt-get update
+(3)search for package
+ex:
+apt-cache search gcc
+(4)edit package source :
+modify /etc/apt/sources.list
+
 solaris: 
 (1) System -> Administration -> Package Manager 
 ex: 
