@@ -211,6 +211,7 @@
 		61A7F6E51282B27500E88405 /* gconftool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gconftool; sourceTree = "<group>"; };
 		61A7F6F61283D8EF00E88405 /* zfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zfs; sourceTree = "<group>"; };
 		61C97220125091DD00F10817 /* rpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rpm; sourceTree = "<group>"; };
+		61CA671B128BB6FD009E972B /* sanwatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sanwatch; sourceTree = "<group>"; };
 		61CD0C2A1287EDC80015B8F8 /* regularExpression */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = regularExpression; sourceTree = "<group>"; };
 		61CD0C2B1287F7B20015B8F8 /* stringMethod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringMethod; sourceTree = "<group>"; };
 		61CD0C2C1287FAC20015B8F8 /* fileHierarchy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileHierarchy; sourceTree = "<group>"; };
@@ -614,6 +615,7 @@
 				618F1ED21263FB9800AC136B /* ioPerformance */,
 				61311F3F1270190100F30A47 /* diskWatch */,
 				619A97BB12755A60002468F5 /* NasProject */,
+				61CA671B128BB6FD009E972B /* sanwatch */,
 			);
 			name = infortrend;
 			sourceTree = "<group>";
