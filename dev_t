@@ -1,0 +1,15 @@
+dev_t
+
+
+1. get dev_t from inode
+dev_t r_dev = inode->i_rdev;
+
+2. get dev_t from struct block_device
+r_dev = bdev->i_rdev;
+
+3. get major, minor from struct gendisk
+disk->major
+disk->first_minor
+
+4. create dev_t from major, minor
+r_dev = MKDEV(majorNum, minorNum);
