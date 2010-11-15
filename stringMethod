@@ -12,3 +12,10 @@ str = "test.jpg"
 str.split('.')
 ->
 ['test', 'jpg']
+
+string replace:
+python:
+ex:
+test = "hello"
+test.replace("h", "a")
+-> aello
