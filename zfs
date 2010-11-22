@@ -1,14 +1,106 @@
 zfs
 command
 
-1. create pool
-zfs create myPool c0t0d0
+pool is consist of devices (usually disks)
+one or more ZFS filesystem exist in zfs pool
+
+1. show existing pools
+zpool list
+
+2. create pool
+ex:
+zpool create myPool c0t0d0
 c0t0d0 is disk name
+after creating, a new filesystem is mounted on /myPool 
+now we can create files under /myPool
 
-2. create volume
-zfs create -V 1gb myPool/myVol1
+3. delete pool
+ex:
+zpool destroy myPool
 myPool is pool name
-myVol1 is volume name
 
-3. list
+4. show pool status
+ex:
+zpool status myPool
+
+5. create mirrored pool
+ex:
+zpool create myPool mirror /home/ocean/disk1 /home/ocean/disk2
+
+6. check error
+zpool scrub myPool
+
+7. remove device from pool
+zpool detach myPool /home/ocean/disk1
+
+8. attach a device to pool
+ex:
+zpool attach myPool /home/ocean/disk2 /home/ocean/disk1
+
+9. add to mirror pool
+ex:
+zpool add myPool mirror /home/ocean/disk3 /home/ocean/disk4
+
+10. show io in pool
+ex:
+zpool iostat -v myPool
+
+11. show file system info in pool
 zfs list
+
+12. create volume
+ex:
+zfs create myPool/vv1
+ex:
+zfs create -V 1gb myPool/myVol1
+
+13. delete volume
+ex:
+zfs destroy myPool/vv1
+
+14. change vv mount point
+ex:
+zfs set mountpoint=/test myPool
+zfs list
+->
+myPool 142K   134G  27.5K  /test/myPool
+
+15. mount vv
+zfs mount myPool/vv1
+
+16. umount vv
+zfs unmount myPool/vv1
+
+17. show vv properties
+ex:
+zfs get all myPool/vv1
+
+18. set quota for vv
+the maximun size for vv
+ex:
+zfs set quota=10G myPool/vv1 
+
+19. get quota for vv
+ex:
+zfs get quota myPool/vv1
+ex:
+zfs get -rHp -oname,property,value quota myPool/vv1
+-r: recursize
+-H: omits header fields
+-p: report exact value
+-o: specify a list of fields you wish to get
+
+20. reservation
+minumm space for vv
+ex:
+zfs set reservation=1G myPool/vv1
+
+21. df -h 
+show filesystem info
+
+
+
+
+
+
+
