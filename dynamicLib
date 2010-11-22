@@ -1,4 +1,5 @@
 dynamic library
+compare
 
 solaris:
 path:
@@ -20,15 +21,7 @@ export LD_LIBRARY_PATH=/root/
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/smbsrv
 
 linux:
-static lib:
-gcc -Wall -c ctest1.c ctest2.c  
-ar -cvq libctest.a ctest1.o ctest2.o
- 
-gcc -o executable-name prog.c libctest.a
- 
-dynamic lib:
 http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
- 
  
 so:
 gcc -Wall -c -fPIC test.c test2.c
