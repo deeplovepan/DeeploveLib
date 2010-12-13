@@ -1,0 +1,16 @@
+static lib
+compare
+
+ex:
+create static lib:
+1. gcc -c hello.c world.c
+2. ar rcs libmylib.a hello.o world.o
+   
+use static lib:
+ex1:
+	gcc main.c test/libmylib.a
+
+ex2:
+	gcc main.c -Ltest -lmylib
+	
+	

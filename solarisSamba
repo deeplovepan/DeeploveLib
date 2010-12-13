@@ -1,0 +1,21 @@
+solaris samba
+command
+
+config file:
+/etc/sfw/smb.conf or
+/etc/samba/smb.conf
+
+
+check service status:
+svcs -a | grep samba
+
+enable service:
+svcadm enable samba	
+
+add user:
+pdbedit -a test
+(we must add user test by useradd first)
+
+recycle:
+same as linux
+

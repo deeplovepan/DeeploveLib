@@ -1,0 +1,76 @@
+afp
+compare
+
+qnap:
+/usr/local/etc/netatalk
+
+
+solaris:
+config file:
+/opt/netatalk/etc/netatalk/AppleVolumes.default
+
+start service:
+svcadm enable -r netatalk
+
+check service:
+svcs | grep  netatalk
+
+-----------------------------------------------------
+
+cent os
+
+1. download Oracle Berkeley DB
+ex:
+download db-5.1.19.NC
+
+2. cd db-5.1.19.NC/build_unix
+   ../dist/configure  && make -j 2 && make install
+
+3. download netatalk-2.1.4.tar
+
+4. ./configure --enable-redhat   --with-bdb=/usr/local/BerkeleyDB.5.1
+
+5. make 
+
+6. make install
+
+7. configure location:
+/usr/local/etc/netatalk
+
+7. chkconfig netatalk on
+
+8. service netatalk start
+
+9. share to guest
+ex:
+add /mnt/toy "mntDoy"
+in the AppleVolumes.default 
+
+
+----------------------------------------------------
+
+ubuntu afp server:
+1. install
+apt-get build-dep netatalk
+apt-get install cracklib2-dev fakeroot libssl-dev
+apt-get source netatalk
+cd netatalk-2*
+DEB_BUILD_OPTIONS=ssl dpkg-buildpackage -rfakeroot
+dpkg -i ~/netatalk_2*.deb
+echo "netatalk hold" | dpkg --set-selections
+
+2. edit /etc/default/netatalk
+ATALKD_RUN=no
+PAPD_RUN=no
+CNID_METAD_RUN=yes
+AFPD_RUN=yes
+TIMELORD_RUN=no
+A2BOOT_RUN=no
+
+3. edit /etc/netatalk/afpd.conf
+- -transall -uamlist uams_randnum.so,uams_dhx.so -nosavepassword -advertise_ssh -setuplog "logger log_maxdebug /var/log/netatalk-logger.log"
+add above in the last line
+
+
+
+

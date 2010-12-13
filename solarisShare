@@ -1,0 +1,44 @@
+solaris share
+command
+
+1. sharemgr list -v
+view the group’s properties
+
+2. sharemgr show -v
+view shares
+
+3. sharemgr show -vp
+view shares with properties
+->
+default nfs=()
+zfs
+build nfs=(anon="0,ro=@192.168.1.0/24")
+          /bits/provisioning    "Build infrastructure"
+ 
+ 
+4. add share group
+ex:
+sharemgr create homegroup
+sharemgr show -vp
+->
+group1 nfs=() smb=()
+ex:
+sharemgr create -P nfs build
+create group build 
+sharemgr list -v
+->
+default enabled nfs
+zfs enabled
+build enabled nfs
+
+5. add share dir to share group
+sharemgr add-share -s /bits/provisioning -d “Build infrastructure” build
+sharemgr show -v
+->
+default
+zfs
+build
+          /bits/provisioning    "Build infrastructure"
+		  
+6. set properties for share group
+sharemgr set -P nfs -p anon=0,ro=@192.168.1.0/24 build

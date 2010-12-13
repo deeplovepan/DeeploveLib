@@ -1,6 +1,10 @@
 install package 
 compare 
 
+solaris:
+show package info:
+ex:
+pkginfo -l  test
 
 cent os, fedora 
 yum 
@@ -23,6 +27,15 @@ ex:
 apt-cache search gcc
 (4)edit package source :
 modify /etc/apt/sources.list
+ex:
+deb http://ftp.tw.debian.org/debian/ etch main contrib non-free 
+deb-src http://ftp.tw.debian.org/debian/ etch main contrib non-free 
+deb http://security.debian.org/ etch/updates main contrib non-free 
+deb-src http://security.debian.org/ etch/updates main contrib non-free
+
+(5)remove 
+ex:
+dpkg --remove netatalk
 
 solaris: 
 (1) System -> Administration -> Package Manager 

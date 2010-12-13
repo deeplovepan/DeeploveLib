@@ -1,0 +1,27 @@
+dom
+html and css
+
+Document Object Model
+
+id:
+an element's id uniquely identifies element on the page
+ex:
+<div id="test">hello</div>
+
+specify id attribute in css:
+use #:
+ex:
+#test { color: red }
+
+class:
+multiple elements can share the same class name
+ex:
+<p class="myClass">hi</p>
+
+specify class attribute in css:
+use .:
+ex:
+.myClass { color: red }
+
+
+

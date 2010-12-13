@@ -23,7 +23,7 @@ ex:
 reconnecting     \\172.18.8.96\IPC$  
 OK               \\192.168.5.34\IPC$
 (2)delete all connection
-net ues * /delete
+net use * /delete
 
 
 

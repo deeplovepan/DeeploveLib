@@ -1,0 +1,49 @@
+nfs
+compare
+
+1. the file defines exported directory
+linux: /etc/exports
+solaris: /etc/dfs/dfstab
+
+2. script to run after modify exprt setting
+linux: /usr/sbin/exportfs -a
+solaris: shareall
+
+3. NFS uses a single access control database that tells which filesystems should be 
+exported and which clients may mount them. The operative copy of this database 
+is usually kept in a file called xtab (sharetab on Solaris and HP-UX) 
+
+
+linux:
+1. setting file:
+/etc/exports
+ex:
+/root/s0  192.168.1.0/24(rw)  *(ro)
+share /root/s0 to 192.168.1.0/24(rw)
+other domain only have read permission
+
+2. set s0 permission
+chmod 777 /root/s0
+
+3. start nfs service
+/etc/init.d/nfs start
+
+4. connect to nfs server
+ex:
+mount -o rw 172.18.8.60:/Pool1/nfsTest test
+
+
+
+connect to linux nfs server from windows:
+windows 2003:
+1. install Microsoft Windows Services for UNIX 3.5
+2. cd \SFU\common
+   mount linux_ip:/path drive_id: (如: mount 192.168.0.1:/abc e:)
+   
+   
+solaris nfs:
+1. /etc/dfs/dfstab
+contain exprted directories and their attirbutes
+
+
+   

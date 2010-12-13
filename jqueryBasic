@@ -1,0 +1,76 @@
+jquery basic
+jquery
+
+$ is alias for jQuery function
+
+select element:
+ex:
+$('tr')
+ex:
+$('div.fancy p span')
+select all span elements inside of p elements, which are themselves inside div elements—but
+only if those divs happen to have a class of fancy
+
+get lenght of select element:
+ex:
+$('tr').lengh
+
+filter element:
+ex:
+$('tr':even)
+get even-indexed element
+
+select multiple elements:
+ex:
+$('tr, p')
+select tr elements and p elements
+
+get css property:
+ex:
+var fontSize = $('tr:first').css('font-size');
+note:
+if we select multiple element, css read will only get first element
+
+set css property:
+ex:
+$('tr:first').css('background-color', '#dddddd');
+ex:
+$('tr:first').css( {' background-color' : ' #dddddd' , ' color' : ' #666666' } );
+
+add class to element:
+ex:
+$('tr').addClass('className1')
+ex:
+$('tr').addClass('className1, className2')
+
+remove class from element:
+$('tr').removeClass('className1')
+
+hide element:
+ex:
+$('#hideButton').click(function() { 
+    $('#disclaimer').hide(); 
+}) ; 
+ex:
+$('#hideButton').click( function() {
+    $(this).hide(); 
+} ) ; 
+note: this is the element that fired the event
+
+
+
+document ready event:
+ex:
+$(document).ready(function() {
+ alert(' Welcome to StarTrackr! Now no longer under police …' ) ; 
+}) ; 
+the selector: document
+the action: ready
+the parameters: the function 
+when document is ready, the function will be called
+
+shortcut for document ready:
+$(function() {
+	alert(' Welcome to StarTrackr! Now no longer under police …' ) ; 
+});
+

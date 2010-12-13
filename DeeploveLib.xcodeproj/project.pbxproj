@@ -13,11 +13,13 @@
 		61321AC61240AC8600BF9AE5 /* linuxHelloDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 61321AC51240AC8600BF9AE5 /* linuxHelloDriver.c */; };
 		6132C50C121E13DA0016372F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 6132C50B121E13DA0016372F /* debug.c */; };
 		613BF0321252D23E002D090B /* miscDriverClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 613BF0311252D23E002D090B /* miscDriverClient.c */; };
+		617CE34612AE2BE700D5E6D3 /* jqueryEx.js in Sources */ = {isa = PBXBuildFile; fileRef = 617CE34512AE2BE700D5E6D3 /* jqueryEx.js */; };
 		617F49EB125B124E00BA909B /* MyDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 617F49EA125B124E00BA909B /* MyDriver.cpp */; };
 		6195227A128A4B8A006B81ED /* JNIFoo.java in Sources */ = {isa = PBXBuildFile; fileRef = 61952279128A4B8A006B81ED /* JNIFoo.java */; };
 		6195227C128A4B9E006B81ED /* foo.c in Sources */ = {isa = PBXBuildFile; fileRef = 6195227B128A4B9E006B81ED /* foo.c */; };
 		61956341123F5A5B002D4400 /* createBlockDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 61956340123F5A5B002D4400 /* createBlockDevice.c */; };
 		619563D4123F8B53002D4400 /* testWorkQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 619563D3123F8B53002D4400 /* testWorkQueue.c */; };
+		61DFD14A129E693100553ED1 /* scsiDeviceTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 61DFD149129E693100553ED1 /* scsiDeviceTest.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* DeeploveLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,7 @@
 		61285074121029C800696385 /* redirectOutputFromSerialPort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redirectOutputFromSerialPort; sourceTree = "<group>"; };
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
+		61287AB412AF6E31002720A3 /* publicAccount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = publicAccount; sourceTree = "<group>"; };
 		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
 		612C7F851234949D00B9563B /* ioctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioctl; sourceTree = "<group>"; };
 		612C7F93123499CB00B9563B /* lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lock; sourceTree = "<group>"; };
@@ -146,11 +149,15 @@
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
 		6147CEB2127ACB7A00633000 /* accountAndGroup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accountAndGroup; sourceTree = "<group>"; };
 		6147CEB3127ACB9A00633000 /* acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acl; sourceTree = "<group>"; };
+		614A515412B5CCAF0048A3BE /* grub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grub; sourceTree = "<group>"; };
+		614A516712B608960048A3BE /* sambaPerformance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sambaPerformance; sourceTree = "<group>"; };
 		614D2FD51239FEEB001A2FCF /* grep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grep; sourceTree = "<group>"; };
 		614D2FF0123A0F2B001A2FCF /* dmStudy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dmStudy; sourceTree = "<group>"; };
 		614D3021123A244B001A2FCF /* initrd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initrd; sourceTree = "<group>"; };
 		6151D09B122DF5A900CF1934 /* redHat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = redHat; sourceTree = "<group>"; };
 		6151D09C122E23A700CF1934 /* kdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kdump; sourceTree = "<group>"; };
+		6151FE631294D87000F57401 /* staticLib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = staticLib; sourceTree = "<group>"; };
+		6151FE8F12951EAB00F57401 /* djangoBasic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = djangoBasic; sourceTree = "<group>"; };
 		6155F6DF1241ACD100B8ECDA /* centOs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = centOs; sourceTree = "<group>"; };
 		6155F72A124238DA00B8ECDA /* linuxDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverIoFlow; sourceTree = "<group>"; };
 		6156D8B7125EC933000CA3F2 /* linuxIoScheduler */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIoScheduler; sourceTree = "<group>"; };
@@ -158,6 +165,16 @@
 		6156D8D6125EF24F000CA3F2 /* pythonGoogleChart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pythonGoogleChart.py; sourceTree = "<group>"; };
 		6156D8D9125EFAE5000CA3F2 /* rgb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgb; sourceTree = "<group>"; };
 		615EF25F128102CB001E0296 /* linuxKernelVersion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelVersion; sourceTree = "<group>"; };
+		617418C312A4EDF90020B9FD /* smp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smp; sourceTree = "<group>"; };
+		617C218F129A05EE000F8651 /* iftNasNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftNasNfs; sourceTree = "<group>"; };
+		617C21AF129A10FE000F8651 /* solarisDisk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisDisk; sourceTree = "<group>"; };
+		617C22A8129A3BA5000F8651 /* cMacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cMacro; sourceTree = "<group>"; };
+		617C22A9129A3C37000F8651 /* array */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = array; sourceTree = "<group>"; };
+		617C22AD129A4325000F8651 /* nfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nfs; sourceTree = "<group>"; };
+		617C2312129A728D000F8651 /* solarisShare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisShare; sourceTree = "<group>"; };
+		617CE31212ADCE7D00D5E6D3 /* solarisSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisSamba; sourceTree = "<group>"; };
+		617CE34512AE2BE700D5E6D3 /* jqueryEx.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jqueryEx.js; sourceTree = "<group>"; };
+		617CE34712AE2CA500D5E6D3 /* uiEx.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = uiEx.html; sourceTree = "<group>"; };
 		617F4941125ACB2900BA909B /* commandLineParameter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = commandLineParameter; sourceTree = "<group>"; };
 		617F49DB125B11C700BA909B /* macDriverLife */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverLife; sourceTree = "<group>"; };
 		617F49E9125B124E00BA909B /* MyDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDriver.h; sourceTree = "<group>"; };
@@ -166,7 +183,6 @@
 		617F49EF125B130400BA909B /* MyDriverNote */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyDriverNote; sourceTree = "<group>"; };
 		61860B3E124736FE00ACF73B /* cli */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cli; sourceTree = "<group>"; };
 		61860B7A1247574600ACF73B /* firewall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firewall; sourceTree = "<group>"; };
-		61867AE41262AAED00CBED25 /* linuxNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxNfs; sourceTree = "<group>"; };
 		61867AEA1262D93500CBED25 /* windowsCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = windowsCommand; sourceTree = "<group>"; };
 		61867AF71262F21500CBED25 /* linuxSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxSamba; sourceTree = "<group>"; };
 		6188430612596E42000FE3F6 /* dev_null */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dev_null; sourceTree = "<group>"; };
@@ -176,6 +192,8 @@
 		618843B012598635000FE3F6 /* macDriverPlist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverPlist; sourceTree = "<group>"; };
 		618843C51259A2BD000FE3F6 /* macDriverCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverCommand; sourceTree = "<group>"; };
 		618844021259AC08000FE3F6 /* class */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = class; sourceTree = "<group>"; };
+		6188DEEC129264DD00623883 /* cgi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cgi; sourceTree = "<group>"; };
+		6189818912B214A50034B006 /* writeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = writeLog; sourceTree = "<group>"; };
 		618F1EC91263F3AB00AC136B /* selinux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selinux; sourceTree = "<group>"; };
 		618F1ED11263FA8200AC136B /* windowsSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = windowsSamba; sourceTree = "<group>"; };
 		618F1ED21263FB9800AC136B /* ioPerformance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioPerformance; sourceTree = "<group>"; };
@@ -215,11 +233,17 @@
 		61CD0C2A1287EDC80015B8F8 /* regularExpression */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = regularExpression; sourceTree = "<group>"; };
 		61CD0C2B1287F7B20015B8F8 /* stringMethod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringMethod; sourceTree = "<group>"; };
 		61CD0C2C1287FAC20015B8F8 /* fileHierarchy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileHierarchy; sourceTree = "<group>"; };
+		61D43030129B56910061CA4B /* afp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = afp; sourceTree = "<group>"; };
+		61D43044129B70C20061CA4B /* screenShot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = screenShot; sourceTree = "<group>"; };
 		61D8FC05125C0D1200461D44 /* ioreg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioreg; sourceTree = "<group>"; };
+		61DFD0D3129E0A6E00553ED1 /* jqueryBasic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jqueryBasic; sourceTree = "<group>"; };
+		61DFD0D5129E0F2900553ED1 /* dom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dom; sourceTree = "<group>"; };
+		61DFD149129E693100553ED1 /* scsiDeviceTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scsiDeviceTest.c; sourceTree = "<group>"; };
 		61E498F4121A65DF002A606C /* iozone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iozone; sourceTree = "<group>"; };
 		61E498F5121A7A58002A606C /* shareMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shareMemory; sourceTree = "<group>"; };
 		61E498F7121A7ACA002A606C /* vss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vss; sourceTree = "<group>"; };
 		61E49948121A8A6D002A606C /* linuxBoot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxBoot; sourceTree = "<group>"; };
+		61E8807512964B4C00960437 /* linuxInterrupt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxInterrupt; sourceTree = "<group>"; };
 		61F74A3B127FAF5A00F08E5D /* typeConvert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typeConvert; sourceTree = "<group>"; };
 		61F74A41127FB01200F08E5D /* space */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = space; sourceTree = "<group>"; };
 		61FAFD60123732B600B0BEC7 /* html5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = html5; sourceTree = "<group>"; };
@@ -297,12 +321,16 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				61DFD0D2129E0A6000553ED1 /* jquery */,
+				617C22A7129A3B69000F8651 /* cAndCPlus */,
+				6151FE8E12951E9D00F57401 /* django */,
+				6188DEEB129264D200623883 /* cgi */,
 				6156D8D8125EFADA000CA3F2 /* art */,
 				6156D8CB125EEDE1000CA3F2 /* googleApi */,
 				612ECC9C12546C4B00C96173 /* python */,
 				613BF0F71253277C002D090B /* doxygen */,
 				611D3E95125045D40053B7CA /* xCode */,
-				61FAFD5F123732A800B0BEC7 /* html */,
+				61FAFD5F123732A800B0BEC7 /* htmlCss */,
 				6141E3B7122211340013D895 /* infortrend */,
 				613A6E20121D37C700805A1C /* macDriver */,
 				61E498F6121A7AC2002A606C /* other */,
@@ -318,6 +346,7 @@
 				612850351210043100696385 /* compare */,
 				61285023120FFFF300696385 /* linuxDriver */,
 				6128500E120FF5DB00696385 /* command */,
+				61287AB412AF6E31002720A3 /* publicAccount */,
 			);
 			name = note;
 			sourceTree = "<group>";
@@ -365,7 +394,6 @@
 				61C97220125091DD00F10817 /* rpm */,
 				6188430612596E42000FE3F6 /* dev_null */,
 				6188432B1259756B000FE3F6 /* md5sum */,
-				61867AE41262AAED00CBED25 /* linuxNfs */,
 				61867AEA1262D93500CBED25 /* windowsCommand */,
 				61867AF71262F21500CBED25 /* linuxSamba */,
 				618F1EC91263F3AB00AC136B /* selinux */,
@@ -378,11 +406,14 @@
 				619F25481266E95900376237 /* ethtool */,
 				619A980412756042002468F5 /* solarisService */,
 				619A994C1276B781002468F5 /* solarisPackage */,
-				619A99D31277BBE5002468F5 /* dynamicLib */,
 				6147CEB2127ACB7A00633000 /* accountAndGroup */,
 				6147CEB3127ACB9A00633000 /* acl */,
 				61A7F6E51282B27500E88405 /* gconftool */,
 				61A7F6F61283D8EF00E88405 /* zfs */,
+				617C21AF129A10FE000F8651 /* solarisDisk */,
+				617C2312129A728D000F8651 /* solarisShare */,
+				617CE31212ADCE7D00D5E6D3 /* solarisSamba */,
+				614A515412B5CCAF0048A3BE /* grub */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -411,6 +442,8 @@
 				619F25151265B4DB00376237 /* qla2xxx */,
 				61311F1A126FE5CE00F30A47 /* dev_t */,
 				615EF25F128102CB001E0296 /* linuxKernelVersion */,
+				61E8807512964B4C00960437 /* linuxInterrupt */,
+				617418C312A4EDF90020B9FD /* smp */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -418,6 +451,8 @@
 		612850351210043100696385 /* compare */ = {
 			isa = PBXGroup;
 			children = (
+				619A99D31277BBE5002468F5 /* dynamicLib */,
+				6151FE631294D87000F57401 /* staticLib */,
 				612850361210045900696385 /* memoryManagement */,
 				614334201210E74400C319F9 /* ifElse */,
 				614334211210E77F00C319F9 /* installPackage */,
@@ -452,6 +487,11 @@
 				61CD0C2A1287EDC80015B8F8 /* regularExpression */,
 				61CD0C2B1287F7B20015B8F8 /* stringMethod */,
 				61CD0C2C1287FAC20015B8F8 /* fileHierarchy */,
+				617C22A9129A3C37000F8651 /* array */,
+				617C22AD129A4325000F8651 /* nfs */,
+				61D43030129B56910061CA4B /* afp */,
+				61D43044129B70C20061CA4B /* screenShot */,
+				6189818912B214A50034B006 /* writeLog */,
 			);
 			name = compare;
 			sourceTree = "<group>";
@@ -616,6 +656,8 @@
 				61311F3F1270190100F30A47 /* diskWatch */,
 				619A97BB12755A60002468F5 /* NasProject */,
 				61CA671B128BB6FD009E972B /* sanwatch */,
+				617C218F129A05EE000F8651 /* iftNasNfs */,
+				614A516712B608960048A3BE /* sambaPerformance */,
 			);
 			name = infortrend;
 			sourceTree = "<group>";
@@ -665,6 +707,14 @@
 			name = java;
 			sourceTree = "<group>";
 		};
+		6151FE8E12951E9D00F57401 /* django */ = {
+			isa = PBXGroup;
+			children = (
+				6151FE8F12951EAB00F57401 /* djangoBasic */,
+			);
+			name = django;
+			sourceTree = "<group>";
+		};
 		6154CA151213CEBE00C37E8A /* python */ = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +747,14 @@
 			name = art;
 			sourceTree = "<group>";
 		};
+		617C22A7129A3B69000F8651 /* cAndCPlus */ = {
+			isa = PBXGroup;
+			children = (
+				617C22A8129A3BA5000F8651 /* cMacro */,
+			);
+			name = cAndCPlus;
+			sourceTree = "<group>";
+		};
 		617F49E7125B122800BA909B /* macDriver */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +774,14 @@
 			name = BasicDriverEx;
 			sourceTree = "<group>";
 		};
+		6188DEEB129264D200623883 /* cgi */ = {
+			isa = PBXGroup;
+			children = (
+				6188DEEC129264DD00623883 /* cgi */,
+			);
+			name = cgi;
+			sourceTree = "<group>";
+		};
 		61952277128A4B5D006B81ED /* jni */ = {
 			isa = PBXGroup;
 			children = (
@@ -729,6 +795,7 @@
 		6195633E123F5A3E002D4400 /* linuxDriver */ = {
 			isa = PBXGroup;
 			children = (
+				61DFD148129E692000553ED1 /* scsiDeviceTest */,
 				611D3E90125041D40053B7CA /* miscDriver */,
 				61321AC41240AC6D00BF9AE5 /* helloDriver */,
 				61321AC11240AC0900BF9AE5 /* memoryManagement */,
@@ -756,6 +823,23 @@
 			name = workQueue;
 			sourceTree = "<group>";
 		};
+		61DFD0D2129E0A6000553ED1 /* jquery */ = {
+			isa = PBXGroup;
+			children = (
+				61DFD0D3129E0A6E00553ED1 /* jqueryBasic */,
+				617CE34512AE2BE700D5E6D3 /* jqueryEx.js */,
+			);
+			name = jquery;
+			sourceTree = "<group>";
+		};
+		61DFD148129E692000553ED1 /* scsiDeviceTest */ = {
+			isa = PBXGroup;
+			children = (
+				61DFD149129E693100553ED1 /* scsiDeviceTest.c */,
+			);
+			name = scsiDeviceTest;
+			sourceTree = "<group>";
+		};
 		61E498F6121A7AC2002A606C /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -765,13 +849,15 @@
 			name = other;
 			sourceTree = "<group>";
 		};
-		61FAFD5F123732A800B0BEC7 /* html */ = {
+		61FAFD5F123732A800B0BEC7 /* htmlCss */ = {
 			isa = PBXGroup;
 			children = (
 				61FAFD60123732B600B0BEC7 /* html5 */,
 				61FAFD6612373C7300B0BEC7 /* htmlClassAndId */,
+				61DFD0D5129E0F2900553ED1 /* dom */,
+				617CE34712AE2CA500D5E6D3 /* uiEx.html */,
 			);
-			name = html;
+			name = htmlCss;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
@@ -837,6 +923,8 @@
 				617F49EB125B124E00BA909B /* MyDriver.cpp in Sources */,
 				6195227A128A4B8A006B81ED /* JNIFoo.java in Sources */,
 				6195227C128A4B9E006B81ED /* foo.c in Sources */,
+				61DFD14A129E693100553ED1 /* scsiDeviceTest.c in Sources */,
+				617CE34612AE2BE700D5E6D3 /* jqueryEx.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

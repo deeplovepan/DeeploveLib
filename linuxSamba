@@ -24,3 +24,16 @@ pdbedit -a test
 
 4. start server
 /etc/init.d/smb start
+
+
+support recycle function:
+ex:
+in the sharing folder section
+add following line:
+vfs objects = extd_audit recycle
+recycle: keeptree = yes
+recycle: repository = ../recycle/%u
+
+show samba info:
+testparm
+

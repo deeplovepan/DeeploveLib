@@ -12,4 +12,7 @@ dispuid
 4. show group list
 dispgid
 
-
+linux:
+set password 
+ex:
+passwd deeplove

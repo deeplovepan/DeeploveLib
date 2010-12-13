@@ -1,0 +1,10 @@
+django basic
+django
+
+install:
+cd Django-1.2.3
+python setup.py install
+
+create project:
+ex:
+django-admin.py startproject firstProject
