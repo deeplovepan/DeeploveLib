@@ -61,6 +61,16 @@ tag:
 git tag v0.1 30df7
 30df7 is leading characters of commit
 
+git tag
+show all tags
+
+git tag v0.2
+add tag for current time
+
+git push --tags
+add tags to server
+
+
 show files status:
 (1)git status
    
@@ -131,4 +141,9 @@ edit .git/config
         remote = origin
         merge = refs/heads/master
  
+(3) commit your changes or stash them before you can merge
+solution:
+git reset --hard 
+this will remove changes on the local side
+
 
