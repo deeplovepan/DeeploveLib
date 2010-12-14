@@ -1,4 +1,5 @@
 jquery ex 
+code
 jquery
 
 // ex1: show 

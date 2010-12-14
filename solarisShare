@@ -2,11 +2,12 @@ solaris share
 command
 
 1. sharemgr list -v
-view the group’s properties
+view the group's properties
 
 2. sharemgr show -v
 view shares
 
+ 
 3. sharemgr show -vp
 view shares with properties
 ->
@@ -14,7 +15,6 @@ default nfs=()
 zfs
 build nfs=(anon="0,ro=@192.168.1.0/24")
           /bits/provisioning    "Build infrastructure"
- 
  
 4. add share group
 ex:
@@ -32,7 +32,7 @@ zfs enabled
 build enabled nfs
 
 5. add share dir to share group
-sharemgr add-share -s /bits/provisioning -d “Build infrastructure” build
+sharemgr add-share -s /bits/provisioning -d "Build infrastructure" build
 sharemgr show -v
 ->
 default

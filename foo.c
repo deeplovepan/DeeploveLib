@@ -1,5 +1,6 @@
-jni
+foo.c
 code
+jni
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -38,7 +38,7 @@ connect to linux nfs server from windows:
 windows 2003:
 1. install Microsoft Windows Services for UNIX 3.5
 2. cd \SFU\common
-   mount linux_ip:/path drive_id: (如: mount 192.168.0.1:/abc e:)
+   mount linux_ip:/path drive_id: (ex: mount 192.168.0.1:/abc e:)
    
    
 solaris nfs:

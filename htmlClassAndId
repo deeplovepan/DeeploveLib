@@ -2,11 +2,11 @@ html class and id
 html and css
 
 ex:
-<div id=”sidebar”>
+<div id="sidebar">
 <h2>Menu</h2>
 </div>
 
-<div class=”post”>
+<div class="post">
 <h2>Yesterday</h1>
 </div>
 

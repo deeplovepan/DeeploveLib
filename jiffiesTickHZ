@@ -3,9 +3,9 @@ linux driver
 
 
 HZ: 
-定義每一秒有幾次timer interrupts 
+timer interrupts /sec
 ex: 
-HZ為1000，代表每秒有1000次timer interrupts 
+HZ = 1000 -> 1000 timer interrupts / sec
 check HZ value: 
 ex: 
 cd /usr/src/kernels/2.6.18-194.el5-xen-i686 
@@ -13,11 +13,10 @@ make menuconfig
 Processor type and features ---> Timer frequency (250 HZ) 
 
 tick: 
-HZ的倒數 
+1/ HZ
 
 jiffies: 
-系統自開幾以來，已經過多少的tick 
-每發生一次timer interrupt，Jiffies變數會被加1 
+tick count after boot
 
 
 calcuate time difference: 

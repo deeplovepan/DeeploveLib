@@ -49,8 +49,8 @@ IOProviderClass:
  indicates the class of the provider objects that your driver can match on
 
 IOMatchCategory:
- allows other drivers to match on the same device as your driver, 
- as long as the drivers’ values for this property differ
+ allows other drivers to match on the same device as your driver,
+ as long as the drivers values for this property differ
 
 
 

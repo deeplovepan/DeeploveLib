@@ -1,5 +1,6 @@
-jni
+JNIFoo.java
 code
+jni
 
 public class JNIFoo {    
     public native String nativeFoo();    

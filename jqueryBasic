@@ -8,7 +8,7 @@ ex:
 $('tr')
 ex:
 $('div.fancy p span')
-select all span elements inside of p elements, which are themselves inside div elements—but
+select all span elements inside of p elements, which are themselves inside div elements but
 only if those divs happen to have a class of fancy
 
 get lenght of select element:
@@ -30,6 +30,7 @@ ex:
 var fontSize = $('tr:first').css('font-size');
 note:
 if we select multiple element, css read will only get first element
+
 
 set css property:
 ex:
@@ -58,11 +59,10 @@ $('#hideButton').click( function() {
 note: this is the element that fired the event
 
 
-
 document ready event:
 ex:
 $(document).ready(function() {
- alert(' Welcome to StarTrackr! Now no longer under police …' ) ; 
+ alert('Welcome to StarTrackr! Now no longer under police') ; 
 }) ; 
 the selector: document
 the action: ready
@@ -71,6 +71,5 @@ when document is ready, the function will be called
 
 shortcut for document ready:
 $(function() {
-	alert(' Welcome to StarTrackr! Now no longer under police …' ) ; 
+	alert('Welcome to StarTrackr! Now no longer under police' ) ; 
 });
-

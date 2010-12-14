@@ -9,4 +9,4 @@ Test is domain name
 Andy.Pan is user name
 
 
-mget *.*         下傳遠端目錄之所有檔案 
+mget *.*      download all file of remote dir

@@ -7,7 +7,7 @@ command
 2=random-read/write
 
 -R:
- 產生excel格式的輸出
+ output excel format
 
 -l:
 lower limit on number of processes to run

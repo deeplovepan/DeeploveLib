@@ -4,4 +4,4 @@ compare
 python 
 print big5 string: 
 ex: 
-print "一二三".decode("big5") 
+print "test".decode("big5").encode("utf8") 

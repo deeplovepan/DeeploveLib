@@ -1,3 +1,7 @@
+createBlockDevice.c
+code
+linux driver create block device
+
 #include <linux/module.h>
 #include "myBlockDeviceLib.h"
 #include "myDevice.h"

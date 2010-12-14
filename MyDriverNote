@@ -1,5 +1,6 @@
-basic mac driver
+MyDriverNote(basic mac driver)
 code
+basic mac driver
 
 after load driver, MyDriver is under IOResources
 

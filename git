@@ -114,10 +114,8 @@ add file:
 
 git checkout:
 (1) git checkout filename 
-    還原檔案到 Repository 狀態
 (2) git checkout HEAD . 
-    將所有檔案都 checkout 出來(最後一次 commit 的版本), 注意, 若有修改的檔案都會被還原到上一版.
-	(git checkout -f 亦可)
+	(= git checkout -f)
 
 git gui on mac os x:
 GitX

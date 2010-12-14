@@ -4,7 +4,7 @@ io port
 
 
 South Bridge chip: 
-intel ICH5R ( Intel® 82801EB I/O Controller Hub 5 (ICH5) / Intel® 82801ER I/O Controller Hub 5 R (ICH5R) ) 
+intel ICH5R ( Intel 82801EB I/O Controller Hub 5 (ICH5) / Intel 82801ER I/O Controller Hub 5 R (ICH5R) ) 
 
 
 super io chip: 
@@ -18,7 +18,9 @@ To read and write configuration regsiter, we need to enter configure mode
 For normal register, we can directly access 
 
 why 0x2e: 
-(Table 131. Fixed I/O Ranges Decoded by Intel® ICH5, 2E–2F, LPC SIO, LPC SIO, p270) 
+(Table 131 Fixed I/O Ranges Decoded by Intel ICH5, 2E-2F, LPC SIO, LPC SIO, p270)
+
+
 
 ex: 
 (1) Winbond W83627HF/F 
@@ -32,6 +34,7 @@ get device id ( CR20, Bit 7 -0 = 0x52, p74)
 3. outb(0x07, 0x2e); outb(0x0b, 0x2f); 
 select Logical Device B (Hardware Monitor) (CR07, Logical Device Number, p74) 
 (4.12 Logical Device B p97) 
+
 
 4. outb(0x60, 0x2e); int base1 = inb(0x2f); 
 outb(0x61, 0x2e); int base2 = inb(0x2f); 
@@ -50,11 +53,14 @@ isadump 0x2e 0x2f ( check value at address 0x60, 0x61 for hardware monotor base 
 note: winband chip has one problem 
 It will leave configuration mode after many read 
 
+
 After getting Hardware Monitor base address, we can access register and ram of HARDWARE MONITOR 
 ( 2.7 REGISTERS AND RAM) 
 If Hardware Monitor base address is 0xc00, to access register and ram of HARDWARE MONITOR, 
 use address register 0xc05( 0xc00 + 5) and data register 0xc06( 0xc00 + 6) to access 
 ( 2.7 REGISTERS AND RAM, Address Register (Port x5h), p38) 
+
+
 
 5. outb(0x4e, 0xc05); outb(0x81, 0xc06); 
 set bank 1 (Register 50h ~ 5Fh Bank Select Register - Index 4Eh, 
@@ -74,7 +80,7 @@ Temperature Sensor 2 Over-temperature (Low Byte) Register - Index 56h (Bank 1), 
 
 8. isadump 0xc05 0xc06 (check value at address 0x41) 
 check if High limit of VTIN2 has been exceeded from temperature sensor 2. 
-(Interrupt Status Register 1ï£§ Index 41h, 
+(Interrupt Status Register Index 41h, 
 Bit 5: A one indicates a High limit of VTIN2 has been exceeded from temperature sensor 2, p42) 
 
 (2) IT8718F 
@@ -104,3 +110,4 @@ After getting Environment Controller Base Address, we can access Environment Con
 If Environment Controller base address is 0x290, to access register, 
 use address register 0x295( 0x290 + 5) and data register 0x296( 0x290 + 6) to access 
 ( 9.6.2.1 Address Port (Base+05h), p77) 
+

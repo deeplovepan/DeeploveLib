@@ -4,7 +4,7 @@ command
 1. install
    yum install samba
 
-2. edit /etc/samba/smb.conf：
+2. edit /etc/samba/smb.conf
 ex:
 [s0]
         comment = s0 dir
