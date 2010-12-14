@@ -1,0 +1,8 @@
+pdbedit
+command
+
+1. pdbedit -L 
+show user list for samba
+
+2. pdbedit -Lv
+show detail user list for samba
