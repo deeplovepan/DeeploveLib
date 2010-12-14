@@ -1,4 +1,5 @@
 type convert
+compare
 
 python:
 char to int

@@ -1,3 +1,6 @@
+jquery ex 
+jquery
+
 // ex1: show 
 $('#showButton').click( function() { 
 	$(' #disclaimer').show( ) ; 

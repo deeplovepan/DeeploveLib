@@ -76,7 +76,6 @@
 		612ECC8A12543A0E00C96173 /* mysql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mysql; sourceTree = "<group>"; };
 		612ECC8B12543B6C00C96173 /* MEACCEI.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MEACCEI.TXT; sourceTree = "<group>"; };
 		612ECC9A12545F6300C96173 /* webTest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = webTest.py; sourceTree = "<group>"; };
-		612ECC9D12546C5700C96173 /* jsonPython */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsonPython; sourceTree = "<group>"; };
 		612ECCAA125472FD00C96173 /* deeploveLib.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = deeploveLib.php; sourceTree = "<group>"; };
 		61309104124B54A800A830EC /* suse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = suse; sourceTree = "<group>"; };
 		61311F1A126FE5CE00F30A47 /* dev_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dev_t; sourceTree = "<group>"; };
@@ -96,12 +95,13 @@
 		613BF0311252D23E002D090B /* miscDriverClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miscDriverClient.c; sourceTree = "<group>"; };
 		613BF0F81253278F002D090B /* doxygen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen; sourceTree = "<group>"; };
 		613BF0FB125330BA002D090B /* path */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = path; sourceTree = "<group>"; };
+		613C385012B701AE009E9537 /* pdbedit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pdbedit; sourceTree = "<group>"; };
+		613C385812B703BD009E9537 /* mkdir */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mkdir; sourceTree = "<group>"; };
 		613D79201225101500AF8E2B /* dd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dd; sourceTree = "<group>"; };
 		613DDB1B121B7F62008AB143 /* objdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objdump; sourceTree = "<group>"; };
 		613DDBD7121B88F8008AB143 /* perror */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perror; sourceTree = "<group>"; };
 		613DDC2D121BC177008AB143 /* showTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = showTrace; sourceTree = "<group>"; };
 		6141527F1212476500AA6001 /* driverInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverInfo; sourceTree = "<group>"; };
-		614152AD121250F600AA6001 /* glib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glib; sourceTree = "<group>"; };
 		614152AF1212547F00AA6001 /* cStructure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cStructure; sourceTree = "<group>"; };
 		61415B8A1212825400AA6001 /* enum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enum; sourceTree = "<group>"; };
 		61415C481212B34D00AA6001 /* gdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gdb; sourceTree = "<group>"; };
@@ -149,8 +149,6 @@
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
 		6147CEB2127ACB7A00633000 /* accountAndGroup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accountAndGroup; sourceTree = "<group>"; };
 		6147CEB3127ACB9A00633000 /* acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acl; sourceTree = "<group>"; };
-		614A515412B5CCAF0048A3BE /* grub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grub; sourceTree = "<group>"; };
-		614A516712B608960048A3BE /* sambaPerformance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sambaPerformance; sourceTree = "<group>"; };
 		614D2FD51239FEEB001A2FCF /* grep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grep; sourceTree = "<group>"; };
 		614D2FF0123A0F2B001A2FCF /* dmStudy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dmStudy; sourceTree = "<group>"; };
 		614D3021123A244B001A2FCF /* initrd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initrd; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 		61A7F6E51282B27500E88405 /* gconftool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gconftool; sourceTree = "<group>"; };
 		61A7F6F61283D8EF00E88405 /* zfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zfs; sourceTree = "<group>"; };
 		61C97220125091DD00F10817 /* rpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rpm; sourceTree = "<group>"; };
-		61CA671B128BB6FD009E972B /* sanwatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sanwatch; sourceTree = "<group>"; };
 		61CD0C2A1287EDC80015B8F8 /* regularExpression */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = regularExpression; sourceTree = "<group>"; };
 		61CD0C2B1287F7B20015B8F8 /* stringMethod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringMethod; sourceTree = "<group>"; };
 		61CD0C2C1287FAC20015B8F8 /* fileHierarchy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileHierarchy; sourceTree = "<group>"; };
@@ -327,7 +324,6 @@
 				6188DEEB129264D200623883 /* cgi */,
 				6156D8D8125EFADA000CA3F2 /* art */,
 				6156D8CB125EEDE1000CA3F2 /* googleApi */,
-				612ECC9C12546C4B00C96173 /* python */,
 				613BF0F71253277C002D090B /* doxygen */,
 				611D3E95125045D40053B7CA /* xCode */,
 				61FAFD5F123732A800B0BEC7 /* htmlCss */,
@@ -336,8 +332,6 @@
 				61E498F6121A7AC2002A606C /* other */,
 				6154CA151213CEBE00C37E8A /* python */,
 				61415C581212C3D800AA6001 /* jspAndServlet */,
-				614152AE1212547200AA6001 /* cAndCplus */,
-				614152AC121250F000AA6001 /* lib */,
 				6143353612115AA000C319F9 /* java */,
 				6143351412114B3000C319F9 /* algorithm */,
 				614334AB12112A4100C319F9 /* ioport */,
@@ -354,6 +348,7 @@
 		6128500E120FF5DB00696385 /* command */ = {
 			isa = PBXGroup;
 			children = (
+				6155F6DF1241ACD100B8ECDA /* centOs */,
 				61284FE2120FD98400696385 /* mount */,
 				61285009120FE05200696385 /* linuxIscsi */,
 				6128500A120FE63000696385 /* ssh */,
@@ -413,7 +408,8 @@
 				617C21AF129A10FE000F8651 /* solarisDisk */,
 				617C2312129A728D000F8651 /* solarisShare */,
 				617CE31212ADCE7D00D5E6D3 /* solarisSamba */,
-				614A515412B5CCAF0048A3BE /* grub */,
+				613C385012B701AE009E9537 /* pdbedit */,
+				613C385812B703BD009E9537 /* mkdir */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -475,7 +471,6 @@
 				612C7F841234901C00B9563B /* runCommandFromProgram */,
 				612C7F851234949D00B9563B /* ioctl */,
 				612C7F93123499CB00B9563B /* lock */,
-				6155F6DF1241ACD100B8ECDA /* centOs */,
 				613BF0FB125330BA002D090B /* path */,
 				618844021259AC08000FE3F6 /* class */,
 				617F4941125ACB2900BA909B /* commandLineParameter */,
@@ -530,14 +525,6 @@
 			isa = PBXGroup;
 			children = (
 				612ECC9A12545F6300C96173 /* webTest.py */,
-			);
-			name = python;
-			sourceTree = "<group>";
-		};
-		612ECC9C12546C4B00C96173 /* python */ = {
-			isa = PBXGroup;
-			children = (
-				612ECC9D12546C5700C96173 /* jsonPython */,
 			);
 			name = python;
 			sourceTree = "<group>";
@@ -607,26 +594,6 @@
 			name = doxygen;
 			sourceTree = "<group>";
 		};
-		614152AC121250F000AA6001 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				614152AD121250F600AA6001 /* glib */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		614152AE1212547200AA6001 /* cAndCplus */ = {
-			isa = PBXGroup;
-			children = (
-				614152AF1212547F00AA6001 /* cStructure */,
-				61415B8A1212825400AA6001 /* enum */,
-				61E498F5121A7A58002A606C /* shareMemory */,
-				613DDBD7121B88F8008AB143 /* perror */,
-				613DDC2D121BC177008AB143 /* showTrace */,
-			);
-			name = cAndCplus;
-			sourceTree = "<group>";
-		};
 		61415C581212C3D800AA6001 /* jspAndServlet */ = {
 			isa = PBXGroup;
 			children = (
@@ -655,9 +622,7 @@
 				618F1ED21263FB9800AC136B /* ioPerformance */,
 				61311F3F1270190100F30A47 /* diskWatch */,
 				619A97BB12755A60002468F5 /* NasProject */,
-				61CA671B128BB6FD009E972B /* sanwatch */,
 				617C218F129A05EE000F8651 /* iftNasNfs */,
-				614A516712B608960048A3BE /* sambaPerformance */,
 			);
 			name = infortrend;
 			sourceTree = "<group>";
@@ -751,6 +716,11 @@
 			isa = PBXGroup;
 			children = (
 				617C22A8129A3BA5000F8651 /* cMacro */,
+				614152AF1212547F00AA6001 /* cStructure */,
+				61415B8A1212825400AA6001 /* enum */,
+				61E498F5121A7A58002A606C /* shareMemory */,
+				613DDBD7121B88F8008AB143 /* perror */,
+				613DDC2D121BC177008AB143 /* showTrace */,
 			);
 			name = cAndCPlus;
 			sourceTree = "<group>";

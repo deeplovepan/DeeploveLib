@@ -13,9 +13,39 @@ str.split('.')
 ->
 ['test', 'jpg']
 
+c:
+use strtok
+ex:
+		char path[100] = "/var/root/Downloads";
+        char *str = strtok(path, "/");
+        while(str != NULL)
+        {
+                printf("str %s\n", str);
+                str = strtok(NULL, "/");
+        }
+->
+	str var
+	str root
+	str Downloads
+
+
+
+
 string replace:
 python:
 ex:
 test = "hello"
 test.replace("h", "a")
 -> aello
+
+string find:
+python:
+ex:
+if test.startswith("abc"):
+	print "start with abc"
+elif test.endswith("abc"):
+	print "ends with abc"
+
+
+
+

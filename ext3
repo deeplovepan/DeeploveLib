@@ -1,5 +1,5 @@
 ext3
-
+command
 
 1. use ram for journal
 mke2fs -O journal_dev /dev/ram0

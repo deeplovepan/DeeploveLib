@@ -19,6 +19,16 @@ int main()
 }
           
 	
+check if file exist:
+use stat
+ex:
+#include <sys/stat.h>
+struct stat info;
+int ret = stat("/var/root/test.c", &info);
+note:
+if stat return 0, file or dir exist
+
+	
 	
 python:
 ex:
@@ -29,6 +39,11 @@ ex:
 file = open("text.txt", "r")
 # get all content of the file
 text = file.read()
+
+ex:
+file = open("text.txt", "r")
 # read line by line 
 for line in file.readlines():
 	print line
+	
+	

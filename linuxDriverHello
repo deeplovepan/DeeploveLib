@@ -1,5 +1,6 @@
 hello example for linux driver 
-linuxDriver 
+linux driver 
+ 
 
 
 #include linux/module.h 

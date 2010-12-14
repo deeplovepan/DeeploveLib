@@ -1,5 +1,6 @@
 gpio
-ioPort 
+io port 
+ 
 
 reference: 
 http://wiki.gp2x.org/wiki/GPIO_Programming_Example 

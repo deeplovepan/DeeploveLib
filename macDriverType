@@ -1,5 +1,5 @@
 mac driver type
-macDriver
+mac driver
 
 kern_return_t:
 	KERN_SUCCESS

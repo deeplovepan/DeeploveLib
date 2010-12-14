@@ -1,4 +1,5 @@
 windows samba
+command
 
 1. map folder to drive letter:
 Explorer -> Tools -> Map Network Drive

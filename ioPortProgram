@@ -1,5 +1,5 @@
 io port program 
-ioPort 
+io port 
 
 Most of the time, I/O pins are controlled by two I/O locations: 
 one that allows selecting what pins are used as input and what pins are used as output 
