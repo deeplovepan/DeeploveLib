@@ -16,3 +16,14 @@ IOLog("hello\n");
 linux driver: 
 ex: 
 printk("hello\n"); 
+
+python:
+ex:
+print "test"
+there is newline
+
+ex:
+import sys
+sys.stdout.write("Hello")
+there is no newline
+

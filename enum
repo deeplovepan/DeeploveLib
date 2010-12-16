@@ -1,5 +1,5 @@
 enum
-cAndCplus
+c and c++
 
 ex:
 enum COLOR {

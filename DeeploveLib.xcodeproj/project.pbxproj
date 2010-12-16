@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6105DCCB123E0B4300728D1B /* myBlockDeviceLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */; };
 		611D3E92125041F10053B7CA /* miscDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 611D3E91125041F10053B7CA /* miscDriver.c */; };
+		6128CCA712B8C3E600342ED8 /* PyMod.c in Sources */ = {isa = PBXBuildFile; fileRef = 6128CCA612B8C3E600342ED8 /* PyMod.c */; };
 		61321AC61240AC8600BF9AE5 /* linuxHelloDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = 61321AC51240AC8600BF9AE5 /* linuxHelloDriver.c */; };
 		6132C50C121E13DA0016372F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 6132C50B121E13DA0016372F /* debug.c */; };
 		613BF0321252D23E002D090B /* miscDriverClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 613BF0311252D23E002D090B /* miscDriverClient.c */; };
@@ -66,6 +67,9 @@
 		6128507912102A1E00696385 /* iso */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iso; sourceTree = "<group>"; };
 		6128507A12102B8600696385 /* linuxMemInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxMemInfo; sourceTree = "<group>"; };
 		61287AB412AF6E31002720A3 /* publicAccount */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = publicAccount; sourceTree = "<group>"; };
+		6128CCA512B8C3BC00342ED8 /* callCFromPython */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = callCFromPython; sourceTree = "<group>"; };
+		6128CCA612B8C3E600342ED8 /* PyMod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PyMod.c; sourceTree = "<group>"; };
+		6128CCA812B8C68F00342ED8 /* callCFromPython.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = callCFromPython.py; sourceTree = "<group>"; };
 		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
 		612C7F851234949D00B9563B /* ioctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioctl; sourceTree = "<group>"; };
 		612C7F93123499CB00B9563B /* lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lock; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		6151FE8F12951EAB00F57401 /* djangoBasic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = djangoBasic; sourceTree = "<group>"; };
 		6155F6DF1241ACD100B8ECDA /* centOs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = centOs; sourceTree = "<group>"; };
 		6155F72A124238DA00B8ECDA /* linuxDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverIoFlow; sourceTree = "<group>"; };
+		615680C712B9BCA500788F64 /* gitorious */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gitorious; sourceTree = "<group>"; };
 		6156D8B7125EC933000CA3F2 /* linuxIoScheduler */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIoScheduler; sourceTree = "<group>"; };
 		6156D8CC125EEDEC000CA3F2 /* googleChart */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = googleChart; sourceTree = "<group>"; };
 		6156D8D6125EF24F000CA3F2 /* pythonGoogleChart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pythonGoogleChart.py; sourceTree = "<group>"; };
@@ -316,6 +321,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				615680C612B9BC9800788F64 /* git */,
 				613C398D12B74E6E009E9537 /* sql */,
 				61DFD0D2129E0A6000553ED1 /* jquery */,
 				617C22A7129A3B69000F8651 /* cAndCPlus */,
@@ -691,8 +697,19 @@
 			isa = PBXGroup;
 			children = (
 				61A7F6DB1282B17000E88405 /* callPythonFromC */,
+				6128CCA512B8C3BC00342ED8 /* callCFromPython */,
+				6128CCA612B8C3E600342ED8 /* PyMod.c */,
+				6128CCA812B8C68F00342ED8 /* callCFromPython.py */,
 			);
 			name = python;
+			sourceTree = "<group>";
+		};
+		615680C612B9BC9800788F64 /* git */ = {
+			isa = PBXGroup;
+			children = (
+				615680C712B9BCA500788F64 /* gitorious */,
+			);
+			name = git;
 			sourceTree = "<group>";
 		};
 		6156D8CB125EEDE1000CA3F2 /* googleApi */ = {
@@ -899,6 +916,7 @@
 				6195227C128A4B9E006B81ED /* foo.c in Sources */,
 				61DFD14A129E693100553ED1 /* scsiDeviceTest.c in Sources */,
 				617CE34612AE2BE700D5E6D3 /* jqueryEx.js in Sources */,
+				6128CCA712B8C3E600342ED8 /* PyMod.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ databaseName = "DeeploveLib.db"
 conn = connect(databaseName)
 cursor = conn.cursor()
 try:
-	cursor.execute('''create table DeeploveLibTable
+	cursor.execute('''create table DeeploveLibTable USING fts3
 		(id integer primary key, title text unique,
 		tag text, subtag text, content text)''')
 except:
