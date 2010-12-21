@@ -32,6 +32,10 @@ remove # to add change log
 (2)git commit -a 
 commit all 
 
+get specific commit file:
+ex:
+git checkout c726e36d79e260b1910f2dcef6473ece18a1d929 test.h
+c726e36d79e260b1910f2dcef6473ece18a1d929 is commit ID
 
 show file history:
 ex:
