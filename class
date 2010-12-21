@@ -10,3 +10,33 @@ dog extends animal
 2. access member
 java:
 this.myMember
+
+3. define class:
+python
+ex:
+class Test:
+	def __init__(self, max):
+		self.max = max
+note:
+class Test has instance variable max
+
+ex:
+class FileInfo(UserDict):
+    def __init__(self, filename=None): 
+		UserDict.__init__(self) 
+note: class FileInfo extends from class UserDict
+note: When defining methods for class, you must explicitly list self as the
+	  first argument for each method
+
+4. create object:
+python:
+ex:
+import fibonacci2
+fib = fibonacci2.Test(100) 
+print fib.__class__   
+-> 
+<class 'fibonacci2.Test'>
+
+
+
+		

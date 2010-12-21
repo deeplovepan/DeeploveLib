@@ -10,7 +10,6 @@ echo ${isDebian}
 python:
 import os
 os.system("ls") 
- 
 get command output:
 import commands
 output = commands.getoutput("ls /sys/bus/scsi/devices") 
@@ -28,3 +27,32 @@ if(fd)
 	}
 }
 pclose(fd);
+
+java:
+get command output:
+ex:
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+String output = "";
+try {
+	String line;
+	try {
+		Process p = Runtime.getRuntime().exec("ls /Pool1/test");
+		BufferedReader input = new BufferedReader
+			            (new InputStreamReader(p.getInputStream(), "UTF8"));
+		while ((line = input.readLine()) != null)
+		{
+			output += (line + '\n');
+		}
+		input.close();
+	}
+	catch (Exception ex) 
+	{
+		ex.printStackTrace();
+	}
+} 
+catch (Exception e) 
+{
+
+}

@@ -150,6 +150,8 @@
 		6143353712115AB600C319F9 /* javaCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = javaCommand; sourceTree = "<group>"; };
 		6143353812115AE200C319F9 /* changeJavaVersionOnMac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changeJavaVersionOnMac; sourceTree = "<group>"; };
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
+		61464EBD12BF5AE700C691FE /* nanoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nanoc; sourceTree = "<group>"; };
+		61464EE412C03F1A00C691FE /* main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main; sourceTree = "<group>"; };
 		6147CEB2127ACB7A00633000 /* accountAndGroup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accountAndGroup; sourceTree = "<group>"; };
 		6147CEB3127ACB9A00633000 /* acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acl; sourceTree = "<group>"; };
 		614D2FD51239FEEB001A2FCF /* grep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grep; sourceTree = "<group>"; };
@@ -162,11 +164,14 @@
 		6155F6DF1241ACD100B8ECDA /* centOs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = centOs; sourceTree = "<group>"; };
 		6155F72A124238DA00B8ECDA /* linuxDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverIoFlow; sourceTree = "<group>"; };
 		615680C712B9BCA500788F64 /* gitorious */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gitorious; sourceTree = "<group>"; };
+		615680E712B9C31300788F64 /* gitWeb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gitWeb; sourceTree = "<group>"; };
 		6156D8B7125EC933000CA3F2 /* linuxIoScheduler */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIoScheduler; sourceTree = "<group>"; };
 		6156D8CC125EEDEC000CA3F2 /* googleChart */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = googleChart; sourceTree = "<group>"; };
 		6156D8D6125EF24F000CA3F2 /* pythonGoogleChart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pythonGoogleChart.py; sourceTree = "<group>"; };
 		6156D8D9125EFAE5000CA3F2 /* rgb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgb; sourceTree = "<group>"; };
 		615EF25F128102CB001E0296 /* linuxKernelVersion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelVersion; sourceTree = "<group>"; };
+		616125C112BAFE3400613625 /* ipv6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipv6; sourceTree = "<group>"; };
+		616125CA12BB60F500613625 /* dns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dns; sourceTree = "<group>"; };
 		617418C312A4EDF90020B9FD /* smp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smp; sourceTree = "<group>"; };
 		617C218F129A05EE000F8651 /* iftNasNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftNasNfs; sourceTree = "<group>"; };
 		617C21AF129A10FE000F8651 /* solarisDisk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisDisk; sourceTree = "<group>"; };
@@ -207,6 +212,7 @@
 		6195227B128A4B9E006B81ED /* foo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = foo.c; sourceTree = "<group>"; };
 		6195227D128A4BA5006B81ED /* jniNote */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jniNote; sourceTree = "<group>"; };
 		61956340123F5A5B002D4400 /* createBlockDevice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createBlockDevice.c; sourceTree = "<group>"; };
+		6195634A12BA0E2E00AF3597 /* import */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = import; sourceTree = "<group>"; };
 		619563A6123F86B5002D4400 /* myDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDevice.h; sourceTree = "<group>"; };
 		619563D3123F8B53002D4400 /* testWorkQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testWorkQueue.c; sourceTree = "<group>"; };
 		619A97BB12755A60002468F5 /* NasProject */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NasProject; sourceTree = "<group>"; };
@@ -321,6 +327,7 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				61464EBC12BF5AD400C691FE /* ruby */,
 				615680C612B9BC9800788F64 /* git */,
 				613C398D12B74E6E009E9537 /* sql */,
 				61DFD0D2129E0A6000553ED1 /* jquery */,
@@ -491,6 +498,9 @@
 				61D43030129B56910061CA4B /* afp */,
 				61D43044129B70C20061CA4B /* screenShot */,
 				6189818912B214A50034B006 /* writeLog */,
+				616125C112BAFE3400613625 /* ipv6 */,
+				616125CA12BB60F500613625 /* dns */,
+				61464EE412C03F1A00C691FE /* main */,
 			);
 			name = compare;
 			sourceTree = "<group>";
@@ -685,6 +695,14 @@
 			name = java;
 			sourceTree = "<group>";
 		};
+		61464EBC12BF5AD400C691FE /* ruby */ = {
+			isa = PBXGroup;
+			children = (
+				61464EBD12BF5AE700C691FE /* nanoc */,
+			);
+			name = ruby;
+			sourceTree = "<group>";
+		};
 		6151FE8E12951E9D00F57401 /* django */ = {
 			isa = PBXGroup;
 			children = (
@@ -700,6 +718,7 @@
 				6128CCA512B8C3BC00342ED8 /* callCFromPython */,
 				6128CCA612B8C3E600342ED8 /* PyMod.c */,
 				6128CCA812B8C68F00342ED8 /* callCFromPython.py */,
+				6195634A12BA0E2E00AF3597 /* import */,
 			);
 			name = python;
 			sourceTree = "<group>";
@@ -708,6 +727,7 @@
 			isa = PBXGroup;
 			children = (
 				615680C712B9BCA500788F64 /* gitorious */,
+				615680E712B9C31300788F64 /* gitWeb */,
 			);
 			name = git;
 			sourceTree = "<group>";
