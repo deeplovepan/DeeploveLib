@@ -1,0 +1,64 @@
+ipv6
+compare
+
+two unicast address assignment:
+1. Link-local address
+only used on the local network link
+format:
+link-local prfix   |    0       |    interface ID  |  
+    10 bits        |   64 bits  |       54 bits    |
+ex:
+fe80::23a1:b152
+fe80 (1111111010) means type of IPv6 address as link local 
+interface ID:
+usually derived from the 48-bit MAC address
+
+solaris:
+reference:
+http://docs.sun.com/app/docs/doc/816-4554/ipv6-config-tasks-1?l=en&a=view
+
+install:
+for get DHCP IPv6, we must install SUNWroute 
+pkg install SUNWroute
+/usr/lib/inet/in.ndpd
+the edit /etc/nsswitch.conf
+->
+hosts:      files dns
+ipnodes:    files dns
+
+2. Global unicast address
+
+solaris:
+enable ipv6:
+ex:
+ifconfig igb1 inet6 plumb up
+
+disable ipv6:
+ex:
+ifconfig igb1 inet6 unplumb down
+
+set static ip:
+ex:
+ifconfig igb1 inet6 fe80::230:48ff:fed3:4c78/10
+ex:
+ifconfig igb1 inet6 addif 2000:2::1/64 up
+
+ex:
+root@NAS5100N:~# ifconfig -a
+lo0: flags=2001000849<UP,LOOPBACK,RUNNING,MULTICAST,IPv4,VIRTUAL> mtu 8232 index 1
+        inet 127.0.0.1 netmask ff000000 
+igb0: flags=1004843<UP,BROADCAST,RUNNING,MULTICAST,DHCP,IPv4> mtu 1500 index 3
+        inet 172.18.8.36 netmask fffffe00 broadcast 172.18.9.255
+        ether 0:30:48:d3:4c:76 
+igb1: flags=1000843<UP,BROADCAST,RUNNING,MULTICAST,IPv4> mtu 1500 index 4
+        inet 10.10.10.1 netmask ffffff00 broadcast 10.10.10.255
+        ether 0:30:48:d3:4c:77 
+lo0: flags=2002000849<UP,LOOPBACK,RUNNING,MULTICAST,IPv6,VIRTUAL> mtu 8252 index 1
+        inet6 ::1/128 
+igb1: flags=2004841<UP,RUNNING,MULTICAST,DHCP,IPv6> mtu 1500 index 4
+        inet6 fe80::230:48ff:fed3:4c77/10 
+        ether 0:30:48:d3:4c:77 
+igb1:1: flags=2004841<UP,RUNNING,MULTICAST,DHCP,IPv6> mtu 1500 index 4
+        inet6 2001::c115:7cfd:801e:8b7/128 
+
+

@@ -1,0 +1,5 @@
+mkdir
+command
+
+1. mkdir -p abc/def/gh
+-p will create intermediate directories as required

@@ -1,0 +1,37 @@
+socket 
+compare
+
+python:
+server:
+from socket import *
+import time
+
+s = socket(AF_INET, SOCK_STREAM)  # Create a TCP socket
+s.bind(('' , 8888) )                 # Bind to port 8888
+s.listen(5)                       # Listen, but allow no more than
+# 5 pending connections.
+while True:
+	client, addr = s.accept()    # Get a connection
+	print("Got a connection from %s" % str(addr) )
+	timestr = time.ctime(time.time() ) + "\r\n"
+	client.send(timestr.encode('ascii' ) )
+	client.close()
+	
+client:
+# Time client program
+from socket import *
+s = socket(AF_INET, SOCK_STREAM)   # Create a TCP socket
+s.connect(('localhost' , 8888) )    # Connect to the server
+tm = s.recv(1024)                 # Receive no m
+s.close()
+print("The time is %s" % tm.decode('ascii') )
+
+send binary data:
+ex:
+data = "FB32"
+data = data.decode("hex")
+s.send(data)
+
+
+
+

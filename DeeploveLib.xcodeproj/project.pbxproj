@@ -83,6 +83,9 @@
 		61309104124B54A800A830EC /* suse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = suse; sourceTree = "<group>"; };
 		61311F1A126FE5CE00F30A47 /* dev_t */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dev_t; sourceTree = "<group>"; };
 		61311F3F1270190100F30A47 /* diskWatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diskWatch; sourceTree = "<group>"; };
+		6131C01712D1AC32005F6955 /* uiMenu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uiMenu; sourceTree = "<group>"; };
+		6131C01812D1AFDF005F6955 /* disableUi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = disableUi; sourceTree = "<group>"; };
+		6131C01F12D1B25F005F6955 /* uiCheckBox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uiCheckBox; sourceTree = "<group>"; };
 		61321AC51240AC8600BF9AE5 /* linuxHelloDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxHelloDriver.c; sourceTree = "<group>"; };
 		6132C50A121E13DA0016372F /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		6132C50B121E13DA0016372F /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 		6143353912115D3600C319F9 /* git */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
 		61464EBD12BF5AE700C691FE /* nanoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nanoc; sourceTree = "<group>"; };
 		61464EE412C03F1A00C691FE /* main */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main; sourceTree = "<group>"; };
+		61464F0012C088FA00C691FE /* socket */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = socket; sourceTree = "<group>"; };
 		6147CEB2127ACB7A00633000 /* accountAndGroup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accountAndGroup; sourceTree = "<group>"; };
 		6147CEB3127ACB9A00633000 /* acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acl; sourceTree = "<group>"; };
 		614D2FD51239FEEB001A2FCF /* grep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grep; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 		617CE31212ADCE7D00D5E6D3 /* solarisSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisSamba; sourceTree = "<group>"; };
 		617CE34512AE2BE700D5E6D3 /* jqueryEx.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jqueryEx.js; sourceTree = "<group>"; };
 		617CE34712AE2CA500D5E6D3 /* uiEx.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = uiEx.html; sourceTree = "<group>"; };
+		617D669E12C31C9700D27888 /* createAppOnMacForJava */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = createAppOnMacForJava; sourceTree = "<group>"; };
+		617D66B412C32F2900D27888 /* grub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grub; sourceTree = "<group>"; };
 		617F4941125ACB2900BA909B /* commandLineParameter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = commandLineParameter; sourceTree = "<group>"; };
 		617F49DB125B11C700BA909B /* macDriverLife */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverLife; sourceTree = "<group>"; };
 		617F49E9125B124E00BA909B /* MyDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDriver.h; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 		618844021259AC08000FE3F6 /* class */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = class; sourceTree = "<group>"; };
 		6188DEEC129264DD00623883 /* cgi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cgi; sourceTree = "<group>"; };
 		6189818912B214A50034B006 /* writeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = writeLog; sourceTree = "<group>"; };
+		618DC00D12CDBA02009D0CEC /* cron */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cron; sourceTree = "<group>"; };
 		618F1EC91263F3AB00AC136B /* selinux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = selinux; sourceTree = "<group>"; };
 		618F1ED11263FA8200AC136B /* windowsSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = windowsSamba; sourceTree = "<group>"; };
 		618F1ED21263FB9800AC136B /* ioPerformance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioPerformance; sourceTree = "<group>"; };
@@ -422,6 +429,8 @@
 				617CE31212ADCE7D00D5E6D3 /* solarisSamba */,
 				613C385012B701AE009E9537 /* pdbedit */,
 				613C385812B703BD009E9537 /* mkdir */,
+				617D66B412C32F2900D27888 /* grub */,
+				618DC00D12CDBA02009D0CEC /* cron */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -458,6 +467,7 @@
 		612850351210043100696385 /* compare */ = {
 			isa = PBXGroup;
 			children = (
+				6131C01612D1AC0E005F6955 /* uiCompare */,
 				619A99D31277BBE5002468F5 /* dynamicLib */,
 				6151FE631294D87000F57401 /* staticLib */,
 				612850361210045900696385 /* memoryManagement */,
@@ -501,6 +511,7 @@
 				616125C112BAFE3400613625 /* ipv6 */,
 				616125CA12BB60F500613625 /* dns */,
 				61464EE412C03F1A00C691FE /* main */,
+				61464F0012C088FA00C691FE /* socket */,
 			);
 			name = compare;
 			sourceTree = "<group>";
@@ -551,6 +562,16 @@
 				612ECCAA125472FD00C96173 /* deeploveLib.php */,
 			);
 			name = php;
+			sourceTree = "<group>";
+		};
+		6131C01612D1AC0E005F6955 /* uiCompare */ = {
+			isa = PBXGroup;
+			children = (
+				6131C01712D1AC32005F6955 /* uiMenu */,
+				6131C01812D1AFDF005F6955 /* disableUi */,
+				6131C01F12D1B25F005F6955 /* uiCheckBox */,
+			);
+			name = uiCompare;
 			sourceTree = "<group>";
 		};
 		61321AC41240AC6D00BF9AE5 /* helloDriver */ = {
@@ -691,6 +712,7 @@
 			children = (
 				6143353712115AB600C319F9 /* javaCommand */,
 				6143353812115AE200C319F9 /* changeJavaVersionOnMac */,
+				617D669E12C31C9700D27888 /* createAppOnMacForJava */,
 			);
 			name = java;
 			sourceTree = "<group>";

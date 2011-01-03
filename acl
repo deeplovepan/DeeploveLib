@@ -29,5 +29,8 @@ chmod A+user:peter:rx:deny /root/testAcl
 set acl on dir for group:
 chmod A+group:gn1:rx:allow /root/testAcl
 
+-R:
+Recursively
+
 
 

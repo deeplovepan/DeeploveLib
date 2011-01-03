@@ -1,0 +1,13 @@
+ui menu
+ui compare
+
+html:
+<SELECT id="test">
+	<OPTION VALUE="10min">agatha
+	<OPTION VALUE="30min">christie
+</SELECT>
+
+jquery:
+set speicif item selected
+$('#test option[value=10min]').attr('selected', 'selected');
+

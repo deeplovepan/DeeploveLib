@@ -4,6 +4,10 @@ compare
 string compare:
 python:
 ==, >, <, !=
+java:
+if(testStr.equals("1"))
+
+
 
 split string:
 python:
@@ -45,6 +49,9 @@ if test.startswith("abc"):
 	print "start with abc"
 elif test.endswith("abc"):
 	print "ends with abc"
+java:
+ex:
+if(buf.indexOf("write_xattr") == -1)
 
 
 

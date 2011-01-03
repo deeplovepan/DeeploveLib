@@ -4,3 +4,7 @@ command
 unzip gz file 
 ex: 
 gunzip test.gz 
+
+unzip zip file
+ex:
+unzip test.zip
