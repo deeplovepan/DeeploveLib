@@ -1,0 +1,10 @@
+cut
+command
+
+ex:
+cut -d ":" -f 1
+seperated by :, get 1 element
+
+cut -d ":" -f 3,5
+seperated by :, get 3 element & 5 element
+
