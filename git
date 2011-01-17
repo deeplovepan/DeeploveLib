@@ -74,6 +74,9 @@ add tag for current time
 git push --tags
 add tags to server
 
+remove tag:
+git tag -d testV1.1
+git push origin :refs/tags/testV1.1
 
 show files status:
 (1)git status
