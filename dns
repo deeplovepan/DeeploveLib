@@ -1,0 +1,7 @@
+dns
+compare
+
+solaris:
+edit /etc/nsswitch.conf
+->
+hosts:      files dns
