@@ -1,0 +1,10 @@
+python's import
+python
+
+ex:
+import sys
+print sys.path
+
+ex:
+from sys import path
+print path
