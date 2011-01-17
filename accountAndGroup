@@ -11,6 +11,11 @@ groupadd gn1
 dispuid
 4. show group list
 dispgid
+5. show id of user
+id  test
+6. change user's uid
+usermod -u 10000 test
+
 
 linux:
 set password 

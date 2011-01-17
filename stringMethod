@@ -32,7 +32,9 @@ ex:
 	str root
 	str Downloads
 
-
+java:
+String splitString = "Bob:Stev:David:John";
+String[] names = splitString.split(":");
 
 
 string replace:

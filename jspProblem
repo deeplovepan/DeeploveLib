@@ -8,3 +8,6 @@ jsp and servlet
 solution: 
 ex: 
 javac -cp /usr/local/apache-tomcat-6.0.29/lib/servlet-api.jar SampleServlet.java 
+
+(2) remove cache
+	rm  -rf /var/apache/tomcat/work/  

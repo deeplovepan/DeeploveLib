@@ -5,3 +5,10 @@ list or array
 python:
 ex:
 a = [1, 2, 3]
+
+dic:
+python
+check if key exist
+ex:
+if key in userDic:
+	print key

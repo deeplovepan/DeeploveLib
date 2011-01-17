@@ -21,10 +21,7 @@ install:
 for get DHCP IPv6, we must install SUNWroute 
 pkg install SUNWroute
 /usr/lib/inet/in.ndpd
-the edit /etc/nsswitch.conf
-->
-hosts:      files dns
-ipnodes:    files dns
+
 
 2. Global unicast address
 

@@ -1,2 +1,14 @@
 ui checkbox
 ui compare
+
+html:
+ex:
+<input type="checkbox" id="myCheckBox" onClick="updateTimePeriod(this);">test
+note: this is square button 
+
+check if checked
+jquery:
+$("#enablePeriodicalImportCheckBox").attr("checked");
+
+check checkBox
+$("#enablePeriodicalImportCheckBox").attr('checked', true);

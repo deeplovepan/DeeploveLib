@@ -1,6 +1,8 @@
 tomcat 
 jsp and servlet
 
+clear cache:
+remove content under /var/apache/tomcat/work/
 
 tomcat on mac os: 
 1. download tomcat source apache-tomcat-5.5.12 

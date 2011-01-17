@@ -86,6 +86,7 @@
 		6131C01712D1AC32005F6955 /* uiMenu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uiMenu; sourceTree = "<group>"; };
 		6131C01812D1AFDF005F6955 /* disableUi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = disableUi; sourceTree = "<group>"; };
 		6131C01F12D1B25F005F6955 /* uiCheckBox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uiCheckBox; sourceTree = "<group>"; };
+		6131C03E12D2B660005F6955 /* jqueryPost */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jqueryPost; sourceTree = "<group>"; };
 		61321AC51240AC8600BF9AE5 /* linuxHelloDriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxHelloDriver.c; sourceTree = "<group>"; };
 		6132C50A121E13DA0016372F /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		6132C50B121E13DA0016372F /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
@@ -215,6 +216,10 @@
 		618F1ED712642DEC00AC136B /* phoronixTestSuite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phoronixTestSuite; sourceTree = "<group>"; };
 		618F1EDC1264384C00AC136B /* installNewLinuxKernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installNewLinuxKernel; sourceTree = "<group>"; };
 		618FED8F127EA09900AD8027 /* sysconf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sysconf; sourceTree = "<group>"; };
+		6192A60212D4503D00882981 /* uiRadioButton */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uiRadioButton; sourceTree = "<group>"; };
+		6192A60312D4579900882981 /* firefox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = firefox; sourceTree = "<group>"; };
+		6192A60512D45C7500882981 /* uiSpace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uiSpace; sourceTree = "<group>"; };
+		6192A61B12D46B4400882981 /* nslookup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nslookup; sourceTree = "<group>"; };
 		61952279128A4B8A006B81ED /* JNIFoo.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JNIFoo.java; sourceTree = "<group>"; };
 		6195227B128A4B9E006B81ED /* foo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = foo.c; sourceTree = "<group>"; };
 		6195227D128A4BA5006B81ED /* jniNote */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jniNote; sourceTree = "<group>"; };
@@ -249,6 +254,7 @@
 		61D43030129B56910061CA4B /* afp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = afp; sourceTree = "<group>"; };
 		61D43044129B70C20061CA4B /* screenShot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = screenShot; sourceTree = "<group>"; };
 		61D8FC05125C0D1200461D44 /* ioreg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioreg; sourceTree = "<group>"; };
+		61DC7C5612E44A3200A8D464 /* cut */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cut; sourceTree = "<group>"; };
 		61DFD0D3129E0A6E00553ED1 /* jqueryBasic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jqueryBasic; sourceTree = "<group>"; };
 		61DFD0D5129E0F2900553ED1 /* dom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dom; sourceTree = "<group>"; };
 		61DFD149129E693100553ED1 /* scsiDeviceTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scsiDeviceTest.c; sourceTree = "<group>"; };
@@ -431,6 +437,9 @@
 				613C385812B703BD009E9537 /* mkdir */,
 				617D66B412C32F2900D27888 /* grub */,
 				618DC00D12CDBA02009D0CEC /* cron */,
+				6192A60312D4579900882981 /* firefox */,
+				6192A61B12D46B4400882981 /* nslookup */,
+				61DC7C5612E44A3200A8D464 /* cut */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -570,6 +579,8 @@
 				6131C01712D1AC32005F6955 /* uiMenu */,
 				6131C01812D1AFDF005F6955 /* disableUi */,
 				6131C01F12D1B25F005F6955 /* uiCheckBox */,
+				6192A60212D4503D00882981 /* uiRadioButton */,
+				6192A60512D45C7500882981 /* uiSpace */,
 			);
 			name = uiCompare;
 			sourceTree = "<group>";
@@ -862,6 +873,7 @@
 			isa = PBXGroup;
 			children = (
 				61DFD0D3129E0A6E00553ED1 /* jqueryBasic */,
+				6131C03E12D2B660005F6955 /* jqueryPost */,
 			);
 			name = jquery;
 			sourceTree = "<group>";
