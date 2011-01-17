@@ -1,0 +1,23 @@
+nanoc
+ruby
+
+runs on your local computer and compiles documents written in formats 
+such as Markdown, Textile, Haml… into a static web site consisting of 
+simple HTML files, ready for uploading to any web server
+
+1. gem install nanoc
+2. gem install kramdown
+3. gem install adsf
+
+4. nanoc create_site tutorial
+
+5. cd tutorial
+   nanoc compile
+   
+6. nanoc view
+   this will start web server
+   
+7. http://localhost:3000/
+
+
+
