@@ -1,0 +1,16 @@
+cron
+command
+
+1. show all tasks
+crontab -l
+
+task format:
+min hour day month week command
+ex:
+
+
+2. enter edit mode
+crontab -e
+
+3. crontab file
+/usr/spool/cron/crontabs/
