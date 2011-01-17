@@ -1,0 +1,28 @@
+include header
+compare
+
+python:
+to include other python file
+ex:
+if Test.py defines function abc()
+(1)
+import Test
+Test.abc()
+(2)
+from Test import abc
+abc()
+(3)
+from Test import *
+we can call every function of Test.py now
+
+to include python file from another directory
+ex:
+import sys
+sys.path.append('./myDir')
+from Test import *
+
+Test.py is under myDir
+
+
+
+

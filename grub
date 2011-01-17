@@ -1,0 +1,7 @@
+grub
+command
+
+set run level:
+add number at end of line
+ex:
+/boot/vmlinuz-2.6.15-8-386 root=/dev/hda34 ro quiet splash 3

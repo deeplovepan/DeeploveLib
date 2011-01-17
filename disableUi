@@ -1,0 +1,13 @@
+disable UI
+ui compare
+
+jquery:
+disable:
+$('#testBut').attr('disabled', 'disabled');
+enable:
+$('#testBut').attr('disabled', '');
+
+javascript:
+disable: 
+document.getElementById('myCheckBox').disabled = true;
+
