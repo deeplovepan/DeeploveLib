@@ -1,0 +1,18 @@
+create app on mac for java
+java
+
+tool: Jar Bundler
+
+1. when create App, JavaApplicationStub is created under Contents/MacOS/
+   this file is not related to java class or jar file
+   we can use the same JavaApplicationStub for all App created from Jar Bundler
+   
+2. Info.plist set how to run this java App
+   1. CFBundleExecutable:
+      set name of executable file, default is JavaApplicationStub
+   2. ClassPath:
+      set needed jar files
+   3. MainClass:
+	  ex:
+	  Test.App1
+	
