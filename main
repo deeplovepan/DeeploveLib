@@ -1,0 +1,17 @@
+main
+compare
+
+java:
+ex:
+class Test {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+python:
+ex:
+if __name__ == "__main__":
+        print "test"
