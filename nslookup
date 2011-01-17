@@ -1,0 +1,13 @@
+nslookup
+command
+
+find ip from domain name
+ex:
+nslookup sw.com
+->
+Server:         172.18.8.78
+Address:        172.18.8.78#53
+
+Non-authoritative answer:
+Name:   sw.com
+Address: 64.118.79.176
