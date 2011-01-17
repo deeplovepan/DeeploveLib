@@ -1,0 +1,40 @@
+call c from python
+python
+
+ex:
+use PyMod.c and  callCFromPython.py
+
+compile:
+gcc -shared -o PyMod.so PyMod.c -lpython2.6 -I/usr/include/python2.6
+
+
+C datatype and Python Object
+s 	char*			string
+s# 	char*, int		string,length
+i 	int				integer
+l 	long int		integer
+c 	char			string
+f 	float			floating-point
+d 	double			floating-point
+O 	PyObject*		raw (unconverted) object
+O& 	&converter		converted object
+(items) 	　　 	Targets　　nested tuple
+[items] 	　		list　　　 FOR Py_BuildValue ONLY
+{items} 	　		dictionary FOR Py_BuildValue ONLY
+
+
+convert python object to c type:
+PyArg_ParseTuple
+ex:
+char* var1;
+int var2;
+float var3;
+PyArg_ParseTuple(args, "sif", &var1, &var2, &var3);
+
+
+convert c type to python object:
+Py_BuildValue
+ex:
+Py_BuildValue("i", result);
+
+
