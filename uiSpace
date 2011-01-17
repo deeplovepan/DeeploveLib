@@ -1,0 +1,9 @@
+ui space
+ui compare
+
+html:
+use padding
+ex:
+.configPadding {
+	padding-left:30px;
+}
