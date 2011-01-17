@@ -4,3 +4,10 @@ command
 ex:
 grep disk_name  *.c
 find file contains disk_name
+
+exclusive find:
+ex:
+ls | grep -v test
+
+search exact word
+ls | grep -w test
