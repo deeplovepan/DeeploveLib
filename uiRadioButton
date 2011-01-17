@@ -1,0 +1,5 @@
+radio button
+ui compare
+
+html:
+<input type="radio" id="DHCP"  value="DHCP" onClick="changeConf(this.value)"/><fmt:bundle basename="Language"><fmt:message key="dhcp"/></fmt:bundle>
