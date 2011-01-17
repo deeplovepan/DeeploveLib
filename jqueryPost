@@ -1,0 +1,13 @@
+jquery post
+jquery
+
+$.post("../servlet/Scheduler",	
+			{
+				timePeriod: timePeriod,
+				isEnablePeriodicalImportCheckBox: isEnablePeriodicalImportCheckBox
+			},
+					
+			function(json){
+				alert("Success");								
+			}
+);
