@@ -1,6 +1,11 @@
 acl
 command
 
+acl priority:
+1. the entry in the front has high priority
+2. put user in the front, then group, finally everyone@
+
+
 show dir acl:
 ex:
 ls -dv andy
@@ -24,10 +29,23 @@ drwxr-xr-x+  4 root     root           4 Oct 29 18:54 andy/
               everyone@:r-x---a-R-c--s:-------:allow
 
 set acl on dir for user:
+ex:
 chmod A+user:peter:rx:deny /root/testAcl
+
+modfiy acl for everyone@
+ex:
+chmod A8=everyone@:rx:allow /Pool1/UserHome/a2
+ex:
+chmod A0=user:dd:list_directory/read_data/read_xattr/execute/read_attributes/read_acl/synchronize:allow  /Pool1/abc
+
 
 set acl on dir for group:
 chmod A+group:gn1:rx:allow /root/testAcl
+
+delete acl entry on index 0
+ex:
+chmod A0- /Pool1/UserHome/a2
+
 
 -R:
 Recursively

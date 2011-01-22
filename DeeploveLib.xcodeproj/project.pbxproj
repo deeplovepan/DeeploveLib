@@ -181,7 +181,7 @@
 		617C218F129A05EE000F8651 /* iftNasNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftNasNfs; sourceTree = "<group>"; };
 		617C21AF129A10FE000F8651 /* solarisDisk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisDisk; sourceTree = "<group>"; };
 		617C22A8129A3BA5000F8651 /* cMacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cMacro; sourceTree = "<group>"; };
-		617C22A9129A3C37000F8651 /* array */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = array; sourceTree = "<group>"; };
+		617C22A9129A3C37000F8651 /* arrayCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arrayCompare; sourceTree = "<group>"; };
 		617C22AD129A4325000F8651 /* nfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nfs; sourceTree = "<group>"; };
 		617C2312129A728D000F8651 /* solarisShare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisShare; sourceTree = "<group>"; };
 		617CE31212ADCE7D00D5E6D3 /* solarisSamba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisSamba; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
 		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
 		619C435D1215534C001C3C24 /* Dictionary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary; sourceTree = "<group>"; };
-		619C4360121553F9001C3C24 /* loop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loop; sourceTree = "<group>"; };
+		619C4360121553F9001C3C24 /* loopCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loopCompare; sourceTree = "<group>"; };
 		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
 		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
 		619F23F712655AA300376237 /* lsof */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lsof; sourceTree = "<group>"; };
@@ -249,12 +249,13 @@
 		61A7F6F61283D8EF00E88405 /* zfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zfs; sourceTree = "<group>"; };
 		61C97220125091DD00F10817 /* rpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rpm; sourceTree = "<group>"; };
 		61CD0C2A1287EDC80015B8F8 /* regularExpression */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = regularExpression; sourceTree = "<group>"; };
-		61CD0C2B1287F7B20015B8F8 /* stringMethod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringMethod; sourceTree = "<group>"; };
+		61CD0C2B1287F7B20015B8F8 /* stringCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringCompare; sourceTree = "<group>"; };
 		61CD0C2C1287FAC20015B8F8 /* fileHierarchy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileHierarchy; sourceTree = "<group>"; };
 		61D43030129B56910061CA4B /* afp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = afp; sourceTree = "<group>"; };
 		61D43044129B70C20061CA4B /* screenShot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = screenShot; sourceTree = "<group>"; };
 		61D8FC05125C0D1200461D44 /* ioreg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioreg; sourceTree = "<group>"; };
 		61DC7C5612E44A3200A8D464 /* cut */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cut; sourceTree = "<group>"; };
+		61DC7C7412E44E8500A8D464 /* wc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wc; sourceTree = "<group>"; };
 		61DFD0D3129E0A6E00553ED1 /* jqueryBasic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jqueryBasic; sourceTree = "<group>"; };
 		61DFD0D5129E0F2900553ED1 /* dom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dom; sourceTree = "<group>"; };
 		61DFD149129E693100553ED1 /* scsiDeviceTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scsiDeviceTest.c; sourceTree = "<group>"; };
@@ -440,6 +441,7 @@
 				6192A60312D4579900882981 /* firefox */,
 				6192A61B12D46B4400882981 /* nslookup */,
 				61DC7C5612E44A3200A8D464 /* cut */,
+				61DC7C7412E44E8500A8D464 /* wc */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -476,6 +478,7 @@
 		612850351210043100696385 /* compare */ = {
 			isa = PBXGroup;
 			children = (
+				6164D44E12E6926800F8BEBE /* programCompare */,
 				6131C01612D1AC0E005F6955 /* uiCompare */,
 				619A99D31277BBE5002468F5 /* dynamicLib */,
 				6151FE631294D87000F57401 /* staticLib */,
@@ -495,7 +498,6 @@
 				6141527F1212476500AA6001 /* driverInfo */,
 				619C41FE12152767001C3C24 /* stackTrace */,
 				619C435D1215534C001C3C24 /* Dictionary */,
-				619C4360121553F9001C3C24 /* loop */,
 				619C436112155452001C3C24 /* function */,
 				619C4363121554A8001C3C24 /* comment */,
 				612C7F841234901C00B9563B /* runCommandFromProgram */,
@@ -510,9 +512,7 @@
 				61F74A41127FB01200F08E5D /* space */,
 				61A7F6B11281591F00E88405 /* dataStructure */,
 				61CD0C2A1287EDC80015B8F8 /* regularExpression */,
-				61CD0C2B1287F7B20015B8F8 /* stringMethod */,
 				61CD0C2C1287FAC20015B8F8 /* fileHierarchy */,
-				617C22A9129A3C37000F8651 /* array */,
 				617C22AD129A4325000F8651 /* nfs */,
 				61D43030129B56910061CA4B /* afp */,
 				61D43044129B70C20061CA4B /* screenShot */,
@@ -787,6 +787,16 @@
 				6156D8D9125EFAE5000CA3F2 /* rgb */,
 			);
 			name = art;
+			sourceTree = "<group>";
+		};
+		6164D44E12E6926800F8BEBE /* programCompare */ = {
+			isa = PBXGroup;
+			children = (
+				619C4360121553F9001C3C24 /* loopCompare */,
+				617C22A9129A3C37000F8651 /* arrayCompare */,
+				61CD0C2B1287F7B20015B8F8 /* stringCompare */,
+			);
+			name = programCompare;
 			sourceTree = "<group>";
 		};
 		617C22A7129A3B69000F8651 /* cAndCPlus */ = {
