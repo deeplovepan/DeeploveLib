@@ -1,0 +1,22 @@
+array compare
+compare
+---------------------------------------------------
+add element to array
+python
+testArray = []
+testArray.append("hi")
+---------------------------------------------------
+amount of array:
+java:
+testArray.length
+
+---------------------------------------------------
+init 0 for all elements of array
+c:
+char str[100] = {0};
+
+---------------------------------------------------
+print array
+java:
+Arrays.toString(cmd)
+

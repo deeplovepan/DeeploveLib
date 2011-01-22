@@ -1,0 +1,96 @@
+string compare
+compare
+
+string length:
+bash:
+msg="hello"
+len=${#msg}
+
+get substring:
+bash:
+msg="hello"
+subMsg=${msg:0:3}
+-> "hel"
+get subMsg from index 0, length is 3
+
+
+
+string compare:
+python:
+==, >, <, !=
+java:
+if(testStr.equals("1"))
+
+--------------------------------------------------------------
+
+split string:
+python:
+ex:
+str = "test.jpg"
+str.split('.')
+->
+['test', 'jpg']
+
+*************************************************
+
+c:
+use strtok
+ex:
+		char path[100] = "/var/root/Downloads";
+        char *str = strtok(path, "/");
+        while(str != NULL)
+        {
+                printf("str %s\n", str);
+                str = strtok(NULL, "/");
+        }
+->
+	str var
+	str root
+	str Downloads
+	
+*************************************************
+
+java:
+ex:
+seperated by ":"
+String splitString = "Bob:Stev:David:John";
+String[] names = splitString.split(":");
+
+ex:
+seperated by "."
+String splitString = "Bob.Stev.David.John";
+String[] names = splitString.split("\\.");
+
+ex:
+import java.util.Scanner;
+Scanner s = new Scanner("test1    test2    test3");
+String str;
+while(s.hasNext())
+{
+	str = s.next();
+	
+}
+-> get three string, test1, test2 and test3
+--------------------------------------------------------------
+
+string replace:
+python:
+ex:
+test = "hello"
+test.replace("h", "a")
+-> aello
+
+string find:
+python:
+ex:
+if test.startswith("abc"):
+	print "start with abc"
+elif test.endswith("abc"):
+	print "ends with abc"
+java:
+ex:
+if(buf.indexOf("write_xattr") == -1)
+
+
+
+
