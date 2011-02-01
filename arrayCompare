@@ -1,10 +1,20 @@
 array compare
 compare
+
+---------------------------------------------------
+the array can grow:
+java:
+rrayList<String> list=new ArrayList<String>();
+***************************************************
+python:
+testArray = []
+
 ---------------------------------------------------
 add element to array
-python
-testArray = []
+python:
 testArray.append("hi")
+java:
+testArray.add("h1")
 ---------------------------------------------------
 amount of array:
 java:

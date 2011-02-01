@@ -72,7 +72,7 @@
 		6128CCA812B8C68F00342ED8 /* callCFromPython.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = callCFromPython.py; sourceTree = "<group>"; };
 		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
 		612C7F851234949D00B9563B /* ioctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioctl; sourceTree = "<group>"; };
-		612C7F93123499CB00B9563B /* lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lock; sourceTree = "<group>"; };
+		612C7F93123499CB00B9563B /* lockCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lockCompare; sourceTree = "<group>"; };
 		612C7FC31234B76D00B9563B /* iostat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iostat; sourceTree = "<group>"; };
 		612C7FD31234C74900B9563B /* linuxDriverSemaphore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linuxDriverSemaphore.c; sourceTree = "<group>"; };
 		612C7FE21234E02500B9563B /* linuxDriverMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverMemory; sourceTree = "<group>"; };
@@ -128,13 +128,13 @@
 		6141E409122249AF0013D895 /* ext3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext3; sourceTree = "<group>"; };
 		614334201210E74400C319F9 /* ifElse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ifElse; sourceTree = "<group>"; };
 		614334211210E77F00C319F9 /* installPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPackage; sourceTree = "<group>"; };
-		6143342F1210EAC000C319F9 /* fileIo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileIo; sourceTree = "<group>"; };
+		6143342F1210EAC000C319F9 /* fileCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileCompare; sourceTree = "<group>"; };
 		614334301210EAE700C319F9 /* driverCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverCommand; sourceTree = "<group>"; };
 		614334361210ED4600C319F9 /* printMessage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = printMessage; sourceTree = "<group>"; };
 		614334371210ED7F00C319F9 /* textEncoding */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textEncoding; sourceTree = "<group>"; };
 		614334381210F11200C319F9 /* math */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = math; sourceTree = "<group>"; };
 		614334391210F18D00C319F9 /* type */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type; sourceTree = "<group>"; };
-		6143343A1210F1AB00C319F9 /* sleep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sleep; sourceTree = "<group>"; };
+		6143343A1210F1AB00C319F9 /* sleepCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sleepCompare; sourceTree = "<group>"; };
 		6143346C1210F8A700C319F9 /* stringAndNumber */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringAndNumber; sourceTree = "<group>"; };
 		6143346E1210F8DE00C319F9 /* time */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = time; sourceTree = "<group>"; };
 		614334811210F98C00C319F9 /* sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sqlite; sourceTree = "<group>"; };
@@ -159,6 +159,11 @@
 		61464F0012C088FA00C691FE /* socket */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = socket; sourceTree = "<group>"; };
 		6147CEB2127ACB7A00633000 /* accountAndGroup */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accountAndGroup; sourceTree = "<group>"; };
 		6147CEB3127ACB9A00633000 /* acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acl; sourceTree = "<group>"; };
+		614A5C4312ED1B4E0005EDE5 /* language */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = language; sourceTree = "<group>"; };
+		614A5CCD12EFF85B0005EDE5 /* linuxIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxIoFlow; sourceTree = "<group>"; };
+		614A5D1212F013DF0005EDE5 /* linuxDriverConstraint */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverConstraint; sourceTree = "<group>"; };
+		614A5D1B12F029930005EDE5 /* eval */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eval; sourceTree = "<group>"; };
+		614A5D9D12F2C57E0005EDE5 /* chgrp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chgrp; sourceTree = "<group>"; };
 		614D2FD51239FEEB001A2FCF /* grep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grep; sourceTree = "<group>"; };
 		614D2FF0123A0F2B001A2FCF /* dmStudy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dmStudy; sourceTree = "<group>"; };
 		614D3021123A244B001A2FCF /* initrd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = initrd; sourceTree = "<group>"; };
@@ -442,6 +447,7 @@
 				6192A61B12D46B4400882981 /* nslookup */,
 				61DC7C5612E44A3200A8D464 /* cut */,
 				61DC7C7412E44E8500A8D464 /* wc */,
+				614A5D9D12F2C57E0005EDE5 /* chgrp */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -471,6 +477,8 @@
 				615EF25F128102CB001E0296 /* linuxKernelVersion */,
 				61E8807512964B4C00960437 /* linuxInterrupt */,
 				617418C312A4EDF90020B9FD /* smp */,
+				614A5CCD12EFF85B0005EDE5 /* linuxIoFlow */,
+				614A5D1212F013DF0005EDE5 /* linuxDriverConstraint */,
 			);
 			name = linuxDriver;
 			sourceTree = "<group>";
@@ -485,13 +493,12 @@
 				612850361210045900696385 /* memoryManagement */,
 				614334201210E74400C319F9 /* ifElse */,
 				614334211210E77F00C319F9 /* installPackage */,
-				6143342F1210EAC000C319F9 /* fileIo */,
 				614334301210EAE700C319F9 /* driverCommand */,
 				614334361210ED4600C319F9 /* printMessage */,
 				614334371210ED7F00C319F9 /* textEncoding */,
 				614334381210F11200C319F9 /* math */,
+				614A5C4312ED1B4E0005EDE5 /* language */,
 				614334391210F18D00C319F9 /* type */,
-				6143343A1210F1AB00C319F9 /* sleep */,
 				6143346C1210F8A700C319F9 /* stringAndNumber */,
 				6143346E1210F8DE00C319F9 /* time */,
 				6143348512111C1500C319F9 /* driverParameter */,
@@ -502,7 +509,6 @@
 				619C4363121554A8001C3C24 /* comment */,
 				612C7F841234901C00B9563B /* runCommandFromProgram */,
 				612C7F851234949D00B9563B /* ioctl */,
-				612C7F93123499CB00B9563B /* lock */,
 				613BF0FB125330BA002D090B /* path */,
 				618844021259AC08000FE3F6 /* class */,
 				617F4941125ACB2900BA909B /* commandLineParameter */,
@@ -752,6 +758,7 @@
 				6128CCA612B8C3E600342ED8 /* PyMod.c */,
 				6128CCA812B8C68F00342ED8 /* callCFromPython.py */,
 				6195634A12BA0E2E00AF3597 /* import */,
+				614A5D1B12F029930005EDE5 /* eval */,
 			);
 			name = python;
 			sourceTree = "<group>";
@@ -792,9 +799,12 @@
 		6164D44E12E6926800F8BEBE /* programCompare */ = {
 			isa = PBXGroup;
 			children = (
+				612C7F93123499CB00B9563B /* lockCompare */,
 				619C4360121553F9001C3C24 /* loopCompare */,
 				617C22A9129A3C37000F8651 /* arrayCompare */,
 				61CD0C2B1287F7B20015B8F8 /* stringCompare */,
+				6143342F1210EAC000C319F9 /* fileCompare */,
+				6143343A1210F1AB00C319F9 /* sleepCompare */,
 			);
 			name = programCompare;
 			sourceTree = "<group>";
