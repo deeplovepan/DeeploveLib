@@ -1,0 +1,48 @@
+file compare
+compare 
+
+c: 
+ssize_t read(int fildes, void *buf, size_t nbyte); 
+ssize_t pread(int fildes, void *buf, size_t nbyte, off_t offset); 
+starts reading at a point in the file indicated by the offset parameter 
+
+write ex:
+#include <fcntl.h>
+int main()
+{
+        int fd = open("out.txt", O_RDWR|O_CREAT);
+        char buf[10000];
+		int len = 100;
+        int writeBytes = write(fd, buf, len);
+        close(fd);
+        return 0;
+}
+          
+	
+check if file exist:
+use stat
+ex:
+#include <sys/stat.h>
+struct stat info;
+int ret = stat("/var/root/test.c", &info);
+note:
+if stat return 0, file or dir exist
+
+	
+	
+python:
+ex:
+file = open("text.txt", "w")
+
+ex:
+file = open("text.txt", "r")
+# get all content of the file
+text = file.read()
+
+ex:
+file = open("text.txt", "r")
+# read line by line 
+for line in file.readlines():
+	print line
+	
+	
