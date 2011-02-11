@@ -34,6 +34,20 @@ match 0 or 1 repetitions
 escape character
 
 
+------------------------------------------------------------------
+check if string match regular expression
+
+javascript
+ex:
+if("hello".match(/[^*?/\:"<>|]/))
+{
+
+}
+
+
+
+------------------------------------------------------------------
+
 search():
 Scan through a string, looking for any location where this RE matches.
 group:

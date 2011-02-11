@@ -109,6 +109,10 @@
 		613DDB1B121B7F62008AB143 /* objdump */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objdump; sourceTree = "<group>"; };
 		613DDBD7121B88F8008AB143 /* perror */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perror; sourceTree = "<group>"; };
 		613DDC2D121BC177008AB143 /* showTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = showTrace; sourceTree = "<group>"; };
+		614032A612F7F48F00C7FA39 /* macStorageDriverIoreg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macStorageDriverIoreg2.png; sourceTree = "<group>"; };
+		614032A712F7F4F300C7FA39 /* macStorageDriverIoreg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macStorageDriverIoreg3.png; sourceTree = "<group>"; };
+		614032A912F7F67500C7FA39 /* macStorageDriverIoreg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macStorageDriverIoreg1.png; sourceTree = "<group>"; };
+		614032AA12F7F98A00C7FA39 /* macStorageDriverIoreg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macStorageDriverIoreg4.png; sourceTree = "<group>"; };
 		6141527F1212476500AA6001 /* driverInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverInfo; sourceTree = "<group>"; };
 		614152AF1212547F00AA6001 /* cStructure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cStructure; sourceTree = "<group>"; };
 		61415B8A1212825400AA6001 /* enum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enum; sourceTree = "<group>"; };
@@ -620,6 +624,7 @@
 		613A6E20121D37C700805A1C /* macDriver */ = {
 			isa = PBXGroup;
 			children = (
+				614032A212F7F33500C7FA39 /* macScsiDriver */,
 				613A6E21121D37D900805A1C /* macUserClient */,
 				6132C58A121E30B30016372F /* macDriverType */,
 				6188436C125983CB000FE3F6 /* macDriverNotification */,
@@ -654,6 +659,17 @@
 				617CE34512AE2BE700D5E6D3 /* jqueryEx.js */,
 			);
 			name = jquery;
+			sourceTree = "<group>";
+		};
+		614032A212F7F33500C7FA39 /* macScsiDriver */ = {
+			isa = PBXGroup;
+			children = (
+				614032A912F7F67500C7FA39 /* macStorageDriverIoreg1.png */,
+				614032A612F7F48F00C7FA39 /* macStorageDriverIoreg2.png */,
+				614032A712F7F4F300C7FA39 /* macStorageDriverIoreg3.png */,
+				614032AA12F7F98A00C7FA39 /* macStorageDriverIoreg4.png */,
+			);
+			name = macScsiDriver;
 			sourceTree = "<group>";
 		};
 		61415C581212C3D800AA6001 /* jspAndServlet */ = {

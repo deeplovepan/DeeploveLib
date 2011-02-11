@@ -8,6 +8,19 @@ app communicates with driver by user client
 2. get ioConnect for driver obj
 
 3. use ioConnect to communicate with user client
+kern_return_t
+IOConnectCallMethod(
+	mach_port_t	 connection,		// In
+	uint32_t	 selector,		// In
+	const uint64_t	*input,			// In
+	uint32_t	 inputCnt,		// In
+	const void      *inputStruct,		// In
+	size_t		 inputStructCnt,	// In
+	uint64_t	*output,		// Out
+	uint32_t	*outputCnt,		// In/Out
+	void		*outputStruct,		// Out
+	size_t		*outputStructCnt)	// In/Out
+
 ex:
 enum {
     kMyUserClientOpen,

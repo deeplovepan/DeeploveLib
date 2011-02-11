@@ -59,3 +59,12 @@ igb1:1: flags=2004841<UP,RUNNING,MULTICAST,DHCP,IPv6> mtu 1500 index 4
         inet6 2001::c115:7cfd:801e:8b7/128 
 
 
+-----------------------------------------------
+dhcp get ipv6 address
+
+linux
+ex:
+dhcp6c eth0
+
+
+
