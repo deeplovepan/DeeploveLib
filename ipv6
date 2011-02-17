@@ -48,6 +48,15 @@ solaris:
 ex:
 touch /etc/hostname6.igb0
 
+above method has problem,
+use following method:
+ex:
+edit /etc/rc3.d/S2setIpv6
+ifconfig e1000g0 inet6 unplumb
+ifconfig e1000g0 inet6 plumb
+ifconfig e1000g0 inet6 up
+ifconfig e1000g0 inet6 dhcp
+
 -------------------------------------------------------
 get IPv6 address from DHCP
 
