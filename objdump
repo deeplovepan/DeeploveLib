@@ -4,4 +4,12 @@ command
 show assembly of program & line number of source code:
 ex:
 objdump -D --line-numbers test.o 
+-----------------------------------------------------
+show architecture:
+ex:
+objdump -a vmlinux
+->
+vmlinux2:     file format elf64-x86-64
+
+
 

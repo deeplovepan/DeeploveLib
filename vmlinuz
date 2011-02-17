@@ -1,0 +1,8 @@
+vmlinuz
+command
+
+uncompress vmlinux:
+ex:
+od -t x1 -A d vmlinuz-2.6.18-128.el5.uvm6PAE | grep "1f 8b 08"
+-> 0008320 1b 00 1f 8b 08 00 d5 c2
+dd bs=1 skip=8322 if=vmlinuz-2.6.18-128.el5.uvm6PAE | zcat > vmlinux
