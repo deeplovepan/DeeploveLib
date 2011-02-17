@@ -130,6 +130,9 @@
 			612B7553130D0C6A008B188C /* PBXTextBookmark */ = 612B7553130D0C6A008B188C /* PBXTextBookmark */;
 			612B7554130D0CE6008B188C /* PBXTextBookmark */ = 612B7554130D0CE6008B188C /* PBXTextBookmark */;
 			612B7555130D0D2A008B188C /* PBXTextBookmark */ = 612B7555130D0D2A008B188C /* PBXTextBookmark */;
+			612B755E130D13A7008B188C /* PBXTextBookmark */ = 612B755E130D13A7008B188C /* PBXTextBookmark */;
+			612B755F130D13B3008B188C /* PBXTextBookmark */ = 612B755F130D13B3008B188C /* PBXTextBookmark */;
+			612B7560130D1428008B188C /* PBXTextBookmark */ = 612B7560130D1428008B188C /* PBXTextBookmark */;
 			6131BFFE12D1633D005F6955 = 6131BFFE12D1633D005F6955 /* PBXTextBookmark */;
 			6131C00312D1652A005F6955 = 6131C00312D1652A005F6955 /* PBXTextBookmark */;
 			6131C02F12D2B12C005F6955 = 6131C02F12D2B12C005F6955 /* PBXTextBookmark */;
@@ -685,7 +688,7 @@
 		isa = PBXTextBookmark;
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		rLen = 4;
-		rLoc = 2595;
+		rLoc = 2592;
 		rType = 0;
 	};
 	612B7549130D068A008B188C /* PBXTextBookmark */ = {
@@ -743,7 +746,7 @@
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		name = "ipv6: 115";
 		rLen = 0;
-		rLoc = 2993;
+		rLoc = 2990;
 		rType = 0;
 		vrLen = 355;
 		vrLoc = 2319;
@@ -763,7 +766,7 @@
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		name = "ipv6: 61";
 		rLen = 0;
-		rLoc = 1388;
+		rLoc = 1385;
 		rType = 0;
 		vrLen = 440;
 		vrLoc = 949;
@@ -773,7 +776,7 @@
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		name = "ipv6: 60";
 		rLen = 0;
-		rLoc = 1384;
+		rLoc = 1381;
 		rType = 0;
 		vrLen = 440;
 		vrLoc = 949;
@@ -783,7 +786,7 @@
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		name = "ipv6: 53";
 		rLen = 0;
-		rLoc = 1141;
+		rLoc = 1118;
 		rType = 0;
 		vrLen = 361;
 		vrLoc = 806;
@@ -793,10 +796,40 @@
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		name = "ipv6: 59";
 		rLen = 0;
-		rLoc = 1141;
+		rLoc = 1118;
 		rType = 0;
 		vrLen = 401;
 		vrLoc = 909;
+	};
+	612B755E130D13A7008B188C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 616125C112BAFE3400613625 /* ipv6 */;
+		name = "ipv6: 65";
+		rLen = 0;
+		rLoc = 1361;
+		rType = 0;
+		vrLen = 468;
+		vrLoc = 975;
+	};
+	612B755F130D13B3008B188C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 616125C112BAFE3400613625 /* ipv6 */;
+		name = "ipv6: 65";
+		rLen = 0;
+		rLoc = 1361;
+		rType = 0;
+		vrLen = 468;
+		vrLoc = 975;
+	};
+	612B7560130D1428008B188C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 616125C112BAFE3400613625 /* ipv6 */;
+		name = "ipv6: 66";
+		rLen = 0;
+		rLoc = 1361;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 975;
 	};
 	612C7F841234901C00B9563B /* runCommandFromProgram */ = {
 		uiCtxt = {
@@ -3386,7 +3419,7 @@
 		fRef = 616125C112BAFE3400613625 /* ipv6 */;
 		name = "ipv6: 120";
 		rLen = 0;
-		rLoc = 3057;
+		rLoc = 3054;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 2319;
@@ -3400,9 +3433,9 @@
 	};
 	616125C112BAFE3400613625 /* ipv6 */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {909, 3318}}";
-			sepNavSelRange = "{1141, 0}";
-			sepNavVisRange = "{909, 401}";
+			sepNavIntBoundsRect = "{{0, 0}, {909, 3234}}";
+			sepNavSelRange = "{1361, 0}";
+			sepNavVisRange = "{975, 502}";
 		};
 	};
 	616125CA12BB60F500613625 /* dns */ = {
