@@ -1,0 +1,13 @@
+trunk
+command
+
+create trunk:
+solaris:
+ex:
+dladm create-aggr -d e1000g1 -d e1000g2 -d e1000g3 1
+ifconfig aggr1 plumb up
+reference: http://myjourneytounix.blogspot.com/2010/03/link-aggregation-in-solaris-10.html
+
+show trunk info:
+solaris:
+dladm show-aggr

@@ -1,0 +1,11 @@
+route
+compare
+
+show route:
+solaris:
+netstat -rn
+---------------------------------------------------------------------------
+add default route:
+solaris:
+ex:
+route add default 172.18.8.1

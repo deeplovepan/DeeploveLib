@@ -1,0 +1,11 @@
+c macro
+c and c++
+
+1. #if
+ex:
+#if 0
+
+#endif
+we often use above to comment out a block of code
+
+

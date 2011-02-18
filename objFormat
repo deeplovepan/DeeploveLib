@@ -1,0 +1,8 @@
+object format
+
+file:
+linux:
+ex:
+file vmlinux
+->
+vmlinux: ELF 64-bit LSB executable, AMD x86-64, version 1 (SYSV), statically linked, not stripped
