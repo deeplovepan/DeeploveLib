@@ -46,8 +46,22 @@ get ipv6 after reboot
 
 solaris:
 ex:
-touch /etc/hostname6.igb0
-
+1. touch /etc/hostname6.igb0
+(prepare: 
+  /lib/svc/method/net-physical 
+  (1) modify
+	  [ -n "$inet6_plumbed" ] && if_configure inet6 "" $inet6_plumbed
+	      ->
+	  [ -n "$inet6_plumbed" ] && if_configureForV6 inet6 "" $inet6_plumbed
+  (2) define new function
+      create if_configureForV6 from copy if_configure function in /lib/svc/share/net_include.sh
+	  modify
+	  /sbin/ifconfig $1 inet6 up || fail="$fail $1"
+      ->
+	  /sbin/ifconfig $1 inet6 up
+	  /sbin/ifconfig $1 inet6 dhcp || fail="$fail $1"
+	   
+	   
 above method has problem,
 use following method:
 ex:

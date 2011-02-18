@@ -102,6 +102,20 @@ python:
 ord('a')
 -> 97
 
+--------------------------------------------------------------
+change char in the string
+ 
+python:
+newText = text[:1] + 'Z' + text[2:]
+
+--------------------------------------------------------------
+remove ending white space
+
+python:
+ex:
+testStr.strip()
+
+
 
 
 

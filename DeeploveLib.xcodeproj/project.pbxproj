@@ -71,6 +71,8 @@
 		6128CCA612B8C3E600342ED8 /* PyMod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PyMod.c; sourceTree = "<group>"; };
 		6128CCA812B8C68F00342ED8 /* callCFromPython.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = callCFromPython.py; sourceTree = "<group>"; };
 		612B758D130D230D008B188C /* vmlinuz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vmlinuz; sourceTree = "<group>"; };
+		612B75AB130E0BDE008B188C /* trunk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trunk; sourceTree = "<group>"; };
+		612B75D9130E5690008B188C /* objFormat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objFormat; sourceTree = "<group>"; };
 		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
 		612C7F851234949D00B9563B /* ioctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioctl; sourceTree = "<group>"; };
 		612C7F93123499CB00B9563B /* lockCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lockCompare; sourceTree = "<group>"; };
@@ -455,6 +457,8 @@
 				61DC7C7412E44E8500A8D464 /* wc */,
 				614A5D9D12F2C57E0005EDE5 /* chgrp */,
 				612B758D130D230D008B188C /* vmlinuz */,
+				612B75AB130E0BDE008B188C /* trunk */,
+				612B75D9130E5690008B188C /* objFormat */,
 			);
 			name = command;
 			sourceTree = "<group>";
