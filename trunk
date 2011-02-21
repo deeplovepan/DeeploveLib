@@ -1,6 +1,9 @@
 trunk
 command
 
+switch:
+the switch must support trunk
+
 create trunk:
 solaris:
 ex:
