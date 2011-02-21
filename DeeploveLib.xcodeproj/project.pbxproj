@@ -73,6 +73,7 @@
 		612B758D130D230D008B188C /* vmlinuz */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vmlinuz; sourceTree = "<group>"; };
 		612B75AB130E0BDE008B188C /* trunk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trunk; sourceTree = "<group>"; };
 		612B75D9130E5690008B188C /* objFormat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = objFormat; sourceTree = "<group>"; };
+		612B75F2130E81CE008B188C /* dhcp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dhcp; sourceTree = "<group>"; };
 		612C7F841234901C00B9563B /* runCommandFromProgram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = runCommandFromProgram; sourceTree = "<group>"; };
 		612C7F851234949D00B9563B /* ioctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ioctl; sourceTree = "<group>"; };
 		612C7F93123499CB00B9563B /* lockCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lockCompare; sourceTree = "<group>"; };
@@ -459,6 +460,7 @@
 				612B758D130D230D008B188C /* vmlinuz */,
 				612B75AB130E0BDE008B188C /* trunk */,
 				612B75D9130E5690008B188C /* objFormat */,
+				612B75F2130E81CE008B188C /* dhcp */,
 			);
 			name = command;
 			sourceTree = "<group>";
