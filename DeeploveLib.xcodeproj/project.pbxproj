@@ -247,6 +247,7 @@
 		619A994C1276B781002468F5 /* solarisPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisPackage; sourceTree = "<group>"; };
 		619A99D31277BBE5002468F5 /* dynamicLib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dynamicLib; sourceTree = "<group>"; };
 		619A9A091277F5F0002468F5 /* includeHeader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = includeHeader; sourceTree = "<group>"; };
+		619BF19D13139F270006C005 /* smtpTest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = smtpTest.py; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
 		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
 		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
@@ -389,6 +390,7 @@
 		6128500E120FF5DB00696385 /* command */ = {
 			isa = PBXGroup;
 			children = (
+				619BF19C13139F070006C005 /* smtp */,
 				6155F6DF1241ACD100B8ECDA /* centOs */,
 				61284FE2120FD98400696385 /* mount */,
 				61285009120FE05200696385 /* linuxIscsi */,
@@ -915,6 +917,14 @@
 				619563D3123F8B53002D4400 /* testWorkQueue.c */,
 			);
 			name = workQueue;
+			sourceTree = "<group>";
+		};
+		619BF19C13139F070006C005 /* smtp */ = {
+			isa = PBXGroup;
+			children = (
+				619BF19D13139F270006C005 /* smtpTest.py */,
+			);
+			name = smtp;
 			sourceTree = "<group>";
 		};
 		61DFD0D2129E0A6000553ED1 /* jquery */ = {

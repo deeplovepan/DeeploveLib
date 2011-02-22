@@ -276,14 +276,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>113</integer>
+									<integer>72</integer>
 									<integer>71</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 1272}, {268, 666}}</string>
+							<string>{{0, 914}, {268, 666}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>windowsCommand</string>
+								<string>smtp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>windowsCommand</string>
+										<string>smtp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>619BF193131395B40006C005</string>
+										<string>619BF19B13139ED50006C005</string>
 										<key>history</key>
 										<array>
 											<string>61285010120FF5E400696385</string>
@@ -475,7 +475,6 @@
 											<string>61DC7C7C12E460B300A8D464</string>
 											<string>617D2E2C12E56D1C00EBE658</string>
 											<string>617D2E2E12E56D1C00EBE658</string>
-											<string>617D2E2F12E56D1C00EBE658</string>
 											<string>6164D45112E6927400F8BEBE</string>
 											<string>6164D47112E6CF8700F8BEBE</string>
 											<string>6164D47312E6CF8700F8BEBE</string>
@@ -584,7 +583,9 @@
 											<string>619BF190131395B40006C005</string>
 											<string>619BF191131395B40006C005</string>
 											<string>619BF192131395B40006C005</string>
-											<string>6176472D1312602400E7D0C1</string>
+											<string>619BF19813139ED50006C005</string>
+											<string>619BF19913139ED50006C005</string>
+											<string>619BF19A13139ED50006C005</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

@@ -17,6 +17,8 @@ def sendMail(content):
 	msg['From'] = fromaddr
 	msg['To'] = toaddr
 	
+	# for SMTP server without authentication,
+	# we do not need to login
 	if loginPassword != "":
 		server.login(loginName, loginPassword)
 	#server.set_debuglevel(1)
