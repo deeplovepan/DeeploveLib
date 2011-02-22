@@ -192,6 +192,7 @@
 		616125C112BAFE3400613625 /* ipv6 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipv6; sourceTree = "<group>"; };
 		616125CA12BB60F500613625 /* dns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dns; sourceTree = "<group>"; };
 		617418C312A4EDF90020B9FD /* smp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smp; sourceTree = "<group>"; };
+		61764722131256D900E7D0C1 /* switchSetting */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switchSetting; sourceTree = "<group>"; };
 		617C218F129A05EE000F8651 /* iftNasNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftNasNfs; sourceTree = "<group>"; };
 		617C21AF129A10FE000F8651 /* solarisDisk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisDisk; sourceTree = "<group>"; };
 		617C22A8129A3BA5000F8651 /* cMacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cMacro; sourceTree = "<group>"; };
@@ -461,6 +462,7 @@
 				612B75AB130E0BDE008B188C /* trunk */,
 				612B75D9130E5690008B188C /* objFormat */,
 				612B75F2130E81CE008B188C /* dhcp */,
+				61764722131256D900E7D0C1 /* switchSetting */,
 			);
 			name = command;
 			sourceTree = "<group>";

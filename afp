@@ -1,9 +1,29 @@
 afp
 compare
 
+reference:
+http://developer.apple.com/library/mac/#documentation/Networking/Conceptual/AFP/AFPSecurity/AFPSecurity.html%23//apple_ref/doc/uid/TP40000854-CH232-54697
+
 qnap:
 /usr/local/etc/netatalk
 
+------------------------------------------------------------
+enable unencrypted passwords login for AFP client on MAC
+defaults write com.apple.AppleShareClient "afp_cleartext_allow" -bool YES
+defaults write com.apple.AppleShareClient "afp_cleartext_warn" -bool YES
+
+------------------------------------------------------------
+enable guest login:
+1. add uams_guest.so in afpd.conf
+ex:
+ - -transall -uamlist uams_randnum.so,uams_dhx.so,uams_dhx2.so,uams_guest.so,uams_clrtxt.so -nosavepassword -loginmesg "" -noddp
+2. svcadm disable netatalk
+3. svcadm enable -r netatalk
+------------------------------------------------------------
+prevent client save password 
+nosavepassword
+note: have no effect on Mac OS X
+------------------------------------------------------------
 
 solaris:
 config file:
@@ -14,6 +34,14 @@ svcadm enable -r netatalk
 
 check service:
 svcs | grep  netatalk
+
+
+uams_clrtxt.so:
+allow clear password
+
+
+/opt/netatalk/etc/netatalk/afpd.conf 
+
 
 -----------------------------------------------------
 

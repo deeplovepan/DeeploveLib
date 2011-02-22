@@ -2,16 +2,26 @@ trunk
 command
 
 switch:
-the switch must support trunk
-
+when enable trunk, the host &  switch must enable trunk
+when disable trunk, the host & switch must disable trunk
+---------------------------------------------------------------------
 create trunk:
 solaris:
 ex:
 dladm create-aggr -d e1000g1 -d e1000g2 -d e1000g3 1
 ifconfig aggr1 plumb up
-reference: http://myjourneytounix.blogspot.com/2010/03/link-aggregation-in-solaris-10.html
-https://wiki.chipp.ch/twiki/bin/view/CmsTier3/InstallationSolaris
-
+note:
+before create trunk, remember to unplumb its members
+---------------------------------------------------------------------
 show trunk info:
 solaris:
 dladm show-aggr
+---------------------------------------------------------------------
+del trunk:
+solaris:
+ex:
+dladm delete-aggr aggr1
+note:
+before delete trunk, remember to unplumb first
+
+

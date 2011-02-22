@@ -9,3 +9,17 @@ add default route:
 solaris:
 ex:
 route add default 172.18.8.1
+---------------------------------------------------------------------------
+add specific route:
+solaris:
+ex:
+route add -net 192.168.16.0 10.236.74.1
+ex:
+route add 192.168.64.4 10.236.74.1
+---------------------------------------------------------------------------
+delete route:
+solaris:
+ex:
+route delete 200.1.1.0 172.18.8.100
+172.18.8.100 is GW ip
+200.1.1.0 is destination IP 
