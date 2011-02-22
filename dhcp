@@ -8,7 +8,6 @@ ex:
 /sbin/dhcpagent -d1 -f &
 ifconfig interface dhcp start
 
-test1
-
+test2
 reference:
 http://dracko.com/index.php?s=page&n=show_post&id=419
