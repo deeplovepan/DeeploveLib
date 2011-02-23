@@ -1,0 +1,21 @@
+comment
+compare
+
+
+python
+ex:
+(1) # this is the comment
+(2) """  this is
+	  multi-line comment
+	"""
+---------------------------------------------------
+html
+ex:
+<!--
+<tr>
+<td class="align_l tdChkbox">
+<input id="login_three" type="checkbox" name="login_three" />
+<fmt:bundle basename="Language"><fmt:message key="afpallowusersavepwd" /></fmt:bundle>
+</td>
+</tr>
+-->

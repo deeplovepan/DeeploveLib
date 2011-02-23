@@ -4,14 +4,27 @@ compare
 reference:
 http://developer.apple.com/library/mac/#documentation/Networking/Conceptual/AFP/AFPSecurity/AFPSecurity.html%23//apple_ref/doc/uid/TP40000854-CH232-54697
 
-qnap:
-/usr/local/etc/netatalk
-
 ------------------------------------------------------------
-enable unencrypted passwords login for AFP client on MAC
-defaults write com.apple.AppleShareClient "afp_cleartext_allow" -bool YES
-defaults write com.apple.AppleShareClient "afp_cleartext_warn" -bool YES
-
+configure file:
+/opt/netatalk/etc/netatalk/afpd.conf 
+------------------------------------------------------------
+AFP packet:
+1. client send DSI Request GetStatus to server
+2. server send DSI Reply GetStatus to client
+   it includes the UAM methods server support
+   (UAM is for authentication)
+3. client send FPLogin  or FPLoginExt to login
+   it will choose  most secure UAM that the AFP client supports
+------------------------------------------------------------
+enable clear passwords login 
+for AFP client on MAC:
+open Library/Preferences/com.apple.AppleShareClient.plist 
+enable afp_cleartext_allow & afp_cleartext_warn
+**********************************************************
+for AFP server:
+use uams_clrtxt.so and remove other UAM so
+ex:
+- -transall -uamlist uams_clrtxt.so -nosavepassword -loginmesg "" -noddp
 ------------------------------------------------------------
 enable guest login:
 1. add uams_guest.so in afpd.conf
@@ -36,13 +49,8 @@ check service:
 svcs | grep  netatalk
 
 
-uams_clrtxt.so:
-allow clear password
 
-
-/opt/netatalk/etc/netatalk/afpd.conf 
-
-
+The "ClearTxt Passwrd" UAM is as bad as it sounds since passwords go unencrypted over the wire. Try to avoid it at both the server's side as well as on the client's. Note: If you want to provide Mac OS 8/9 clients with NetBoot-services then you need uams_cleartext.so since the AFP-client integrated into the Mac's firmware can only deal with this basic form of authentication.
 -----------------------------------------------------
 
 cent os

@@ -248,13 +248,14 @@
 		619A99D31277BBE5002468F5 /* dynamicLib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dynamicLib; sourceTree = "<group>"; };
 		619A9A091277F5F0002468F5 /* includeHeader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = includeHeader; sourceTree = "<group>"; };
 		619BF19D13139F270006C005 /* smtpTest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = smtpTest.py; sourceTree = "<group>"; };
+		619BF1A61313AE8A0006C005 /* sqliteTest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sqliteTest.py; sourceTree = "<group>"; };
 		619C406C1214E675001C3C24 /* cvs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cvs; sourceTree = "<group>"; };
 		619C41FE12152767001C3C24 /* stackTrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTrace; sourceTree = "<group>"; };
 		619C422D12152D34001C3C24 /* linuxDriverLink */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxDriverLink; sourceTree = "<group>"; };
 		619C435D1215534C001C3C24 /* Dictionary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary; sourceTree = "<group>"; };
 		619C4360121553F9001C3C24 /* loopCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loopCompare; sourceTree = "<group>"; };
 		619C436112155452001C3C24 /* function */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = function; sourceTree = "<group>"; };
-		619C4363121554A8001C3C24 /* comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment; sourceTree = "<group>"; };
+		619C4363121554A8001C3C24 /* commentCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = commentCompare; sourceTree = "<group>"; };
 		619F23F712655AA300376237 /* lsof */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lsof; sourceTree = "<group>"; };
 		619F25161265BB6200376237 /* networkSetting */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = networkSetting; sourceTree = "<group>"; };
 		619F253612669EDD00376237 /* netstat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = netstat; sourceTree = "<group>"; };
@@ -523,7 +524,6 @@
 				619C41FE12152767001C3C24 /* stackTrace */,
 				619C435D1215534C001C3C24 /* Dictionary */,
 				619C436112155452001C3C24 /* function */,
-				619C4363121554A8001C3C24 /* comment */,
 				612C7F841234901C00B9563B /* runCommandFromProgram */,
 				612C7F851234949D00B9563B /* ioctl */,
 				613BF0FB125330BA002D090B /* path */,
@@ -723,6 +723,7 @@
 			children = (
 				614334811210F98C00C319F9 /* sqlite */,
 				612ECC8A12543A0E00C96173 /* mysql */,
+				619BF1A61313AE8A0006C005 /* sqliteTest.py */,
 			);
 			name = database;
 			sourceTree = "<group>";
@@ -835,6 +836,7 @@
 				61CD0C2B1287F7B20015B8F8 /* stringCompare */,
 				6143342F1210EAC000C319F9 /* fileCompare */,
 				6143343A1210F1AB00C319F9 /* sleepCompare */,
+				619C4363121554A8001C3C24 /* commentCompare */,
 			);
 			name = programCompare;
 			sourceTree = "<group>";
