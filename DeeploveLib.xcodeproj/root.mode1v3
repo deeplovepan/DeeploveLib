@@ -267,7 +267,6 @@
 								<string>6132C508121E13B70016372F</string>
 								<string>61284FE1120FD96500696385</string>
 								<string>6143346F1210F97F00C319F9</string>
-								<string>612850351210043100696385</string>
 								<string>6128500E120FF5DB00696385</string>
 								<string>619BF19C13139F070006C005</string>
 								<string>08FB7795FE84155DC02AAC07</string>
@@ -278,14 +277,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>65</integer>
-									<integer>30</integer>
+									<integer>29</integer>
+									<integer>26</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 456}, {268, 666}}</string>
+							<string>{{0, 260}, {268, 666}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -322,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>afp</string>
+								<string>sqliteTest.py</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>afp</string>
+										<string>sqliteTest.py</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>619A1C261314AA4A00EA66D9</string>
+										<string>619A1C901314FDE100EA66D9</string>
 										<key>history</key>
 										<array>
 											<string>61285010120FF5E400696385</string>
@@ -363,7 +362,6 @@
 											<string>613C38B312B73CF2009E9537</string>
 											<string>613C38B412B73CF2009E9537</string>
 											<string>613C38B512B73CF2009E9537</string>
-											<string>613C38B712B73CF2009E9537</string>
 											<string>613C38D212B73CF2009E9537</string>
 											<string>613C38D512B73CF2009E9537</string>
 											<string>613C38E812B73CF2009E9537</string>
@@ -456,7 +454,6 @@
 											<string>6192A62712D4786D00882981</string>
 											<string>6192A64812D480A300882981</string>
 											<string>6162CB9312D5C839000F4D32</string>
-											<string>6162CBAE12D6F264000F4D32</string>
 											<string>6159315E12DAA13D0092CEBC</string>
 											<string>61B0308F12DBF017008D52A8</string>
 											<string>61B030A112DC2266008D52A8</string>
@@ -515,7 +512,6 @@
 											<string>6167C4E412F3E433009D0D9E</string>
 											<string>61D4530412F79C21008D315F</string>
 											<string>61D4532912F7B837008D315F</string>
-											<string>6140325F12F7D32200C7FA39</string>
 											<string>614032BF12F8126600C7FA39</string>
 											<string>614032C012F8126600C7FA39</string>
 											<string>614032C112F8126600C7FA39</string>
@@ -524,7 +520,6 @@
 											<string>615624CE1302352A00D18260</string>
 											<string>615624F01302626300D18260</string>
 											<string>615624F11302626300D18260</string>
-											<string>61562507130283AF00D18260</string>
 											<string>61795FA81303CDC7004CE2B0</string>
 											<string>6179601413056F2C004CE2B0</string>
 											<string>615C96F81308C26F00B2382B</string>
@@ -533,7 +528,6 @@
 											<string>615C970F1308F66600B2382B</string>
 											<string>615C971F13090E1000B2382B</string>
 											<string>615C97331309247500B2382B</string>
-											<string>615C9751130B685100B2382B</string>
 											<string>615C975A130B6CC600B2382B</string>
 											<string>615C975B130B6CC600B2382B</string>
 											<string>615C975C130B6CC600B2382B</string>
@@ -579,17 +573,22 @@
 											<string>619BF191131395B40006C005</string>
 											<string>619BF19813139ED50006C005</string>
 											<string>619BF19913139ED50006C005</string>
-											<string>619BF1A71313C4250006C005</string>
 											<string>619BF1A81313C4250006C005</string>
 											<string>619BF1A91313C4250006C005</string>
-											<string>619BF1AA1313C4250006C005</string>
 											<string>619BF1AB1313C4250006C005</string>
-											<string>619BF1AC1313C4250006C005</string>
-											<string>619BF1AD1313C4250006C005</string>
 											<string>619BF1AE1313C4250006C005</string>
 											<string>619BF1AF1313C4250006C005</string>
 											<string>619A1C231314AA4A00EA66D9</string>
-											<string>619A1C251314AA4A00EA66D9</string>
+											<string>619A1C2D1314E1B700EA66D9</string>
+											<string>619A1C2E1314E1B700EA66D9</string>
+											<string>619A1C2F1314E1B700EA66D9</string>
+											<string>619A1C301314E1B700EA66D9</string>
+											<string>619A1C311314E1B700EA66D9</string>
+											<string>619A1C341314E1B700EA66D9</string>
+											<string>619A1C4A1314E60500EA66D9</string>
+											<string>619A1C4B1314E60500EA66D9</string>
+											<string>619A1C8E1314FDE100EA66D9</string>
+											<string>619A1C8F1314FDE100EA66D9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -787,6 +786,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>6184582F120FACA800F093F1</string>
 		<string>/var/root/Documents/gitProjects/DeeploveLib/DeeploveLib.xcodeproj</string>
 	</array>
@@ -1023,12 +1023,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>sqlite</string>
+										<string>solarisShare</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -1049,8 +1051,6 @@
 							<string>428pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1086,8 +1086,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>619BF17F13136A410006C005</string>
-				<string>619BF18013136A410006C005</string>
+				<string>619A1C2B1314E1B300EA66D9</string>
+				<string>619A1C2C1314E1B300EA66D9</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>

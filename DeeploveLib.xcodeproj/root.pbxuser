@@ -334,6 +334,106 @@
 			619A1C231314AA4A00EA66D9 /* PBXTextBookmark */ = 619A1C231314AA4A00EA66D9 /* PBXTextBookmark */;
 			619A1C251314AA4A00EA66D9 /* PBXTextBookmark */ = 619A1C251314AA4A00EA66D9 /* PBXTextBookmark */;
 			619A1C261314AA4A00EA66D9 /* PBXTextBookmark */ = 619A1C261314AA4A00EA66D9 /* PBXTextBookmark */;
+			619A1C291314E1B300EA66D9 /* PBXTextBookmark */ = 619A1C291314E1B300EA66D9 /* PBXTextBookmark */;
+			619A1C2A1314E1B300EA66D9 /* PBXTextBookmark */ = 619A1C2A1314E1B300EA66D9 /* PBXTextBookmark */;
+			619A1C2D1314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C2D1314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C2E1314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C2E1314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C2F1314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C2F1314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C301314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C301314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C311314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C311314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C321314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C321314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C331314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C331314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C341314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C341314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C351314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C351314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C361314E1B700EA66D9 /* PBXTextBookmark */ = 619A1C361314E1B700EA66D9 /* PBXTextBookmark */;
+			619A1C371314E23800EA66D9 /* PBXTextBookmark */ = 619A1C371314E23800EA66D9 /* PBXTextBookmark */;
+			619A1C381314E2B100EA66D9 /* PBXTextBookmark */ = 619A1C381314E2B100EA66D9 /* PBXTextBookmark */;
+			619A1C391314E2D200EA66D9 /* PBXTextBookmark */ = 619A1C391314E2D200EA66D9 /* PBXTextBookmark */;
+			619A1C3A1314E30E00EA66D9 /* PBXTextBookmark */ = 619A1C3A1314E30E00EA66D9 /* PBXTextBookmark */;
+			619A1C3B1314E30E00EA66D9 /* PBXTextBookmark */ = 619A1C3B1314E30E00EA66D9 /* PBXTextBookmark */;
+			619A1C3C1314E32400EA66D9 /* PBXTextBookmark */ = 619A1C3C1314E32400EA66D9 /* PBXTextBookmark */;
+			619A1C3D1314E32400EA66D9 /* PBXBookmark */ = 619A1C3D1314E32400EA66D9 /* PBXBookmark */;
+			619A1C3E1314E32400EA66D9 /* PBXTextBookmark */ = 619A1C3E1314E32400EA66D9 /* PBXTextBookmark */;
+			619A1C3F1314E34E00EA66D9 /* PBXTextBookmark */ = 619A1C3F1314E34E00EA66D9 /* PBXTextBookmark */;
+			619A1C401314E34E00EA66D9 /* PBXTextBookmark */ = 619A1C401314E34E00EA66D9 /* PBXTextBookmark */;
+			619A1C411314E34E00EA66D9 /* PBXTextBookmark */ = 619A1C411314E34E00EA66D9 /* PBXTextBookmark */;
+			619A1C421314E3F800EA66D9 /* PBXTextBookmark */ = 619A1C421314E3F800EA66D9 /* PBXTextBookmark */;
+			619A1C431314E50600EA66D9 /* PBXTextBookmark */ = 619A1C431314E50600EA66D9 /* PBXTextBookmark */;
+			619A1C441314E50600EA66D9 /* PBXTextBookmark */ = 619A1C441314E50600EA66D9 /* PBXTextBookmark */;
+			619A1C451314E50600EA66D9 /* PBXTextBookmark */ = 619A1C451314E50600EA66D9 /* PBXTextBookmark */;
+			619A1C461314E5CF00EA66D9 /* PBXTextBookmark */ = 619A1C461314E5CF00EA66D9 /* PBXTextBookmark */;
+			619A1C471314E5CF00EA66D9 /* PBXTextBookmark */ = 619A1C471314E5CF00EA66D9 /* PBXTextBookmark */;
+			619A1C481314E5CF00EA66D9 /* PBXTextBookmark */ = 619A1C481314E5CF00EA66D9 /* PBXTextBookmark */;
+			619A1C491314E5CF00EA66D9 /* PBXTextBookmark */ = 619A1C491314E5CF00EA66D9 /* PBXTextBookmark */;
+			619A1C4A1314E60500EA66D9 /* PBXTextBookmark */ = 619A1C4A1314E60500EA66D9 /* PBXTextBookmark */;
+			619A1C4B1314E60500EA66D9 /* PBXTextBookmark */ = 619A1C4B1314E60500EA66D9 /* PBXTextBookmark */;
+			619A1C4C1314E60500EA66D9 /* PBXTextBookmark */ = 619A1C4C1314E60500EA66D9 /* PBXTextBookmark */;
+			619A1C4D1314E60500EA66D9 /* PBXTextBookmark */ = 619A1C4D1314E60500EA66D9 /* PBXTextBookmark */;
+			619A1C4E1314E72800EA66D9 /* PBXTextBookmark */ = 619A1C4E1314E72800EA66D9 /* PBXTextBookmark */;
+			619A1C4F1314E72800EA66D9 /* PBXTextBookmark */ = 619A1C4F1314E72800EA66D9 /* PBXTextBookmark */;
+			619A1C501314E72800EA66D9 /* PBXTextBookmark */ = 619A1C501314E72800EA66D9 /* PBXTextBookmark */;
+			619A1C511314E74900EA66D9 /* PBXTextBookmark */ = 619A1C511314E74900EA66D9 /* PBXTextBookmark */;
+			619A1C521314E7FC00EA66D9 /* PBXTextBookmark */ = 619A1C521314E7FC00EA66D9 /* PBXTextBookmark */;
+			619A1C531314E95C00EA66D9 /* PBXTextBookmark */ = 619A1C531314E95C00EA66D9 /* PBXTextBookmark */;
+			619A1C541314E98500EA66D9 /* PBXTextBookmark */ = 619A1C541314E98500EA66D9 /* PBXTextBookmark */;
+			619A1C551314E9BE00EA66D9 /* PBXTextBookmark */ = 619A1C551314E9BE00EA66D9 /* PBXTextBookmark */;
+			619A1C561314E9D900EA66D9 /* PBXTextBookmark */ = 619A1C561314E9D900EA66D9 /* PBXTextBookmark */;
+			619A1C571314EA3200EA66D9 /* PBXTextBookmark */ = 619A1C571314EA3200EA66D9 /* PBXTextBookmark */;
+			619A1C581314EA8400EA66D9 /* PBXTextBookmark */ = 619A1C581314EA8400EA66D9 /* PBXTextBookmark */;
+			619A1C591314EADC00EA66D9 /* PBXTextBookmark */ = 619A1C591314EADC00EA66D9 /* PBXTextBookmark */;
+			619A1C5A1314EAF100EA66D9 /* PBXTextBookmark */ = 619A1C5A1314EAF100EA66D9 /* PBXTextBookmark */;
+			619A1C5B1314EAFB00EA66D9 /* PBXTextBookmark */ = 619A1C5B1314EAFB00EA66D9 /* PBXTextBookmark */;
+			619A1C5C1314EB2E00EA66D9 /* PBXTextBookmark */ = 619A1C5C1314EB2E00EA66D9 /* PBXTextBookmark */;
+			619A1C5D1314EB4300EA66D9 /* PBXTextBookmark */ = 619A1C5D1314EB4300EA66D9 /* PBXTextBookmark */;
+			619A1C5E1314EB7200EA66D9 /* PBXTextBookmark */ = 619A1C5E1314EB7200EA66D9 /* PBXTextBookmark */;
+			619A1C5F1314EBAA00EA66D9 /* PBXTextBookmark */ = 619A1C5F1314EBAA00EA66D9 /* PBXTextBookmark */;
+			619A1C601314EBCD00EA66D9 /* PBXTextBookmark */ = 619A1C601314EBCD00EA66D9 /* PBXTextBookmark */;
+			619A1C611314EBDF00EA66D9 /* PBXTextBookmark */ = 619A1C611314EBDF00EA66D9 /* PBXTextBookmark */;
+			619A1C621314EC0700EA66D9 /* PBXTextBookmark */ = 619A1C621314EC0700EA66D9 /* PBXTextBookmark */;
+			619A1C631314EC2A00EA66D9 /* PBXTextBookmark */ = 619A1C631314EC2A00EA66D9 /* PBXTextBookmark */;
+			619A1C641314EC3C00EA66D9 /* PBXTextBookmark */ = 619A1C641314EC3C00EA66D9 /* PBXTextBookmark */;
+			619A1C651314EC4800EA66D9 /* PBXTextBookmark */ = 619A1C651314EC4800EA66D9 /* PBXTextBookmark */;
+			619A1C661314EC6800EA66D9 /* PBXTextBookmark */ = 619A1C661314EC6800EA66D9 /* PBXTextBookmark */;
+			619A1C671314EC7300EA66D9 /* PBXTextBookmark */ = 619A1C671314EC7300EA66D9 /* PBXTextBookmark */;
+			619A1C681314EC7C00EA66D9 /* PBXTextBookmark */ = 619A1C681314EC7C00EA66D9 /* PBXTextBookmark */;
+			619A1C691314EC8F00EA66D9 /* PBXTextBookmark */ = 619A1C691314EC8F00EA66D9 /* PBXTextBookmark */;
+			619A1C6A1314ECC500EA66D9 /* PBXTextBookmark */ = 619A1C6A1314ECC500EA66D9 /* PBXTextBookmark */;
+			619A1C6B1314ECDD00EA66D9 /* PBXTextBookmark */ = 619A1C6B1314ECDD00EA66D9 /* PBXTextBookmark */;
+			619A1C6C1314ECFB00EA66D9 /* PBXTextBookmark */ = 619A1C6C1314ECFB00EA66D9 /* PBXTextBookmark */;
+			619A1C6D1314ED0400EA66D9 /* PBXTextBookmark */ = 619A1C6D1314ED0400EA66D9 /* PBXTextBookmark */;
+			619A1C6E1314ED7500EA66D9 /* PBXTextBookmark */ = 619A1C6E1314ED7500EA66D9 /* PBXTextBookmark */;
+			619A1C6F1314ED7500EA66D9 /* PBXTextBookmark */ = 619A1C6F1314ED7500EA66D9 /* PBXTextBookmark */;
+			619A1C701314ED7500EA66D9 /* PBXTextBookmark */ = 619A1C701314ED7500EA66D9 /* PBXTextBookmark */;
+			619A1C711314ED7E00EA66D9 /* PBXTextBookmark */ = 619A1C711314ED7E00EA66D9 /* PBXTextBookmark */;
+			619A1C721314EDC000EA66D9 /* PBXTextBookmark */ = 619A1C721314EDC000EA66D9 /* PBXTextBookmark */;
+			619A1C731314EE7900EA66D9 /* PBXTextBookmark */ = 619A1C731314EE7900EA66D9 /* PBXTextBookmark */;
+			619A1C741314EEA200EA66D9 /* PBXTextBookmark */ = 619A1C741314EEA200EA66D9 /* PBXTextBookmark */;
+			619A1C751314EEBA00EA66D9 /* PBXTextBookmark */ = 619A1C751314EEBA00EA66D9 /* PBXTextBookmark */;
+			619A1C761314EF0100EA66D9 /* PBXTextBookmark */ = 619A1C761314EF0100EA66D9 /* PBXTextBookmark */;
+			619A1C771314EF1D00EA66D9 /* PBXTextBookmark */ = 619A1C771314EF1D00EA66D9 /* PBXTextBookmark */;
+			619A1C781314EF6700EA66D9 /* PBXTextBookmark */ = 619A1C781314EF6700EA66D9 /* PBXTextBookmark */;
+			619A1C791314F0A500EA66D9 /* PBXTextBookmark */ = 619A1C791314F0A500EA66D9 /* PBXTextBookmark */;
+			619A1C7A1314F31500EA66D9 /* PBXTextBookmark */ = 619A1C7A1314F31500EA66D9 /* PBXTextBookmark */;
+			619A1C7B1314F31800EA66D9 /* PBXTextBookmark */ = 619A1C7B1314F31800EA66D9 /* PBXTextBookmark */;
+			619A1C7C1314F34E00EA66D9 /* PBXTextBookmark */ = 619A1C7C1314F34E00EA66D9 /* PBXTextBookmark */;
+			619A1C7D1314F38800EA66D9 /* PBXTextBookmark */ = 619A1C7D1314F38800EA66D9 /* PBXTextBookmark */;
+			619A1C7E1314F3AC00EA66D9 /* PBXTextBookmark */ = 619A1C7E1314F3AC00EA66D9 /* PBXTextBookmark */;
+			619A1C7F1314F45000EA66D9 /* PBXTextBookmark */ = 619A1C7F1314F45000EA66D9 /* PBXTextBookmark */;
+			619A1C801314F49400EA66D9 /* PBXTextBookmark */ = 619A1C801314F49400EA66D9 /* PBXTextBookmark */;
+			619A1C811314F4F300EA66D9 /* PBXTextBookmark */ = 619A1C811314F4F300EA66D9 /* PBXTextBookmark */;
+			619A1C821314F52000EA66D9 /* PBXTextBookmark */ = 619A1C821314F52000EA66D9 /* PBXTextBookmark */;
+			619A1C831314F54B00EA66D9 /* PBXTextBookmark */ = 619A1C831314F54B00EA66D9 /* PBXTextBookmark */;
+			619A1C841314F55E00EA66D9 /* PBXTextBookmark */ = 619A1C841314F55E00EA66D9 /* PBXTextBookmark */;
+			619A1C851314F5A000EA66D9 /* PBXTextBookmark */ = 619A1C851314F5A000EA66D9 /* PBXTextBookmark */;
+			619A1C861314F5A900EA66D9 /* PBXTextBookmark */ = 619A1C861314F5A900EA66D9 /* PBXTextBookmark */;
+			619A1C871314F5E700EA66D9 /* PBXTextBookmark */ = 619A1C871314F5E700EA66D9 /* PBXTextBookmark */;
+			619A1C881314F60000EA66D9 /* PBXTextBookmark */ = 619A1C881314F60000EA66D9 /* PBXTextBookmark */;
+			619A1C8B1314F63F00EA66D9 /* PBXTextBookmark */ = 619A1C8B1314F63F00EA66D9 /* PBXTextBookmark */;
+			619A1C8C1314F63F00EA66D9 /* PBXTextBookmark */ = 619A1C8C1314F63F00EA66D9 /* PBXTextBookmark */;
+			619A1C8D1314F63F00EA66D9 /* PBXTextBookmark */ = 619A1C8D1314F63F00EA66D9 /* PBXTextBookmark */;
+			619A1C8E1314FDE100EA66D9 /* PBXTextBookmark */ = 619A1C8E1314FDE100EA66D9 /* PBXTextBookmark */;
+			619A1C8F1314FDE100EA66D9 /* PBXTextBookmark */ = 619A1C8F1314FDE100EA66D9 /* PBXTextBookmark */;
+			619A1C901314FDE100EA66D9 /* PBXTextBookmark */ = 619A1C901314FDE100EA66D9 /* PBXTextBookmark */;
 			619BF184131388FA0006C005 = 619BF184131388FA0006C005 /* PBXTextBookmark */;
 			619BF185131388FA0006C005 = 619BF185131388FA0006C005 /* PBXTextBookmark */;
 			619BF186131388FA0006C005 = 619BF186131388FA0006C005 /* PBXTextBookmark */;
@@ -903,9 +1003,9 @@
 	};
 	612ECC8A12543A0E00C96173 /* mysql */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {950, 714}}";
+			sepNavIntBoundsRect = "{{0, 0}, {909, 735}}";
 			sepNavSelRange = "{16, 0}";
-			sepNavVisRange = "{0, 353}";
+			sepNavVisRange = "{0, 331}";
 		};
 	};
 	612ECC8B12543B6C00C96173 /* MEACCEI.TXT */ = {
@@ -2278,9 +2378,9 @@
 	};
 	6143343A1210F1AB00C319F9 /* sleepCompare */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {909, 462}}";
+			sepNavIntBoundsRect = "{{0, 0}, {909, 545}}";
 			sepNavSelRange = "{99, 0}";
-			sepNavVisRange = "{0, 186}";
+			sepNavVisRange = "{0, 210}";
 		};
 	};
 	6143346C1210F8A700C319F9 /* stringAndNumber */ = {
@@ -2299,9 +2399,9 @@
 	};
 	614334811210F98C00C319F9 /* sqlite */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1060, 693}}";
-			sepNavSelRange = "{0, 6}";
-			sepNavVisRange = "{0, 475}";
+			sepNavIntBoundsRect = "{{0, 0}, {909, 1008}}";
+			sepNavSelRange = "{662, 0}";
+			sepNavVisRange = "{371, 534}";
 		};
 	};
 	614334831210F9DE00C319F9 /* phpOnMac */ = {
@@ -3464,9 +3564,9 @@
 	};
 	617C2312129A728D000F8651 /* solarisShare */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1060, 1071}}";
-			sepNavSelRange = "{109, 18}";
-			sepNavVisRange = "{71, 274}";
+			sepNavIntBoundsRect = "{{0, 0}, {1060, 1330}}";
+			sepNavSelRange = "{772, 0}";
+			sepNavVisRange = "{489, 491}";
 		};
 	};
 	617CE31212ADCE7D00D5E6D3 /* solarisSamba */ = {
@@ -4068,6 +4168,997 @@
 		vrLen = 990;
 		vrLoc = 0;
 	};
+	619A1C291314E1B300EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 617C2312129A728D000F8651 /* solarisShare */;
+		rLen = 0;
+		rLoc = 522;
+		rType = 0;
+	};
+	619A1C2A1314E1B300EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 617C2312129A728D000F8651 /* solarisShare */;
+		name = "solarisShare: 45";
+		rLen = 0;
+		rLoc = 772;
+		rType = 0;
+		vrLen = 491;
+		vrLoc = 489;
+	};
+	619A1C2D1314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 61D43030129B56910061CA4B /* afp */;
+		name = "afp: 5";
+		rLen = 154;
+		rLoc = 24;
+		rType = 0;
+		vrLen = 990;
+		vrLoc = 0;
+	};
+	619A1C2E1314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619C4360121553F9001C3C24 /* loopCompare */;
+		name = "loopCompare: 1";
+		rLen = 0;
+		rLoc = 12;
+		rType = 0;
+		vrLen = 150;
+		vrLoc = 0;
+	};
+	619A1C2F1314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334201210E74400C319F9 /* ifElse */;
+		name = "ifElse: 2";
+		rLen = 7;
+		rLoc = 9;
+		rType = 0;
+		vrLen = 134;
+		vrLoc = 0;
+	};
+	619A1C301314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6143343A1210F1AB00C319F9 /* sleepCompare */;
+		name = "sleepCompare: 9";
+		rLen = 0;
+		rLoc = 99;
+		rType = 0;
+		vrLen = 210;
+		vrLoc = 0;
+	};
+	619A1C311314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619C4363121554A8001C3C24 /* commentCompare */;
+		name = "commentCompare: 14";
+		rLen = 0;
+		rLoc = 164;
+		rType = 0;
+		vrLen = 364;
+		vrLoc = 0;
+	};
+	619A1C321314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334811210F98C00C319F9 /* sqlite */;
+		name = "sqlite: 5";
+		rLen = 0;
+		rLoc = 56;
+		rType = 0;
+		vrLen = 606;
+		vrLoc = 0;
+	};
+	619A1C331314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 13";
+		rLen = 6;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 617;
+		vrLoc = 0;
+	};
+	619A1C341314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 617C2312129A728D000F8651 /* solarisShare */;
+		name = "solarisShare: 7";
+		rLen = 8;
+		rLoc = 75;
+		rType = 0;
+		vrLen = 370;
+		vrLoc = 0;
+	};
+	619A1C351314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 6";
+		rLen = 0;
+		rLoc = 1266;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 0;
+	};
+	619A1C361314E1B700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 6";
+		rLen = 0;
+		rLoc = 1266;
+		rType = 0;
+		vrLen = 373;
+		vrLoc = 0;
+	};
+	619A1C371314E23800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 7";
+		rLen = 0;
+		rLoc = 1266;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 0;
+	};
+	619A1C381314E2B100EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 12";
+		rLen = 0;
+		rLoc = 1312;
+		rType = 0;
+		vrLen = 479;
+		vrLoc = 0;
+	};
+	619A1C391314E2D200EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 16;
+	};
+	619A1C3A1314E30E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 16;
+	};
+	619A1C3B1314E30E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 16;
+	};
+	619A1C3C1314E32400EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 16;
+	};
+	619A1C3D1314E32400EA66D9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+	};
+	619A1C3E1314E32400EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 10";
+		rLen = 0;
+		rLoc = 176;
+		rType = 0;
+		vrLen = 557;
+		vrLoc = 76;
+	};
+	619A1C3F1314E34E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 10";
+		rLen = 0;
+		rLoc = 176;
+		rType = 0;
+		vrLen = 557;
+		vrLoc = 76;
+	};
+	619A1C401314E34E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1452;
+		rType = 0;
+		vrLen = 822;
+		vrLoc = 16;
+	};
+	619A1C411314E34E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1312;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 36;
+	};
+	619A1C421314E3F800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 25";
+		rLen = 0;
+		rLoc = 1295;
+		rType = 0;
+		vrLen = 729;
+		vrLoc = 166;
+	};
+	619A1C431314E50600EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 4";
+		rLen = 7;
+		rLoc = 61;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 0;
+	};
+	619A1C441314E50600EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334811210F98C00C319F9 /* sqlite */;
+		name = "sqlite: 5";
+		rLen = 0;
+		rLoc = 56;
+		rType = 0;
+		vrLen = 578;
+		vrLoc = 0;
+	};
+	619A1C451314E50600EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334811210F98C00C319F9 /* sqlite */;
+		name = "sqlite: 25";
+		rLen = 0;
+		rLoc = 622;
+		rType = 0;
+		vrLen = 638;
+		vrLoc = 18;
+	};
+	619A1C461314E5CF00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 4";
+		rLen = 7;
+		rLoc = 61;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 0;
+	};
+	619A1C471314E5CF00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 612ECC8A12543A0E00C96173 /* mysql */;
+		name = "mysql: 3";
+		rLen = 0;
+		rLoc = 16;
+		rType = 0;
+		vrLen = 331;
+		vrLoc = 0;
+	};
+	619A1C481314E5CF00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334811210F98C00C319F9 /* sqlite */;
+		name = "sqlite: 25";
+		rLen = 0;
+		rLoc = 622;
+		rType = 0;
+		vrLen = 638;
+		vrLoc = 18;
+	};
+	619A1C491314E5CF00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334811210F98C00C319F9 /* sqlite */;
+		name = "sqlite: 30";
+		rLen = 0;
+		rLoc = 690;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 371;
+	};
+	619A1C4A1314E60500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 612ECC8A12543A0E00C96173 /* mysql */;
+		name = "mysql: 3";
+		rLen = 0;
+		rLoc = 16;
+		rType = 0;
+		vrLen = 331;
+		vrLoc = 0;
+	};
+	619A1C4B1314E60500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 614334811210F98C00C319F9 /* sqlite */;
+		name = "sqlite: 28";
+		rLen = 0;
+		rLoc = 662;
+		rType = 0;
+		vrLen = 534;
+		vrLoc = 371;
+	};
+	619A1C4C1314E60500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 4";
+		rLen = 7;
+		rLoc = 61;
+		rType = 0;
+		vrLen = 795;
+		vrLoc = 0;
+	};
+	619A1C4D1314E60500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 19";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 15;
+	};
+	619A1C4E1314E72800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 5";
+		rLen = 12;
+		rLoc = 93;
+		rType = 0;
+		vrLen = 580;
+		vrLoc = 53;
+	};
+	619A1C4F1314E72800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 31";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 199;
+	};
+	619A1C501314E72800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 31";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 756;
+		vrLoc = 166;
+	};
+	619A1C511314E74900EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 33";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 657;
+		vrLoc = 274;
+	};
+	619A1C521314E7FC00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 21";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 764;
+		vrLoc = 166;
+	};
+	619A1C531314E95C00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1263;
+		rType = 0;
+		vrLen = 889;
+		vrLoc = 166;
+	};
+	619A1C541314E98500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 0;
+		rLoc = 1243;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 383;
+	};
+	619A1C551314E9BE00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 36";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 808;
+		vrLoc = 383;
+	};
+	619A1C561314E9D900EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 36";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 808;
+		vrLoc = 383;
+	};
+	619A1C571314EA3200EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 37";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 810;
+		vrLoc = 383;
+	};
+	619A1C581314EA8400EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 37";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 383;
+	};
+	619A1C591314EADC00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 7";
+		rLen = 0;
+		rLoc = 168;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	619A1C5A1314EAF100EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 37";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 806;
+		vrLoc = 373;
+	};
+	619A1C5B1314EAFB00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 37";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 805;
+		vrLoc = 373;
+	};
+	619A1C5C1314EB2E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 36";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 373;
+	};
+	619A1C5D1314EB4300EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 36";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 768;
+		vrLoc = 373;
+	};
+	619A1C5E1314EB7200EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 23";
+		rLen = 0;
+		rLoc = 1062;
+		rType = 0;
+		vrLen = 766;
+		vrLoc = 373;
+	};
+	619A1C5F1314EBAA00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 29";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 834;
+		vrLoc = 373;
+	};
+	619A1C601314EBCD00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 29";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 829;
+		vrLoc = 373;
+	};
+	619A1C611314EBDF00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 29";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 827;
+		vrLoc = 373;
+	};
+	619A1C621314EC0700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 28";
+		rLen = 0;
+		rLoc = 1197;
+		rType = 0;
+		vrLen = 886;
+		vrLoc = 373;
+	};
+	619A1C631314EC2A00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 926;
+		vrLoc = 373;
+	};
+	619A1C641314EC3C00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 25";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 876;
+		vrLoc = 373;
+	};
+	619A1C651314EC4800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 23";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 876;
+		vrLoc = 373;
+	};
+	619A1C661314EC6800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 23";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 373;
+	};
+	619A1C671314EC7300EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 23";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 875;
+		vrLoc = 373;
+	};
+	619A1C681314EC7C00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 23";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 872;
+		vrLoc = 373;
+	};
+	619A1C691314EC8F00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 372;
+	};
+	619A1C6A1314ECC500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 372;
+	};
+	619A1C6B1314ECDD00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 875;
+		vrLoc = 372;
+	};
+	619A1C6C1314ECFB00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 879;
+		vrLoc = 372;
+	};
+	619A1C6D1314ED0400EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 24";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 880;
+		vrLoc = 372;
+	};
+	619A1C6E1314ED7500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 5";
+		rLen = 12;
+		rLoc = 93;
+		rType = 0;
+		vrLen = 580;
+		vrLoc = 53;
+	};
+	619A1C6F1314ED7500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 41";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 750;
+		vrLoc = 579;
+	};
+	619A1C701314ED7500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 42";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 579;
+	};
+	619A1C711314ED7E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 31";
+		rLen = 0;
+		rLoc = 1243;
+		rType = 0;
+		vrLen = 789;
+		vrLoc = 579;
+	};
+	619A1C721314EDC000EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 31";
+		rLen = 0;
+		rLoc = 1242;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 579;
+	};
+	619A1C731314EE7900EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 26";
+		rLen = 0;
+		rLoc = 1017;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 579;
+	};
+	619A1C741314EEA200EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 26";
+		rLen = 0;
+		rLoc = 1017;
+		rType = 0;
+		vrLen = 889;
+		vrLoc = 579;
+	};
+	619A1C751314EEBA00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 41";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 889;
+		vrLoc = 579;
+	};
+	619A1C761314EF0100EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 32";
+		rLen = 0;
+		rLoc = 1242;
+		rType = 0;
+		vrLen = 917;
+		vrLoc = 579;
+	};
+	619A1C771314EF1D00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 29";
+		rLen = 0;
+		rLoc = 1084;
+		rType = 0;
+		vrLen = 835;
+		vrLoc = 579;
+	};
+	619A1C781314EF6700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 26";
+		rLen = 0;
+		rLoc = 1017;
+		rType = 0;
+		vrLen = 831;
+		vrLoc = 579;
+	};
+	619A1C791314F0A500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 30";
+		rLen = 0;
+		rLoc = 1201;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 579;
+	};
+	619A1C7A1314F31500EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 22";
+		rLen = 0;
+		rLoc = 1242;
+		rType = 0;
+		vrLen = 622;
+		vrLoc = 326;
+	};
+	619A1C7B1314F31800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 31";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 622;
+		vrLoc = 326;
+	};
+	619A1C7C1314F34E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 27";
+		rLen = 6;
+		rLoc = 1018;
+		rType = 0;
+		vrLen = 716;
+		vrLoc = 241;
+	};
+	619A1C7D1314F38800EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 19";
+		rLen = 0;
+		rLoc = 503;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 241;
+	};
+	619A1C7E1314F3AC00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 43";
+		rLen = 0;
+		rLoc = 1451;
+		rType = 0;
+		vrLen = 649;
+		vrLoc = 528;
+	};
+	619A1C7F1314F45000EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 20";
+		rLen = 0;
+		rLoc = 591;
+		rType = 0;
+		vrLen = 755;
+		vrLoc = 166;
+	};
+	619A1C801314F49400EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 21";
+		rLen = 0;
+		rLoc = 829;
+		rType = 0;
+		vrLen = 800;
+		vrLoc = 166;
+	};
+	619A1C811314F4F300EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 31";
+		rLen = 0;
+		rLoc = 728;
+		rType = 0;
+		vrLen = 605;
+		vrLoc = 372;
+	};
+	619A1C821314F52000EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 35";
+		rLen = 0;
+		rLoc = 829;
+		rType = 0;
+		vrLen = 578;
+		vrLoc = 372;
+	};
+	619A1C831314F54B00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 25";
+		rLen = 0;
+		rLoc = 590;
+		rType = 0;
+		vrLen = 537;
+		vrLoc = 372;
+	};
+	619A1C841314F55E00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 28";
+		rLen = 0;
+		rLoc = 728;
+		rType = 0;
+		vrLen = 520;
+		vrLoc = 372;
+	};
+	619A1C851314F5A000EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 30";
+		rLen = 0;
+		rLoc = 728;
+		rType = 0;
+		vrLen = 449;
+		vrLoc = 509;
+	};
+	619A1C861314F5A900EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 29";
+		rLen = 0;
+		rLoc = 728;
+		rType = 0;
+		vrLen = 449;
+		vrLoc = 509;
+	};
+	619A1C871314F5E700EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 34";
+		rLen = 0;
+		rLoc = 728;
+		rType = 0;
+		vrLen = 734;
+		vrLoc = 588;
+	};
+	619A1C881314F60000EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 29";
+		rLen = 0;
+		rLoc = 705;
+		rType = 0;
+		vrLen = 710;
+		vrLoc = 486;
+	};
+	619A1C8B1314F63F00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 51";
+		rLen = 0;
+		rLoc = 1315;
+		rType = 0;
+		vrLen = 669;
+		vrLoc = 798;
+	};
+	619A1C8C1314F63F00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 5";
+		rLen = 12;
+		rLoc = 93;
+		rType = 0;
+		vrLen = 580;
+		vrLoc = 53;
+	};
+	619A1C8D1314F63F00EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 5";
+		rLen = 12;
+		rLoc = 93;
+		rType = 0;
+		vrLen = 602;
+		vrLoc = 0;
+	};
+	619A1C8E1314FDE100EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF19D13139F270006C005 /* smtpTest.py */;
+		name = "smtpTest.py: 14";
+		rLen = 0;
+		rLoc = 290;
+		rType = 0;
+		vrLen = 557;
+		vrLoc = 76;
+	};
+	619A1C8F1314FDE100EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 50";
+		rLen = 0;
+		rLoc = 1314;
+		rType = 0;
+		vrLen = 637;
+		vrLoc = 830;
+	};
+	619A1C901314FDE100EA66D9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
+		name = "sqliteTest.py: 55";
+		rLen = 0;
+		rLoc = 1426;
+		rType = 0;
+		vrLen = 622;
+		vrLoc = 830;
+	};
 	619A97BB12755A60002468F5 /* NasProject */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {2309.43, 4893}}";
@@ -4166,15 +5257,15 @@
 	619BF19D13139F270006C005 /* smtpTest.py */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {909, 609}}";
-			sepNavSelRange = "{456, 0}";
-			sepNavVisRange = "{15, 603}";
+			sepNavSelRange = "{290, 0}";
+			sepNavVisRange = "{76, 557}";
 		};
 	};
 	619BF1A61313AE8A0006C005 /* sqliteTest.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1167.88, 526}}";
-			sepNavSelRange = "{142, 0}";
-			sepNavVisRange = "{0, 182}";
+			sepNavIntBoundsRect = "{{0, 0}, {909, 1218}}";
+			sepNavSelRange = "{1426, 0}";
+			sepNavVisRange = "{830, 622}";
 		};
 	};
 	619BF1A71313C4250006C005 /* PBXTextBookmark */ = {
@@ -4242,7 +5333,7 @@
 		fRef = 619BF1A61313AE8A0006C005 /* sqliteTest.py */;
 		name = "sqliteTest.py: 5";
 		rLen = 0;
-		rLoc = 142;
+		rLoc = 1452;
 		rType = 0;
 		vrLen = 182;
 		vrLoc = 0;
@@ -4321,9 +5412,9 @@
 	};
 	619C4363121554A8001C3C24 /* commentCompare */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {950, 448}}";
-			sepNavSelRange = "{0, 7}";
-			sepNavVisRange = "{0, 100}";
+			sepNavIntBoundsRect = "{{0, 0}, {943.975, 545}}";
+			sepNavSelRange = "{164, 0}";
+			sepNavVisRange = "{0, 364}";
 		};
 	};
 	619F23F712655AA300376237 /* lsof */ = {

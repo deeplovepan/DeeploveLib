@@ -1,7 +1,10 @@
 sqlite
 database 
 
+column tyep:
+INTEGER, REAL, TEXT, BLOB
 
+------------------------------------------------------
 command: 
 (1) select * from testTable; 
 show content of testTable 
@@ -17,6 +20,16 @@ delete all records in testTable
 update record 
 (7) delete from testTable where name like "peter%" 
 delete one record 
+(8) sqlite3 test
+sqlite3 test.db
+select test database
+(9) show current database
+.database
+(10) show current table
+.table
+
+
+
 
 
 fts3: 

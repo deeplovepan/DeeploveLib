@@ -32,7 +32,23 @@ zfs enabled
 build enabled nfs
 
 5. add share dir to share group
-sharemgr add-share -s /bits/provisioning -d "Build infrastructure" build
+ sharemgr add-share -s  /Pool-1/abc/abc1 -r abc1 -d  "test" cifs_group
+ -r : resource name
+ -s : path 
+ -d : description
+ 
+->
+default nfs=()
+          /Pool-1/1234/你好    nfs=() nfs:sys=(rw="@172.18.8.0:16")   ""
+smb smb=()
+        * /var/smb/cvol
+			c$=/var/smb/cvol       smb=(abe="false" guestok="false")      "Default Share"
+zfs
+cifs_group smb=()
+          abc1=/Pool-1/abc/abc1 "test"
+ 
+----------------------------------------------------------------
+ 
 sharemgr show -v
 ->
 default
