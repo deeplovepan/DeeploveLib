@@ -1,0 +1,22 @@
+xml compare
+compare
+
+parse xml:
+python:
+ex:
+test.xml:
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<test>
+       <path shareName="aba" description="" pool="Pool-1">/Pool-1/1234/aba</path>
+       <path shareName="你好嗎" description="" pool="Pool-1">/Pool-1/1234/你好嗎</path>
+    </test>
+</root>
+
+from xml.dom.minidom import parse, parseString
+domDoc = parse('test.xml')
+pathElements = domDoc.getElementsByTagName("path")
+for element in pathElements:
+	node = element.childNodes[0]
+	if node.nodeType == node.TEXT_NODE:
+		print node.data

@@ -193,6 +193,7 @@
 		616125CA12BB60F500613625 /* dns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dns; sourceTree = "<group>"; };
 		617418C312A4EDF90020B9FD /* smp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smp; sourceTree = "<group>"; };
 		61764722131256D900E7D0C1 /* switchSetting */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switchSetting; sourceTree = "<group>"; };
+		617A8E74131CA061008071F6 /* xmlCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xmlCompare; sourceTree = "<group>"; };
 		617C218F129A05EE000F8651 /* iftNasNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftNasNfs; sourceTree = "<group>"; };
 		617C21AF129A10FE000F8651 /* solarisDisk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisDisk; sourceTree = "<group>"; };
 		617C22A8129A3BA5000F8651 /* cMacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cMacro; sourceTree = "<group>"; };
@@ -852,6 +853,7 @@
 				6143343A1210F1AB00C319F9 /* sleepCompare */,
 				619C4363121554A8001C3C24 /* commentCompare */,
 				619A1C9A131512A300EA66D9 /* tryCatchCompare */,
+				617A8E74131CA061008071F6 /* xmlCompare */,
 			);
 			name = programCompare;
 			sourceTree = "<group>";
