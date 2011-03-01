@@ -1,0 +1,46 @@
+snmp
+command
+
+MIB format:
+ex:
+from SNMPv2-SMI.txt:
+	
+	
+from UCD-SNMP-MIB.txt:
+	ucdavis MODULE-IDENTITY
+	      ....
+		  ::= { enterprises 2021 }
+
+from UCD-DEMO-MIB.txt
+     ucdDemoMIB MODULE-IDENTITY
+		  ...
+		  ::= { ucdavis 14 }
+	
+	ucdDemoMIBObjects OBJECT IDENTIFIER ::= { ucdDemoMIB 1 }
+
+	ucdDemoPublic OBJECT IDENTIFIER ::= { ucdDemoMIBObjects 1 }	  
+
+	ucdDemoPublicString OBJECT-TYPE
+		  SYNTAX	OCTET STRING (SIZE(0..1024))
+		  ::= { ucdDemoPublic 2 }
+
+
+----------------------------------------------------------
+snmptrapd:
+start on mac os:
+1. disable authentication 
+edit /etc/snmp/snmptrapd.conf 
+disableAuthorization yes
+
+2. snmptrapd
+3. when receiving trap, we can see it from 
+   tail -f /var/log/system.log
+----------------------------------------------------------
+send snmp trap from command line
+ex:
+snmptrap -v 2c -c public 192.168.4.44:162 "" .1.3.6.1.4.1.2021.14.1 ucdDemoPublic.2 s "deeplove"
+-v: version
+-c: community
+192.168.4.44: destintaion IP
+162: destintaion port
+OID: .1.3.6.1.4.1.2021.14.1

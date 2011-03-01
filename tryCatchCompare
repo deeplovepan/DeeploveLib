@@ -1,0 +1,9 @@
+try catch
+compare
+
+python:
+ex:
+try:
+  doSomething()
+except: 
+  pass
