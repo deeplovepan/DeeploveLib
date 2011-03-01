@@ -27,11 +27,21 @@ from UCD-DEMO-MIB.txt
 
 ----------------------------------------------------------
 snmptrapd:
-start on mac os:
-1. disable authentication 
-edit /etc/snmp/snmptrapd.conf 
-disableAuthorization yes
+start snmptrapd:
 
+mac os:
+1.
+  method 1: not authentication, can receive trap for any community string 
+		edit /etc/snmp/snmptrapd.conf 
+		disableAuthorization yes
+  method 2: only receive trap for specific community string
+		ex:
+		edit /etc/snmp/snmptrapd.conf
+		authCommunity log,execute,net public
+		authCommunity log,execute,net test
+		
+		receive trap for public community or test community
+		
 2. snmptrapd
 3. when receiving trap, we can see it from 
    tail -f /var/log/system.log
