@@ -5,7 +5,7 @@ linux:
 ex:
 #include <syslog.h>
 syslog(LOG_INFO, "hello");
-
+------------------------------------------------------------
 python:
 ex:
 import syslog

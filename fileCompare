@@ -1,6 +1,11 @@
 file compare
 compare 
 
+fopen v.s open
+open is low level IO
+fopen is high level IO, c standard
+------------------------------------------------------------
+
 c: 
 ssize_t read(int fildes, void *buf, size_t nbyte); 
 ssize_t pread(int fildes, void *buf, size_t nbyte, off_t offset); 
@@ -18,7 +23,7 @@ int main()
         return 0;
 }
           
-	
+------------------------------------------------------------
 check if file exist:
 use stat
 ex:
@@ -28,21 +33,77 @@ int ret = stat("/var/root/test.c", &info);
 note:
 if stat return 0, file or dir exist
 
-	
-	
+------------------------------------------------------------
+open & close file
 python:
 ex:
 file = open("text.txt", "w")
+file.close()
+************************************************************
+c:
+FILE *file = fopen("test.txt", "r");
+fclose(file);
 
+FILE *fopen(const char *path, const char *mode);
+mode:
+r: Open text file for reading. The stream is positioned at the 
+   beginning of the file
+r+
+   Open for reading and writing. The stream is positioned at the beginning
+   of the file
+w
+	Truncate file to zero length or create text file for writing. The stream 
+	is positioned at the beginning of the file
+w+
+	Open for reading and writing. The file is created if it does not exist, 
+	otherwise it is truncated. The stream is positioned at the beginning of
+	the file
+a
+	Open for appending (writing at end of file). The file is created if it does 
+	not exist. The stream is positioned at the end of the file
+a+
+	Open for reading and appending (writing at end of file). The file is created
+	if it does not exist. The initial file position for reading is at the
+	beginning of the file, but output is always appended to the end of the file.
+------------------------------------------------------------
+read line by line
+c:
+ex:
+FILE *file = fopen("test.txt", "r");
+char str[1000];
+while(fgets(str, 100, file) != NULL)
+{
+	int len = strlen(str);
+	if(str[len-1] == '\n')
+	{
+		str[len-1] = 0;
+	}
+	else
+	{
+		str[len] = 0;
+	}
+}
+
+char * fgets ( char * str, int num, FILE * stream );
+	Reads characters from stream and stores them as a C string into str
+	until (num-1) characters have been read or either a newline or a the 
+	End-of-File is reached, whichever comes first.
+
+note:
+if there is '\n', the string read by fgets will also include '\n' 
+************************************************************
+python:
+ex:
+file = open("text.txt", "r")
+for line in file.readlines():
+	print line
+------------------------------------------------------------
+read all content of file
+c:
 ex:
 file = open("text.txt", "r")
 # get all content of the file
 text = file.read()
 
-ex:
-file = open("text.txt", "r")
-# read line by line 
-for line in file.readlines():
-	print line
 	
 	

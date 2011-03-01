@@ -242,6 +242,16 @@
 		6195634A12BA0E2E00AF3597 /* import */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = import; sourceTree = "<group>"; };
 		619563A6123F86B5002D4400 /* myDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDevice.h; sourceTree = "<group>"; };
 		619563D3123F8B53002D4400 /* testWorkQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testWorkQueue.c; sourceTree = "<group>"; };
+		619A1C931314FF0100EA66D9 /* installPythonModule */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPythonModule; sourceTree = "<group>"; };
+		619A1C9A131512A300EA66D9 /* tryCatchCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tryCatchCompare; sourceTree = "<group>"; };
+		619A1C9C131514A900EA66D9 /* snmp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = snmp; sourceTree = "<group>"; };
+		619A1C9D1315162A00EA66D9 /* snmpTrapSender.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = snmpTrapSender.py; sourceTree = "<group>"; };
+		619A1CC21316480B00EA66D9 /* UCD-DEMO-MIB.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UCD-DEMO-MIB.txt"; sourceTree = "<group>"; };
+		619A1CC31316495000EA66D9 /* UCD-SNMP-MIB.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UCD-SNMP-MIB.txt"; sourceTree = "<group>"; };
+		619A1CC713164A7000EA66D9 /* SNMPv2-SMI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SNMPv2-SMI.txt"; sourceTree = "<group>"; };
+		619A1CCD13164B2300EA66D9 /* SNMPv2-SMI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SNMPv2-SMI.png"; sourceTree = "<group>"; };
+		619A1CF01316603E00EA66D9 /* vim */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vim; sourceTree = "<group>"; };
+		619A1CFE131743CD00EA66D9 /* find */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = find; sourceTree = "<group>"; };
 		619A97BB12755A60002468F5 /* NasProject */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NasProject; sourceTree = "<group>"; };
 		619A980412756042002468F5 /* solarisService */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisService; sourceTree = "<group>"; };
 		619A994C1276B781002468F5 /* solarisPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisPackage; sourceTree = "<group>"; };
@@ -391,6 +401,7 @@
 		6128500E120FF5DB00696385 /* command */ = {
 			isa = PBXGroup;
 			children = (
+				619A1C9B1315149D00EA66D9 /* snmp */,
 				619BF19C13139F070006C005 /* smtp */,
 				6155F6DF1241ACD100B8ECDA /* centOs */,
 				61284FE2120FD98400696385 /* mount */,
@@ -466,6 +477,8 @@
 				612B75D9130E5690008B188C /* objFormat */,
 				612B75F2130E81CE008B188C /* dhcp */,
 				61764722131256D900E7D0C1 /* switchSetting */,
+				619A1CF01316603E00EA66D9 /* vim */,
+				619A1CFE131743CD00EA66D9 /* find */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -790,6 +803,7 @@
 				6128CCA812B8C68F00342ED8 /* callCFromPython.py */,
 				6195634A12BA0E2E00AF3597 /* import */,
 				614A5D1B12F029930005EDE5 /* eval */,
+				619A1C931314FF0100EA66D9 /* installPythonModule */,
 			);
 			name = python;
 			sourceTree = "<group>";
@@ -837,6 +851,7 @@
 				6143342F1210EAC000C319F9 /* fileCompare */,
 				6143343A1210F1AB00C319F9 /* sleepCompare */,
 				619C4363121554A8001C3C24 /* commentCompare */,
+				619A1C9A131512A300EA66D9 /* tryCatchCompare */,
 			);
 			name = programCompare;
 			sourceTree = "<group>";
@@ -919,6 +934,19 @@
 				619563D3123F8B53002D4400 /* testWorkQueue.c */,
 			);
 			name = workQueue;
+			sourceTree = "<group>";
+		};
+		619A1C9B1315149D00EA66D9 /* snmp */ = {
+			isa = PBXGroup;
+			children = (
+				619A1CC713164A7000EA66D9 /* SNMPv2-SMI.txt */,
+				619A1CCD13164B2300EA66D9 /* SNMPv2-SMI.png */,
+				619A1CC31316495000EA66D9 /* UCD-SNMP-MIB.txt */,
+				619A1CC21316480B00EA66D9 /* UCD-DEMO-MIB.txt */,
+				619A1C9C131514A900EA66D9 /* snmp */,
+				619A1C9D1315162A00EA66D9 /* snmpTrapSender.py */,
+			);
+			name = snmp;
 			sourceTree = "<group>";
 		};
 		619BF19C13139F070006C005 /* smtp */ = {

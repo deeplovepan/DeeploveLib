@@ -1,6 +1,13 @@
 nfs
 compare
 
+enable nfs server
+solaris:
+svcadm enable -r network/nfs/server:default
+note:
+we must share one dir for nfs before enable nfs service
+
+
 1. the file defines exported directory
 linux: /etc/exports
 solaris: /etc/dfs/dfstab
