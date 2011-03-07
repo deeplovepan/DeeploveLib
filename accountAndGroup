@@ -4,7 +4,14 @@ command
 solaris:
 ex:
 1. add user
+ex:
 useradd deeplove
+ex:
+useradd -d /Pool-1/UserHome/test -s /usr/bin/nassh -m test123
+add user test123, with home dir /Pool-1/UserHome/test
+-d: home dir path
+-m: create home dir
+
 2. add group
 groupadd gn1
 3. show user list

@@ -1,6 +1,7 @@
 solaris share
 command
 
+---------------------------------------------------
 1. sharemgr list -v
 view the group's properties
 
@@ -32,7 +33,7 @@ zfs enabled
 build enabled nfs
 
 5. add share dir to share group
- sharemgr add-share -s  /Pool-1/abc/abc1 -r abc1 -d  "test" cifs_group
+sharemgr add-share -s /Pool-1/abc/abc1 -r abc1 -d  "test" cifs_group
  -r : resource name
  -s : path 
  -d : description
@@ -48,7 +49,6 @@ cifs_group smb=()
           abc1=/Pool-1/abc/abc1 "test"
  
 ----------------------------------------------------------------
- 
 sharemgr show -v
 ->
 default
@@ -56,5 +56,12 @@ zfs
 build
           /bits/provisioning    "Build infrastructure"
 		  
-6. set properties for share group
-sharemgr set -P nfs -p anon=0,ro=@192.168.1.0/24 build
+----------------------------------------------------------------
+delete share group
+ex:
+sharemgr delete smb_group
+----------------------------------------------------------------
+modify share dir property
+ex:
+sharemgr set-share  -r vv7=vv77  -s /Pool-3/vv7 smb_group
+modify resource name ( from vv7 to vv77)

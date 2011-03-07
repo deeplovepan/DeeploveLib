@@ -10,7 +10,13 @@ python:
 msg = "hello"
 len(msg)
 --------------------------------------------------------------
-
+string add:
+python:
+ex:
+a = "aa" + "bb"
+ex:
+a = "%s %s"% ("aa", "bb")
+--------------------------------------------------------------
 get substring:
 bash:
 msg="hello"
@@ -115,6 +121,11 @@ newText = text[:1] + 'Z' + text[2:]
 --------------------------------------------------------------
 remove ending white space
 
+python:
+ex:
+testStr.strip()
+--------------------------------------------------------------
+remove starting white space
 python:
 ex:
 testStr.strip()

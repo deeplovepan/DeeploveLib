@@ -1,26 +1,46 @@
 nfs
 compare
 
+nfs share note:
+if no specifiy any rule,
+nfs share can be accessed by any host
+----------------------------------------------------------------------
+mount nfs share:
+mac os:
+ex:
+mount_nfs  172.18.8.149:/Pool-2/apple19 /tmp/test
+/Pool-2/apple19 is path on nfs server
+/tmp/test is mount point on local machine
+ex:
+mount -t nfs 172.18.8.149:/Pool-2/apple19 /tmp/test
+******************************************************************
+linux:
+mount -t nfs 172.18.8.149:/Pool-2/apple19 /tmp/test
+******************************************************************
+windows:
+windows 2003:
+1. install Microsoft Windows Services for UNIX 3.5
+2. cd \SFU\common
+   mount linux_ip:/path drive_id: (ex: mount 192.168.0.1:/abc e:)
+----------------------------------------------------------------------
 enable nfs server
 solaris:
 svcadm enable -r network/nfs/server:default
 note:
 we must share one dir for nfs before enable nfs service
-
-
-1. the file defines exported directory
+******************************************************************
+linux:
+/etc/init.d/nfs start
+----------------------------------------------------------------------
+the file defines exported directory
 linux: /etc/exports
 solaris: /etc/dfs/dfstab
-
-2. script to run after modify exprt setting
+----------------------------------------------------------------------
+script to run after modify exprt setting
 linux: /usr/sbin/exportfs -a
 solaris: shareall
-
-3. NFS uses a single access control database that tells which filesystems should be 
-exported and which clients may mount them. The operative copy of this database 
-is usually kept in a file called xtab (sharetab on Solaris and HP-UX) 
-
-
+----------------------------------------------------------------------
+add share:
 linux:
 1. setting file:
 /etc/exports
@@ -28,29 +48,37 @@ ex:
 /root/s0  192.168.1.0/24(rw)  *(ro)
 share /root/s0 to 192.168.1.0/24(rw)
 other domain only have read permission
-
 2. set s0 permission
 chmod 777 /root/s0
+******************************************************************
+solaris:
+1. create NFS share group
+sharemgr  create -P nfs myNfsGroup
+2. add dir to group
+sharemgr add-share -s /Pool-1/test myNfsGroup
+3. set share permission
+sharemgr set -P nfs -S sys -p ro=10.10.10.1/24:20.20.20.1/24 -p rw=30.30.30.1/24 -s /Pool-1/test myNfsGroup 
 
-3. start nfs service
-/etc/init.d/nfs start
 
-4. connect to nfs server
-ex:
-mount -o rw 172.18.8.60:/Pool1/nfsTest test
+NFS properties:
+1. root=access-list
+	Only root users from the hosts specified in access-list have root access. 
+2. anon=uid
+	Set uid to be the effective user ID of unknown users. By default, 
+	unknown users are given the effective user ID UID_NOBODY. If uid is set to -1,
+	access is denied.
+3. rw=access-list
+	Sharing is read-write to the clients listed in access-list
+4. ro=access-list
+	Sharing is read-only to the clients listed in access-list
+----------------------------------------------------------------------
+remove share:
+solaris:
+sharemgr remove-share -s /Pool-1/test myNfsGroup
+----------------------------------------------------------------------
 
 
 
-connect to linux nfs server from windows:
-windows 2003:
-1. install Microsoft Windows Services for UNIX 3.5
-2. cd \SFU\common
-   mount linux_ip:/path drive_id: (ex: mount 192.168.0.1:/abc e:)
-   
-   
-solaris nfs:
-1. /etc/dfs/dfstab
-contain exprted directories and their attirbutes
 
 
    

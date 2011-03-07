@@ -138,7 +138,7 @@
 		614334211210E77F00C319F9 /* installPackage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = installPackage; sourceTree = "<group>"; };
 		6143342F1210EAC000C319F9 /* fileCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fileCompare; sourceTree = "<group>"; };
 		614334301210EAE700C319F9 /* driverCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverCommand; sourceTree = "<group>"; };
-		614334361210ED4600C319F9 /* printMessage */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = printMessage; sourceTree = "<group>"; };
+		614334361210ED4600C319F9 /* printMessageCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = printMessageCompare; sourceTree = "<group>"; };
 		614334371210ED7F00C319F9 /* textEncoding */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = textEncoding; sourceTree = "<group>"; };
 		614334381210F11200C319F9 /* math */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = math; sourceTree = "<group>"; };
 		614334391210F18D00C319F9 /* type */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type; sourceTree = "<group>"; };
@@ -194,6 +194,7 @@
 		617418C312A4EDF90020B9FD /* smp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = smp; sourceTree = "<group>"; };
 		61764722131256D900E7D0C1 /* switchSetting */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switchSetting; sourceTree = "<group>"; };
 		617A8E74131CA061008071F6 /* xmlCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xmlCompare; sourceTree = "<group>"; };
+		617A8E79131CCC0D008071F6 /* namespace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = namespace; sourceTree = "<group>"; };
 		617C218F129A05EE000F8651 /* iftNasNfs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iftNasNfs; sourceTree = "<group>"; };
 		617C21AF129A10FE000F8651 /* solarisDisk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisDisk; sourceTree = "<group>"; };
 		617C22A8129A3BA5000F8651 /* cMacro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cMacro; sourceTree = "<group>"; };
@@ -526,7 +527,6 @@
 				614334201210E74400C319F9 /* ifElse */,
 				614334211210E77F00C319F9 /* installPackage */,
 				614334301210EAE700C319F9 /* driverCommand */,
-				614334361210ED4600C319F9 /* printMessage */,
 				614334371210ED7F00C319F9 /* textEncoding */,
 				614334381210F11200C319F9 /* math */,
 				614A5C4312ED1B4E0005EDE5 /* language */,
@@ -854,6 +854,7 @@
 				619C4363121554A8001C3C24 /* commentCompare */,
 				619A1C9A131512A300EA66D9 /* tryCatchCompare */,
 				617A8E74131CA061008071F6 /* xmlCompare */,
+				614334361210ED4600C319F9 /* printMessageCompare */,
 			);
 			name = programCompare;
 			sourceTree = "<group>";
@@ -867,6 +868,7 @@
 				61E498F5121A7A58002A606C /* shareMemory */,
 				613DDBD7121B88F8008AB143 /* perror */,
 				613DDC2D121BC177008AB143 /* showTrace */,
+				617A8E79131CCC0D008071F6 /* namespace */,
 			);
 			name = cAndCPlus;
 			sourceTree = "<group>";
