@@ -1,0 +1,46 @@
+webdav
+command
+
+configure webdav server on mac:
+1. System Preferences -> Sharing -> Web Sharing
+
+2. edit /etc/apache2/httpd.conf
+uncomment following lines:
+LoadModule dav_module libexec/apache2/mod_dav.so
+Include /private/etc/apache2/extra/httpd-dav.conf
+
+3. edit /etc/apache2/extra/httpd-dav.conf
+create share
+ex:
+Alias /webdav "/Library/WebServer/WebDAV"
+
+<Directory "/Library/WebServer/WebDAV">
+  Dav On
+
+  Order Allow,Deny
+  Allow from all
+
+  AuthType Basic
+  AuthName WebDAV-Realm
+  AuthUserFile "/usr/webdav.passwd"
+
+  <LimitExcept GET OPTIONS>
+    require user test
+  </LimitExcept>
+</Directory>
+
+4. add user
+sudo htpasswd -c /usr/webdav.passwd test
+
+5. create share Directory
+mkdir -p /Library/WebServer/WebDAV
+
+6. apachectl graceful
+restart apache 
+-----------------------------------------------------------------
+connect to WebDAV server
+mac:
+ex:
+finder -> Connect to Server -> http://192.168.4.44/webdav
+
+
