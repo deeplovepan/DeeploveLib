@@ -8,14 +8,26 @@ ex:
 (1) javac -cp /usr/local/apache-tomcat-6.0.29/lib/servlet-api.jar SampleServlet.java 
 (2) javac -cp /usr/local/apache-tomcat-6.0.29/lib/servlet-api.jar:/usr/local/apache-tomcat-6.0.29/lib/junit-3.8.2.jar:/usr/local/apache-tomcat-6.0.29/lib/cactus.core.framework.uberjar.javaEE.14-1.8.1.jar 
 SampleServlet.java TestSampleServlet.java 
+------------------------------------------------------------------------
 
 (2) java -cp
 ex:
 java -cp DiskWatch.jar driveinfo.MainApp 172.18.8.104  output 30 5
+------------------------------------------------------------------------
 
 (3) java.library.path
 ex:
 java -Djava.library.path=. Test
+
+------------------------------------------------------------------------
+jar tf test.jar
+view the contents of a JAR file
+
+------------------------------------------------------------------------
+jar xf test.jar
+extract the contents of a JAR file
+
+
 
 
 
