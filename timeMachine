@@ -1,0 +1,8 @@
+time machine
+command
+
+use solaris as time machine disk
+1. enable AFP and share dir 
+2. enable bonjour
+3. defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1 
+    (on mac os machine)

@@ -24,6 +24,7 @@ init git project on github:
 (4) git init
 (5) git remote add origin git@github.com:deeplovepan/test.git
 (6) git push origin master
+----------------------------------------------------------------
 
 
 record file change:
@@ -31,7 +32,7 @@ record file change:
 remove # to add change log
 (2)git commit -a 
 commit all 
-
+----------------------------------------------------------------
 get specific commit file:
 ex:
 git checkout c726e36d79e260b1910f2dcef6473ece18a1d929 test.h
@@ -114,11 +115,17 @@ https://sites.google.com/site/aisorcerer/linux-1/setupthegitservice
 get project from remote server
 ex:
 git clone http://github.com/jdg/oauthconsumer.git
+--------------------------------------------------------------
 
 add file:
-(1)git add -u
-(2)git add *.c 
-
+1. git add . 
+   add to index only files created or modified and not those deleted 
+2. git add -u
+   add to index only files modified or deleted and not those created 
+3. git add -A 
+   do both operation at once, add to index all files 
+4. git add *.c 
+--------------------------------------------------------------
 git checkout:
 (1) git checkout filename 
 (2) git checkout HEAD . 
