@@ -3,7 +3,7 @@ compare
 
 ---------------------------------------------------
 the array can grow:
-java:
+java:  abc
 rrayList<String> list=new ArrayList<String>();
 ***************************************************
 python:
