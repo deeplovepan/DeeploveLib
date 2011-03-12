@@ -3,3 +3,8 @@ compare
 
 mac:
 Command-Shift-4:
+
+set file format:
+mac
+ex:
+defaults write com.apple.screencapture type tiff
