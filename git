@@ -93,7 +93,9 @@ branch:
 (1)git branch branch1
    create branch branch1
 (2)switch branch
-    git checkout branch1	
+    git checkout branch1
+(3)git branch
+   show branches list
 
 delete file:
 ex:
