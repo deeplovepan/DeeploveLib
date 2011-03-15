@@ -42,6 +42,7 @@
 		6105DCBF123DFA4200728D1B /* virtualMachine */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = virtualMachine; sourceTree = "<group>"; };
 		6105DCC9123E0B4300728D1B /* myBlockDeviceLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBlockDeviceLib.h; sourceTree = "<group>"; };
 		6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myBlockDeviceLib.c; sourceTree = "<group>"; };
+		6111F2A8132F076C00759258 /* typeCast */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typeCast; sourceTree = "<group>"; };
 		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
 		6117143B124CA3C60096093B /* sysctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sysctl; sourceTree = "<group>"; };
 		611ADCC81223AF220091246C /* ext4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext4; sourceTree = "<group>"; };
@@ -292,6 +293,7 @@
 		61DFD0D3129E0A6E00553ED1 /* jqueryBasic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jqueryBasic; sourceTree = "<group>"; };
 		61DFD0D5129E0F2900553ED1 /* dom */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dom; sourceTree = "<group>"; };
 		61DFD149129E693100553ED1 /* scsiDeviceTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scsiDeviceTest.c; sourceTree = "<group>"; };
+		61E31FF61328AA5200F66D91 /* dmg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dmg; sourceTree = "<group>"; };
 		61E498F4121A65DF002A606C /* iozone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iozone; sourceTree = "<group>"; };
 		61E498F5121A7A58002A606C /* shareMemory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shareMemory; sourceTree = "<group>"; };
 		61E498F7121A7ACA002A606C /* vss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vss; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 				619A1CFE131743CD00EA66D9 /* find */,
 				617A86C01324CFE100D84A06 /* webdav */,
 				617A86D71325C53700D84A06 /* timeMachine */,
+				61E31FF61328AA5200F66D91 /* dmg */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -885,6 +888,7 @@
 				613DDBD7121B88F8008AB143 /* perror */,
 				613DDC2D121BC177008AB143 /* showTrace */,
 				617A8E79131CCC0D008071F6 /* namespace */,
+				6111F2A8132F076C00759258 /* typeCast */,
 			);
 			name = cAndCPlus;
 			sourceTree = "<group>";
@@ -1051,6 +1055,9 @@
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "DeeploveLib" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* DeeploveLib */;
 			projectDirPath = "";
 			projectRoot = "";

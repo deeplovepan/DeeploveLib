@@ -107,6 +107,7 @@ A2BOOT_RUN=no
 - -transall -uamlist uams_randnum.so,uams_dhx.so -nosavepassword -advertise_ssh -setuplog "logger log_maxdebug /var/log/netatalk-logger.log"
 add above in the last line
 
+compile ex:
+./configure --prefix=/opt/netatalk --with-ssl-dir=/usr/sfw  --with-bdb=/usr/local/BerkeleyDB.4.8 --without-pam --disable-ddp --disable-tcp-wrappers --disable-srvloc  --with-cnid-dbd-backend --enable-nfsv4acls 
 
-
-
+./configure --prefix=/opt/netatalk --with-ssl-dir=/usr/sfw  --with-bdb=/usr/local/BerkeleyDB.4.8  --disable-ddp --disable-tcp-wrappers --disable-srvloc  --with-cnid-dbd-backend --enable-nfsv4acls 

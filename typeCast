@@ -1,0 +1,10 @@
+type cast
+c and c++
+
+problem:
+cast from void* to int loses precision
+ex:
+void *a;
+int b = a;
+solution:
+int b =  *((int*)&a);
