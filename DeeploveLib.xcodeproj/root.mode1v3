@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -266,7 +268,9 @@
 								<string>08FB7794FE84155DC02AAC07</string>
 								<string>6132C508121E13B70016372F</string>
 								<string>61284FE1120FD96500696385</string>
+								<string>617C22A7129A3B69000F8651</string>
 								<string>6141E3B7122211340013D895</string>
+								<string>613A6E20121D37C700805A1C</string>
 								<string>6143353612115AA000C319F9</string>
 								<string>612850351210043100696385</string>
 								<string>6128500E120FF5DB00696385</string>
@@ -279,14 +283,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
-									<integer>17</integer>
+									<integer>40</integer>
+									<integer>35</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {268, 606}}</string>
+							<string>{{0, 295}, {268, 625}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -298,14 +302,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {285, 624}}</string>
+						<string>{{0, 0}, {285, 643}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>268</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>49 233 1108 665 0 0 1280 938 </string>
+						<string>49 245 1231 684 0 0 1280 938 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -316,14 +320,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>afp</string>
+								<string>genericKext</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>afp</string>
+										<string>genericKext</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>61135856132E346300224809</string>
+										<string>61EA9BC21330B58E0047487B</string>
 										<key>history</key>
 										<array>
 											<string>61285010120FF5E400696385</string>
@@ -346,7 +348,6 @@
 											<string>613C388B12B73CF2009E9537</string>
 											<string>613C389512B73CF2009E9537</string>
 											<string>613C389612B73CF2009E9537</string>
-											<string>613C389912B73CF2009E9537</string>
 											<string>613C389A12B73CF2009E9537</string>
 											<string>613C389B12B73CF2009E9537</string>
 											<string>613C389C12B73CF2009E9537</string>
@@ -406,7 +407,6 @@
 											<string>613C3A1912B772ED009E9537</string>
 											<string>613C3A2112B77336009E9537</string>
 											<string>613C3A2212B77336009E9537</string>
-											<string>613C3A2412B77336009E9537</string>
 											<string>613C3A2612B77354009E9537</string>
 											<string>613C3A2D12B77379009E9537</string>
 											<string>613C3A4412B774C1009E9537</string>
@@ -511,7 +511,6 @@
 											<string>617647331312602400E7D0C1</string>
 											<string>6176473A13134B2F00E7D0C1</string>
 											<string>6176473C13134B2F00E7D0C1</string>
-											<string>6176473D13134B2F00E7D0C1</string>
 											<string>6176474913134E6E00E7D0C1</string>
 											<string>6176474A13134E6E00E7D0C1</string>
 											<string>619BF185131388FA0006C005</string>
@@ -552,9 +551,7 @@
 											<string>617A8E44131C8FD0008071F6</string>
 											<string>617A8E45131C8FD0008071F6</string>
 											<string>617A8E7E131CD80E008071F6</string>
-											<string>617A8E81131CD80E008071F6</string>
 											<string>617A8E87131CD80E008071F6</string>
-											<string>617A8E88131CD80E008071F6</string>
 											<string>617A8EBA131E1AB7008071F6</string>
 											<string>617A8EBD131E1AB7008071F6</string>
 											<string>617A8EC3131E1F74008071F6</string>
@@ -609,7 +606,14 @@
 											<string>619162431328D69A0037A22A</string>
 											<string>61916260132A24500037A22A</string>
 											<string>61135850132DF50700224809</string>
-											<string>6113584C132DF50400224809</string>
+											<string>6111F406132F46C900759258</string>
+											<string>6111F407132F46C900759258</string>
+											<string>6111F408132F46C900759258</string>
+											<string>6111F409132F46C900759258</string>
+											<string>61EA9B9E13306BF80047487B</string>
+											<string>61EA9BC01330B58E0047487B</string>
+											<string>61EA9BC11330B58E0047487B</string>
+											<string>613C3A2412B77336009E9537</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -621,14 +625,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {818, 502}}</string>
+								<string>{{0, 0}, {941, 509}}</string>
 								<key>RubberWindowFrame</key>
-								<string>49 233 1108 665 0 0 1280 938 </string>
+								<string>49 245 1231 684 0 0 1280 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>502pt</string>
+							<string>509pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -641,18 +645,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 507}, {818, 117}}</string>
+								<string>{{0, 514}, {941, 129}}</string>
 								<key>RubberWindowFrame</key>
-								<string>49 233 1108 665 0 0 1280 938 </string>
+								<string>49 245 1231 684 0 0 1280 938 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>117pt</string>
+							<string>129pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>818pt</string>
+					<string>941pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -667,9 +671,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>61135852132DF50700224809</string>
+				<string>61EA9BC31330B58E0047487B</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>61135853132DF50700224809</string>
+				<string>61EA9BC41330B58E0047487B</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -807,12 +811,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>6184582F120FACA800F093F1</string>
 		<string>/var/root/Documents/gitProjects/oldDeeploveLib/DeeploveLib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>49 233 1108 665 0 0 1280 938 </string>
+	<string>49 245 1231 684 0 0 1280 938 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -889,7 +892,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6184582F120FACA800F093F1</string>
-				<string>6113584A132DF50400224809</string>
+				<string>61EA9BC51330B58E0047487B</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -1051,7 +1054,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>afp</string>
+										<string>ipv6</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -1107,8 +1110,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>6113584E132DF50400224809</string>
-				<string>6113584F132DF50400224809</string>
+				<string>61EA9B9C13306BB80047487B</string>
+				<string>61EA9B9D13306BB80047487B</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>

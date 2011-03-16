@@ -43,6 +43,7 @@
 		6105DCC9123E0B4300728D1B /* myBlockDeviceLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBlockDeviceLib.h; sourceTree = "<group>"; };
 		6105DCCA123E0B4300728D1B /* myBlockDeviceLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myBlockDeviceLib.c; sourceTree = "<group>"; };
 		6111F2A8132F076C00759258 /* typeCast */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typeCast; sourceTree = "<group>"; };
+		6111F3DD132F3CDC00759258 /* cPlusProblem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cPlusProblem; sourceTree = "<group>"; };
 		6112A64E12192C74006785E8 /* linuxKernelStack */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxKernelStack; sourceTree = "<group>"; };
 		6117143B124CA3C60096093B /* sysctl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sysctl; sourceTree = "<group>"; };
 		611ADCC81223AF220091246C /* ext4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext4; sourceTree = "<group>"; };
@@ -299,6 +300,7 @@
 		61E498F7121A7ACA002A606C /* vss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vss; sourceTree = "<group>"; };
 		61E49948121A8A6D002A606C /* linuxBoot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxBoot; sourceTree = "<group>"; };
 		61E8807512964B4C00960437 /* linuxInterrupt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxInterrupt; sourceTree = "<group>"; };
+		61EA9BC71330B5D60047487B /* macDriverDebug */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverDebug; sourceTree = "<group>"; };
 		61F74A3B127FAF5A00F08E5D /* typeConvert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typeConvert; sourceTree = "<group>"; };
 		61F74A41127FB01200F08E5D /* space */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = space; sourceTree = "<group>"; };
 		61FAFD60123732B600B0BEC7 /* html5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = html5; sourceTree = "<group>"; };
@@ -669,6 +671,7 @@
 				618843C51259A2BD000FE3F6 /* macDriverCommand */,
 				617F49DB125B11C700BA909B /* macDriverLife */,
 				61D8FC05125C0D1200461D44 /* ioreg */,
+				61EA9BC71330B5D60047487B /* macDriverDebug */,
 			);
 			name = macDriver;
 			sourceTree = "<group>";
@@ -889,6 +892,7 @@
 				613DDC2D121BC177008AB143 /* showTrace */,
 				617A8E79131CCC0D008071F6 /* namespace */,
 				6111F2A8132F076C00759258 /* typeCast */,
+				6111F3DD132F3CDC00759258 /* cPlusProblem */,
 			);
 			name = cAndCPlus;
 			sourceTree = "<group>";

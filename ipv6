@@ -111,6 +111,9 @@ windows server 2008:
 1. Start—>Administrative tools—>Server Manager
 2. Add Roles  -> DHCP server
 3. edit Scope Options
+note:
+if enable allow list, then only ips listed in
+allow list can get IP  
 -----------------------------------------------
 start DHCP server:
 linux:

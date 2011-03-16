@@ -7,3 +7,10 @@ ex:
 kextutil -n -t GenericKext.kext
 -n: not load driver
 -t: print dianostic info
+
+kextlibs:
+find OSBundleLibraries needed by a kext
+ex:
+kextlibs test.kext
+ex:
+kextlibs -undef-symbols mpioDriver.kext
