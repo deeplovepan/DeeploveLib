@@ -12,6 +12,7 @@ printf("%2d", number);
 mac driver: 
 ex: 
 IOLog("hello\n"); 
+the log file location: /var/log/kernel.log
 
 linux driver: 
 ex: 
