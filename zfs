@@ -1,6 +1,7 @@
 zfs
 command
 
+test
 pool is consist of devices (usually disks)
 one or more ZFS filesystem exist in zfs pool
 
