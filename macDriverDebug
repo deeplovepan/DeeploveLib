@@ -14,7 +14,9 @@ error code: 0: read from a non-present page
 EIP: address of instruction at panic
  
 create symbol file:
-/Volumes/KernelDebugKit/createsymbolfiles -s /tmp PanicDriver/build/Debug/PanicDriver.kext
+kextutil -n -s /tmp test.kext
+-s: create symbol file into /tmp
+-n: no laod
  
 assume 0x223ab275 is EIP address
 gdb /Volumes/KernelDebugKit/mach_kernel
