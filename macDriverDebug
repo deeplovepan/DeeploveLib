@@ -1,6 +1,12 @@
 mac driver debug
 mac driver
 
+reference:
+http://fieldofcows.com/index.php?title=Setting_up_Kernel_Debugging_on_OS_X
+
+kernel crash log:
+/Library/Logs/DiagnosticReports
+
 type 14 = page fault
 error code: 0: read from a non-present page
 2: write to a non-present page

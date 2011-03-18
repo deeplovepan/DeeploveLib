@@ -3,31 +3,51 @@ compare
 
 reference:
 http://developer.apple.com/library/mac/#documentation/Networking/Conceptual/AFP/AFPSecurity/AFPSecurity.html%23//apple_ref/doc/uid/TP40000854-CH232-54697
-
 ------------------------------------------------------------
-configure file:
-/opt/netatalk/etc/netatalk/afpd.conf 
+compile netatalk on solaris:
+prepare: 
+	1. install gcc 
+	2. install ar
+	3. install SUNWgnome-common-devel 
+	   ( for netatalk version >= 2.2)
+compile:
+1. ./configure --prefix=/opt/netatalk --with-ssl-dir=/usr/sfw  --with-bdb=/usr/local/BerkeleyDB.4.8  --disable-ddp --disable-tcp-wrappers --disable-srvloc  --with-cnid-dbd-backend --enable-nfsv4acls 
+2. make
+3. make install
+   netatalk is installed on /opt/
 ------------------------------------------------------------
-AFP packet:
-1. client send DSI Request GetStatus to server
-2. server send DSI Reply GetStatus to client
-   it includes the UAM methods server support
-   (UAM is for authentication)
-3. client send FPLogin  or FPLoginExt to login
-   it will choose  most secure UAM that the AFP client supports
+start service on solaris:
+svcadm enable -r netatalk
 ------------------------------------------------------------
+netatalk acl support:
+1. version >= 2.2
+   ( version 2.1 has some problems)
+------------------------------------------------------------
+netatalk add share:
+edit  /opt/netatalk/etc/netatalk/AppleVolumes.default 
+ex:
+"/Pool1/test" "test" cnidscheme:dbd options:acls,upriv,nostat
+------------------------------------------------------------
+AFP login:
+flow:
+	1. client send DSI Request GetStatus to server
+	2. server send DSI Reply GetStatus to client
+	   it includes the UAM methods server support
+	   (UAM is for authentication)
+	3. client send FPLogin  or FPLoginExt to login
+	   it will choose  most secure UAM that the AFP client supports
+**********************************************************
 enable clear passwords login 
 for AFP client on MAC:
 open Library/Preferences/com.apple.AppleShareClient.plist 
 enable afp_cleartext_allow & afp_cleartext_warn
-**********************************************************
 for AFP server:
 use uams_clrtxt.so and remove other UAM so
 ex:
 - -transall -uamlist uams_clrtxt.so -nosavepassword -loginmesg "" -noddp
-------------------------------------------------------------
+**********************************************************
 enable guest login:
-1. add uams_guest.so in afpd.conf
+1. add uams_guest.so in /opt/netatalk/etc/netatalk/afpd.conf 
 ex:
  - -transall -uamlist uams_randnum.so,uams_dhx.so,uams_dhx2.so,uams_guest.so,uams_clrtxt.so -nosavepassword -loginmesg "" -noddp
 2. svcadm disable netatalk
@@ -37,22 +57,6 @@ prevent client save password
 nosavepassword
 note: have no effect on Mac OS X
 ------------------------------------------------------------
-
-solaris:
-config file:
-/opt/netatalk/etc/netatalk/AppleVolumes.default
-
-start service:
-svcadm enable -r netatalk
-
-check service:
-svcs | grep  netatalk
-
-
-
-The "ClearTxt Passwrd" UAM is as bad as it sounds since passwords go unencrypted over the wire. Try to avoid it at both the server's side as well as on the client's. Note: If you want to provide Mac OS 8/9 clients with NetBoot-services then you need uams_cleartext.so since the AFP-client integrated into the Mac's firmware can only deal with this basic form of authentication.
------------------------------------------------------
-
 cent os
 
 1. download Oracle Berkeley DB
@@ -81,10 +85,7 @@ download db-5.1.19.NC
 ex:
 add /mnt/toy "mntDoy"
 in the AppleVolumes.default 
-
-
 ----------------------------------------------------
-
 ubuntu afp server:
 1. install
 apt-get build-dep netatalk
@@ -94,7 +95,6 @@ cd netatalk-2*
 DEB_BUILD_OPTIONS=ssl dpkg-buildpackage -rfakeroot
 dpkg -i ~/netatalk_2*.deb
 echo "netatalk hold" | dpkg --set-selections
-
 2. edit /etc/default/netatalk
 ATALKD_RUN=no
 PAPD_RUN=no
@@ -102,12 +102,7 @@ CNID_METAD_RUN=yes
 AFPD_RUN=yes
 TIMELORD_RUN=no
 A2BOOT_RUN=no
-
 3. edit /etc/netatalk/afpd.conf
 - -transall -uamlist uams_randnum.so,uams_dhx.so -nosavepassword -advertise_ssh -setuplog "logger log_maxdebug /var/log/netatalk-logger.log"
 add above in the last line
 
-compile ex:
-./configure --prefix=/opt/netatalk --with-ssl-dir=/usr/sfw  --with-bdb=/usr/local/BerkeleyDB.4.8 --without-pam --disable-ddp --disable-tcp-wrappers --disable-srvloc  --with-cnid-dbd-backend --enable-nfsv4acls 
-
-./configure --prefix=/opt/netatalk --with-ssl-dir=/usr/sfw  --with-bdb=/usr/local/BerkeleyDB.4.8  --disable-ddp --disable-tcp-wrappers --disable-srvloc  --with-cnid-dbd-backend --enable-nfsv4acls 
