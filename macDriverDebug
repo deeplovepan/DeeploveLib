@@ -4,6 +4,14 @@ mac driver
 reference:
 http://fieldofcows.com/index.php?title=Setting_up_Kernel_Debugging_on_OS_X
 
+check object count:
+use ioclasscount
+ex:
+ioclasscount SCSITaskUserClientIniter
+->
+SCSITaskUserClientIniter = 3
+
+
 kernel crash log:
 /Library/Logs/DiagnosticReports
 
