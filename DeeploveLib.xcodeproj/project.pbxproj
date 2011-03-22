@@ -310,6 +310,9 @@
 		61FAFD6712375FE200B0BEC7 /* linuxLoadBalance */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxLoadBalance; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
+		DD3D4832133743EF00E7D65B /* macDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverIoFlow; sourceTree = "<group>"; };
+		DD3D483A1338453600E7D65B /* compileMacDriver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = compileMacDriver; sourceTree = "<group>"; };
+		DD3D483B13386EBB00E7D65B /* boot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = boot; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +499,7 @@
 				61E31FF61328AA5200F66D91 /* dmg */,
 				61EA9BEE1331DA8C0047487B /* ar */,
 				61EA9BEF1331DB0E0047487B /* which */,
+				DD3D483B13386EBB00E7D65B /* boot */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -676,6 +680,8 @@
 				617F49DB125B11C700BA909B /* macDriverLife */,
 				61D8FC05125C0D1200461D44 /* ioreg */,
 				61EA9BC71330B5D60047487B /* macDriverDebug */,
+				DD3D4832133743EF00E7D65B /* macDriverIoFlow */,
+				DD3D483A1338453600E7D65B /* compileMacDriver */,
 			);
 			name = macDriver;
 			sourceTree = "<group>";

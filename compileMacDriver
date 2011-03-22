@@ -1,0 +1,8 @@
+compile mac driver
+mac driver
+
+1. Apple's kext
+(1) download source:
+ex:
+http://www.opensource.apple.com/release/mac-os-x-1066/
+
