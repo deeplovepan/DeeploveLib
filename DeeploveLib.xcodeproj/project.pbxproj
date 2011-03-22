@@ -313,6 +313,8 @@
 		DD3D4832133743EF00E7D65B /* macDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverIoFlow; sourceTree = "<group>"; };
 		DD3D483A1338453600E7D65B /* compileMacDriver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = compileMacDriver; sourceTree = "<group>"; };
 		DD3D483B13386EBB00E7D65B /* boot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = boot; sourceTree = "<group>"; };
+		DD3D48421338707200E7D65B /* macKernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macKernel; sourceTree = "<group>"; };
+		DD3D48491338835000E7D65B /* dhcpServer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dhcpServer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +502,7 @@
 				61EA9BEE1331DA8C0047487B /* ar */,
 				61EA9BEF1331DB0E0047487B /* which */,
 				DD3D483B13386EBB00E7D65B /* boot */,
+				DD3D48491338835000E7D65B /* dhcpServer */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -682,6 +685,7 @@
 				61EA9BC71330B5D60047487B /* macDriverDebug */,
 				DD3D4832133743EF00E7D65B /* macDriverIoFlow */,
 				DD3D483A1338453600E7D65B /* compileMacDriver */,
+				DD3D48421338707200E7D65B /* macKernel */,
 			);
 			name = macDriver;
 			sourceTree = "<group>";

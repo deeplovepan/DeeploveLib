@@ -1,0 +1,37 @@
+dhcp server
+command
+
+linux dhcpV4 server:
+******************************************
+config file:
+/etc/dhcpd.conf
+******************************************
+start dhcpV4 server:
+service dhcpd start
+------------------------------------------------
+
+linux dhcpV6 server:
+******************************************
+config dhcp ipv6 server
+linux:
+config:
+/etc/dhcp6s.conf
+ex:
+interface eth0 {
+    renew-time 60;
+    rebind-time 90;
+    prefer-life-time 130;
+    valid-life-time 200;
+    allow rapid-commit;
+    link AAA {
+        pool{
+            range 2001:b021:1B::10 to 2001:b021:1B::210/64;af
+            prefix 2001:b021:1B::/48;
+        };
+    };
+};
+*******************************************************
+start dhcpV6 server:
+service dhcp6s start
+or
+dhcp6s -d -D -f eth0
