@@ -47,6 +47,7 @@ ex:
 pkgadd -d gcc-3.3.2-sol10-sparc-local 
 package search location: http://pkg.opensolaris.org/release/en/index.shtml 
 (3) pkg install gcc-dev
+pkg install -v gcc-dev
 fetch from web
 (4) pkg install sunstudioexpress
 

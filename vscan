@@ -1,0 +1,24 @@
+vscan
+command
+
+set up vscan service
+1. install a scan engine 
+
+2. enable file system to allow virus scan
+ex:
+zfs set vscan=on path/pool/volumes/vol1
+
+3. enable vscan service
+svcadm enable vscan
+
+4. add a scan engine
+reference:
+http://dlc.sun.com/osol/docs/content/SYSADV6/vscan-5.html#vscan-8
+ex:
+vscanadm add-engine engine_ID
+
+
+5. get info about vscan
+ex:
+vscanadm get-engine
+

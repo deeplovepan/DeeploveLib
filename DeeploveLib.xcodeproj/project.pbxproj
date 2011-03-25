@@ -315,6 +315,7 @@
 		DD3D483B13386EBB00E7D65B /* boot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = boot; sourceTree = "<group>"; };
 		DD3D48421338707200E7D65B /* macKernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macKernel; sourceTree = "<group>"; };
 		DD3D48491338835000E7D65B /* dhcpServer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dhcpServer; sourceTree = "<group>"; };
+		DD3D484A13398EED00E7D65B /* vscan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vscan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +504,7 @@
 				61EA9BEF1331DB0E0047487B /* which */,
 				DD3D483B13386EBB00E7D65B /* boot */,
 				DD3D48491338835000E7D65B /* dhcpServer */,
+				DD3D484A13398EED00E7D65B /* vscan */,
 			);
 			name = command;
 			sourceTree = "<group>";

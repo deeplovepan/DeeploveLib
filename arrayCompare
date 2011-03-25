@@ -31,6 +31,10 @@ testArray.add("h1")
 amount of array:
 java:
 testArray.length
+ArrayList:
+ex:
+list.size()
+
 
 ---------------------------------------------------
 init 0 for all elements of array
