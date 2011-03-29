@@ -311,6 +311,8 @@
 		8DD76FB20486AB0100D96B5E /* DeeploveLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeeploveLib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DeeploveLib.1; sourceTree = "<group>"; };
 		DD200B6E13401FF50097D788 /* history */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = history; sourceTree = "<group>"; };
+		DD200B70134185520097D788 /* OracleLinux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OracleLinux; sourceTree = "<group>"; };
+		DD200B791341B6480097D788 /* osascript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = osascript; sourceTree = "<group>"; };
 		DD3D4832133743EF00E7D65B /* macDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverIoFlow; sourceTree = "<group>"; };
 		DD3D483A1338453600E7D65B /* compileMacDriver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = compileMacDriver; sourceTree = "<group>"; };
 		DD3D483B13386EBB00E7D65B /* boot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = boot; sourceTree = "<group>"; };
@@ -507,6 +509,8 @@
 				DD3D48491338835000E7D65B /* dhcpServer */,
 				DD3D484A13398EED00E7D65B /* vscan */,
 				DD200B6E13401FF50097D788 /* history */,
+				DD200B70134185520097D788 /* OracleLinux */,
+				DD200B791341B6480097D788 /* osascript */,
 			);
 			name = command;
 			sourceTree = "<group>";
