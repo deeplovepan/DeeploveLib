@@ -20,3 +20,4 @@ use solaris as time machine disk
 .sparsebundle dir:
 time machine will create a .sparsebundle dir
 this dir contains backup data
+

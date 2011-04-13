@@ -22,6 +22,7 @@
 		61DFD14A129E693100553ED1 /* scsiDeviceTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 61DFD149129E693100553ED1 /* scsiDeviceTest.c */; };
 		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* DeeploveLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* DeeploveLib.1 */; };
+		DD79C22213557AE400B62EE1 /* IOregistryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD79C22113557AE300B62EE1 /* IOregistryTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -319,6 +320,7 @@
 		DD3D48421338707200E7D65B /* macKernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macKernel; sourceTree = "<group>"; };
 		DD3D48491338835000E7D65B /* dhcpServer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dhcpServer; sourceTree = "<group>"; };
 		DD3D484A13398EED00E7D65B /* vscan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vscan; sourceTree = "<group>"; };
+		DD79C22113557AE300B62EE1 /* IOregistryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOregistryTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -922,6 +924,7 @@
 		617F49E7125B122800BA909B /* macDriver */ = {
 			isa = PBXGroup;
 			children = (
+				DD79C21F13557AB300B62EE1 /* IORegistry */,
 				617F49E8125B123500BA909B /* BasicDriverEx */,
 			);
 			name = macDriver;
@@ -1052,6 +1055,14 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
+		DD79C21F13557AB300B62EE1 /* IORegistry */ = {
+			isa = PBXGroup;
+			children = (
+				DD79C22113557AE300B62EE1 /* IOregistryTest.m */,
+			);
+			name = IORegistry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1113,6 +1124,7 @@
 				61DFD14A129E693100553ED1 /* scsiDeviceTest.c in Sources */,
 				617CE34612AE2BE700D5E6D3 /* jqueryEx.js in Sources */,
 				6128CCA712B8C3E600342ED8 /* PyMod.c in Sources */,
+				DD79C22213557AE400B62EE1 /* IOregistryTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

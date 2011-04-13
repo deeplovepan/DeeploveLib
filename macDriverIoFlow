@@ -32,3 +32,16 @@ UInt64                byteStart,
 IOMemoryDescriptor *  buffer,
 IOStorageAttributes * attributes      = 0,
 UInt64 *              actualByteCount = 0);
+
+
+
+
+
+
+
+
+
+
+
+
+

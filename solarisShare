@@ -65,3 +65,12 @@ modify share dir property
 ex:
 sharemgr set-share  -r vv7=vv77  -s /Pool-3/vv7 smb_group
 modify resource name ( from vv7 to vv77)
+
+
+/etc/dfs/sharetab
+/etc/dfs/dfstab
+
+
+
+
+
