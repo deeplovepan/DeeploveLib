@@ -12,10 +12,15 @@ dladm create-aggr -d e1000g1 -d e1000g2 -d e1000g3 1
 ifconfig aggr1 plumb up
 note:
 before create trunk, remember to unplumb its members
+default is passive LACP mode
+
+create active LACP trunk
+dladm create-aggr -l active -d e1000g1 -d e1000g2 -d e1000g3 1
 ---------------------------------------------------------------------
 show trunk info:
 solaris:
 dladm show-aggr
+
 ---------------------------------------------------------------------
 del trunk:
 solaris:

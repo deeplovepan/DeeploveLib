@@ -1,6 +1,8 @@
 ipv6
 compare
 
+length: 128bits
+
 two unicast address assignment:
 1. Link-local address
 only used on the local network link
