@@ -5,9 +5,17 @@ ex:
 grep disk_name  *.c
 find file contains disk_name
 
+full match:
+ex:
+ls | grep -w hello
+
 exclusive find:
 ex:
 ls | grep -v test
 
 search exact word
 ls | grep -w test
+
+search with regular expression:
+grep  -v -w '[0-9]\{1,2\}'
+exclude 00 ~ 99
