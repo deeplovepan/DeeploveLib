@@ -1,0 +1,11 @@
+sort
+command
+
+sort by number
+ex:
+echo "11\n2\n3" | sort -n
+->
+2
+3
+11
+

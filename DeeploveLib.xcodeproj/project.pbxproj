@@ -321,6 +321,7 @@
 		DD3D48491338835000E7D65B /* dhcpServer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dhcpServer; sourceTree = "<group>"; };
 		DD3D484A13398EED00E7D65B /* vscan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vscan; sourceTree = "<group>"; };
 		DD79C22113557AE300B62EE1 /* IOregistryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOregistryTest.m; sourceTree = "<group>"; };
+		DDB84F121373C6DF00BAA85D /* sort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sort; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,6 +514,7 @@
 				DD200B6E13401FF50097D788 /* history */,
 				DD200B70134185520097D788 /* OracleLinux */,
 				DD200B791341B6480097D788 /* osascript */,
+				DDB84F121373C6DF00BAA85D /* sort */,
 			);
 			name = command;
 			sourceTree = "<group>";
