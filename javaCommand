@@ -27,6 +27,8 @@ view the contents of a JAR file
 jar xf test.jar
 extract the contents of a JAR file
 
+jar uf test.jar com/test.class
+update jar 
 
 
 

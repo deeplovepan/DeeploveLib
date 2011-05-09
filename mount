@@ -14,3 +14,7 @@ mount / -o remount,rw
 configure mount devices at boot time on linux
 ex:
 /dev/dm-2           /root/s0                ext2    defaults        0  0
+
+
+4. mount rw when in repair filesystem mode
+mount -o remount,rw / 

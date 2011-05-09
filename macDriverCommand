@@ -14,3 +14,6 @@ ex:
 kextlibs test.kext
 ex:
 kextlibs -undef-symbols mpioDriver.kext
+
+remove kext cache:
+rm -rf /System/Library/Caches/com.apple.kext.caches
