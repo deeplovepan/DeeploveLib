@@ -111,3 +111,11 @@ condlog(0, "%s: size %llu, expected %llu. "
 mpp->size); 
 mpp->action = ACT_REJECT; 
 } 
+
+
+problem:
+How can I boot a server from a replicated SAN LUN using device-mapper-multipath in Red Hat Enterprise Linux 5?
+solution:
+https://access.redhat.com/kb/docs/DOC-17660
+http://sourceware.org/lvm2/wiki/MultipathUsageGuide
+

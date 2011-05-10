@@ -4,6 +4,11 @@ database
 column tyep:
 INTEGER, REAL, TEXT, BLOB
 
+run:
+ex:
+sqlite3 test.db 
+
+
 ------------------------------------------------------
 command: 
 (1) select * from testTable; 
