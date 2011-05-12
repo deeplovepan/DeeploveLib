@@ -315,6 +315,7 @@
 		DD200B70134185520097D788 /* OracleLinux */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OracleLinux; sourceTree = "<group>"; };
 		DD200B791341B6480097D788 /* osascript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = osascript; sourceTree = "<group>"; };
 		DD25A2051378E3E50003CD84 /* ln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ln; sourceTree = "<group>"; };
+		DD25A222137B8ED80003CD84 /* uniq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uniq; sourceTree = "<group>"; };
 		DD3D4832133743EF00E7D65B /* macDriverIoFlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = macDriverIoFlow; sourceTree = "<group>"; };
 		DD3D483A1338453600E7D65B /* compileMacDriver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = compileMacDriver; sourceTree = "<group>"; };
 		DD3D483B13386EBB00E7D65B /* boot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = boot; sourceTree = "<group>"; };
@@ -517,6 +518,7 @@
 				DD200B791341B6480097D788 /* osascript */,
 				DDB84F121373C6DF00BAA85D /* sort */,
 				DD25A2051378E3E50003CD84 /* ln */,
+				DD25A222137B8ED80003CD84 /* uniq */,
 			);
 			name = command;
 			sourceTree = "<group>";

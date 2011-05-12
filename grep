@@ -19,3 +19,10 @@ ls | grep -w test
 search with regular expression:
 grep  -v -w '[0-9]\{1,2\}'
 exclude 00 ~ 99
+
+recursive search
+Read all files under each directory, recursively
+use -R
+ex:
+grep -R hello *
+
