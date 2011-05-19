@@ -2,8 +2,8 @@ multipath
 command 
 
 
-debin install: 
-(1)apt-get install multipath [ remove highlighting ]-tools 
+debian install: 
+(1)apt-get install multipath-tools 
 (2) edit multipath.conf 
 /lib/udev/scsi_id 
 multipath info when no path: 
@@ -76,6 +76,8 @@ for old kernel
 no_path_retry 30 
 
 set path_grouping_policy as group_by_prio 
+
+
 problem: 
 Is device-mapper driver missing from kernel? 
 answer: 
