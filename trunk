@@ -29,4 +29,14 @@ dladm delete-aggr aggr1
 note:
 before delete trunk, remember to unplumb first
 
+---------------------------------------------------------------------
+modify trunk
+solaris:
+ex:
+dladm modify-aggr -l active aggr1
+note:
+three modes: off, active, passive
+
+
+
 

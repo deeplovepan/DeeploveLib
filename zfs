@@ -98,6 +98,8 @@ zfs set reservation=1G myPool/vv1
 21. df -h 
 show filesystem info
 
+22. export
+zpool export pool-1
 
 
 
