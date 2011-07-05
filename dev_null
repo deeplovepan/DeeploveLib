@@ -8,3 +8,7 @@ ls > /dev/null
 2. hide stdout and stderr
 ex:
 abc >& /dev/null
+
+
+
+abc 2>/dev/null

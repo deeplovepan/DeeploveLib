@@ -101,7 +101,20 @@ show filesystem info
 22. export
 zpool export pool-1
 
+23. add log disk
+ex:
+zpool add pool1 log mirror c0t4d0 c0t6d0
+ex:
+zpool add pool1 log c0t4d0 c0t6d0
 
+24. get pool info
+zpool get all myPool
+
+25. set dedup on vv
+zfs set dedup=on  Pool-2/vv1
+
+26. get dedup info
+zfs get dedup
 
 
 

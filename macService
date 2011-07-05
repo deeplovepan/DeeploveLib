@@ -32,3 +32,13 @@ launchctl load /Library/LaunchDaemons/test.plist
  
 stop:
 launchctl unload /Library/LaunchDaemons/test.plist
+
+
+startup item:
+path: /System/Library/StartupItems
+      /Library/StartupItems 
+manual start:
+   /sbin/SystemStarter restart "Web Server" 
+
+
+

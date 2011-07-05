@@ -11,3 +11,7 @@ ifconfig interface dhcp start
 test2
 reference:
 http://dracko.com/index.php?s=page&n=show_post&id=419
+
+
+can get dhcp on solaris:
+rm /etc/dhcp/yge0.dhc

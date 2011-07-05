@@ -29,7 +29,7 @@ usermod -u 10000 test
 
 7. add user to group
 ex:
-useradd -G myGroup peter
+useradd -g myGroup peter
 
 8. show user info
 ex:
@@ -56,6 +56,10 @@ getent passwd
 
 13. add user with specific uid
 useradd -u 12000 peter
+
+14. modify group name
+change appleGroup to macGroup
+groupmod -n macGroup appleGroup
 
 
 linux:
