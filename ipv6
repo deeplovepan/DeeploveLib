@@ -1,6 +1,13 @@
 ipv6
 compare
 
+convert the IPv6 address to ipv6-literal
+ex:
+fe80:0:0:0:a0b6:99c9:2f6c:5759
+->
+fe80-0-0-0-a0b6-99c9-2f6c-5759.ipv6-literal.net
+-------------------------------------------------------
+
 length: 128bits
 
 two unicast address assignment:

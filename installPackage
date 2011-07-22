@@ -51,5 +51,11 @@ package search location: http://pkg.opensolaris.org/release/en/index.shtml
 pkg install -v gcc-dev
 fetch from web
 (4) pkg install sunstudioexpress
+(5) uninstall
+ex
+pkgrm Test
+
+
+
 
 

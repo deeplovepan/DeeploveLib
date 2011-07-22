@@ -1,0 +1,7 @@
+how to print message
+use cmn_err
+ex:
+cmn_err(CE_NOTE, "hello");
+
+message log:
+/var/adm/messages

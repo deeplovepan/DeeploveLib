@@ -21,3 +21,9 @@ show running vnc server info:
 
 connect to linux vnc server form mac: 
 vnc://172.18.1.1:5901 
+
+solaris:
+1. export PATH=$PATH:/usr/X11/bin:/usr/openwin/bin/
+2. modify .vnc/xstartup 
+   change "twm &" to " /usr/dt/bin/dtsession & "
+3. vncserver
