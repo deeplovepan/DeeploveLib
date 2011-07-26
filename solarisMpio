@@ -30,10 +30,18 @@ use MPXIO
 
 configure file:
 /kernel/drv/scsi_vhci.conf
+enable multipath
 ex:
 device-type-scsi-options-list =
 "IFT     ", "symmetric-option";
 symmetric-option = 0x1000000;
+
+disable multipath
+ex:
+device-type-scsi-options-list = 
+"IFT     ", "disable-option";
+disable-option = 0x7000000;
+
 
 show MPXIO info
 stmsboot -L
