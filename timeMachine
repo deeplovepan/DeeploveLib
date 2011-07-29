@@ -1,6 +1,9 @@
 time machine
 command
 
+reference:
+http://www.trollop.org/2011/07/23/os-x-10-7-lion-time-machine-netatalk-2-2/
+
 use solaris as time machine disk
 
 1. enable AFP and share dir 

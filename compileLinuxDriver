@@ -1,7 +1,6 @@
 compile linux driver 
 linux driver 
  
-
 require package: 
 cent os: 
 yum install kernel-devel 

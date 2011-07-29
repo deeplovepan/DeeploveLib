@@ -18,3 +18,8 @@ install:
    nx_nic-4.0.517-1.x86_64.rpm is creaed in /usr/src/packages/RPMS/x86_64
 2. rpm -ivh nx_nic-4.0.517-1.x86_64.rpm
 
+
+uncompress source rpm:
+ex:
+rpm2cpio test.rpm | cpio -idmv --no-absolute-filenames
+

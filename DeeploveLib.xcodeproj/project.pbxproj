@@ -28,6 +28,8 @@
 		DDB56F1413D94FEE000DBD49 /* solarisMpio in Sources */ = {isa = PBXBuildFile; fileRef = DDB56F1313D94FED000DBD49 /* solarisMpio */; };
 		DDB56F1913DD673B000DBD49 /* MissionControl in Sources */ = {isa = PBXBuildFile; fileRef = DDB56F1813DD673B000DBD49 /* MissionControl */; };
 		DDB56FBF13DEA016000DBD49 /* enableRoot in Sources */ = {isa = PBXBuildFile; fileRef = DDB56FBE13DEA015000DBD49 /* enableRoot */; };
+		DDB56FC413E017A0000DBD49 /* ps in Sources */ = {isa = PBXBuildFile; fileRef = DDB56FC313E01768000DBD49 /* ps */; };
+		DDB56FCA13E2812B000DBD49 /* dtrace in Sources */ = {isa = PBXBuildFile; fileRef = DDB56FC913E28121000DBD49 /* dtrace */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -335,6 +337,9 @@
 		DDB56F1313D94FED000DBD49 /* solarisMpio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisMpio; sourceTree = "<group>"; };
 		DDB56F1813DD673B000DBD49 /* MissionControl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MissionControl; sourceTree = "<group>"; };
 		DDB56FBE13DEA015000DBD49 /* enableRoot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enableRoot; sourceTree = "<group>"; };
+		DDB56FC313E01768000DBD49 /* ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ps; sourceTree = "<group>"; };
+		DDB56FC913E28121000DBD49 /* dtrace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dtrace; sourceTree = "<group>"; };
+		DDB56FD013E2B5EE000DBD49 /* getMacOsVersion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getMacOsVersion; sourceTree = "<group>"; };
 		DDB84F121373C6DF00BAA85D /* sort */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sort; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -535,6 +540,8 @@
 				DD25A222137B8ED80003CD84 /* uniq */,
 				DDB56F1313D94FED000DBD49 /* solarisMpio */,
 				DDB56FBE13DEA015000DBD49 /* enableRoot */,
+				DDB56FC313E01768000DBD49 /* ps */,
+				DDB56FC913E28121000DBD49 /* dtrace */,
 			);
 			name = command;
 			sourceTree = "<group>";
@@ -1099,6 +1106,7 @@
 		DDB56F1713DD671D000DBD49 /* Mac OS */ = {
 			isa = PBXGroup;
 			children = (
+				DDB56FD013E2B5EE000DBD49 /* getMacOsVersion */,
 				DDB56F1813DD673B000DBD49 /* MissionControl */,
 			);
 			name = "Mac OS";
@@ -1171,6 +1179,8 @@
 				DDB56F1413D94FEE000DBD49 /* solarisMpio in Sources */,
 				DDB56F1913DD673B000DBD49 /* MissionControl in Sources */,
 				DDB56FBF13DEA016000DBD49 /* enableRoot in Sources */,
+				DDB56FC413E017A0000DBD49 /* ps in Sources */,
+				DDB56FCA13E2812B000DBD49 /* dtrace in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

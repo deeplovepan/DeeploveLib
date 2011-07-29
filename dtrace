@@ -1,0 +1,24 @@
+dtrace
+command
+
+provider:module:function:name
+ex:
+dtrace -n 'pid25344::test:return { ustack(); }'
+show stack of pid25344's test function 
+
+ex:
+dtrace -n 'pid25344::test:entry { ustack(); }'
+
+
+dtrace -l
+show available probe
+ID   PROVIDER            MODULE                          FUNCTION NAME
+1     dtrace                                                     BEGIN
+2     dtrace                                                     END
+3     dtrace                                                     ERROR
+4        fbt com.sns.driver.SNSArchitectureModel _Z10SNSWarningPKcz [SNSWarning(char const*, ...)] entry
+5        fbt com.sns.driver.SNSArchitectureModel _Z10SNSWarningPKcz [SNSWarning(char const*, ...)] return
+
+
+dtrace -p 26053 -s /Users/deeplove/test.d
+

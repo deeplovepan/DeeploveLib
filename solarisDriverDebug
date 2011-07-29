@@ -1,3 +1,8 @@
+reference:
+1. http://blog.csdn.net/kbkiss_1/article/details/5527395
+2. Solaris Modular Debugger Guide
+   http://download.oracle.com/docs/cd/E19683-01/806-6545/index.html
+
 how to print message
 use cmn_err
 ex:
@@ -21,4 +26,38 @@ ls /var/crash/evt/
 bounds    unix.1    unix.3    unix.5    vmcore.1  vmcore.3
 vmcore.5 unix.0    unix.2    unix.4    vmcore.0  vmcore.2 
 vmcore.4
+
+debug:
+ex:
+mdb 5
+5 map to unix.5 & vmcore.5
+(1) ::msgbuf
+panic[cpu0]/thread=fffffe8000f52c60: 
+BAD TRAP: type=e (#pf Page fault) rp=fffffe8000f52ae0 addr=fffffffff474c0e5
+sched: 
+#pf Page fault
+Bad kernel fault at addr=0xfffffffff474c0e5
+pid=0, pc=0xfffffffff474c0e5, sp=0xfffffe8000f52bd0, eflags=0x10282
+cr0: 8005003b<pg,wp,ne,et,ts,mp,pe> cr4: 6f0<xmme,fxsr,pge,mce,pae,pse>
+cr2: fffffffff474c0e5 cr3: ce44000 cr8: c
+rdi: ffffffff8009de80 rsi:                0 rdx: fffffe8000f52c00
+rcx: ffffffffffffffff  r8: fffffffffbc29cc0  r9:             ec8a
+rax:             1c8c rbx:                0 rbp: fffffe8000f52c40
+r10:                0 r11: fffffffffbcf3300 r12: fffffe8000f52be0
+r13:                0 r14:                0 r15:                0
+fsb: ffffffff80000000 gsb: fffffffffbc29cc0  ds:               43
+es:               43  fs:                0  gs:              1c3
+trp:                e err:               10 rip: fffffffff474c0e5
+cs:               28 rfl:            10282 rsp: fffffe8000f52bd0
+ss:                0
+
+fffffe8000f529f0 unix:real_mode_end+7f81 ()
+fffffe8000f52ad0 unix:trap+5e6 ()
+fffffe8000f52ae0 unix:_cmntrap+140 ()
+fffffe8000f52c40 fffffffff474c0e5 ()
+fffffe8000f52c50 unix:thread_start+8 ()
+
+(2)::stackregs
+
+
 

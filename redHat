@@ -7,3 +7,6 @@ http://mirrors.fedoraproject.org/publiclist/
 
 ex:
 http://mirror.optus.net/redhat/rhel/
+
+package ftp:
+ftp://ftp.redhat.com/pub/redhat/linux/enterprise/
