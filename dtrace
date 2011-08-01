@@ -19,6 +19,20 @@ ID   PROVIDER            MODULE                          FUNCTION NAME
 4        fbt com.sns.driver.SNSArchitectureModel _Z10SNSWarningPKcz [SNSWarning(char const*, ...)] entry
 5        fbt com.sns.driver.SNSArchitectureModel _Z10SNSWarningPKcz [SNSWarning(char const*, ...)] return
 
-
+run dtrace script for specific process
 dtrace -p 26053 -s /Users/deeplove/test.d
 
+show probe in kernel
+dtrace -l | grep fbt
+
+show probe for Mac Driver com.peter.testIokit
+ex:
+50569        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver12getMetaClassEv [com_peter_driver_MyDriver::getMetaClass() const] entry
+50570        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver12getMetaClassEv [com_peter_driver_MyDriver::getMetaClass() const] return
+50571        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver9MetaClass5allocEv [com_peter_driver_MyDriver::MetaClass::alloc() const] entry
+50572        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver9MetaClass5allocEv [com_peter_driver_MyDriver::MetaClass::alloc() const] return
+50573        fbt com.peter.testIokit _ZN25com_peter_driver_MyDriver4stopEP9IOService [com_peter_driver_MyDriver::stop(IOService*)] entry
+50574        fbt com.peter.testIokit _ZN25com_peter_driver_MyDriver4stopEP9IOService [com_peter_driver_MyDriver::stop(IOService*)] return
+
+trace mac driver:
+dtrace -n 'fbt:com.peter.testIokit:_ZN25com_peter_driver_MyDriver4stopEP9IOService:entry'
