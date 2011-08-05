@@ -2,6 +2,12 @@ reference:
 1. http://blog.csdn.net/kbkiss_1/article/details/5527395
 2. Solaris Modular Debugger Guide
    http://download.oracle.com/docs/cd/E19683-01/806-6545/index.html
+3. kmdb & mdb
+   http://blog.csdn.net/liyue0624/article/details/4316027
+
+show kernel thread:
+mdb -k
+ -> ::threadlist
 
 how to print message
 use cmn_err
@@ -26,6 +32,10 @@ ls /var/crash/evt/
 bounds    unix.1    unix.3    unix.5    vmcore.1  vmcore.3
 vmcore.5 unix.0    unix.2    unix.4    vmcore.0  vmcore.2 
 vmcore.4
+
+boot option:
+(1) in GRUB, add "-v" parameter to the end of kernel parameters.
+(2) in GRUB, add "-k" parameter to the end of kernel parameters.
 
 debug:
 ex:

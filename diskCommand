@@ -1,0 +1,26 @@
+disk command
+compare
+
+solaris:
+(1) show disk:
+    format
+
+(2) partition disk
+    1. format
+       -> fdisk
+       -> partition
+          -> label
+          -> quit
+       -> label
+
+(3) format partition
+    newfs /dev/rdsk/c231t231d1s0
+    disk is c231t231d1
+    s0 is partition0
+
+(4) mount partition
+    mount /dev/dsk/c231t231d1s0 /test
+    must use dsk, not rdsk
+
+(5) check disk io performance
+    iostat -xn 5

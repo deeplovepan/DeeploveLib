@@ -2,6 +2,7 @@ dtrace
 command
 
 provider:module:function:name
+
 ex:
 dtrace -n 'pid25344::test:return { ustack(); }'
 show stack of pid25344's test function 
@@ -9,6 +10,43 @@ show stack of pid25344's test function
 ex:
 dtrace -n 'pid25344::test:entry { ustack(); }'
 
+ex:
+The stack() action records a kernel stack trace to the directed buffer
+
+tracemem:
+add "-x rawbytes" to print hex
+ex:
+dtrace -x rawbytes -s test.d
+note:
+1, 2, 4, and 8 bytes will be printed as integers of that size;
+other sizes will be hex dumped.
+
+
+show return value:
+arg1 contain return value
+ex:
+dtrace -n 'pid41993::test123:return { printf("%d", arg1); }'
+
+print arg string for user process
+ex:
+dtrace -n 'pid42109::test123:entry { printf("%s", copyinstr(arg0) );  }'
+
+print arg string for driver
+ex:
+dtrace -n 'fbt::test:entry { printf("%s", stringof(arg0) );  }'
+
+
+probefunc: function name
+probemod: module name
+
+fbt: Function Boundary Tracing
+
+ex:
+trace only probe that module name = Virtual
+pid$1:::entry
+/probemod == "Virtual"/
+{
+}
 
 dtrace -l
 show available probe

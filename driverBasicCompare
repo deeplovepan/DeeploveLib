@@ -1,0 +1,23 @@
+driver basic
+compare
+
+create device from major & minor:
+    solaris:
+        dev_t makedevice(major_t majnum, minor_t minnum);
+    linux:
+        MKDEV(int major, int minor);
+        ex:
+            dev_t deviceNumber = MKDEV( 10, 10);
+
+
+print to log:
+    solaris:
+         use cmn_err 
+         log file: /var/adm/messages
+         ex:
+            cmn_err(CE_NOTE, "hello\n");
+    linux:
+         use printk
+         log file: /var/log/messages
+         ex:
+            printk("error\n");
