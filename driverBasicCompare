@@ -21,3 +21,8 @@ print to log:
          log file: /var/log/messages
          ex:
             printk("error\n");
+    mac os:
+         use IOLog
+         log file: /var/log/system.log
+         ex:
+            IOLog("error\n");

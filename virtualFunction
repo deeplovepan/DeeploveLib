@@ -1,0 +1,61 @@
+virtual function
+c and c++
+
+#include <iostream.h>
+
+class Window // Base class for C++ virtual function example
+{
+    public:
+        virtual void Create() 
+        {
+            cout <<"Window Create\n";
+
+        }
+        
+        void Create2() 
+        {
+            cout <<"Window Create2\n";
+        
+        }
+
+};
+
+class CommandButton : public Window
+{
+    public:
+        void Create()
+        {
+            cout<<"CommandButton create\n";
+        }
+        void Create2()
+        {
+            cout<<"CommandButton Create2\n";
+        }
+
+};
+
+int main()
+{
+    Window *y = new CommandButton();
+    CommandButton *z = new CommandButton();
+    
+    cout<<"virtual function\n";
+    y->Create();
+    z->Create();
+
+    cout<<"no virtual function\n";
+    y->Create2();
+    z->Create2();
+
+
+    return 0;
+}
+
+->
+virtual function
+CommandButton create
+CommandButton create
+no virtual function
+Window Create2
+CommandButton Create2
+
