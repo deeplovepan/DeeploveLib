@@ -13,6 +13,11 @@ dtrace -n 'pid25344::test:entry { ustack(); }'
 ex:
 The stack() action records a kernel stack trace to the directed buffer
 
+
+wildcard function name
+ex:
+dtrace -n 'pid19865::test*:entry {}'
+
 tracemem:
 add "-x rawbytes" to print hex
 ex:
@@ -21,6 +26,10 @@ note:
 1, 2, 4, and 8 bytes will be printed as integers of that size;
 other sizes will be hex dumped.
 
+
+run specific program and trace it
+ex:
+dtrace -c '/Users/deeplove/test3.o hello' -n 'pid$target::main:entry {}'
 
 show return value:
 arg1 contain return value
