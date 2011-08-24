@@ -330,8 +330,13 @@
 		DD3D484A13398EED00E7D65B /* vscan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vscan; sourceTree = "<group>"; };
 		DD6E85D4138653020009B0C0 /* javaInstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = javaInstall; sourceTree = "<group>"; };
 		DD79C22113557AE300B62EE1 /* IOregistryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOregistryTest.m; sourceTree = "<group>"; };
+		DD7D446B140353EE007D4E8A /* solarisPci */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisPci; sourceTree = "<group>"; };
+		DD7D448614048F93007D4E8A /* linuxPci */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linuxPci; sourceTree = "<group>"; };
+		DD7D448714049F0D007D4E8A /* pciConfigurationRegister.png */ = {isa = PBXFileReference; path = pciConfigurationRegister.png; sourceTree = "<group>"; };
+		DD7D44891404D16F007D4E8A /* memoryMap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = memoryMap; sourceTree = "<group>"; };
 		DD9962FC13EA402C0035D842 /* diskCommand */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diskCommand; sourceTree = "<group>"; };
 		DD99635E13EA7C500035D842 /* driverBasicCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverBasicCompare; sourceTree = "<group>"; };
+		DD9A127D13FBBBF000F25D6C /* solarisIscsi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = solarisIscsi; sourceTree = "<group>"; };
 		DDA4642813EFE7A500530284 /* virtualFunction */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = virtualFunction; sourceTree = "<group>"; };
 		DDA4642D13F220A200530284 /* cPointer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cPointer; sourceTree = "<group>"; };
 		DDA4649713F4C66000530284 /* driverIoCompare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = driverIoCompare; sourceTree = "<group>"; };
@@ -414,6 +419,8 @@
 		61284FE1120FD96500696385 /* note */ = {
 			isa = PBXGroup;
 			children = (
+				DD7D44881404D146007D4E8A /* memory */,
+				DD7D4469140353A9007D4E8A /* PCI */,
 				DDB56F1713DD671D000DBD49 /* Mac OS */,
 				DD1C370F13D6CCDB006F7FB1 /* solarisDriver */,
 				61464EBC12BF5AD400C691FE /* ruby */,
@@ -454,6 +461,7 @@
 				619BF19C13139F070006C005 /* smtp */,
 				6155F6DF1241ACD100B8ECDA /* centOs */,
 				61284FE2120FD98400696385 /* mount */,
+				DD9A127D13FBBBF000F25D6C /* solarisIscsi */,
 				61285009120FE05200696385 /* linuxIscsi */,
 				6128500A120FE63000696385 /* ssh */,
 				6128500D120FF5A200696385 /* linuxService */,
@@ -1107,6 +1115,24 @@
 				DD79C22113557AE300B62EE1 /* IOregistryTest.m */,
 			);
 			name = IORegistry;
+			sourceTree = "<group>";
+		};
+		DD7D4469140353A9007D4E8A /* PCI */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D448714049F0D007D4E8A /* pciConfigurationRegister.png */,
+				DD7D448614048F93007D4E8A /* linuxPci */,
+				DD7D446B140353EE007D4E8A /* solarisPci */,
+			);
+			name = PCI;
+			sourceTree = "<group>";
+		};
+		DD7D44881404D146007D4E8A /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				DD7D44891404D16F007D4E8A /* memoryMap */,
+			);
+			name = memory;
 			sourceTree = "<group>";
 		};
 		DDB56F1713DD671D000DBD49 /* Mac OS */ = {

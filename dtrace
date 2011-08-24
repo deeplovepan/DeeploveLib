@@ -83,3 +83,11 @@ ex:
 
 trace mac driver:
 dtrace -n 'fbt:com.peter.testIokit:_ZN25com_peter_driver_MyDriver4stopEP9IOService:entry'
+
+
+if program is compiled with optimization, some functions can not be traced
+
+
+
+
+

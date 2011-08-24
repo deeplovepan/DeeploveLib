@@ -69,5 +69,7 @@ fffffe8000f52c50 unix:thread_start+8 ()
 
 (2)::stackregs
 
+fail safe mode:
+OS is mounted at /a
 
 

@@ -9,6 +9,7 @@ solaris:
     1. format
        -> fdisk
        -> partition
+          when Enter partition size, use ? to get max block 
           -> label
           -> quit
        -> label
@@ -45,5 +46,17 @@ solaris:
     ->
     major 227, minor 0
 
+
+(9) show scsi device info
+    iostat -En
+    ->
+    c2t17d0          Soft Errors: 1 Hard Errors: 0 Transport Errors: 0 
+    Vendor: IFT      Product: ESVA E20-1130    Revision: 385A Serial No:  
+    Size: 32.21GB <32212254208 bytes>
+    Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+    Illegal Request: 1 Predictive Failure Analysis: 0
+
+(10) remove unexist disk
+     devfsadm -C            
 
 

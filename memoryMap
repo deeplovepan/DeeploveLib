@@ -1,0 +1,5 @@
+memory map
+
+linux driver:
+map physical memory to virtual memory
+    ioremap
