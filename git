@@ -66,6 +66,9 @@ show detail about the commit
 (6) git show v0.1:test.txt
     show file on specific tag
 
+merge:
+    git merge 
+
 tag:
 git tag v0.1 30df7
 30df7 is leading characters of commit
