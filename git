@@ -68,6 +68,9 @@ show detail about the commit
 
 merge:
     git merge 
+    
+get back to merge conflicts after modify conflicts incorrectly?
+    git checkout -m test.txt
 
 tag:
 git tag v0.1 30df7
@@ -98,12 +101,24 @@ show difference:
 
 branch:
 (1)git branch branch1
-   create branch branch1
+   create local branch branch1
 (2)switch branch
     git checkout branch1
 (3)git branch
-   show branches list
-
+   show local branches list
+(4)git branch -r
+   show remote branch list
+(5)git branch branch1 -D
+   delete branch1
+(6)create branch on remote
+   git push origin branch1 
+   ( local is in branch1 now)
+(7) delete local branch
+    git branch -d branch1   
+(8) delete remote branch
+    git push origin :branch1
+    
+ 
 delete file:
 ex:
 1. rm test.c
@@ -112,6 +127,9 @@ ex:
 compare difference between local and remote
 1. git fetch
 2. git diff master origin/master
+
+update remote branch list
+    git fetch
 
 show remote info:
 git remote -v
@@ -166,5 +184,17 @@ edit .git/config
 solution:
 git reset --hard 
 this will remove changes on the local side
+
+--------------------------------------------------------------
+
+check project's branches list:
+ex:
+    https://github.com/test/VitaDock/branches 
+    (test is project name)
+    
+git branch name:
+    ex:
+        feature/test1
+
 
 
