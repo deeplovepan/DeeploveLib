@@ -8,3 +8,4 @@ set file format:
 mac
 ex:
 defaults write com.apple.screencapture type tiff
+killall SystemUIServer
