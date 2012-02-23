@@ -91,8 +91,12 @@ show difference:
 
 branch:
 (1)git branch branch1
+   git checkout branch1
+   git push -u origin branch1
+
    create branch branch1
-(2)switch branch
+
+(2)switch branch or get branch from server
     git checkout branch1
 (3)git branch
    show branches list
