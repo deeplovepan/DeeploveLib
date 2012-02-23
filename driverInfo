@@ -28,3 +28,14 @@ set module version in driver:
 ex:
 MODULE_VERSION("1.5");
 
+check if driver load:
+    solaris:
+        use modinfo
+        ex:
+        modinfo | grep zfs
+            ->
+            162 fffffffff400c000  a0930   8   1  zfs (ZFS filesystem version 15)
+            162 fffffffff400c000  a0930 181   1  zfs (ZFS storage pool)
+
+
+

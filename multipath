@@ -2,8 +2,8 @@ multipath
 command 
 
 
-debin install: 
-(1)apt-get install multipath [ remove highlighting ]-tools 
+debian install: 
+(1)apt-get install multipath-tools 
 (2) edit multipath.conf 
 /lib/udev/scsi_id 
 multipath info when no path: 
@@ -76,6 +76,8 @@ for old kernel
 no_path_retry 30 
 
 set path_grouping_policy as group_by_prio 
+
+
 problem: 
 Is device-mapper driver missing from kernel? 
 answer: 
@@ -111,3 +113,11 @@ condlog(0, "%s: size %llu, expected %llu. "
 mpp->size); 
 mpp->action = ACT_REJECT; 
 } 
+
+
+problem:
+How can I boot a server from a replicated SAN LUN using device-mapper-multipath in Red Hat Enterprise Linux 5?
+solution:
+https://access.redhat.com/kb/docs/DOC-17660
+http://sourceware.org/lvm2/wiki/MultipathUsageGuide
+

@@ -1,0 +1,17 @@
+pointer
+c and c++
+
+when pointer address + 1, it is based on the size of 
+data pointer points
+
+ex:
+struct abc
+{
+    char a;
+    char b;
+    char c;
+};
+struct abc *temp = malloc(sizeof(struct abc) * 100);
+printf("%p %p\n", temp, temp+1);
+->
+0x1029007e0 0x1029007e3

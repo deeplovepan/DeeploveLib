@@ -1,0 +1,93 @@
+dtrace
+command
+
+provider:module:function:name
+
+ex:
+dtrace -n 'pid25344::test:return { ustack(); }'
+show stack of pid25344's test function 
+
+ex:
+dtrace -n 'pid25344::test:entry { ustack(); }'
+
+ex:
+The stack() action records a kernel stack trace to the directed buffer
+
+
+wildcard function name
+ex:
+dtrace -n 'pid19865::test*:entry {}'
+
+tracemem:
+add "-x rawbytes" to print hex
+ex:
+dtrace -x rawbytes -s test.d
+note:
+1, 2, 4, and 8 bytes will be printed as integers of that size;
+other sizes will be hex dumped.
+
+
+run specific program and trace it
+ex:
+dtrace -c '/Users/deeplove/test3.o hello' -n 'pid$target::main:entry {}'
+
+show return value:
+arg1 contain return value
+ex:
+dtrace -n 'pid41993::test123:return { printf("%d", arg1); }'
+
+print arg string for user process
+ex:
+dtrace -n 'pid42109::test123:entry { printf("%s", copyinstr(arg0) );  }'
+
+print arg string for driver
+ex:
+dtrace -n 'fbt::test:entry { printf("%s", stringof(arg0) );  }'
+
+
+probefunc: function name
+probemod: module name
+
+fbt: Function Boundary Tracing
+
+ex:
+trace only probe that module name = Virtual
+pid$1:::entry
+/probemod == "Virtual"/
+{
+}
+
+dtrace -l
+show available probe
+ID   PROVIDER            MODULE                          FUNCTION NAME
+1     dtrace                                                     BEGIN
+2     dtrace                                                     END
+3     dtrace                                                     ERROR
+4        fbt com.sns.driver.SNSArchitectureModel _Z10SNSWarningPKcz [SNSWarning(char const*, ...)] entry
+5        fbt com.sns.driver.SNSArchitectureModel _Z10SNSWarningPKcz [SNSWarning(char const*, ...)] return
+
+run dtrace script for specific process
+dtrace -p 26053 -s /Users/deeplove/test.d
+
+show probe in kernel
+dtrace -l | grep fbt
+
+show probe for Mac Driver com.peter.testIokit
+ex:
+50569        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver12getMetaClassEv [com_peter_driver_MyDriver::getMetaClass() const] entry
+50570        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver12getMetaClassEv [com_peter_driver_MyDriver::getMetaClass() const] return
+50571        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver9MetaClass5allocEv [com_peter_driver_MyDriver::MetaClass::alloc() const] entry
+50572        fbt com.peter.testIokit _ZNK25com_peter_driver_MyDriver9MetaClass5allocEv [com_peter_driver_MyDriver::MetaClass::alloc() const] return
+50573        fbt com.peter.testIokit _ZN25com_peter_driver_MyDriver4stopEP9IOService [com_peter_driver_MyDriver::stop(IOService*)] entry
+50574        fbt com.peter.testIokit _ZN25com_peter_driver_MyDriver4stopEP9IOService [com_peter_driver_MyDriver::stop(IOService*)] return
+
+trace mac driver:
+dtrace -n 'fbt:com.peter.testIokit:_ZN25com_peter_driver_MyDriver4stopEP9IOService:entry'
+
+
+if program is compiled with optimization, some functions can not be traced
+
+
+
+
+

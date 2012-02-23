@@ -1,0 +1,7 @@
+ln
+command
+
+ex:
+ln -s myData.txt myDataLink
+->
+lrwxr-xr-x   1 deeplove  staff        10 May 10 11:17 myDataLink -> myData.txt

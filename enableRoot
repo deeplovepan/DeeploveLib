@@ -1,0 +1,7 @@
+1. From the Finder's Go menu, choose Utilities.
+2. Open Directory Utility.
+3. Click the lock in the Directory Utility window.
+4. Enter an administrator account name and password, then click OK.
+5. Choose Enable Root User from the Edit menu.
+6. Enter the root password you wish to use in both the Password and Verify
+   fields, then click OK.

@@ -10,6 +10,10 @@ name:
 usually master is name for local Repository
 origin is name for remote Repository
 
+init ssh key:
+reference:
+http://help.github.com/mac-set-up-git/
+
 init git project:
 if there is a project dir "test" in local host
 (1) cd test
@@ -62,6 +66,12 @@ show detail about the commit
 (6) git show v0.1:test.txt
     show file on specific tag
 
+merge:
+    git merge 
+    
+get back to merge conflicts after modify conflicts incorrectly?
+    git checkout -m test.txt
+
 tag:
 git tag v0.1 30df7
 30df7 is leading characters of commit
@@ -90,17 +100,27 @@ show difference:
 (3)git diff v0.01:story.txt v0.03:story.txt
 
 branch:
-(1)git branch branch1
-   git checkout branch1
-   git push -u origin branch1
-
-   create branch branch1
-
-(2)switch branch or get branch from server
+(1) create branch branch1
+    git branch branch1
+    git checkout branch1
+    git push -u origin branch1
+(2)switch branch
     git checkout branch1
 (3)git branch
-   show branches list
-
+   show local branches list
+(4)git branch -r
+   show remote branch list
+(5)git branch branch1 -D
+   delete branch1
+(6)create branch on remote
+   git push origin branch1 
+   ( local is in branch1 now)
+(7) delete local branch
+    git branch -d branch1   
+(8) delete remote branch
+    git push origin :branch1
+    
+ 
 delete file:
 ex:
 1. rm test.c
@@ -109,6 +129,9 @@ ex:
 compare difference between local and remote
 1. git fetch
 2. git diff master origin/master
+
+update remote branch list
+    git fetch
 
 show remote info:
 git remote -v
@@ -163,5 +186,17 @@ edit .git/config
 solution:
 git reset --hard 
 this will remove changes on the local side
+
+--------------------------------------------------------------
+
+check project's branches list:
+ex:
+    https://github.com/test/VitaDock/branches 
+    (test is project name)
+    
+git branch name:
+    ex:
+        feature/test1
+
 
 

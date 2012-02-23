@@ -27,3 +27,7 @@ declare varaible or method
 ex: 
 <%! int count = 0; %> 
 count will become instance variable of the class 
+
+5. use jsp in javscript
+ex:
+var isSetLater = '<%= request.getParameter("isSetLater") %>';

@@ -1,0 +1,8 @@
+solaris iscsi
+command
+
+1. iscsiadm list target
+    List your iSCSI target information.
+
+2. iscsiadm list target -S
+    show lun info

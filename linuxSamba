@@ -37,3 +37,9 @@ recycle: repository = ../recycle/%u
 show samba info:
 testparm
 
+mount cifs from linux:
+mount -t cifs //192.168.101.100/test /mnt/testCifs 
+      -o username=shareuser,password=sharepassword,domain=nixcraft 
+
+
+

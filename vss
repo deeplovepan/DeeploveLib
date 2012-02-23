@@ -48,8 +48,6 @@ Provider Id: {d1da7f61-d080-4ce9-92a1-2c4b819b2787}
 Version: 1.5.0.3.5
  
  
- 
- 
 IVssHardwareSnapshotProvider Interface
 http://msdn.microsoft.com/en-us/library/aa384229(VS.85).aspx
 diskshadow:
@@ -57,3 +55,12 @@ diskshadow:
 2. create
 3. list shadows all
 4. delete shadows all
+
+test software:
+BrightStor ARCserve
+1. backup SQL: select SQL item under MSDEWriter
+
+
+
+
+

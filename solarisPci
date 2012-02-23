@@ -1,0 +1,32 @@
+solaris pci
+
+
+add_drv -i '"pci1274,8001" "pci1039,900" ' test
+1274 is vendor ID, 8001 is device ID
+
+
+show PCI info
+(1) prtpicl -v
+(2) prtconf -vp 
+(3) prtconf -D
+
+
+/etc/driver_aliases
+
+find device and matching driver
+    prtconf -D
+
+find  PCI devices that does not have a driver
+    prtconf -D | grep pci
+    ->
+        pci8086,244e, instance #0 (driver name: pci_pci)
+        pci8086,24d0
+
+        pci8086,24d0 does not have driver
+
+after load pci driver for pci8086,24d0
+    -> add_drv -i "pci8086,24d0" deeplove
+       -> pci8086,24d0 (driver name: deeplove)
+    -> cat /etc/driver_aliases | grep deeplove
+       -> deeplove "pci8086,24d0"
+

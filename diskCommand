@@ -1,0 +1,62 @@
+disk command
+compare
+
+solaris:
+(1) show disk:
+    format
+
+(2) partition disk
+    1. format
+       -> fdisk
+       -> partition
+          when Enter partition size, use ? to get max block 
+          -> label
+          -> quit
+       -> label
+
+(3) format partition
+    newfs /dev/rdsk/c231t231d1s0
+    disk is c231t231d1
+    s0 is partition0
+
+(4) mount partition
+    mount /dev/dsk/c231t231d1s0 /test
+    must use dsk, not rdsk
+
+(5) check disk io performance
+    iostat -xn 5
+
+(6) disk name
+    ex:
+    /dev/dsk/c0t0d0s0 & /dev/rdsk/c0t0d0s0
+    c0: controller 0
+    t0: target 0
+    d0: disk 0
+    s0: parition 0
+
+(7) /dev/dsk/c4t220000D023180136d0s0 -> ../../devices/pci@0,0/pci8086,3597@4/pci1077,15d@0/fp@0,0/disk@w220000d023180136,0:a
+
+
+(8) ses device
+    ls -l /dev/es/ses0
+    ->
+    /devices/pci@0,0/pci8086,3597@4/pci1077,15d@0/fp@0,0/enclosure@w220000d023180137,0:0
+    
+    ls -l /devices/pci@0,0/pci8086,3597@4/pci1077,15d@0/fp@0,0/enclosure@w220000d023180137,0:0
+    ->
+    major 227, minor 0
+
+
+(9) show scsi device info
+    iostat -En
+    ->
+    c2t17d0          Soft Errors: 1 Hard Errors: 0 Transport Errors: 0 
+    Vendor: IFT      Product: ESVA E20-1130    Revision: 385A Serial No:  
+    Size: 32.21GB <32212254208 bytes>
+    Media Error: 0 Device Not Ready: 0 No Device: 0 Recoverable: 0 
+    Illegal Request: 1 Predictive Failure Analysis: 0
+
+(10) remove unexist disk
+     devfsadm -C            
+
+

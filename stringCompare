@@ -95,6 +95,7 @@ test.replace("h", "a")
 string find:
 python:
 ex:
+startswith return True or False
 if test.startswith("abc"):
 	print "start with abc"
 elif test.endswith("abc"):
@@ -102,6 +103,7 @@ elif test.endswith("abc"):
 ex:
 text.find("bc")
 Return the lowest index where "bc" is found
+Return -1 if not found
 ******************************************************
 java:
 ex:

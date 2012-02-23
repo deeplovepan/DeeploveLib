@@ -4,6 +4,14 @@ mac driver
 reference:
 http://fieldofcows.com/index.php?title=Setting_up_Kernel_Debugging_on_OS_X
 
+check object count:
+use ioclasscount
+ex:
+ioclasscount SCSITaskUserClientIniter
+->
+SCSITaskUserClientIniter = 3
+
+
 kernel crash log:
 /Library/Logs/DiagnosticReports
 
@@ -18,6 +26,11 @@ kextutil -n -s /tmp test.kext
 -s: create symbol file into /tmp
 -n: no laod
  
+
+download kernel debug kit from apple website:
+ex:
+download kernel_debug_kit_10.6.7_10j869.dmg
+
 assume 0x223ab275 is EIP address
 gdb /Volumes/KernelDebugKit/mach_kernel
 --> set kext-symbol-file-path /tmp

@@ -1,6 +1,9 @@
 webdav
 command
 
+reference:
+http://manas.tungare.name/blog/howto-setup-webdav-on-mac-os-x/
+
 configure webdav server on mac:
 1. System Preferences -> Sharing -> Web Sharing
 

@@ -1,0 +1,16 @@
+compile mac driver
+mac driver
+
+source download site:
+http://www.opensource.apple.com/release/mac-os-x-1066/
+
+
+1.compile Apple's kext
+(1) download source:
+ex:
+download IOStorageFamily-116.1.20
+
+(2) compile problem for IOStorageFamily-116.1.20
+can not find definition for SUB_ABSOLUTETIME
+solution:
+it is defined in xnu-1504.9.26/libkern/libkern/OSBase.h

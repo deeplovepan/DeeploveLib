@@ -1,6 +1,15 @@
 ipv6
 compare
 
+convert the IPv6 address to ipv6-literal
+ex:
+fe80:0:0:0:a0b6:99c9:2f6c:5759
+->
+fe80-0-0-0-a0b6-99c9-2f6c-5759.ipv6-literal.net
+-------------------------------------------------------
+
+length: 128bits
+
 two unicast address assignment:
 1. Link-local address
 only used on the local network link
@@ -89,24 +98,6 @@ igb1: flags=2004841<UP,RUNNING,MULTICAST,DHCP,IPv6> mtu 1500 index 4
 igb1:1: flags=2004841<UP,RUNNING,MULTICAST,DHCP,IPv6> mtu 1500 index 4
         inet6 2001::c115:7cfd:801e:8b7/128 
 -----------------------------------------------
-config dhcp ipv6 server
-linux:
-config:
-/etc/dhcp6s.conf
-interface eth0 {
-    renew-time 60;
-    rebind-time 90;
-    prefer-life-time 130;
-    valid-life-time 200;
-    allow rapid-commit;
-    link AAA {
-        pool{
-                range 2001:b021:1B::10 to 2001:b021:1B::210/64;af
-                prefix 2001:b021:1B::/48;
-        };
-    };
-};
-*******************************************************
 windows server 2008:
 1. Start—>Administrative tools—>Server Manager
 2. Add Roles  -> DHCP server
@@ -114,11 +105,7 @@ windows server 2008:
 note:
 if enable allow list, then only ips listed in
 allow list can get IP  
------------------------------------------------
-start DHCP server:
-linux:
-ex:
-dhcp6s -d -D -f eth0
+
 -----------------------------------------------
 check dhcp status:
 solaris:

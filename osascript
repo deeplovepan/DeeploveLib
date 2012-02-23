@@ -1,0 +1,6 @@
+osascript
+command
+
+execute AppleScripts
+
+ex:

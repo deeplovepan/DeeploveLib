@@ -1,0 +1,65 @@
+driver basic
+compare
+
+create device from major & minor:
+    solaris:
+        dev_t makedevice(major_t majnum, minor_t minnum);
+        major_t getmajor(dev_t dev);
+        minor_t getminor(dev_t dev);
+    linux:
+        MKDEV(int major, int minor);
+        ex:
+            dev_t deviceNumber = MKDEV( 10, 10);
+
+
+print to log:
+    solaris:
+         use cmn_err 
+         log file: /var/adm/messages
+         ex:
+            cmn_err(CE_CONT, "hello\n");
+    linux:
+         use printk
+         log file: /var/log/messages
+         ex:
+            printk("error\n");
+    mac os:
+         use IOLog
+         log file: /var/log/system.log
+         ex:
+            IOLog("error\n");
+
+sleep:
+    solaris:
+        use delay
+        ex:
+        // sleep 1s
+        delay(drv_usectohz(1000000));
+    linux:
+        use msleep
+        ex:
+        // sleep 1s
+        msleep(1000);
+    mac:
+        use IOSleep
+        ex:
+        // sleep 1s 
+        IOSleep(1000);
+
+thread:
+    solaris:
+        void thread_create(
+            caddr_t	stk,
+            size_t	stksize,
+            void	(*proc)(),
+            void	*arg,
+            size_t	len,
+            proc_t	 *pp,
+            int	state,
+            pri_t	pri);
+        void thread_exit(void);
+    linux:
+        
+
+
+

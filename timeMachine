@@ -1,8 +1,26 @@
 time machine
 command
 
+reference:
+http://www.trollop.org/2011/07/23/os-x-10-7-lion-time-machine-netatalk-2-2/
+
 use solaris as time machine disk
+
 1. enable AFP and share dir 
-2. enable bonjour
-3. defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1 
-    (on mac os machine)
+
+2. enable bonjour 
+   (option, this will make share show on the finder)
+
+3. edit AppleVolumes.default 
+   add tm option for share 
+   ex:
+   "/Pool-1/testTime2" "testTime2" cnidscheme:dbd options:acls,upriv,nostat,tm
+
+4. enable acl full perssion for everyone for share folder
+   ( this step is for netatalk version < 2.2)
+
+
+.sparsebundle dir:
+time machine will create a .sparsebundle dir
+this dir contains backup data
+

@@ -3,3 +3,20 @@ command
 
 format:
 show disk info
+ex:
+format
+->
+Searching for disks...
+Failed to inquiry this logical diskFailed to inquiry this logical diskdone
+
+
+AVAILABLE DISK SELECTIONS:
+0. c2d0 < cyl 30398 alt 2 hd 255 sec 63>
+/pci@0,0/pci-ide@1f,2/ide@0/cmdk@0,0
+1. c2d1 < cyl 30398 alt 2 hd 255 sec 63>
+/pci@0,0/pci-ide@1f,2/ide@0/cmdk@1,0
+2. c4d0 <ST325062-         5ND40BN-0001-232.89GB>
+/pci@0,0/pci-ide@1f,2/ide@1/cmdk@0,0
+3. c4d1 <ST325062-         5QE3PY6-0001-232.89GB>
+/pci@0,0/pci-ide@1f,2/ide@1/cmdk@1,0
+Specify disk (enter its number): 

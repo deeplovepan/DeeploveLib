@@ -1,0 +1,6 @@
+uniq
+
+report or filter out repeated lines in a file
+
+ex:
+grep -R hello  * | uniq

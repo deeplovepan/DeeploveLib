@@ -1,8 +1,11 @@
 space
 compare
 
-1. trim space at end of line
+1. trim space at start and end of string
 python:
 ex:
 myStr = "hello  "
 myStr = myStr.strip()
+
+java:
+test.trim();

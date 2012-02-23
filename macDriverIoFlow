@@ -1,0 +1,47 @@
+mac driver IO flow
+mac driver
+
+flow:
+(1)
+IOMedia's write is called
+IOMedia
+virtual void write(
+IOService *           client,
+UInt64                byteStart,
+IOMemoryDescriptor *  buffer,
+IOStorageAttributes * attributes,
+IOStorageCompletion * completion);
+
+(2)
+in IOMedia's write
+create request(subclass of IOCommand) 
+call request's write method
+void com_eonpath_driver_MpioRequest::write(
+Member* path, 
+UInt64 byteStart, 
+IOMemoryDescriptor *buffer,
+IOStorageAttributes *attributes, 
+IOStorageCompletion *completion)
+
+(3)
+in request's write method
+call IOStorage's write method
+virtual IOReturn write(
+IOService *           client,
+UInt64                byteStart,
+IOMemoryDescriptor *  buffer,
+IOStorageAttributes * attributes      = 0,
+UInt64 *              actualByteCount = 0);
+
+
+
+
+
+
+
+
+
+
+
+
+

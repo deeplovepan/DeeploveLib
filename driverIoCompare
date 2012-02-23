@@ -1,0 +1,23 @@
+driver IO compare
+compare
+
+IO 
+    mac:
+        IOMemoryDescriptor
+            _length;  /* transfer count in bytes */
+            getPhysicalSegment(IOByteCount offset, IOByteCount *length) 
+                
+    solaris:
+        struct buf:
+            b_bcount;		/* transfer count in bytes */
+            b_lblkno                /* start sector */
+            dev_t b_edev;   /* target device */
+
+    linux:
+        struct bio:
+            bi_size  /* transfer count in bytes */
+            bi_sector /* start sector */
+            struct block_device *bi_bdev  /* target device */
+        
+--------------------------------------------------------------------------
+    

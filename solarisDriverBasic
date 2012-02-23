@@ -1,0 +1,98 @@
+solaris driver basic
+solaris driver
+
+Device Driver Tutorial:
+http://download.oracle.com/docs/cd/E19082-01/819-3159/drivertutp/index.html
+
+Writing Device Driver
+http://download.oracle.com/docs/cd/E19082-01/819-3196/index.html
+
+device name:
+ex:
+	/dev/dsk/c0t0d0s7  ->  /devices/pci@1c,600000/scsi@2/sd@0,0:h
+	
+compile with Oracle Solaris Studio
+  1.32-bit 
+    cc -D_KERNEL -c mydriver.c
+	ld -r -o mydriver mydriver.o
+	 
+  2.64-bit x86
+	cc -D_KERNEL -m64 -xarch=sse2a -xmodel=kernel -c mydriver.c
+    ld -r -o mydriver mydriver.o
+    
+  3.64-bit SPARC
+    cc -D_KERNEL -m64 -c mydriver.c
+    ld -r -o mydriver mydriver.o
+    
+compile with gcc
+	1.64-bit SPARC
+	  gcc -D_KERNEL -m64 -mcpu=v9 -mcmodel=medlow -fno-pic -mno-fpu
+         -ffreestanding -nodefaultlibs -c mydriver.c
+      ld -r -o mydriver mydriver.o
+    2.64-bit x86
+      gcc -D_KERNEL -m64 -mcmodel=kernel -mno-red-zone -ffreestanding
+         -nodefaultlibs -c mydriver.c
+      ld -r -o mydriver mydriver.o
+    3.32-bit
+      gcc -D_KERNEL -ffreestanding -nodefaultlibs -c mydriver.c
+      ld -r -o mydriver mydriver.o
+  
+ 
+install driver
+    1. copy configuration file to /usr/kernel/drv
+       cp mydriver.conf /usr/kernel/drv
+    2. test
+       (1)copy driver binary to /tmp
+          cp mydriver /tmp
+       (2)Link to the driver from the kernel driver directory
+     	  on 64-bit SPARC
+          ln -s /tmp/mydriver /usr/kernel/drv/sparcv9/mydriver
+          on 64-bit x86
+          ln -s /tmp/mydriver /usr/kernel/drv/amd64/mydriver
+          on 32-bit
+          ln -s /tmp/mydriver /usr/kernel/drv/mydriver
+    3. if driver is well tested, copy it to kernel driver directory
+       64-bit SPARC
+       cp mydriver /usr/kernel/drv/sparcv9/mydriver
+       64-bit x86
+       cp mydriver /usr/kernel/drv/amd64/mydriver
+       32-bit
+       cp mydriver /usr/kernel/drv/mydriver
+     
+make the installed driver usable
+ex:
+add_drv mydriver
+1. The _info(9E), _init(9E), and attach(9E) entry points are called in that order.
+2. The driver is added to the /devices directory.
+3. The driver is the most recent module listed by modinfo(1M).
+4. The driver is the most recent module listed in the file /etc/name_to_major.
+
+
+rem_drv
+unload the  driver and remove the device from the 
+devices directory:
+
+
+/etc/driver_aliases 
+shows which devices are bound to which drivers.
+
+load driver
+ex
+modload mydriver
+
+unload driver
+unload the driver but not remove the device from
+devices.
+ex
+modunload mydriver
+
+show drivers info
+modinfo
+
+get driver major number
+cat /etc/name_to_major
+
+
+     
+     
+  
