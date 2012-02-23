@@ -119,7 +119,8 @@ branch:
     git branch -d branch1   
 (8) delete remote branch
     git push origin :branch1
-    
+(9) delete remote branch on local
+    git branch -rd origin/test
  
 delete file:
 ex:
