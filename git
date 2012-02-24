@@ -67,7 +67,7 @@ show detail about the commit
     show file on specific tag
 
 merge:
-    git merge 
+    git merge --no-ff
     
 get back to merge conflicts after modify conflicts incorrectly?
     git checkout -m test.txt
