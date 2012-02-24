@@ -67,7 +67,7 @@ show detail about the commit
     show file on specific tag
 
 merge:
-    git merge 
+    git merge test --no-ff
     
 get back to merge conflicts after modify conflicts incorrectly?
     git checkout -m test.txt
@@ -121,6 +121,8 @@ branch:
     git push origin :branch1
 (9) delete remote branch on local
     git branch -rd origin/test
+(10) create local branch and switch to it
+    git checkout -b test 
  
 delete file:
 ex:
