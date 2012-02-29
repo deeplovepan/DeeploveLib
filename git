@@ -67,7 +67,11 @@ show detail about the commit
     show file on specific tag
 
 merge:
+<<<<<<< HEAD
     git merge --no-ff
+=======
+    git merge test --no-ff
+>>>>>>> a635cb186804d62d58b440dfb159f7beff1cb5b8
     
 get back to merge conflicts after modify conflicts incorrectly?
     git checkout -m test.txt
@@ -100,8 +104,10 @@ show difference:
 (3)git diff v0.01:story.txt v0.03:story.txt
 
 branch:
-(1)git branch branch1
-   create local branch branch1
+(1) create branch branch1
+    git branch branch1
+    git checkout branch1
+    git push -u origin branch1
 (2)switch branch
     git checkout branch1
 (3)git branch
@@ -117,7 +123,10 @@ branch:
     git branch -d branch1   
 (8) delete remote branch
     git push origin :branch1
-    
+(9) delete remote branch on local
+    git branch -rd origin/test
+(10) create local branch and switch to it
+    git checkout -b test 
  
 delete file:
 ex:
